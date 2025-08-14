@@ -1,8 +1,11 @@
 ---
-tags: [Kripke, Modal Logic, System T]
+tags:
+  - Kripke
+  - ModalLogic
+  - SystemT
 title: System T
-created: '2025-08-11T05:27:50.930Z'
-modified: '2025-08-11T05:37:31.175Z'
+created: 2025-08-11T05:27:50.930Z
+modified: 2025-08-11T05:37:31.175Z
 ---
 [[Modal Logic]]
 # System T

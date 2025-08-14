@@ -1,11 +1,17 @@
 ---
-attachments: [reflexive relation.png]
-tags: [Modal Logic, Model Theory, System T]
+attachments:
+  - reflexive relation.png
+tags:
+  - ModalLogic
+  - ModelTheory
+  - Kripke
+  - SystemT
 title: Reflexive Relation
-created: '2025-08-11T05:31:31.593Z'
-modified: '2025-08-11T05:40:15.679Z'
+created: 2025-08-11T05:31:31.593Z
+modified: 2025-08-11T05:40:15.679Z
 ---
 [[Modal Logic]]
+[[System T]]
 # Reflexive Relation
 1. 自反关系的定义
 
