@@ -2,17 +2,17 @@
 tags:
   - Kripke
   - ModalLogic
+  - 论文
 title: Semantic Considerations on Modal Logic 全文
 created: 2025-08-15T1:24
 modified: 2025-08-15T1:24
 ---
-[[Semantic Considerations On Modal Logic重要部分]]
+[[模态逻辑的模型结构]]
 [[Kripke]]
 [[Modal Logic]]
 
-# Semantic Considerations on Modal Logic
+# Semantic Considerations on Modal Logic全文
 
-以下是转换为 Obsidian 兼容的 LaTeX 格式的完整论文翻译，所有公式均采用 `$...$` 行内公式或 `$$...$$` 块级公式标记，关键术语保留中英对照：
 
 ---
 

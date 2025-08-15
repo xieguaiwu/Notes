@@ -3,6 +3,7 @@ tags:
   - Kripke
   - ModalLogic
   - SystemT
+  - 定义性
 title: System T
 created: 2025-08-11T05:27:50.930Z
 modified: 2025-08-11T05:37:31.175Z

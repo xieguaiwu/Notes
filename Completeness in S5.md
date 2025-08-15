@@ -2,6 +2,8 @@
 tags:
   - Kripke
   - ModalLogic
+  - 证明
+  - 论文
 title: Completeness in S5
 created: 2025-08-11T06:04:59.444Z
 modified: 2025-08-11T06:09:18.876Z
