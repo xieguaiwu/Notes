@@ -7,7 +7,7 @@ title: Semantic Considerations on Modal Logic 全文
 created: 2025-08-15T1:24
 modified: 2025-08-15T1:24
 ---
-[[模态逻辑的模型结构]]
+[[关于哲学命题的论域在模态逻辑语义扩展理论下的形式化的可能性]]
 [[Kripke]]
 [[Modal Logic]]
 
