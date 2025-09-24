@@ -17,3 +17,14 @@ modified:
 
 ## 1.2 Consideration For a Bigger Picture
 上方的图只能体现个人的需求曲线，而市场整体的需求曲线则取决于许多个人。
+市场需求是个人需求之和：
+![[add_demand_schedule.png]]
+保持range（价格）的一致，同时将各quantity相加
+
+## 1.3 Shifts
+### 1.3.1 Horizontal Shift
+![[horizontal_shift_demand_schedule.png]]
+此时变化的是**demand**
+### 1.3.2
+![[vertical_shift_deman_schedule.png]]
+此时变化的则是**price**
