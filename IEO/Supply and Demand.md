@@ -2,6 +2,7 @@
 tags:
   - Economics
   - 定义性
+  - 供需关系
 title: Supply and Demand
 created: 2025-09-23T13:02:00
 modified:
