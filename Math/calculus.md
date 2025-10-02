@@ -1,2 +1,0 @@
-#Math #Calculus
-[[limit]]
