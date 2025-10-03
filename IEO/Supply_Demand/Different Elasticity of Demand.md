@@ -1,3 +1,4 @@
+#Economics #定义性 #供需关系 
 [[Price Elasticity of Demand]]
 
 ## 1. $$E_{d}=0\Leftrightarrow\text{perfectly inelastic}$$
@@ -15,4 +16,4 @@
 ## 4. $$|E_{d}|=\infty\Leftrightarrow\text{perfect elastic}$$
 ![[demand_elasticity_5.png]]
 
-可以看到，$E_{d}$本质上无非是价格-供应量图像的斜率的倒数
+可以看到，在相同价格和数量下，**斜率越小，$E_{d}$越大**

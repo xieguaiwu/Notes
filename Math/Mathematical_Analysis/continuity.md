@@ -22,6 +22,8 @@ $$可导性\Rightarrow 连续性$$
 ### 3.1 可导性定义
 见[[differentiation]]中关于可导性定义的叙述，可知只有当双侧导数都存在且彼此相等时，函数才在一个点上是可导的。
 对于绝对值函数在特定点上的不可导性已经证明$连续性\nRightarrow 可导性$
+除此之外可见[[Weiestrass function]]
+
 ### 3.2 证明$可导性\Rightarrow 连续性$
 见[[Differentiability and Continuity]]
 
