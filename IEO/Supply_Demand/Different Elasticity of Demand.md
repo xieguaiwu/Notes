@@ -1,5 +1,5 @@
 #Economics #定义性 #供需关系 
-[[Price Elasticity of Demand]]
+[[IMP Price Elasticity of Demand]]
 
 ## 1. $$E_{d}=0\Leftrightarrow\text{perfectly inelastic}$$
 ![[demand_elasticity_1.png]]

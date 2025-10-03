@@ -2,6 +2,7 @@
 tags:
   - Economics
   - 定义性
+  - "#供需关系"
 title: Equilibrium
 created: 2025-09-26T15:10:00
 modified:
