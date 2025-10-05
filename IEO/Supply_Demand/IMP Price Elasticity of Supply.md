@@ -14,7 +14,7 @@ modified:
 $$E_s=\frac{\%\Delta Q^s}{\%\Delta P}=\frac{\Delta Q^s/(\frac{Q^s_1+Q^s_2}{2})}{\Delta P/(\frac{P_1+P_2}{2})}$$
 其中$Q^s$指供给量 (quantity supplied)，$P$仍旧指价格（不只有商品自身的价格，**也有投入价格 (input price)** ）。
 见[[Supply and Demand]]：当物品价格上升/投入价格下降/技术进步时，供给量会增加。
-
+与PED不同，$E_s$恒为非负数，因为供应量与价格正相关。
 ## 2. Different kinds
 $$E_s=0\Leftrightarrow\text{Perfectly inelastic supply}$$
 $$E_s\in(0,1)\Leftrightarrow\text{Relatively inelastic supply}$$
@@ -37,7 +37,7 @@ $$E_s=\infty\Leftrightarrow\text{Perfectly elastic supply}$$
 ![[production_frontier.png]]
 假如仍然没有实现生产效率的最大化（即生产不位于图中的曲线上时），那么供给弹性会很高：因为此时企业存在未被利用的生产能力，**扩大产能不需要额外支出**
 
-- 增加产量所需的**增量成本（Incremental Cost）越小**，供给弹性**越大**。生产者可以更容易地扩大生产。
+- 增加产量所需的**边际成本（Marginal Cost）越小**，供给弹性**越大**。生产者可以更容易地扩大生产。
     
-- 增加产量所需的**增量成本（incremental Cost）越大**，供给弹性**越小**。
+- 增加产量所需的**增量成本（Marginal Cost ）越大**，供给弹性**越小**。
 
