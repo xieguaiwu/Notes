@@ -3,6 +3,7 @@ tags:
   - Economics
   - 定义性
   - 供需关系
+  - WelfareEconomics
 title: Price Elasticity of Demand
 created: 2025-10-02T20:37:00
 modified:

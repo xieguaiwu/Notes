@@ -8,6 +8,7 @@ created: 2025-09-26T15:10:00
 modified:
 ---
 [[Supply and Demand]]
+[[Pareto Efficiency]]
 # Equilibrium
 ## 1. Graph and Mechanism
 Equilibrium represents the combination of both supply curve and demand curve. The essential intercept in them is **price**.

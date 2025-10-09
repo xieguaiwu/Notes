@@ -3,6 +3,7 @@ tags:
   - Economics
   - 证明
   - 供需关系
+  - WelfareEconomics
 title: Influence of Tax Incidence to Economic Surplus
 created: 2025-10-06T00:15:00
 modified:

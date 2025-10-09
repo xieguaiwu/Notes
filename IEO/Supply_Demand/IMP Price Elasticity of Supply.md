@@ -4,6 +4,7 @@ tags:
   - 定义性
   - 供需关系
   - "#证明"
+  - WelfareEconomics
 title: Price Elasticity of Supply
 created: 2025-10-02T22:11:00
 modified:
