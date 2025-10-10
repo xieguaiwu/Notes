@@ -26,7 +26,7 @@ $$\text{Social cost}=\text{private cost}+\text{external cost}$$
 解决方法：通过收税等方法人为抬高私人攻击线至社会成本的程度，最终令市场达到最佳条件
 **庇古税 (Pigovian tax)**
 [[Pigovian Tax]]
-### 2.2. Positive Externalities
+### 2.2 Positive Externalities
 在正外部性的情况下，旁观者收益$\Rightarrow$**生产的社会成本小于私人成本**
 解决方法：可以通过政府补贴的方式令供给曲线向下移动
 - 正外部性的一个很重要的例子就是发明新技术，**专利制度正是在通过专利费来将新发明的外部性内在化**——每一个使用了新技术的企业都需要额外投入专利费用才能开始生产，**这等同于令供给曲线向下移动到最优的位置**
@@ -44,6 +44,7 @@ $$\text{Social cost}=\text{private cost}+\text{external cost}$$
 除了庇古税以外，还可以通过**私人解决方法 (Private Solutions)** 来解决外部性问题
 - 慈善活动
 - 多方签订协议，互相保证利益
+[[Coase Theorem]]: 如果私人各方可以无成本地协商，那么**私人市场就将总能解决外部性问题**
 ## 5. Conclusion
 无论生产方还是消费方，**负外部性令市场生产量大于社会希望的量**，**正外部性令市场生产量小于社会希望的量**
 
