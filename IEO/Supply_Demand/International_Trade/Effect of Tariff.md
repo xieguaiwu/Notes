@@ -4,10 +4,12 @@ tags:
   - InternationalTrade
   - 证明
   - 供需关系
+  - WelfareEconomics
 title: Effect of Tariff
 created: 2025-10-08T18:13:00
 modified:
 ---
+[[Trades-love them]]
 # Effect of Tariff
 关税仅仅对于[[Trade and Economic Surplus]]中的进口国才有意义。
 当国家开始进口时，国内价格$P_d'$下降到了世界价格，于是损害了先前仍然在旧国内价格$P_d$下竞争的国内生产者的利益。增加了关税$\Delta t$后：
