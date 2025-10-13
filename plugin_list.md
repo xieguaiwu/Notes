@@ -4,13 +4,12 @@
 4. style settings
 5. outliner
 6. better export pdf
-7. latex suite
-8. better word count
-9. hover editor
-10. commander
-11. another quick switcher
-12. better file link
-13. mermaid tools
-14. image auto upload
-15. file explorer note count
-16. hider
+7. better word count
+8. hover editor
+9. commander
+10. another quick switcher
+11. better file link
+12. mermaid tools
+13. image auto upload
+14. file explorer note count
+15. hider
