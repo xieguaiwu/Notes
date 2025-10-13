@@ -5,6 +5,7 @@ tags:
   - 证明
   - 供需关系
   - WelfareEconomics
+  - 决策
 title: Effect of Tariff
 created: 2025-10-08T18:13:00
 modified:

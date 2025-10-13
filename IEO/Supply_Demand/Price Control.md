@@ -4,6 +4,7 @@ tags:
   - 供需关系
   - 定义性
   - WelfareEconomics
+  - 决策
 title: Price Control
 created: 2025-10-03T19:50:00
 modified:

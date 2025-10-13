@@ -3,6 +3,7 @@ tags:
   - Economics
   - 定义性
   - WelfareEconomics
+  - 决策
 title: Public Goods and Common Resources
 created: 2025-10-10T09:37:00
 modified:
