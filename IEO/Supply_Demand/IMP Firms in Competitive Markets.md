@@ -27,8 +27,8 @@ modified:
 
 ## 3. Profit Maximization
 ### 3.1 Marginal-Cost Curve
-正如[[补充：边际成本与价格供给弹性]]&[[Consideration of Marginal Changes]]中关于利润最大化的知识点一样，对于price taker而言，**当$MR=MC$时，利润最大**
-$$MC=\frac{\Delta TC}{\Delta Q}=MR=\frac{\Delta TR}{\Delta Q}$$
+正如[[补充：边际成本与价格供给弹性]]&[[Consideration of Marginal Changes]]中关于利润最大化的知识点一样，对于price taker而言，**当$MR=MC$时，利润最大，此时边际成本也等于价格**
+$$MC=\frac{\Delta TC}{\Delta Q}=MR=\frac{\Delta TR}{\Delta Q}=\pi$$
 其中$\Delta TR$指total revenue总营收，此时$\Delta TC=\Delta TR$
 
 ![[marginal_cost_curve.png]]
@@ -90,3 +90,22 @@ $$\pi=(\frac{TR}{Q}-\frac{TC}{Q})\times Q$$
 $$\pi=(P-ATC)\times Q$$
 所以企业在这种情况下会盈利，如下所示：
 ![[firm_profit.png]]
+故当$P<ATC$则亏损，亏损量如图所示：
+![[firm_losses.png]]
+
+## 5. Supply Curve
+
+### 5.1 短期供给
+正如同[[Supply and Demand]]对个人和市场的需求与供给曲线的说法，只要$P>AVC$（即企业不会短期停业），**每个企业的边际成本曲线就是其供给曲线，市场总供给等于各个企业的供给量之和**
+![[individual_and_total_suppluy_for_firms.png]]
+
+### 5.2 长期供给
+假如并不总是$P>AVC$，即企业可能会进入和退出市场，那么供给线会发生改变。
+- 已经进入市场的企业盈利$\Rightarrow$新企业进入市场$\Rightarrow$**供给上升，价格下降**
+- 已经进入市场的企业亏损$\Rightarrow$企业退出市场$\Rightarrow$**供给下降，价格上升**
+
+如前文所言，**利润最大化意味着边际成本等于价格**，而企业自由进入和退出市场又会**迫使价格等于平均总成本**：
+$$\pi=MC=ATC$$
+因为[[IMP Costs of Production]]中**5**所说的，**边际成本等于平均总成本时，平均总成本最低**，所以：
+$$\pi=MC=ATC_{min}$$
+**这个点名为长期均衡点 (long-run equilibrium)**

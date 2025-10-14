@@ -70,6 +70,7 @@ $$MC=\frac{\Delta TC}{\Delta Q^s}$$
 - 边际成本$MC$**递增**
 - 平均总成本$ATC$总是呈现U形：因为平均固定成本$AFC$递减，但平均可变成本$AVC$递增。
 - **只要边际成本小于平均总成本，平均总成本就下降**，反之则上升
+正因如此，**当$ATC=MC$时，平均总成本最少**
 $$ATC-MC>0\Rightarrow\text{decreasing }ATC$$
 $$ATC-MC<0\Rightarrow\text{increasing }ATC$$
 从数学上看，这正是一个平均数和增量的关系：如果新增加的项小于平均数，那么就会拉低平均数，反之则会拉高平均数。
