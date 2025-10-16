@@ -14,7 +14,7 @@ modified:
 Price Elasticity of Demand ($E_{d}$) 即价格需求弹性，以下方是其定义式：
 $$E_{d}=\frac{\Delta Q/Q}{\Delta P/P}=\frac{\Delta P}{\Delta Q}\times \frac{Q}{P}$$
 其中$Q$和$P$分别是需求量 (quantity demanded) 和价格。价格需求弹性反应的是**需求量对价格的变动的反应程度**。定义式等同于用需求量变动的**百分比**除以价格变动的**百分比**。
-
+弹性即图象斜率的倒数
 ## 2. Different Elasticity
 $$E_{d}=0\Leftrightarrow\text{perfectly inelastic}$$
 $$|E_{d}|\in(0,1)\Leftrightarrow\text{inelastic}$$

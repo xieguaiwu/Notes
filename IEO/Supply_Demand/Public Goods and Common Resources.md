@@ -14,7 +14,7 @@ modified:
 - 私人物品：排他性 (excludable) & 竞争性 (rival in consumption)
 - 公共物品：二者皆无
 - 公有资源：不排他，但具有竞争性（数量有限，如土地等自然资源都属于此）
-- 公共物品：**一种具有排他性但没有竞争性的物品**$\Rightarrow$存在自然垄断（见[[Natural Monopoly]]）
+- 公共物品：**一种具有排他性但没有竞争性的物品**$\Rightarrow$存在自然垄断（见[[Monopoly]]中的**Natural Monopoly**）
 
 ## 2. Free-Rider Problem
 搭便车问题：一个市场中存在免费获得了**公共物品的收益**的人，这属于外部性 ([[Externality, Pigovian tax]]) 的一种特殊情况。与所有外部性问题一样，它也会造成市场失灵的问题。

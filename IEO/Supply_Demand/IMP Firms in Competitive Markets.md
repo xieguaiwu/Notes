@@ -20,7 +20,7 @@ modified:
 在竞争市场中，**单一买者或卖者的行为对市场价格少有影响**，他们只能接受市场设定的价格，**是price taker（价格接受者）**
 
 ## 2. Revenue of a Competitive Firm
-如果生产$Q$单位商品，其中每单位价格是$P$，$\text{总收益} TR =P\times Q$；平均收益$AR=\frac{PQ}{Q}=P$，边际收益$MR=\frac{\Delta TR}{\Delta Q}=P$
+如果生产$Q$单位商品，其中每单位价格是$P$，$\text{总收益} TR =P\times Q$；平均收益$AR=\frac{PQ}{Q}=P$，边际收益$MR=\frac{\Delta TR}{\Delta Q}=\frac{P\times Q}{Q}=P$
 对于竞争企业来说，**平均收益和边际收益都等于价格**
 
 利润$\pi=TR-TC$
@@ -28,9 +28,8 @@ modified:
 ## 3. Profit Maximization
 ### 3.1 Marginal-Cost Curve
 正如[[补充：边际成本与价格供给弹性]]&[[Consideration of Marginal Changes]]中关于利润最大化的知识点一样，对于price taker而言，**当$MR=MC$时，利润最大，此时边际成本也等于价格**
-$$MC=\frac{\Delta TC}{\Delta Q}=MR=\frac{\Delta TR}{\Delta Q}=\pi$$
+$$MC=\frac{\Delta TC}{\Delta Q}=MR=\frac{\Delta TR}{\Delta Q}=P$$
 其中$\Delta TR$指total revenue总营收，此时$\Delta TC=\Delta TR$
-
 ![[marginal_cost_curve.png]]
 由于公司是price taker，故图中价格线$P$是水平的。
 
@@ -109,3 +108,11 @@ $$\pi=MC=ATC$$
 因为[[IMP Costs of Production]]中**5**所说的，**边际成本等于平均总成本时，平均总成本最低**，所以：
 $$\pi=MC=ATC_{min}$$
 **这个点名为长期均衡点 (long-run equilibrium)**
+在可以自由进入或退出市场时，竞争市场的**长期均衡会发生在企业的有效规模 (efficient scale) 中**
+
+### 5.3 零经济利润和零会计利润
+上文所述的零利润指的是**零经济利润**：
+$$\pi=TR-TC$$
+正如[[IMP Costs of Production]]中**3**所说的，其中$EC$指显性成本，$IC$指隐性成本
+$$TC=EC+IC$$
+而与此同时，**会计利润根本不用考虑隐性成本**，它直接等于$TR-EC$，故**会计利润不一定为零**。
