@@ -5,6 +5,7 @@ tags:
   - 定义性
   - 决策
   - 证明
+  - WelfareEconomics
 title: Monopoly
 created: 2025-10-16T07:42:00
 modified:
@@ -73,3 +74,15 @@ $$MR<P$$
 [[Consideration of Marginal Changes]]中提及的边际利润公式同样成立：
 $$MP=MR-MC$$
 对于垄断企业，同样有$MR=MC\Rightarrow\pi_{max}$
+
+### 2.3 A Monopoly’s Profit
+与[[IMP Firms in Competitive Markets]]相同，同样有：
+$$\pi=TR-TC=(\frac{TR}{Q}-\frac{TC}{Q})\times Q=(P-ATC)\times Q$$
+![[monopoly_profit.png]]
+
+## 3. Monopoly and Deadweight loss
+首先见下图所体现的**有效产量 (efficient quantity)**，即企业边际成本线与买者的需求线的交点，与[[IMP Firms in Competitive Markets]]的**5.2**中的**efficient scale**同理：
+![[deadweight_loss_of_monopoly.png]]
+价格高于有效产量时
+
+在福利经济学的角度，垄断无法总剩余最大化。首先，从图象上看，**供给曲线与价格相交所成的面积是生产者盈余**，且**需求曲线与价格相交形成的面积是消费者盈余**（见[[Economic Surplus]]**3**）。
