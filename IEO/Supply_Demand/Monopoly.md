@@ -35,7 +35,7 @@ right to produce a good or service)**
 
 ### Natural Monopolies
 自然垄断源自造成垄断的第三种原因，即一个垄断企业能够以低于许多企业的成本进行生产。
-只有在下图的这种情况下时，才可能会形成自然垄断：
+只有在下图的这种情况下时（**平均总成本递减**），才可能会形成自然垄断：
 ![[natural_monopoly.png]]
 当$ATC$随产量增加而递减时，说明**单个企业可以用最低的成本生产任何数量的商品**，此时**存在着规模经济 (economies of scale)**
 除此之外，固定的市场规模对于自然垄断也十分重要。市场扩大时，自然垄断或许会变为竞争市场
@@ -64,6 +64,7 @@ $$MR=\frac{(P\times Q)'}{Q'}=\frac{P'Q+Q'P}{Q'}=Q\times\frac{P'}{Q'}+P$$
 $$\frac{P'}{Q'}=\frac{\Delta P}{\Delta Q}=\frac{1}{E_d}$$
 $$\frac{P'}{Q'}<0\Rightarrow Q\times\frac{P'}{Q'}<0$$
 那么就必然有：
+$$MR=P(1+\frac{1}{E_d})$$
 $$MR<P$$
 所以，**垄断者的边际收益$MR$总是小于物品价格$P$**：
 ![[MR_and_price.png]]
@@ -81,8 +82,21 @@ $$\pi=TR-TC=(\frac{TR}{Q}-\frac{TC}{Q})\times Q=(P-ATC)\times Q$$
 ![[monopoly_profit.png]]
 
 ## 3. Monopoly and Deadweight loss
-首先见下图所体现的**有效产量 (efficient quantity)**，即企业边际成本线与买者的需求线的交点，与[[IMP Firms in Competitive Markets]]的**5.2**中的**efficient scale**同理：
-![[deadweight_loss_of_monopoly.png]]
-价格高于有效产量时
 
-在福利经济学的角度，垄断无法总剩余最大化。首先，从图象上看，**供给曲线与价格相交所成的面积是生产者盈余**，且**需求曲线与价格相交形成的面积是消费者盈余**（见[[Economic Surplus]]**3**）。
+### 3.1 Cause
+>补充：
+>竞争市场中，**边际成本线就是供给线**（见[[补充：边际成本与价格供给弹性]]），很明显，由于边际成本同样能左右垄断企业的决策，对垄断企业来说，边际成本线就相当于它的供给线，尽管根据定义来看它并没有供给线。
+
+首先见下图所体现的**有效产量 (efficient quantity)**，即企业边际成本线与买者的需求线的交点，与[[IMP Firms in Competitive Markets]]的**5.2**中的**efficient scale**同理：
+![[efficient_price_of_monopoly.png]]
+如图所示，价格高于有效产量时，$MC>Q^D$，反之则$MC<Q^D$，所以只有当$MC=Q^D$时才能获得有效产量。
+
+问题在于，**垄断企业只有在$Q^D>MC$时才能获得更大利润**，它的定价往往更高。我们用[[Economic Surplus]]的知识点来分析其**deadweight loss**：
+![[deadweight_loss_of_monopoly.png]]
+在福利经济学的角度，垄断无法总剩余最大化。首先，从图象上看，**供给曲线与价格相交所成的面积是生产者盈余**，且**需求曲线与价格相交形成的面积是消费者盈余**（见[[Economic Surplus]]**3**），而企业对价格的人为抬高则必然会造成无谓损失，**其效果与对消费者征税无异**
+
+### 3.2 Other Possibilities
+在一些企业为了利润最大化而实行的策略下，无谓损失也可以被减少，例如**价格歧视 (price discrimination)**
+Price discrimination意味着企业**通过不同顾客的支付意愿来收取不同价格**，例如精装书和平装书、成人票和儿童票，甚至是私立学校的奖学金。
+此时，尽管**消费者剩余没有增加**，但是**生产者剩余增加了**，从而减少了无谓损失。在理想情况下，假如企业真的能完美地预测消费意愿，那么将不会有无谓损失，市场的全部利润全部属于垄断企业：
+![[price_discrimination.png]]
