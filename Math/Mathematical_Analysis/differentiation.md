@@ -34,9 +34,24 @@ $$\lim_{x\to c^+}\frac{f(x+c)-f(x)}{c}=\lim_{x\to c^-}\frac{f(x+c)-f(x)}{c}$$
 ## 3. 特殊情况
 ### 3.1
 当$f'(c)=0$ 时无法直接判断原函数图象，其有以下几种可能：
-![[f(c)'=0.png]]
+![[f'(c)=0.png]]
+
+当函数在点$c$出现 **垂直的切线 (vertical tangent line)** 时：
+$$\lim_{\Delta x\to 0} \frac{f(c+\Delta x)-f(c)}{\Delta x}=\pm\infty$$
+假如函数连续，那么可以认为：
+$$f'(c)=\pm\infty$$
+**函数在这点是不可导的！**
+图像如下：
+![[Vertical_tangent.svg]]
 ### 3.2
+$$D_x[\log_a x]=\frac{1}{x\ln a}$$
+$$D_x[\ln x]=\frac{1}{x}$$
 $$D_x[\tan x]=\sec^2 x$$
+$$D_x[\sin x]=\cos x$$
+$$\lim_{x\to 0}\frac{\sin(x)}{x}=1$$
+$$D_x[\cos x]=-\sin x$$
+$$\lim_{x\to 0}\cos(x)=1$$
+$$\lim_{x\to 0}\frac{1-\cos(x)}{x}=0$$
 $$D_x[\cot x]=-\csc^2 x$$
 $$D_x[\sec x]=\sec x\tan x$$
 $$D_x[\csc x]=-\csc x\cot x$$
@@ -52,3 +67,5 @@ $$\frac{d}{dx}[f(x)\div g(x)]=\frac{f'(x)g(x)-g'(x)f(x)}{g(x)^2}(g(x)\ne 0)$$
 $$\frac{d}{dx}[f(g(x))]=f'(g(x))\times g'(x)$$
 如果函数$y=f(u)$可导，函数$u=g(x)$可导，那么：
 $$\frac{dy}{dx}=\frac{dy}{du}\times \frac{du}{dx}$$
+## 5. 其它问题
+正如前文所言，求导在几何上的意义在于作切线 (tangent line)。这里有两种特殊的切线：**vertical tangent line**和**horizontal tangent line**

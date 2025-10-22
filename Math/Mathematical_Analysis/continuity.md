@@ -11,7 +11,7 @@ modified:
 [[calculus]]
 ## 1. Continuity at a Point
 A function $f(x)$ is continuous at point the $c$ within its domain only when:
-$$(\forall c)(c\in\mathbf{D})\lim_{x\to c}f(x)=f(c)$$
+$$\lim_{x\to c}f(x)=f(c)$$
 ## 2. Continuous of the Whole Function
 A function is continuous in an interval only when the function is continuous at every point within that interval.
 $$(\forall c)(c\in\mathbf{D})\lim_{x\to c}f(x)=f(c)$$
