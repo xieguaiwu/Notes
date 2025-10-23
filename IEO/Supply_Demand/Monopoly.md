@@ -89,9 +89,9 @@ $$\pi=TR-TC=(\frac{TR}{Q}-\frac{TC}{Q})\times Q=(P-ATC)\times Q$$
 
 首先见下图所体现的**有效产量 (efficient quantity)**，即企业边际成本线与买者的需求线的交点，与[[IMP Firms in Competitive Markets]]的**5.2**中的**efficient scale**同理：
 ![[efficient_price_of_monopoly.png]]
-如图所示，价格高于有效产量时，$MC>Q^D$，反之则$MC<Q^D$，所以只有当$MC=Q^D$时才能获得有效产量。
+如图所示，价格高于有效产量时，$MC>Q^d$，反之则$MC<Q^d$，所以只有当$MC=Q^d$时才能获得有效产量。
 
-问题在于，**垄断企业只有在$Q^D>MC$时才能获得更大利润**，它的定价往往更高。我们用[[Economic Surplus]]的知识点来分析其**deadweight loss**：
+问题在于，**垄断企业只有在$Q^d>MC$时才能获得更大利润**，它的定价往往更高。我们用[[Economic Surplus]]的知识点来分析其**deadweight loss**：
 ![[deadweight_loss_of_monopoly.png]]
 在福利经济学的角度，垄断无法总剩余最大化。首先，从图象上看，**供给曲线与价格相交所成的面积是生产者盈余**，且**需求曲线与价格相交形成的面积是消费者盈余**（见[[Economic Surplus]]**3**），而企业对价格的人为抬高则必然会造成无谓损失，**其效果与对消费者征税无异**
 
