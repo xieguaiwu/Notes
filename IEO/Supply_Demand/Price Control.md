@@ -24,7 +24,7 @@ modified:
 ### 1.1.2 $$\text{Price Ceiling} < P_0 $$
 此时，由于平衡价格已经被强行改变，价格上限会对市场造成影响
 ![[binding_price_ceiling.png]]
-此时已经无法达成市场均衡，出现了供大于求 (excess demand) 的状况（可见[[Supply and Demand]]1.2.2）
+此时已经无法达成市场均衡，出现了供不应求 (excess demand) 的状况（可见[[Supply and Demand]]1.2.2）
 
 [[补充：案例-房租价格上限]]
 ## 1.2 Price Floor

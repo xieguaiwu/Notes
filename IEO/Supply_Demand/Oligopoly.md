@@ -22,7 +22,8 @@ modified:
 寡头各自之间都会希望占据更大的市场份额，这种勾结往往难以为继。
 
 ### 2.2 The Equilibrium for an Oligopoly
-寡头之间的博弈是一种非合作博弈 (Non-Cooperative Games)，最终达到的均衡状态正是一种**Nash Equilibrium**（其具体证明见[[Nash Equilibrium]]），但是，这种利己的选择最终**会令总产量增加，价格下降**，同时，寡头企业也**无法在边际成本上生产 ($P>MC$)**。这点在垄断企业和竞争企业上都是可行的（见[[Monopoly]]和[[IMP Firms in Competitive Markets]]）。
+寡头之间的博弈是一种非合作博弈 (Non-Cooperative Games)，最终达到的均衡状态正是一种**Nash Equilibrium**（其具体证明见[[Nash Equilibrium]]），但是，这种利己的选择最终**会令总产量增加，价格下降**，同时，寡头企业也**无法在平均总成本最低处上生产 (对于寡头企业，$P>MC$)**。与此同时，在垄断企业上也可以有$P>MC$，但在竞争企业上只有$P=MC$（见[[Monopoly]]和[[IMP Firms in Competitive Markets]]）。
+换而言之，寡头市场会有规模不经济的现象（见[[Different Average Total Costs]]）
 
 在价格上，**垄断价格大于寡头价格大于竞争企业价格**：
 $$P_{monopoly}>P_{oligopoly}>P_{competitive}$$
@@ -32,16 +33,28 @@ $$P_{monopoly}>P_{oligopoly}>MC$$
 $$Q^s_{competitive}>Q^s_{oligopoly}>Q^s_{monopoly}$$
 
 ## 3. Output Effect & Price Effect
-- Output effect（产量效应）：$P_{monopoly}>MC\Rightarrow MP\text{ (Marginal profit) }>0$
+- Output effect（产量效应）：指每多销售一单位产品所带来的额外收入
 - Price effect（价格效应）：生产量上升则价格下降，从而利润下降
+（在[[MR = Price Effect + Output Effect]]中可以见到对二者更详细的分析）
 
 ### 3.1 Price Effect
-$$\text{Price Effect}=\frac{\Delta P}{\Delta Q^d}$$
-根据[[Equilibrium]]中的定义，价格效应等于需求线斜率的倒数
+$$\text{Price Effect}=Q^d\times\frac{\Delta P}{\Delta Q^d}$$
+其中的$Q^d$指的是企业在降价前的产量水平。根据价格效应，**如果寡头企业不降价就无法获得更高的产量**，所以$\Delta P<0$，故**对于寡头来说，价格效应是负的**
+$$\text{Price Effect}<0$$
+同时，
 ### 3.2 Output Effect
+$$\text{Output Effect}=P$$
+
+### 3.3 寡头市场的规模不经济
 对于边际利润$MP$来说：
-$$MP=MR-MC=[P+(Q^d\times \frac{\Delta P}{\Delta Q^d})]-MC$$
-即：
-$$MP=[P+Q^d\times\text{price effect}]-MC$$
-由于$P>MC$，所以自然$MP>0$
+$$MP=MR-MC$$
+同时
+$$MR=P+\text{price effect}=P+(Q^d\times \frac{\Delta P}{\Delta Q^d})$$
+正如前文所言，寡头市场下的价格效应小于零，所以：
+$$MR<P$$
+与此同时，为了能让企业生存下去，必然有
+$$MR\geq MC$$
+（其中当$MR=MC$时实现均衡状态）
+则
+$$P>MC$$
 
