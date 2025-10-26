@@ -4,6 +4,7 @@ tags:
   - Economics
   - 定义性
   - 论文
+  - GameTheory
 title: Nash Equilibrium
 created: 2025-10-23T10:58:00
 modified:
