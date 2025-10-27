@@ -33,7 +33,7 @@ Basic classical economics.
 ---
 ## 3. Marginal Revenue ($MR$)
 Still basic classical economics
-$$MR=\frac{\Delta TR}{\Delta Q}$$
+$$MR=\frac{\Delta TR}{\Delta Q}=\frac{Q\times\Delta P}{\Delta Q}=\frac{dP}{dQ}\times Q$$
 或者，$MR$的定义式也可以写成（详细过程见[[MR = Price Effect + Output Effect]]）：
 $$MR=P+\text{price effect}$$
 除此之外，关于营收最大化

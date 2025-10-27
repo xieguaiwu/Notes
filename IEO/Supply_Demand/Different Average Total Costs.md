@@ -6,10 +6,11 @@
 最左边的$ATC$图中，长期平均总成本随产量的增加而减少。这意味着**规模经济 (Economies of Scale) **
 
 此时的企业将被鼓励多生产，因此，[[MR = Price Effect + Output Effect]]中提及的**产出效应被放大**，而价格效应则并不那么显著，因此对企业来说：
-$$\text{price effect}\to 0$$
-$$MR\to P$$
+$$\lim_{\text{price effect}\to 0}$$
+$$\lim_{MR\to P}$$
 故利润最大化时
-$$(MR=MC)\Rightarrow (MC\to P)$$
+$$(MR=MC)\Rightarrow (lim_{MC\to P})$$
+
 ## 2.
 中间的$ATC$图则展示了一个更为均衡的情况，即长期平均总成本不随着产量的变动而变动，这**属于规模收益不变 (constant returns to scale)**
 
