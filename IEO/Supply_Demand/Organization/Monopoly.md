@@ -90,7 +90,7 @@ $$\pi=TR-TC=(\frac{TR}{Q}-\frac{TC}{Q})\times Q=(P-ATC)\times Q$$
 
 首先见下图所体现的**有效产量 (efficient quantity)**，即企业边际成本线与买者的需求线的交点，与[[IMP Firms in Competitive Markets]]的**5.2**中的**efficient scale**同理：
 ![[efficient_price_of_monopoly.png]]
-如图所示，价格高于有效产量时，$MC>Q^d$，反之则$MC<Q^d$，所以只有当$MC=Q^d$时才能获得有效产量。
+如图所示，价格高于有效产量时，$MC(Q)>Demand(Q)$，反之则$MC(Q)<Demand(Q)$，所以只有当$MC(Q)=Demand(Q)$时才能获得有效产量。
 
 问题在于，**垄断企业只有在$Q^d>MC$时才能获得更大利润**，它的定价往往更高。我们用[[Economic Surplus]]的知识点来分析其**deadweight loss**：
 ![[deadweight_loss_of_monopoly.png]]
