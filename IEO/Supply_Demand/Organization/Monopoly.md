@@ -96,6 +96,10 @@ $$\pi=TR-TC=(\frac{TR}{Q}-\frac{TC}{Q})\times Q=(P-ATC)\times Q$$
 ![[deadweight_loss_of_monopoly.png]]
 在福利经济学的角度，垄断无法总剩余最大化。首先，从图象上看，**供给曲线与价格相交所成的面积是生产者盈余**，且**需求曲线与价格相交形成的面积是消费者盈余**（见[[Economic Surplus]]**3**），而企业对价格的人为抬高则必然会造成无谓损失，**其效果与对消费者征税无异**
 
+对于垄断下的deadweight loss的计算，见[[补充：应试中快速计算垄断的无谓损失]]
+简单来说：
+$$\text{Deadweight Loss}=\frac{1}{2}\times(P_m-MC(Q_m))\times(Q_c-Q_m)$$
+其中，$P_m$指垄断价格，$Q_m$是垄断产量，$Q_c$则是前文提及过的有效产量
 ### 3.2 Other Possibilities
 在一些企业为了利润最大化而实行的策略下，无谓损失也可以被减少，例如**价格歧视 (price discrimination)**
 Price discrimination意味着企业**通过不同顾客的支付意愿来收取不同价格**，例如精装书和平装书、成人票和儿童票，甚至是私立学校的奖学金。
