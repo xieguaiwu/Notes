@@ -28,3 +28,6 @@ $$S'=g(x+\Delta t)$$
 
 ## 3.
 总而言之，对买者和卖者征税效果等同，它们都会移动供给和需求曲线的相对位置。
+
+## IMP 4. 征税幅度与deadweight loss
+征税$n\%$，deadweight loss上升幅度$>n\%$

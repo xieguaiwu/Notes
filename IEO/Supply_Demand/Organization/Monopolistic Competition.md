@@ -58,4 +58,15 @@ $$MC<ATC$$
 正因如此，也总是有$MC<P$，这与垄断企业与寡头企业情况相同（见[[Oligopoly]]）
 
 ## 4. Monopolistic Competition and Welfare Economics
-正如[[Monopoly]]在**3**中的知识点，
+正如[[Monopoly]]在**3**中的知识点，由于价格加成高于边际成本，故许多消费者不会购买产品，故会造成无谓损失。
+
+## 5. Entrance of New Competitors
+新企业进入市场可能会造成两种外部性：
+- 产品多样化的外部性 (The product-variety externality)：新产品进入增加了消费者盈余，造成**正外部性**
+- 抢走业务的外部性 (The business-stealing externality)：新企业抢走旧企业的顾客，造成**负外部性**
+
+如果正外部性$>$负外部性：说明旧市场产品太少
+反之则意味着产品太多
+
+## 6. Additional
+广告营销是垄断竞争市场中的常见竞争手段。**广告营销会促进竞争**
