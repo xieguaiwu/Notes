@@ -16,12 +16,13 @@ GDP (Gross Domestic Product): 所有人的**总收入**和商品/服务产出的
 其大致形态可以用[[Simple Models]]中的**1**中所展示的Circular Flow衡量：
 ![[circular_flow_of_GDP.png]]
 
+### 1.1 About GDP
 关于GDP：
 - **GDP只包括最终物品的价值**，因为中间物品的价值已经包括在了最终价格中
 - 只要商品是在某国生产的，那么**无论生产者国籍**，其**价值都算在该国GDP中**
 - **GDP只包括当期生产的商品与服务**，例如二手车的价值就不会被算进GDP中
 
-## 1.2 The Components of GDP
+### 1.2 The Components of GDP
 GDP ($Y$) 主要由四部分组成：
 - 消费$C$
 - 投资$I$
@@ -29,6 +30,9 @@ GDP ($Y$) 主要由四部分组成：
 - 净出口$NX$
 所以：
 $$Y=C+I+G+NX$$
+对于一个不进行对外贸易的封闭经济 (closed economy)，$NX=0$，所以其GDP应该写成：
+$$Y=C+I+G$$
+与之相反，现代经济是开放经济 (open economy)
 
 ### 1.21 Investment
 GDP中的投资不同于一般意义下的投资，它指代的是**购买未来用于生产的物品**，值得注意的是，**存货也属于GDP中的投资**：存货被视作是企业自己购买了自己的产品，卖出存货意味着原先的这笔投资为负
