@@ -39,7 +39,7 @@ $$\text{本金翻倍所需年数}\approx\frac{70}{\text{年增长率（百分比
 vocab: risk aversion$\Leftrightarrow$风险厌恶
 用[[Consideration of Marginal Changes]]中的边际效用递减法则来建立风险厌恶模型：
 ![[risk_aversion_model.png]]
-可以看到，效用函数属于[[Higher Order Derivative]]中的凸函数，其特点在于二阶导小于零，说明边际效应在递减，而**失去财富的边际效应大于增加财富的边际效应**
+可以看到，效用函数属于[[Higher Order Derivative]]中的凹函数，其特点在于二阶导小于零，说明边际效应在递减，而**失去财富的边际效应大于增加财富的边际效应**
 
 ### 3.2 Insurance
 **保险的最重要作用就在于规避风险**

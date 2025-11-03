@@ -37,7 +37,7 @@ $$\text{Unemployment Rate}=\frac{\text{Number of Unemployed}}{\text{Labor Force}
 自然失业率 (natural rate of unemployment)：自然失业率是充分就业时会出现的失业率，它也是当劳动市场处于均衡状态时的失业率。因此，自然失业率不会造成通货膨胀。
 
 **自然失业=摩擦性失业+结构性失业+周期性失业**
-$\text{Natural Unemployment}=\text{Frictional Unemployment}+\text{Structural Unemployment}+\text{Cyclical Unemployment}$
+$$\text{Natural Unemployment}=\text{Frictional Unemployment}+\text{Structural Unemployment}$$
 
 ## 4. Unemployment Insurance
 失业保险制度的设计**降低了失业者寻找工作的努力程度**

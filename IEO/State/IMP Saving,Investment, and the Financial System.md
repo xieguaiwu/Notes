@@ -74,6 +74,6 @@ vocab: loanable funds$\Rightarrow$可贷资金市场
 $$S=(Y-T-C)+(T-G)$$
 故**政府财政赤字会令国民储蓄减少**，于是可贷资金的供给下降：
 ![[market_of_loanable_funds_with_government_budget_dificts.png]]
-这等同于decrease in demand，而供给减少后，**利率上升，但是投资减少**
+这等同于decrease in supply，而供给减少后，**利率上升，但是投资减少**
 反之，**财政盈余会增加可贷资金供给，降低利率，刺激投资**
 
