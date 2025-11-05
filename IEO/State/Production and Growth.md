@@ -23,15 +23,15 @@ modified:
 
 ## 2. The Production Function
 符号：$Y$表示产量，$L$是劳动量，$K$是物质资本量，$H$是人力资本量，而$N$则是自然资源
-$$Y=AF(L,K,H,N)$$
+$$Y=A\cdot F(L,K,H,N)$$
 函数$F()$直接表示生产产出的组合，变量$A$则表示生产技术
 
 在[[Different Average Total Costs]]的**2**中提及过规模收益不变的情况，其定义是：
 在**长期**内，企业的所有投入要素（资本、劳动力、原材料等）以**一个既定的比例增加**时，其 **总产出（产量）** 也会以**相同的比例增加**。
 对应到生产函数上：
-$$xY=AF(xL,xK,xH,xN)$$
+$$xY=A\cdot F(xL,xK,xH,xN)$$
 如果令$x=\frac{1}{L}$，则可以得出人均产量的生产函数：
-$$\frac{Y}{L}=AF(1,\frac{K}{L},\frac{H}{L},\frac{N}{L})$$
+$$\frac{Y}{L}=A\cdot F(1,\frac{K}{L},\frac{H}{L},\frac{N}{L})$$
 
 ## 3. Diminishing Returns
 Diminishing Returns: 收益递减效应，意味着随投入量的增加，**每一单位的额外投入所得到的收益减少**
