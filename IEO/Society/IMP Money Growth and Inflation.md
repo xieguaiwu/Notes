@@ -6,6 +6,7 @@ tags:
   - 定义性
   - 供需关系
   - WelfareEconomics
+  - 决策
 title: IMP Money Growth and Inflation
 created: 2025-11-04T15:48:00
 modified:
@@ -34,7 +35,10 @@ modified:
 vocab: dichotomy$\Rightarrow$二分法
 这一节涉及名义变量nominal variables和真实变量real variables，正如[[National Income]]中**2**关于名义和真实GDP的知识点。
 对于GDP，只有涉及到通货膨胀的GDP才是real GDP。对应到价格上，**只有relative price才是real variables**
-正因如此，古典二分法 (Classical Dichotomy) 才会认为货币供给的变化只影响名义变量，所以其认为**货币中性 (Monetary Neutrality)**
+
+由于企业常常无法快速变更价格，所以**relative price可能会被通货膨胀率影响**，故令市场配置无法达到帕累托最优（见[[Pareto Efficiency]]）
+
+正因如此，古典二分法 (Classical Dichotomy) 才会认为**货币供给的变化只影响名义变量**，所以其认为**货币中性 (Monetary Neutrality)**
 这对长期来说是正确的，但在短期范围内并不一定
 
 ## 3. Velocity and the Quantity Equation
@@ -63,3 +67,29 @@ $$M\uparrow\times V^{-}=P\uparrow\times Y^{-}$$
 
 ## 5. Fisher effect
 这段内容是费雪的代表作《利息理论》中出现的。
+正如前文所说，有real variable和nominal variable的分别。[[Cost of Living]]的**7**涉及到了Real Interest Rates和Nominal Interest Rates，其公式如下：
+$$\text{Real interest rate}=\text{Nominal interest rate}-\text{Inflation rate}$$
+将之写成
+$$\text{Nominal interest rate}=\text{Real interest rate}+\text{Inflation rate}$$
+由于Real Interest Rate在一段时期内的变化并不会太大，所以通货膨胀率越高，名义利率越高。**当货币量增加且通货膨胀率增加时，名义利率也会水涨船高**。
+
+反而言之，适当的通货紧缩会令$\text{Nominal interest rate}=\text{Real interest rate}$，这就是**弗里德曼规则 (Friedman rule)**
+
+如下图所见，名义利率和通货膨胀率有着很高的相关性：
+![[nominal_interest_rate_and_inflation.png]]
+
+## 6. The Costs of Inflation
+### 6.1 Inflation and the Cost of Living
+如果相信大多数人都依靠在当下出售商品/服务获得收入，那么**收入上涨与通货膨胀率同步，则通货膨胀率本身不会降低人们的实际购买力**
+
+### 6.2 Avoiding Inflation
+正如前文的**4**所言，Inflation Tax是通过通货膨胀率对所有货币持有者征税。为了规避Inflation Tax，一种做法是**减少货币持有量**，由于这需要频繁地去银行，所以它被称为皮鞋成本**Shoeleather Cost**
+
+## 7. The Dark Side of Inflation
+### 7.1 Tax Distortions
+这归根结底还是因为**税收不考虑实际购买力**，以名义价格为准绳来征税常常会因为通货膨胀造成的实际购买力的下降而增加实际的税收负担。
+
+### 7.2 Arbitrary Redistributions of Wealth
+正如《货币幻觉》中关于一战后伴随着高通货膨胀率的各国政府应对战争贷款的行为的例子那样，**预期之外的通货膨胀可能会在债务人和债权人之间进行财富再分配**。
+- **通货紧缩损害债务人 (debtors)，利好债权人 (creditors)**
+- 反之，通货膨胀率利好债务人，令债权人蒙受损失

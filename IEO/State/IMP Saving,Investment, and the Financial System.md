@@ -48,6 +48,7 @@ $$S=(Y-T-C)+(T-G)$$
 	- $T-G>0\Rightarrow$财政盈余 (budget surplus)
 无论如何，都仍然会有**总储蓄等于总投资**：
 $$S=I$$
+对于open economy，情况并不完全相同，具体见[[Open-Economy Macroeconomics]]的**2**
 
 ## 4. The Market for Loanable Funds
 vocab: loanable funds$\Rightarrow$可贷资金市场

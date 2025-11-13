@@ -3,6 +3,7 @@ tags:
   - Economics
   - 定义性
   - 证明
+  - 决策
 title: Basic Finance
 created: 2025-11-01T20:32:00
 modified:

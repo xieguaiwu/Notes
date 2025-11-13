@@ -18,11 +18,11 @@ modified:
 3. 计算费用
 4. 选择基准年，计算指数
 公式如下：
-$$\text{CPI}=\frac{\text{Price of basket of goods and services in current year}}{\text{Price of basket in the base year}}\times 100\%$$
+$$\text{CPI}=\frac{\text{Price of basket of goods and services in current year}}{\text{Price of basket in the base year}}\times 100$$
 
 ## 2. Calculate Inflation Rate with CPI
 类似于[[National Income]]中的**3.2**：
-$$\text{Inflation rate in year 2}=\frac{\text{CPI in year 2}-\text{CPI in year 1}}{\text{CPI in year 1}}\times 100\%$$
+$$\text{Inflation rate in year 2}=\frac{\text{CPI in year 2}-\text{CPI in year 1}}{\text{CPI in year 1}}\times 100$$
 ## 3. Problem With CPI
 消费者物价指数有以下集中问题：
 - Substitution Bias （替代偏向）：由于替代品效应（可以见[[IMP Price Elasticity of Demand]]），物价变化会改变对物品的需求量，**人们往往会直接对价格弹性高的物品选择替代品**，但统计时却仍旧以旧有的商品/服务作为统计对象，故最终**CPI衡量的生活成本增加大于实际增加**。

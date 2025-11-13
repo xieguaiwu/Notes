@@ -51,13 +51,13 @@ Real GDP: **用过去的价格来确定当下生产的物品和服务的价值**
 
 ## 3. The GDP Deflator
 ### 3.1
-$$\text{GDP deflator}=\frac{\text{Nominal GDP}}{\text{Real GDP}}\times 100\%$$
+$$\text{GDP deflator}=\frac{\text{Nominal GDP}}{\text{Real GDP}}\times 100$$
 **GDP平减指数仅体现物品和服务基于基准年价格的物价**，而不体现产量
 正因如此，GDP deflator可以用来衡量通货膨胀率。
 
 ### 3.2
 两个相邻年份的通货膨胀率的计算如下：
-$$\text{Inflation rate in year 2}=\frac{\text{GDP deflator in year 2}-\text{GDP deflator in year 1}}{\text{GDP deflator in year 1}}\times 100\%$$
+$$\text{Inflation rate in year 2}=\frac{\text{GDP deflator in year 2}-\text{GDP deflator in year 1}}{\text{GDP deflator in year 1}}\times 100$$
 
 ## 4. GDP and Social Welfare
 尽管GDP指数不能直接反应国家中人们在医疗、教育各方面的实际质量，但一般认为，GDP更高的国家在各方面确实更有能力提供更好的生活

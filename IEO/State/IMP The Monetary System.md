@@ -40,7 +40,7 @@ modified:
 **如果银行用准备金形式持有全部存款，那么它将不影响货币供给**。
 
 大多数银行都采用部分准备金制度 (fractional‑reserve banking)，其准备金率如此计算：
-$$\text{Reserve Ratio}=\frac{\text{Reserves}}{\text{Total Deposites}}\times 100\%$$
+$$\text{Reserve Ratio}=\frac{\text{Reserves}}{\text{Total Deposites}}\times 100$$
 如果储备金率是$10\%$，那么说明**银行将总存款的$90\%$都发放为贷款**。考虑到原先的存款者仍然在名义上掌管着$100\%$的存款，而获得了银行贷款的债务人又获得了这些存款的$90\%$，而这两部分都算作总货币量的组成部分，那么可以说，**当银行只把部分存款当成准备金时，银行创造了更多货币**
 在这种情况下，尽管经济并没有更加富裕，但是**流动性增加了**
 
@@ -79,7 +79,7 @@ $$\text{Leverage Ratio}=\frac{\text{Total Assets}}{\text{Capital}}$$
 
 美联储影响银行持有准备金意愿的手段：
 1. 法定准备金 (reserve requirements)：法定准备金规定了银行所必须持有的最低准备金量。**法定准备金增加则提高准备金率，从而降低货币乘数，减少货币供给**。这种方案可能会干扰银行经营。
-$$\text{Reserve Ratio}\uparrow=\frac{\text{Reserves}\uparrow}{\text{Total Deposites}}\times 100\%$$
+$$\text{Reserve Ratio}\uparrow=\frac{\text{Reserves}\uparrow}{\text{Total Deposites}}\times 100$$
 $$\text{Money Multiplier}\downarrow=\frac{1}{\text{Reserve Ratio}\uparrow}$$
 2. 支付准备金利息 (Interest on Reserves)：通过向银行的准备金支付利息的方式来鼓励银行持有更多准备金。如果成功令储备金率上升，那么货币乘数会下降，于是货币供给减少。
 
