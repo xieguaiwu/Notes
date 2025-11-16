@@ -4,6 +4,7 @@ tags:
   - 基本原理
   - 供需关系
   - 决策
+  - Economics
 title: MR = Price Effect + Output Effect
 created: 2025-10-25T17:14:00
 modified:
