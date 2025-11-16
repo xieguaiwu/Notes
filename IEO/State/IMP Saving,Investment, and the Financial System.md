@@ -58,6 +58,7 @@ vocab: loanable funds$\Rightarrow$可贷资金市场
 
 于是有如下图象：
 ![[market_of_loanable_funds.png]]
+关于利率和货币供需量的总体关系，可见[[IMP How do Monetary & Fiscal Policy influence Aggregate Demand]]中关于凯恩斯流动性偏好理论的知识点。
 
 ### 4.1 Shifts of the Graph
 #### 4.11 Saving Incentives

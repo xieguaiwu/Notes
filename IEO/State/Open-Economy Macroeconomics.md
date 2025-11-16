@@ -4,6 +4,7 @@ tags:
   - MonetaryEconomics
   - 定义性
   - 供需关系
+  - Economics
 title: Open-Economy Macroeconomics
 created: 2025-11-06T09:37:00
 modified:
