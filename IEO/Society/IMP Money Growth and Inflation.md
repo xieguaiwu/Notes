@@ -85,6 +85,9 @@ $$\text{Nominal interest rate}=\text{Real interest rate}+\text{Inflation rate}$$
 ### 6.2 Avoiding Inflation
 正如前文的**4**所言，Inflation Tax是通过通货膨胀率对所有货币持有者征税。为了规避Inflation Tax，一种做法是**减少货币持有量**，由于这需要频繁地去银行，所以它被称为皮鞋成本**Shoeleather Cost**
 
+### 6.3 Menu Costs
+企业不会频繁地改变定价，尽管经济状况可能会有波动。这是因为**变换定价会承担菜单成本 (menu costs)**，故企业在宣布更换价格时往往会慎重考虑，以致有[[Aggregate Demand & Aggregate Supply]]的**4.2**中的sticky-price theory
+
 ## 7. The Dark Side of Inflation
 ### 7.1 Tax Distortions
 这归根结底还是因为**税收不考虑实际购买力**，以名义价格为准绳来征税常常会因为通货膨胀造成的实际购买力的下降而增加实际的税收负担。
