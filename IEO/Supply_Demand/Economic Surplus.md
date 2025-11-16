@@ -17,7 +17,8 @@ $$\text{消费者剩余}=\text{买者愿意为商品支付的价格}-\text{实�
 除此之外，**价格的下降也带来了新的消费者**，他们的人数是$Q_2-Q_1$，因此其消费者剩余$CS_2=\frac{1}{2}(Q_2-Q_1)(P_1-P_2)$
 总而言之，总消费者剩余$CS$等同于梯形$BCFD$的面积
 $$\Delta CS=\frac{1}{2}(Q_0+Q_1)(P_1-P_0)$$
-
+Marginal Buyer：
+只要价格升高，**就会最先放弃购买的买者**
 ## 2. Producer Surplus
 与Consumer Surplus类似，
 $$\text{生产者剩余}=\text{实际价格}-\text{最低价格}$$
