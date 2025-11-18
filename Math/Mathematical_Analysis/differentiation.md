@@ -46,6 +46,7 @@ $$f'(c)=\pm\infty$$
 ### 3.2
 $$D_x[\log_a x]=\frac{1}{x\ln a}$$
 $$D_x[\ln x]=\frac{1}{x}$$
+$$D_x[e^x]=e^x$$
 $$D_x[\tan x]=\sec^2 x$$
 $$D_x[\sin x]=\cos x$$
 $$\lim_{x\to 0}\frac{\sin(x)}{x}=1$$
@@ -55,6 +56,37 @@ $$\lim_{x\to 0}\frac{1-\cos(x)}{x}=0$$
 $$D_x[\cot x]=-\csc^2 x$$
 $$D_x[\sec x]=\sec x\tan x$$
 $$D_x[\csc x]=-\csc x\cot x$$
+
+---
+#### 3.21 证明$D_x[e^x]=e^x$
+$$D_x[e^x]=\lim_{h\to 0}\frac{e^{x+h}-e^x}{h}$$
+考虑到
+$$e^{x+h}=e^x\cdot e^h$$
+带入原式
+$$D_x[e^x]=\lim_{h\to 0}\frac{e^x(e^h-1)}{h}=e^x\lim_{h\to 0}\frac{e^h-1}{h}$$
+于是现在只需要考虑极限
+$$\lim_{h\to 0}\frac{e^h-1}{h}$$
+通过换元法，设定$x=e^h-1$，那么当$h\to 0$时，可以意识到$x\to 0$，于是将它带入此极限可得
+$$\lim_{h\to 0}\frac{e^h-1}{h}=\lim_{x\to 0}\frac{x}{\ln(x+1)}$$
+---
+
+另一方面，根据[[Definition of e]]，可知
+$$e=\lim_{h\to 0}(1+h)^{1/h}$$
+那么可以得到$\ln e$的定义：
+$$\ln e=\ln\lim_{h\to 0}((1+h)^{1/h})=\lim_{h\to 0}\frac{\ln(1+h)}{h}$$
+
+---
+
+那么再次操作原先的极限：
+$$\lim_{x\to 0}\frac{x}{\ln(x+1)}=\lim_{x\to 0}\frac{1}{\frac{\ln(x+1)}{x}}$$
+单独观察分母，立刻意识到这和$\ln e$的定义如出一辙
+$$\lim_{x\to 0}\frac{\ln(x+1)}{x}=\ln e=1$$
+那么原极限就等于一
+$$\lim_{h\to 0}\frac{e^h-1}{h}=\lim_{x\to 0}\frac{x}{\ln(x+1)}=\lim_{x\to 0}\frac{1}{\ln e}=1$$
+于是起初的导数就是
+$$D_x[e^x]=e^x\lim_{h\to 0}\frac{e^h-1}{h}=e^x\cdot 1=e^x$$
+
+---
 
 ## 4. Rule of Derivative
 ### 4.1
