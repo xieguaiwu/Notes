@@ -8,7 +8,7 @@ modified:
 ---
 # continuity
 [[limit]]
-[[calculus]]
+
 ## 1. Continuity at a Point
 A function $f(x)$ is continuous at point the $c$ within its domain only when:
 $$\lim_{x\to c}f(x)=f(c)$$

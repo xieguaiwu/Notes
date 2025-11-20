@@ -22,3 +22,7 @@ $$\text{Primarily, }|f(x)-L|<\varepsilon (0<|x-a|<\delta)$$
 Introducing second-order predicate logic:
 $$\text{(Beware of the causal relationship: $\forall\varepsilon\Rightarrow\exists\delta $ and $x\Rightarrow y$)}$$
 $$(\forall\varepsilon>0)(\exists\delta>0)(\forall x\in\mathbb{R})(0<|x-a|<\delta\Rightarrow |f(x)-L|<\varepsilon)$$
+## 2. 常见
+$$\lim_{x\to 0}\cos(x)=1$$
+$$\lim_{x\to 0}\frac{1-\cos(x)}{x}=0$$
+$$\lim_{x\to 0}\frac{\sin(x)}{x}=1$$
