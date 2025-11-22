@@ -15,11 +15,11 @@ $$y''\Leftrightarrow \frac{d^2y}{dx^2}\Leftrightarrow D_x^2[y]$$
 ## 2. Usage
 ### 2.1
 函数的单调性 (Monotonicity) 由一阶导数判断，**函数的凹凸性 (Concavity)** 由二阶导数判断
-如果在区间$(a,b)$中**函数$f(x)$的一阶导数递增**，那么$x\in(a,b)\Rightarrow f''(x)>0$，这样的函数是**凹向上的**，或者说**凹的 (concave up)**：
+如果在区间$(a,b)$中**函数$f(x)$的一阶导数递增**，那么$x\in(a,b)\Rightarrow f''(x)>0$，这样的函数是**凹向上的**，或者说**凸的 (concave up)**，即凸函数：
 $$(\forall c)(c\in(a,b))f'(c+\Delta c)>f'(c)\Rightarrow \text{Concave Up in }(a,b)$$
 ![[concave_up.png]]
 
-如果在区间$(a,b)$中**函数$f(x)$的一阶导数递减**，那么$x\in(a,b)\Rightarrow f''(x)<0$，这样的函数是**凹向下的**，或者说**凸出的 (concave Down)**：
+如果在区间$(a,b)$中**函数$f(x)$的一阶导数递减**，那么$x\in(a,b)\Rightarrow f''(x)<0$，这样的函数是**凹向下的**，或者说**凸出的 (concave Down)**，即凹函数：
 $$(\forall c)(c\in(a,b))f(c+\Delta c)'<f'(c)\Rightarrow \text{Concave Down in }(a,b)$$
 ![[concave_down.png]]
 

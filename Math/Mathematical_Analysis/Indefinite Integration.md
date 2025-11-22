@@ -36,3 +36,5 @@ $$\sum_{i=1}^n=a_i=a_1+a_2+\ldots+a_n$$
 求和运算有以下性质：
 $$\sum_{i=1}^nka_i=k\cdot\sum_{i=1}^na_i$$
 $$\sum_{i=1}^n(a_i\pm b_i)=\sum_{i=1}^na_i\pm\sum_{i=1}^nb_i$$
+
+## 4. Sum techniques
