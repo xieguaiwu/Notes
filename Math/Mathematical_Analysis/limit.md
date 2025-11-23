@@ -26,3 +26,4 @@ $$(\forall\varepsilon>0)(\exists\delta>0)(\forall x\in\mathbb{R})(0<|x-a|<\delta
 $$\lim_{x\to 0}\cos(x)=1$$
 $$\lim_{x\to 0}\frac{1-\cos(x)}{x}=0$$
 $$\lim_{x\to 0}\frac{\sin(x)}{x}=1$$
+$$\lim_{x\to 0}\frac{\tan x}{x}=\lim_{x\to 0}\frac{\sin x}{x\cdot\cos x}=\lim_{x\to 0}\frac{\sin(x)}{x}\cdot\lim_{x\to0}\frac{1}{\cos x}=1$$
