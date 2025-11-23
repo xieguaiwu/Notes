@@ -10,7 +10,7 @@ modified:
 ## 1. The Learning Problem
 一般的学习问题的模型如下所示：
 ![[learning_problem.png]]
-对于未知的映射（其数学定义见[[function mapping]]），有输入集$\mathcal{X}\in\mathbb{R}^d$，其中$\mathbb{R}^d$是n-dimensional Euclidean space（见[[n-dimensional Euclidean space]]），另一方面也有输出集$\mathcal{Y}$
+对于未知的映射（其数学定义见[[function mapping]]），有输入集$\mathcal{X}\in\mathbb{R^d}$，其中$\mathbb{R}^d$是n-dimensional Euclidean space（见[[n-dimensional Euclidean space]]），另一方面也有输出集$\mathcal{Y}$
 
 数据集$\mathcal{D}$即图中的training examples，它的一般形式是一对输入和输出$(x_N,y_N)$，其中$y_n=f(x_n)$
 
@@ -32,3 +32,18 @@ $$h(x)=+1\Leftrightarrow\sum_{i=1}^d w_ix_i>-b$$
 
 在训练此模型时，需要分类数据集$\mathcal{D}$，若设定$\circ$是$+1$而$\times$是$-1$，则可能会出现如下两种情况：
 ![[misclassified_and_classified_data_set.png]]
+
+---
+
+为了方便表述，将函数$h(x)$完全转换成向量形式，设定：
+$$\mathbf{x}=[x_0,x_1,\ldots,x_d]^\mathbf{T}$$
+$$\mathbf{w}=[w_0,w_1,\ldots,w_d]^\mathbf{T}$$
+其中$\mathbf{T}$表示向量转置 (transpose) ，其效果见[[Vector and Matrix]]。在这样表示之后：
+$$\mathbf{w^T x}=\sum_{i=1}^d w_ix_i$$
+于是将原先的$h(x)$表达式重写为
+$$h(x)=f(\mathbf{w^T x})+b$$
+这属于机器学习模型中的线性方法，即属于广义线性方法 (Generalized linear methods)：$f(x,\theta)=\mathbf{w^T}\phi(x)+b$
+## 3. Perceptron Learning Algorithm
+在PLA算法中，会对权重向量$\mathbf{w}$进行迭代算法 (iterative method)：
+在迭代次数$t(t\in\mathbb{Z^+})$时，会有权重向量$\mathbf{w}(t)$
+
