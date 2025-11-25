@@ -28,6 +28,7 @@ This leads to these situations
 Take the function below as an example:
 $$\lim_{ x \to 1 } \frac{2x^2-x-6}{x(x-1)^3} $$
 On the  left side of $1$, the function is positive, whereas on the right side, the function is negative. Therefore, in this case there's a **difference in left and right limits**.
+由于左右极限不相等，故极限并不存在
 
 ## 3. Limit with Absolute Value
 Consider this:

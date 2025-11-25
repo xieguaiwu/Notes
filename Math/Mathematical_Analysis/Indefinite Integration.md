@@ -15,7 +15,7 @@ $$\frac{d}{dx}F(x)=f(x)\Leftrightarrow\int f(x)=F(x)+C$$
 其中$C$是常数，因为常数在被求导后会直接消除。正因如此，不定积分形如下图：
 ![[antiderivatives_intuition.png]]
 同时，考虑到不定积分的定义和[[Higher Order Derivative]]的高阶导数知识点，可以意识到：
-$$f'(x)=\int f''(x)$$
+$$f'(x)=\int f''(x)dx+C$$
 
 ## 2. Rules of Antiderivatives
 根据[[differentiation]]的**3.2**中的诸多导数规则，可以给出如下不定积分规则：
@@ -29,12 +29,22 @@ $$\int\cos x\text{ }dx=\sin x +C$$
 $$\int\sin x\text{ }dx=-\cos x +C$$
 $$\int\sec^2 x\text{ }dx=\tan x +C$$
 $$\int\sec x\tan x\text{ }dx=\sec x+C$$
-$$\int\csc x\cot x=-\csc x +C$$
+$$\int\csc x\cot x\text{ }dx=-\csc x +C$$
 
 ## 3. Sum
-$$\sum_{i=1}^n=a_i=a_1+a_2+\ldots+a_n$$
+求和运算的一般形式如下
+$$\sum_{i=1}^na_i=a_1+a_2+\ldots+a_n$$
+其中$i$是一个虚拟变量，即求和指数 (index of summation)。
+联系到[[Boundedness]]，可知这个数列是有界的，且**其upper bound是$n$，其lower bound则是$1$**
+
 求和运算有以下性质：
 $$\sum_{i=1}^nka_i=k\cdot\sum_{i=1}^na_i$$
 $$\sum_{i=1}^n(a_i\pm b_i)=\sum_{i=1}^na_i\pm\sum_{i=1}^nb_i$$
 
 ## 4. Sum techniques
+### 4.1
+注意对于
+$$\sum_{i=1}^nC(C\in\mathbb{R})$$
+在$C$是常数时，求和的结果是$n\cdot C$！
+
+### 4.2

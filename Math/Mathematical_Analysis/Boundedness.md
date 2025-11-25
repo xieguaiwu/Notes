@@ -41,4 +41,6 @@ $$\lim_{x\to a}(f(x)\cdot g(x))=L\cdot M$$
 而
 $$\lim_{x\to 1}f(x)=0$$
 那么原极限等同于
+$$\lim_{x\to 1}(f(x)\cdot g(x+1)) = 0 \cdot M = 0$$
+带入$M=1$后
 $$\lim_{x\to 1}(f(x)\cdot g(x+1))=0\cdot 1=0$$

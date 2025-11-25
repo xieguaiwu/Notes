@@ -13,7 +13,7 @@ $$\text{Continuity: }\lim_{\Delta x \to 0}f(x+\Delta x)=f(x)$$
 $$\text{Differentiability: }\lim_{\Delta x \to 0}\frac{f(x+\Delta x)-f(x)}{\Delta x}$$
 对于二式，可以简单变形并得出：
 $$\lim_{\Delta x \to 0}(\frac{f(x+\Delta x)-f(x)}{\Delta x}\times \Delta x)=\lim_{\Delta x \to 0}\frac{f(x+\Delta x)-f(x)}{\Delta x}\times\lim_{\Delta x \to 0}\Delta x$$
-由于$\lim_{\Delta x \to 0}$，所以：
+由于$\lim_{\Delta x \to 0}\Delta x=0$，所以可知原极限内出现了乘以零的情况：
 $$\lim_{\Delta x \to 0}(f(x+\Delta x)-f(x))=0$$
 由于$f(x)$不受极限的影响，可以直接将它从括号中剔出，于是：
 $$\lim_{\Delta x \to 0}f(x+\Delta x)=f(x)$$
