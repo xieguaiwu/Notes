@@ -3,6 +3,7 @@ tags:
   - Math
   - Calculus
   - 定义性
+  - 证明
 title: Indefinite Integration
 created: 2025-11-20T12:51:00
 modified:
@@ -42,9 +43,33 @@ $$\sum_{i=1}^nka_i=k\cdot\sum_{i=1}^na_i$$
 $$\sum_{i=1}^n(a_i\pm b_i)=\sum_{i=1}^na_i\pm\sum_{i=1}^nb_i$$
 
 ## 4. Sum techniques
-### 4.1
-注意对于
-$$\sum_{i=1}^nC(C\in\mathbb{R})$$
-在$C$是常数时，求和的结果是$n\cdot C$！
 
-### 4.2
+### 4.1 Gaussian Summation
+对于
+$$\sum_{j=1}^{100}j$$
+即计算从一加到一百的和，可以将它等同地写成另一种形式
+$$\sum_{j=1}^{100}(101-j)$$
+这样就是从一百加到一的和
+
+令
+$$S=\sum_{j=1}^{100}j=\sum_{j=1}^{100}(101-j)$$
+那么可以意识到
+$$2S=\sum_{j=1}^{100}j+\sum_{j=1}^{100}(101-j)$$
+根据先前的求和运算性质，直接合并两段求和：
+$$2S=\sum_{j=1}^{100}(j+101-j)$$
+$$2S=101\times 100$$
+$$\Rightarrow S=5050$$
+
+### 4.2 Scaling Summation Method
+对于形式如下的求和：
+$$\sum_{j=a}^b(f(j)-f(j-1))=f(b)-f(a-1)$$
+这是因为除$f(b)$和$f(a-1)$之外的项全部会被消除
+
+### 4.3 Common Summations
+$$\sum_{i=1}^nC=n\cdot C$$
+$$\sum_{i=1}^n i=\frac{n(n+1)}{2}$$
+$$\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}$$
+$$\sum_{i=1}^n i^3=\frac{n^2(n+1)^2}{4}$$
+
+## 5. Summation and Area
+

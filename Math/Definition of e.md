@@ -8,8 +8,6 @@ created: 2025-11-18T12:08:00
 modified:
 ---
 # Definition of $e$
-[[calculus]]
-[[数学]]
 自然对数$e$的定义如下：
 $$e=\lim_{n\to\infty}(1+\frac{1}{n})^n$$
 
