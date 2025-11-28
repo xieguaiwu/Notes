@@ -65,3 +65,14 @@ Evidence有多种形式
 - Summary: **比原文更短**，直接展示原文的中心论点
 在其中要使用**signal words**来标识重要信息，以此来强调论据
 
+### 3.3 Construction of Claims
+Claims同时出现在thesis和evidence中
+
+Claims: **需要证据支撑**的有争议的论述 (defensible)
+
+在body pararaphs发展段落：
+- **Claim = Reason**
+- Evidence
+- Explanation = (两个及以上)解释evidence如何支持claim
+- Connection to Thesis
+ 
