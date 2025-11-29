@@ -2,6 +2,7 @@
 tags:
   - MachineLearning
   - Math
+  - Algorithm
 title: Basic Learning Model
 created: 2025-11-21T09:35:00
 modified:
