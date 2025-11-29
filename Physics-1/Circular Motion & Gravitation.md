@@ -35,16 +35,16 @@ $$v=\omega\cdot r$$
 ### 0.4
 对于圆周运动的frequency $f$和其period $T$，有
 $$T=\frac{1}{f}$$
-其中$f$的单位是$rev/s$，即每秒内旋转的圈数 (revolution)
+其中$f$的单位是$rev/s$（即$Hz$），即每秒内旋转的圈数 (revolution)
 另一方面，$T$则代表了完整旋转一圈所花费的时间，则其单位为$s$
 
 ## 1. Uniform Circular Motion
-Uniform circular motion即物体速度不变的圆周运动，其图示如下：
+Uniform circular motion即物体速度大小不变（但方向改变）的圆周运动，其图示如下：
 ![[uniform_circular_motion.png]]
 对于这种运动，其运动方向的变化就是其加速度，则加速度$\vec{a}$和$\Delta\vec{v}$方向相同，都是向运动中心的，所以称其为centripetal/radial acceleration（向心加速度），记作$\vec{a}_R$
-（在Uniform Circular Motion中，**向心加速度和向心力都朝向运动中心**）
+（在Uniform Circular Motion中，**向心加速度和向心力都朝向运动中心**；另一方面，做圆周运动的物体**没有离心力**）
 
-## 2. Centripetal Acceleration
+## 2. Centripetal Acceleration & Centripetal Force
 为了计算$\vec{a}_R$，见下方的示意图
 ![[centripetal_movement.png]]
 取一个足够小的$\Delta\theta$，于是从$A$点到$B$点的运动距离趋近于$\Delta l$
@@ -73,4 +73,26 @@ $$a_R=\frac{v^2}{r}=\omega^2r$$
 $$F_R=m\frac{v^2}{r}=m\omega^2r$$
 （如果严格从一开始给出的定义出发，也可以这样推导[[Radial Acceleration Proof 2]]）
 
-## 3. Dynamics of Uniform Circular Motion
+## 3. Nonuniform Circular Motion
+只有当centripetal force直接面向运动中心时，才会有uniform circular motion，反之则是nonuniform circular motion，其centripetal force一般形式如下：
+![[nonuniform_circular_motion.png]]
+如图所示，它相较于uniform circular motion的最大区别是多出了$\vec{F}_{\tan}$，而指向运动中心的$\vec{F}_{R}$和它所带来的$\vec{a}_R$则仍旧存在：
+![[acceleration_in_nonuniform_circular_motion.png]]
+与**2**相同：
+$$a_R=\frac{v^2}{r}=\omega^2r$$
+$$F_R=m\frac{v^2}{r}=m\omega^2r$$
+另一方面
+$$a_{\tan}=\frac{\Delta v}{\Delta t}$$
+于是自然
+$$F_{\tan}=m\cdot a_{\tan}=m\frac{\Delta v}{\Delta t}$$
+总加速度为：
+$$a=\sqrt{a_{\tan}^2+a_R^2}$$
+其中$a_{\tan}$和$a_R$**相互垂直**
+
+## 4. Law of Universal Gravity
+直接见纸质笔记
+
+## 5. Weightlessness
+继续见纸质笔记
+
+## 6. Kepler's Laws
