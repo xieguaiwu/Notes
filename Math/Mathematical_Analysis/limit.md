@@ -27,3 +27,17 @@ $$\lim_{x\to 0}\cos(x)=1$$
 $$\lim_{x\to 0}\frac{1-\cos(x)}{x}=0$$
 $$\lim_{x\to 0}\frac{\sin(x)}{x}=1$$
 $$\lim_{x\to 0}\frac{\tan x}{x}=\lim_{x\to 0}\frac{\sin x}{x\cdot\cos x}=\lim_{x\to 0}\frac{\sin(x)}{x}\cdot\lim_{x\to0}\frac{1}{\cos x}=1$$
+## 3. 常见无穷小替换
+以下式子全部在$\lim{x\to 0}$时成立
+$$\sin x\sim x$$
+$$\tan x\sim x$$
+$$\arcsin x\sim x$$
+$$\arctan x\sim x$$
+$$(1-\cos x)\sim\frac{x^2}{2}$$
+$$\ln(1+x)\sim x$$
+$$(e^x-1)\sim x$$
+$$(a^x-1)\sim x\cdot\ln a(a>0,a\neq 1)$$
+$$\log_a(1+x)\sim\frac{x}{\ln a}$$
+$$(1+x)^a-1\sim ax$$
+$$^n\sqrt{1+x}-1\sim\frac{x}{n}$$
+$$\ln(1+x)-x\sim -\frac{1}{2}x^2$$

@@ -72,4 +72,3 @@ $$\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}$$
 $$\sum_{i=1}^n i^3=\frac{n^2(n+1)^2}{4}$$
 
 ## 5. Summation and Area
-
