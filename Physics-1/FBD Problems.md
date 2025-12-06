@@ -27,3 +27,13 @@ modified:
 $$\sum F_y=3-1=2N$$
 $$\sum F_x=-8+5=-3N$$
 注意：考虑到右侧是正方向，所以必须意识到 **$|\vec{F_4}|$是负数**，即$\vec{F_4}=-8N$
+
+## IMP 2. Intermediate Static Friction
+![[intermediate_friction_when_moving_together.png]]
+联系[[Dynamic & Friction]]的**1.2**中关于静摩擦的知识点
+
+若A和B**不受加速度**，那么**A不受摩擦力**
+在A和B共同运动时：
+- 若有共同加速度，且没有相对滑动，那么**A受static firction，提供加速度**
+
+在A和B间有相对滑动时，**A受kinetic friction**
