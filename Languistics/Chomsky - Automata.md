@@ -53,3 +53,24 @@ $$Q\to Q\textasciicircum R$$
 其中$\textasciicircum$是毗邻符号，只要利用这两条规则就可以生成无限个that从句
 
 这篇笔记所展示的是乔姆斯基理论的一般方法，特殊的语言会有特殊的语法，例如英语语法就有：[[Chomsky - Formal Grammar in English]]
+
+## 4. Def - Language
+下面通过上述规则给出$\mathbf{L(G)}$的定义
+若重写规则有
+$$P:\alpha\to\beta$$
+$$\phi_1\phi_2\in V^*$$
+应用重写规则的操作可以写成：
+$$\phi_1\alpha\phi_2\Rightarrow_{\mathbf{G}}\phi_1\beta\phi_2$$
+其中$\Rightarrow_{\mathbf{G}}$指推导关系
+若$V^*=\{\alpha_1,\alpha_2,\ldots,\alpha_m\}$
+就可以进一步将这个推导关系推广到整个$\mathbf{L(G)}$
+其中，任意两两string间都有$\alpha_x\Rightarrow^*_{\mathbf{G}}\alpha_{x+1}$，由于这个推导关系仅仅针对于$V^*$，所以将之特别地写作$\Rightarrow^*_{\mathbf{G}}$，考虑到这种语法生成的递归性，最终有：
+$$\alpha_1\Rightarrow^*_{\mathbf{G}}\alpha_m$$
+于是写出语言集合的定义：
+$$\mathbf{L(G)}=(W|W\in V^*_T\wedge S\Rightarrow^*_{\mathbf{G}}W)$$
+所以说，只要一个string符合两个条件就一定属于$\mathbf{L(G)}$中
+- string包括终极符号$P$
+- string能从$S$中推导出来
+
+若$$\mathbf{L(G_1)}=\mathbf{L(G_2)}$$
+那么可以说$\mathbf{G_1}$等价于$\mathbf{G_2}$
