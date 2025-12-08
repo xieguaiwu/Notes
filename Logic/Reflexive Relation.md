@@ -2,11 +2,11 @@
 attachments:
   - reflexive relation.png
 tags:
-  - ModalLogic
   - ModelTheory
   - Kripke
   - SystemT
   - 定义性
+  - Logic
 title: Reflexive Relation
 created: 2025-08-11T05:31:31.593Z
 modified: 2025-08-11T05:40:15.679Z
