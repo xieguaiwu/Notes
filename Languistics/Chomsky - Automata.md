@@ -4,6 +4,7 @@ tags:
   - 定义性
   - Math
   - Chomsky
+  - Logic
 title: Chomsky - Automata
 created: 2025-12-07T21:14:00
 modified:
@@ -29,3 +30,26 @@ $$V=V_N\cup V_T$$
 而必须保证
 $$V_N\cap V_T=\emptyset$$
 
+## 3. Def - Generation
+在$V_N$中，$S$是起始符号，是生成过程的起点，而$P$则是重写规则，其一般形式是：
+$$P:\phi\to\psi$$
+其中
+$$\phi\in V^+,\psi\in V^*$$
+$$\Rightarrow\phi\neq\emptyset$$
+另一方面，符号$\#$用来表示string的界限，于是可以这样描述迭代的重写过程：
+$$\# S\#\to\#\phi_1\#$$
+$$\#\phi_1\#\to\#\phi_2\#$$
+$$\#\phi_2\#\to\ldots\to\#\phi_n\#$$
+此处的$\#\phi_n\#$就是终极string
+
+此处的$\to$并非逻辑学中的蕴含符号，而是重写符号，它有以下几条性质：
+1. $\to$并不是自反的 (not reflexive)（见[[Reflexive Relation]]）
+2. 不存在任何$\phi,\psi,\omega$（它们都是string）使得$\psi\emptyset\phi\to\psi\omega\phi$
+3. 语法$G$必然包含有**能确定所有生成方式的有限个规则的个数的规则$\aleph_j\to\omega_j$**
+
+在生成过程中，假如设定$Q$和$P$是从$S$生成出的句子，其中$P$是英语中的一个that从句，那么就有：
+$$S\to Q$$
+$$Q\to Q\textasciicircum R$$
+其中$\textasciicircum$是毗邻符号，只要利用这两条规则就可以生成无限个that从句
+
+这篇笔记所展示的是乔姆斯基理论的一般方法，特殊的语言会有特殊的语法，例如英语语法就有：[[Chomsky - Formal Grammar in English]]
