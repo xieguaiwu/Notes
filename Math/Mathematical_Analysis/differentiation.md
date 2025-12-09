@@ -47,12 +47,12 @@ $$f'(c)=\pm\infty$$
 $$D_x[\log_a x]=\frac{1}{x\ln a}$$
 $$D_x[\ln x]=\frac{1}{x}$$
 $$D_x[e^x]=e^x$$
-$$D_x[\tan x]=\sec^2 x$$
-$$D_x[\sin x]=\cos x$$
-$$D_x[\cos x]=-\sin x$$
-$$D_x[\cot x]=-\csc^2 x$$
-$$D_x[\sec x]=\sec x\tan x$$
-$$D_x[\csc x]=-\csc x\cot x$$
+$$D_x[\tan x]=(\sec^2 x)x'$$
+$$D_x[\sin x]=(\cos x)x'$$
+$$D_x[\cos x]=-(\sin x)x'$$
+$$D_x[\cot x]=-(\csc^2 x)x'$$
+$$D_x[\sec x]=(\sec x\tan x)x'$$
+$$D_x[\csc x]=-(\csc x\cot x)x'$$
 
 ---
 #### 3.21 证明$D_x[e^x]=e^x$
