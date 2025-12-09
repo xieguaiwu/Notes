@@ -68,7 +68,40 @@ $$\sum_{j=a}^b(f(j)-f(j-1))=f(b)-f(a-1)$$
 ### 4.3 Common Summations
 $$\sum_{i=1}^nC=n\cdot C$$
 $$\sum_{i=1}^n i=\frac{n(n+1)}{2}$$
+$$\sum_{i=1}^n(2i-1)=n^2$$
 $$\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}$$
+$$\sum_{i=1}^n(3i^2-3i+1)=n^3$$
 $$\sum_{i=1}^n i^3=\frac{n^2(n+1)^2}{4}$$
 
 ## 5. Summation and Area
+### 5.1
+对于求和与面积，引入下方的运动学例子
+![[summation_and_area.png]]
+可以看出在任何一个时间段$x$内的位移量可以用下方公式表示：
+$$\Delta x=v_x(t_x-t_{x-1})$$
+那么这段运动的总位移就可以用求和的形式写作：
+$$\sum_{i=1}^nv_i(t_i-t_{i-1})$$
+这对于方向不一的运动同样可行
+
+### 5.2
+若要求得连续函数（关于连续性的定义，见[[continuity]]）所成的面积： 
+![[area_of_continuous_func.png]]
+由于此时的因变量有连续的变化，而又希望延续先前的思路去衡量所成面积，所以构造出区间$[p,q]$，另其成矩形，设定其高为$v(c)$，其中$c\in[p,q]$
+![[measure_integration_1.png]]
+则可以单独地求出这个区间的面积，其为$(p-q)\times v(c)$
+将这种方法应用于函数的定义域，那么如下图：
+![[measure_integration_2.png]]
+于是对于每个小区间$[t_{x-1},t_x]$，都会有一个拟订的常数$v(c_x)$，而$c_x\in [t_{x-1},t_x]$
+那么此时，面积约等于这一系列矩形面积之和
+$$\Delta x=\sum_{i=1}^n(v(c_i)\times (t_x-t_{x-1}))$$
+在选取$v(c_i)$时，可能会有两种估计：
+![[lower_and_upper_sum.png]]
+其中
+$$f(m_i)=f(x)_\min(x\in [t_{x-1},t_x])$$
+$$f(M_i)=f(x)_\max(x\in [t_{x-1},t_x])$$
+因此，选取不同的$c_i$就会估计出不同的面积：
+$$\text{Lower Sum}=\sum_{i=1}^n(m_i\times (t_x-t_{x-1}))$$
+$$\text{Upper Sum}=\sum_{i=1}^n(M_i\times (t_x-t_{x-1}))$$
+于是会形成两种估计：
+![[lower_and_upper_sum2.png]]
+$$\text{Lower Sum}\leq\text{Real Area}\leq\text{Upper Sum}$$
