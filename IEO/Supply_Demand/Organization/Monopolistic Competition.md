@@ -41,19 +41,19 @@ $$P>ATC\Rightarrow\text{长期决策：进入新行业}$$
 ### 3.1 Graph
 ![[monopolistic_competitor_in_long_run.png]]
 在长期均衡点时，**新企业没有进入市场的激励，旧企业也没有退出的意愿**，这与[[IMP Firms in Competitive Markets]]的**5.2**和**5.3**相同，此时同样企业处于**零经济利润**，同时也处于长期利润最大化。
-此时，**需求线与$ATC$线互相相切**，其解释见[[MC函数与ATC函数相切的解释]]。在它们相切时，$ATC$的导数一定小于零，**说明切点一定位于$ATC_{min}$左侧**
+此时，**需求线与$ATC$线互相相切**，其解释见[[MC函数与ATC函数相切的解释]]。在它们相切时，$ATC$的导数一定小于零，**说明切点一定位于$ATC_\min$左侧**
 
 总而言之，当$MR(Q_{max})=MC(Q_{max})$、$P(Q_{max})=ATC(Q_{max})$时，必定会出现需求曲线与平均总成本曲线相切于$x=Q_{max}$的情况。
 
 ### 3.2 Monopolistic Competition and Perfect Competition
 ![[monopolistic_vs_perfect_competition1.png]]
 在[[IMP Firms in Competitive Markets]]中的**5.2**，曾经提及过完全竞争市场下企业的长期均衡点上会有：
-$$P=MC=ATC_{min}$$
-其中，当企业能够在$ATC_{min}$上生产时，我们称之为**有效规模 (efficient scale)**
+$$P=MC=ATC_\min$$
+其中，当企业能够在$ATC_\min$上生产时，我们称之为**有效规模 (efficient scale)**
 但对于垄断竞争来说，情况并不尽然。如图所示，对于垄断竞争，**总会有价格大于最低平均总成本** ($P>ATC_{min}$)，所以**垄断竞争企业没法在有效规模上生产**，这说明企业存在**闲置产能（excess capacity）**
 
 垄断竞争企业在长期均衡时会在$ATC$导数小于零而不是等于零的位置下（即$\text{decreasing} ATC$）生产，根据[[IMP Costs of Production]]的**5**，这说明：
-$$P>ATC_{min}$$
+$$P>ATC_\min$$
 $$MC<ATC$$
 正因如此，也总是有$MC<P$，这与垄断企业与寡头企业情况相同（见[[Oligopoly]]）
 
