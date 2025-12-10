@@ -121,10 +121,37 @@ $$A_{15}\vdash\Delta\leftrightarrow i(A_{23})$$
 $$(A_{19-23})\vdash\Re E\text{ }\ddot{W}\Game\text{ }\Delta \leftrightarrow qho\text{ }muag\text{ }i$$
 
 ### 2.7
-根据第8句第二个单词和$A_{12}$推断
+现在解决第六题
+根据$A_{18}$可知
+$$\bowtie\leftrightarrow l$$
+根据$A_{23}$则可推出答案的第二个字符，根据$A_{12}$可以推出答案的第三个字符
+对于答案的下一个字符，回到第6句，见$A_{10}$的推论，设定第6句倒数第二个字符写为$\ddot{\Theta}^\circ$，由于第6句的最后一个单词只包含这两个字符，且对应了三个音节，那么
+$$(a_2\wedge A_{10})\vdash\Theta\leftrightarrow a(A_{24})$$
+于是最终解决了问题：
+$$(a_2\wedge A_{10}\wedge A_{12}\wedge A_{18}\wedge A_{23-24})\vdash \Delta\bowtie\text{ }\bar{\Theta}\forall\leftrightarrow li\text{ }cas$$
+
+### 2.8
+开始解决第七题
+首先根据$A_{10}$得出第一个字符：
+$$U\leftrightarrow n(A_{10})$$
+设定第7题倒数第二个字符写作$\bar{\aleph}$，根据$A_{15}$就可以推断
+$$(a_2\wedge A_{15})\vdash\aleph\leftrightarrow e(A_{25})$$
+根据$A_{21}$以及第1句第二个单词可以推测出
+$$A_{21}\vdash K\leftrightarrow nt(A_{26})$$
+另一方面，根据第8句第二个单词和$A_{12}$推断
 $$A_{12}\vdash\ddot{H}_\circ\leftrightarrow eg$$
 考虑到$A_4$
 $$(A_{12}\wedge A_4)\vdash H_\circ\leftrightarrow e$$
+
+### 2.9
+现在解决最后一题
+根据$A_{25}$可以证明
+$$A_{25}\vdash W^\circ\leftrightarrow y(A_{27})$$
+根据$A_{24}$可以找到$\Theta\leftrightarrow a$
+设定第3句第三个字符写作$\bar{\Phi}$，考虑规则$A_{15}$，那么：
+$$(a_2\wedge A_{15})\vdash\Phi\leftrightarrow aw(A_{28})$$
+最终完成这道题
+$$(a_2\wedge A_{27-28})\vdash\ddot{\Phi}W^\circ\leftrightarrow yawg$$
 
 ---
 
@@ -134,3 +161,12 @@ $$(A_{12}\wedge A_4)\vdash H_\circ\leftrightarrow e$$
 3. $$\bar{N}\cap^\circ\text{ }\bar{\odot}\bowtie\leftrightarrow his\text{ }lus$$
 4. $$\Re E\text{ }\ddot{W}\Game\text{ }\Delta \leftrightarrow qho\text{ }muag\text{ }i$$
 5. $$^\circ\dot{W}\mathbb{4}\leftrightarrow hluav$$
+6. $$\Delta\bowtie\text{ }\bar{\Theta}\forall\leftrightarrow li\text{ }cas$$
+7. $$\ddot{\aleph}U\text{ } H_\circ\bar{K}\leftrightarrow neeg\text{ }ntse$$
+8. $$\ddot{\Phi}W^\circ\leftrightarrow yawg$$
+
+---
+
+## 4. Standard Solution
+![[rossetta_MSK_2003_solution.png]]
+![[rossetta_MSK_2003_solution2.png]]
