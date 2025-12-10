@@ -37,7 +37,7 @@ vocab: abjad$\Leftrightarrow$辅音音素的
 
 ## 5. Abugida Systems
 vocab: abugida$\Leftrightarrow$元音附标文字
-与abjad systems相反，abugida systems中的每个完整字符都代表一个vowel和一个consonant的结合。没有diacritics的字符代表一个consonant后带有一个vowel（这个vowel被称为inherent vowel/default vowel）
+与abjad systems相反，abugida systems中的每个完整字符都代表一个vowel和一个consonant的结合。**没有diacritics的字符代表一个consonant后带有一个vowel**（这个vowel被称为inherent vowel/default vowel）
 
 主要代表：南亚和东南亚语言
 缅甸文字母：
