@@ -3,6 +3,7 @@ tags:
   - Calculus
   - 证明
   - Math
+  - Exercise
 title: limit_problem_10.22
 created: 2025-10-22T12:22:00
 modified:
