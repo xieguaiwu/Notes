@@ -1,4 +1,4 @@
-#Economics #定义性 
+#Economics #定义性 #Exercise 
 # East European economic organizations
 
 ## 1.
