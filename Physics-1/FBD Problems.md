@@ -2,6 +2,8 @@
 tags:
   - Physics
   - 定义性
+  - Exercise
+  - 证明
 title: FBD Problems
 created: 2025-12-04T09:29:00
 modified:
@@ -28,12 +30,23 @@ $$\sum F_y=3-1=2N$$
 $$\sum F_x=-8+5=-3N$$
 注意：考虑到右侧是正方向，所以必须意识到 **$|\vec{F_4}|$是负数**，即$\vec{F_4}=-8N$
 
-## IMP 2. Intermediate Static Friction
+## IMP 3. Intermediate Static Friction
 ![[intermediate_friction_when_moving_together.png]]
 联系[[Dynamic & Friction]]的**1.2**中关于静摩擦的知识点
 
 若A和B**不受加速度**，那么**A不受摩擦力**
 在A和B共同运动时：
-- 若有共同加速度，且没有相对滑动，那么**A受static firction，提供加速度**
+- 若有共同加速度，且没有相对滑动，那么**A受static friction，提供加速度**
 
 在A和B间有相对滑动时，**A受kinetic friction**
+
+另一方面，直接与地面接触的B会受到摩擦力
+
+## IMP 4. Gravity & Friction
+>在这个系统的两边分别给予外力，考虑中间四个相互挤压的质量相同物体之间的摩擦力
+![[friction_by_gravity_and_squeezing.png]]
+注意：必须意识到这些物体之间除了压力之外**还受到重力**
+
+首先，**1和4会受到摩擦力作用**，这是自然的。
+另一方面，1和4会受到重力作用，从而**令1、2和3、4间存在相对运动**，因此2的左侧和3的右侧**都受到竖直向上的摩擦力**
+2和3也会受到竖直向下的重力作用，但是它们两侧的竖直向上的摩擦力会抵消掉重力作用，因此，**2和3之间没有相对运动**，它们之间**没有摩擦力**
