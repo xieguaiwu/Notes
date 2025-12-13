@@ -9,7 +9,7 @@ created: 2025-12-04T09:29:00
 modified:
 ---
 # FBD Problems
-## 1.
+## IMP 1. Contact Force in Non-contact Situation
 >The figure presents a diagram of 3 blocks on a horizontal **rough surface**. From left to right the blocks are labeled Block 1, Block 2, and Block 3. Block 1 is the smallest and Block 2 is the largest. **The blocks are touching**. A rightward pointing arrow labeled P points toward the left side of Block 1.
 
 ![[FBD_for_3_blocks.png]]
@@ -21,7 +21,7 @@ modified:
 ![[FBD_for_3_blocks_Answer.png]]
 
 ## 2.
->在图1的情况中对Pin做受力分析，其形式如图2
+>在figure 1的情况中对Pin做受力分析，其形式如figure 2
 
 
 ![[FBD_Table_Acceleration.png]]
