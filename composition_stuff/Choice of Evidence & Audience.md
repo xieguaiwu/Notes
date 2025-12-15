@@ -29,7 +29,14 @@ Logos: 专注于建立推理链条，帮助作者**建立可信度**，这很依
 ![[rhetorical_triangle_with_speaker_and_audience2.png]]
 
 ## 3. Strategic & Sufficient Evidence
+### 3.1 Choosing Evidence
 Evidence:
 - Provide **sufficient** support for each claim
 - 确保在**质和量**上都足够有效
 
+### 3.2 Displaying Evidence
+有以下几种方式去展示evidence
+- Illustrate/Exemplify: 展示证据，使用假设、真实故事或者证言 (for example, for instance)
+- Clarify: 给出定义，或者用更简单的语言解释，澄清可能的误解 (more specifically, in other words)
+- Amplify: 强调问题的广度和重要性，最终说明行动的重要性，令结论更普世而更具有影响 (furthermore, in addition, to make matters worse)
+- Associate or Disassociate: 使用比较或对比，帮助读者在这些对比和比较中建立联系 (in a similar sense, in the same way, in contrast)
