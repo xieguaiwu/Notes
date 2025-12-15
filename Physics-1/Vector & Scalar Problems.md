@@ -26,3 +26,13 @@ $$\Delta x=x_f-x_i=\frac{v_f^2-v_i^2}{2\vec{a}}$$
 在题目中，考虑到加速度与正方向相反，所以：
 $$\Delta x=x_f-x_i=\frac{v_f^2-v_i^2}{-2a}$$
 $$\Rightarrow x_f=\frac{v_i^2-v_f^2}{2a}+x_i$$
+
+## 3. Same Quantities in v-t Graph
+>在下方v-t图中展示了两段运动A和B，求它们当中相同的物理量
+
+![[same_quantities_in_v-t_graph.png]]
+1. Acceleration: 看**导数**，可以知道并不相同
+2. Average Speed/Velocity: 看**总体斜率**，并不相同
+3. Elapsed Time（花费时间）: 看**纵坐标**，不同
+4. Displacement: 看**面积**，相同：
+![[same_quantities_in_v-t_graph_calculate.png]]

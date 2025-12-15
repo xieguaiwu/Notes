@@ -58,6 +58,12 @@ Argument由三个部分组成：
 Evidence有多种形式
 应当通过**2**所提及的分析方法来判断支撑argument的evidence的价值，这取决于**evidence的内容和形式与rhetorical situation中的各个元素的联系紧密程度**
 
+这些种类的evidence各有优劣：
+![[types_of_evidence.png]]
+
+对于不同段落可以选择不同的evidence：
+![[rhetorical_element_and_evidence.png]]
+
 ### 3.2 Embedding Evidence
 对于嵌入论据而言，以下几种方式最为常见：
 - Quotation
