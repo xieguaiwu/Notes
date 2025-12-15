@@ -11,7 +11,7 @@ modified: 2025-09-20
 # limit of rational function
 
 ## 1. Def
-$$\\lim_{ x \to a } \frac{p(x)}{q(x)}$$ 
+$$\lim_{ x \to a } \frac{p(x)}{q(x)}$$ 
 
 ---
 

@@ -92,16 +92,16 @@ $$\sum_{i=1}^nv_i(t_i-t_{i-1})$$
 将这种方法应用于函数的定义域，那么如下图：
 ![[measure_integration_2.png]]
 于是对于每个小区间$[t_{x-1},t_x]$，都会有一个拟订的常数$v(c_x)$，而$c_x\in [t_{x-1},t_x]$
-那么此时，面积约等于这一系列矩形面积之和
-$$\Delta x=\sum_{i=1}^n(v(c_i)\times (t_x-t_{x-1}))$$
+那么此时，面积约等于这一系列矩形面积之和。矩形数量越多则越精确，所以使用极限（见[[limit]]）
+$$\Delta x=\lim_{n\to\infty}\sum_{i=1}^n(v(c_i)\times (t_x-t_{x-1}))$$
 在选取$v(c_i)$时，可能会有两种估计：
 ![[lower_and_upper_sum.png]]
 其中
 $$f(m_i)=f(x)_\min(x\in [t_{x-1},t_x])$$
 $$f(M_i)=f(x)_\max(x\in [t_{x-1},t_x])$$
 因此，选取不同的$c_i$就会估计出不同的面积：
-$$\text{Lower Sum}=\sum_{i=1}^n(m_i\times (t_x-t_{x-1}))$$
-$$\text{Upper Sum}=\sum_{i=1}^n(M_i\times (t_x-t_{x-1}))$$
+$$\text{Lower Sum}=\lim_{n\to\infty}\sum_{i=1}^n(m_i\times (t_x-t_{x-1}))$$
+$$\text{Upper Sum}=\lim_{n\to\infty}\sum_{i=1}^n(M_i\times (t_x-t_{x-1}))$$
 于是会形成两种估计：
 ![[lower_and_upper_sum2.png]]
 $$\text{Lower Sum}\leq\text{Real Area}\leq\text{Upper Sum}$$
