@@ -38,3 +38,16 @@ $$f(x)=L=f(a)$$
 首先，**完全定义不代表连续性**（见连续性定义[[continuity]]）
 其次，**递增的函数也可以是不连续的**
 在两种情况中，函数都完全可以在区间内跳过$g(c)=50$，只有命题3能够借助intermediate value theorem证明$g(c)=50$的存在性
+
+## 3. $\exists f(c)$与极限存在、可导性和连续性的关系
+>下方哪个命题不能用来证明$$\exists f(0)$$
+>1. $\exists\lim_{x\to 0}f(x)$
+>2. $f$在$x=0$上连续
+>3. $f$在$x=0$上可导
+>4. $f$与$y$轴有交点
+
+**只有1（存在极限）不能证明**
+连续性：
+$$\lim_{x\to 0}f(x)=f(0)\Rightarrow\exists f(0)$$
+可导性：根据[[Differentiability and Continuity]]可以知道**可导性就意味着连续性**，所以仍然可以证明$\exists f(0)$
+有交点：在几何上证明了$\exists f(0)$
