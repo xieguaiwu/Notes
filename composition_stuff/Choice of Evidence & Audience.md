@@ -40,3 +40,11 @@ Evidence:
 - Clarify: 给出定义，或者用更简单的语言解释，澄清可能的误解 (more specifically, in other words)
 - Amplify: 强调问题的广度和重要性，最终说明行动的重要性，令结论更普世而更具有影响 (furthermore, in addition, to make matters worse)
 - Associate or Disassociate: 使用比较或对比，帮助读者在这些对比和比较中建立联系 (in a similar sense, in the same way, in contrast)
+
+## 4. Explaining Claims and Evidence
+为了让evidence更加有效，一个作家需要做三件事：
+- **Introduction** of the source
+- **Integration** of evidence
+- 通过**Explanation** of evidence来支撑论点
+
+Commentary: 作者帮助读者用来联系claims、evidence和reasoning的解释
