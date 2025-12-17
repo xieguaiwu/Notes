@@ -43,6 +43,10 @@ $$f'(c)=\pm\infty$$
 **函数在这点是不可导的！**
 图像如下：
 ![[Vertical_tangent.svg]]
+另一方面，假如在$x=c$出现**horizontal tangent line**，那么仅仅有
+$$f'(c)=0$$
+此时仍旧存在导数
+
 ### 3.2
 $$D_x[\log_a x]=\frac{1}{x\ln a}$$
 $$D_x[\ln x]=\frac{1}{x}$$
