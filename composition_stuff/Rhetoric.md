@@ -2,6 +2,7 @@
 tags:
   - Composition
   - 定义性
+  - 基本原理
 title: Rhetoric
 created: 2025-11-27T13:20:00
 modified:
@@ -52,6 +53,8 @@ Argument由三个部分组成：
 - Evidence
 **通过Evidence来支持Reason，最终组成Thesis**
 ![[basic_elements_of_an_argument.png]]
+一个thesis必须首先是一个**defensible claim**，即它不能够是单纯事实性的
+
 
 选择Evidence的原则：根据分析其audience
 
@@ -59,10 +62,32 @@ Evidence有多种形式
 应当通过**2**所提及的分析方法来判断支撑argument的evidence的价值，这取决于**evidence的内容和形式与rhetorical situation中的各个元素的联系紧密程度**
 
 这些种类的evidence各有优劣：
-![[types_of_evidence.png]]
 
-对于不同段落可以选择不同的evidence：
-![[rhetorical_element_and_evidence.png]]
+| Types                    | Cons                                            |
+| ------------------------ | ----------------------------------------------- |
+| **Facts**                | 或许会反对事实的组成 (**what constitutes a proven fact**) |
+| **Anecdotes**            | 效力                                              |
+| **Analogies**            | 读者或许不理解喻体                                       |
+| **Statistics**           | 可信度                                             |
+| **Examples**             | 相关性                                             |
+| **Details**              | 相关性                                             |
+| **Illustrations**        | 或许不会被接受，或许读者不熟悉这些描述                             |
+| **Expert Opinions**      | 专家的可信度+专家意见不一定客观                                |
+| **Personal Observation** | 可信度                                             |
+| **Testimonies**          | 可信度                                             |
+| **Experiments**          | 可信度                                             |
+
+其中examples/details/illustrations都比较相似
+
+对于rhetorical situation中的不同元素可以选择不同的evidence：
+
+| Elements in Rhetorical Situation | Evidence                                          |
+| -------------------------------- | ------------------------------------------------- |
+| **Exigence**                     | 涉及动机，例如**personal anecdotes**                     |
+| **Purpose**                      | 涉及目的，例如**expert opinions**                        |
+| **Writer**                       | 例如**personal observations**                       |
+| **Context**                      | 需要具有客观性，例如**statistics**                          |
+| **Message**                      | 需要能够证明claim，最好具有多面性，例如**anecdotes**和**analogies** |
 
 ### 3.2 Embedding Evidence
 对于嵌入论据而言，以下几种方式最为常见：
