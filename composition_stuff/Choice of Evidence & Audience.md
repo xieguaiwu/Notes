@@ -16,7 +16,7 @@ Background: 观众经验的总和，他们掌握的知识、受到的教育和�
 ## 2. Adapting to an Audience
 作者在其rhetorical situation中最重要的成分是他的purpose，他的所有rhetorical choices都应当服务于这个purpose，而这些rhetorical choices会直接影响到[[Rhetoric]]的**2.1**中所提及的所有rhetorical element
 
-### 2.1 Modes of Persuation
+### 2.1 Modes of Persuasion
 如[[Rhetoric]]的**2.2**所说，为了加强观点，演讲者需要用不同种方式来说服观众。主要有三种说服方式：
 ![[modes_of_persuation.png]]
 Ethos: 帮助作者与读者之间**建立信任**，因为ethos能够说明作者有着远大追求，而不拘泥于个人的蝇头小利
@@ -48,3 +48,7 @@ Evidence:
 - 通过**Explanation** of evidence来支撑论点
 
 Commentary: 作者帮助读者用来联系claims、evidence和reasoning的解释
+
+## 5. Explicit & Implicit Thesis
+Explicit Thesis: 为文章提供与主张直接相关的焦点
+Implicit Thesis: 为文章提供与主张间接相关的焦点，例如说明一个事物的好处

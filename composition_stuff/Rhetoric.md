@@ -48,7 +48,7 @@ Appeals包括三点：
 ## 3. Argument
 ### 3.1
 Argument由三个部分组成：
-- Thesis/Main Idea/Conclusion，其中包括claim
+- Thesis/Main Idea/Conclusion/Overarching Claim，其中包括claim
 - Reason=**claim**
 - Evidence
 **通过Evidence来支持Reason，最终组成Thesis**
