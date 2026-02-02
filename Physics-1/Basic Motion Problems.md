@@ -64,4 +64,41 @@ modified:
 - 如果v_A > v_B，则A相对于B向右运动
 - 如果v_A < v_B，则A相对于B向左运动
 
+## 4. 相对速度题目
+>一列火车以相对于地面的速度 $v_t$ 向 $+x$ 方向行驶。火车上的乘客以相对于火车的速度 $v_0$ 在 $-x$ 方向滚动一个小球。另一名乘客迅速停止小球并以相同的速度 $v_0$ 相对于火车向相反方向滚动。
+
+根据**3**所提供的公式，可以知道
+- 开始时，$v_{Ball}=v_t-v_0$，其中$v_t>t_0$，故$v_{Ball}>0$
+- 中间时，小球被停下，所以$v_{Ball}=v_t$
+- 结束时，小球向正方向行驶$v_{Ball}=v_t+v_0$
+
+所以最终的$v-t$图象是：
+![[train_and_ball_problem.png]]
+
+## 5. 向上斜抛运动，计算水平位移
+>如图所示，其中球在到达其无墙时的**理论最高点时刻**，恰好撞到墙。求球的水平位移
+
+![[golf_striker.png]]
+
+已知：
+$$v_{0x} = v_0 \cos\theta$$
+$$v_{0y} = v_0 \sin\theta$$
+
+### 5.1 方法一
+设到达墙的时间为 $t_1$。根据题意，此时球处于理论最高点，竖直速度为 0：
+$$v_y(t_1) = v_0\sin\theta - g t_1 = 0 $$
+$$\Rightarrow t_1 = \frac{v_0 \sin\theta}{g}$$
+那么自然
+$$x = v_{0x} \cdot t_1 = (v_0 \cos\theta) \cdot \left(\frac{v_0 \sin\theta}{g}\right) = \frac{v_0^2 \sin\theta \cos\theta}{g}$$
+
+### IMP 5.2 方法二
+由于球最终落回原点，我们可以使用镜像法来理解这个问题。弹性碰撞于竖直墙等价于在墙的另一侧存在一个镜像物体。
+
+**从击球点到墙的距离为 $x$，从墙到镜像物体的落点也为 $x$，因此总水平射程为 $2x$**
+对于一个完整的抛体运动，水平射程公式为：
+$$x_{total} = \frac{v_0^2 \sin(2\theta)}{g} = \frac{2v_0^2 \sin\theta \cos\theta}{g}$$
+既然
+$$2x = \frac{2v_0^2 \sin\theta \cos\theta}{g}$$
+那么
+$$x = \frac{v_0^2 \sin\theta \cos\theta}{g}$$
 
