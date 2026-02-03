@@ -7,6 +7,17 @@ created: 2025-11-25T10:02:00
 modified:
 ---
 # Reference Frames Problems
+## 0. 相对速度
+
+相对速度公式：v_{A相对B} = v_A - v_B
+
+如果A车速度为v_A，B车速度为v_B，那么A相对于B的速度就是两者之差。
+
+若A车速度为正（向右），B车速度也为正（向右），则：
+- 如果v_A > v_B，则A相对于B向右运动
+- 如果v_A < v_B，则A相对于B向左运动
+
+
 ## 1.
 >A rowboat moving in a lake is accelerating at a constant rate towards the shore. An observer in **another boat moving at a constant velocity** measures the row boat’s acceleration. A second observer, **standing still on the shore**, also measures the acceleration of the rowboat. Are the two accelerations measured by the two observers the same? Why or why not?
 
@@ -50,3 +61,14 @@ $$v_{ground}=\frac{D}{t_2}$$
 $$\frac{D}{t_2}=v_{cart}+\frac{D}{t_1}$$
 那么自然
 $$v_{cart}=\frac{D}{t_2}-\frac{D}{t_1}$$
+
+## 5. 火车与变速的小球
+>一列火车以相对于地面的速度 $v_t$ 向 $+x$ 方向行驶。火车上的乘客以相对于火车的速度 $v_0$ 在 $-x$ 方向滚动一个小球。另一名乘客迅速停止小球并以相同的速度 $v_0$ 相对于火车向相反方向滚动。
+
+根据**3**所提供的公式，可以知道
+- 开始时，$v_{Ball}=v_t-v_0$，其中$v_t>t_0$，故$v_{Ball}>0$
+- 中间时，小球被停下，所以$v_{Ball}=v_t$
+- 结束时，小球向正方向行驶$v_{Ball}=v_t+v_0$
+
+所以最终的$v-t$图象是：
+![[train_and_ball_problem.png]]

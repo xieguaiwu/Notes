@@ -67,3 +67,22 @@ $$F_N=m\cdot g-F\cdot\sin\theta$$
 $$\vec{F_{fr}}+\vec{F_N}=0N$$
 时，梯子才能静止地立在原地，所以自然，在数值上
 $$F_{fr}=F_N$$
+
+## 7. 
+>一个箱子通过绳子以一定角度被拉动，在粗糙水平面上保持恒定速度移动。当摩擦系数增加但**速度仍保持不变时**，需要重新分析受力情况。
+
+原先的受力分析如下
+![[box_and_changing_fiction_factor.png]]
+
+在初始状态下，箱子匀速运动，说明：
+- $$\sum F=T-(mg-T\cdot\sin\theta)\mu_k=0N$$
+- 水平方向：牵引力的水平分量等于摩擦力 $T\cdot\cos\theta = f_k = \mu_k N$
+- 垂直方向：支持力加上绳子的垂直分量等于重力 $F_N + T\cdot\sin\theta = mg$，因此 $F_N = mg - T\cdot\sin\theta$
+
+当摩擦系数$\mu_k$增加但仍保持匀速运动时：
+- 由于要保持匀速，水平方向仍需满足 $T'\cdot\cos\theta' = f_k' = \mu_k'\cdot F_N'$
+- 由于$\mu_k' > \mu_k$，为了保持平衡，**牵引力$T$必须增加**
+- 同时，由于摩擦力等于$(mg-T'\cdot\sin\theta')\mu_k'$，**所以为了增大摩擦力以保持和外力为零，$\theta$要么不变，要么变小**
+
+这是一种可能的受力分析图
+![[box_and_changing_fiction_factor2.png]]
