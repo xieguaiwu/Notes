@@ -4,6 +4,7 @@ tags:
   - Linguistics
   - 基本原理
   - 定义性
+  - GermanVerb
 title: Reflexive Verb
 created: 2026-02-05T14:46:00
 modified:

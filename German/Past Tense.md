@@ -4,6 +4,7 @@ tags:
   - Linguistics
   - 定义性
   - 基本原理
+  - GermanTense
 title: Past Tense
 created: 2026-02-05T14:24:00
 modified:
@@ -143,14 +144,14 @@ modified:
 
 **规则：不加 ge-**
 
-| 动词             | 第二分词            |
-| -------------- | --------------- |
-| besuchen（拜访）   | besuch**t**     |
-| erklären（解释）   | erklär**t**     |
-| verkaufen（卖）   | verkauf**t**    |
-| entdecken（发现）  | entdeck**t**    |
-| zerstören（破坏）  | zerstör**t**    |
-| gefallen（喜欢）   | gefall**en**    |
+| 动词 | 第二分词 |
+|------|---------|
+| besuchen（拜访） | besuch**t** |
+| erklären（解释） | erklär**t** |
+| verkaufen（卖） | verkauf**t** |
+| entdecken（发现） | entdeck**t** |
+| zerstören（破坏） | zerstör**t** |
+| gefallen（喜欢） | gefall**en** |
 | misslingen（失败） | misslunge**en** |
 
 ---
