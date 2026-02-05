@@ -1,6 +1,6 @@
 ---
 tags:
-  - Languistics
+  - Linguistics
   - 证明
   - Exercise
 title: Rossetta MSK 2003

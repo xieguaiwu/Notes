@@ -1,6 +1,6 @@
 ---
 tags:
-  - Languistics
+  - Linguistics
   - Logic
   - 定义性
   - Chomsky

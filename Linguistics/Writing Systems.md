@@ -1,6 +1,6 @@
 ---
 tags:
-  - Languistics
+  - Linguistics
   - 定义性
 title: Writing Systems
 created: 2025-12-09T21:14:00
