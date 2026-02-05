@@ -143,14 +143,14 @@ modified:
 
 **规则：不加 ge-**
 
-| 动词 | 第二分词 |
-|------|---------|
-| besuchen（拜访） | besuch**t** |
-| erklären（解释） | erklär**t** |
-| verkaufen（卖） | verkauf**t** |
-| entdecken（发现） | entdeck**t** |
-| zerstören（破坏） | zerstör**t** |
-| gefallen（喜欢） | gefall**en** |
+| 动词             | 第二分词            |
+| -------------- | --------------- |
+| besuchen（拜访）   | besuch**t**     |
+| erklären（解释）   | erklär**t**     |
+| verkaufen（卖）   | verkauf**t**    |
+| entdecken（发现）  | entdeck**t**    |
+| zerstören（破坏）  | zerstör**t**    |
+| gefallen（喜欢）   | gefall**en**    |
 | misslingen（失败） | misslunge**en** |
 
 ---
@@ -167,6 +167,7 @@ modified:
 
 ### 2. 规则动词变化
 
+**一三人称单数相同**
 **人称词尾：**
 
 | 人称 | 词尾 |
@@ -243,27 +244,16 @@ modified:
 | ihr | ging**t** |
 | sie/Sie | ging**en** |
 
-**例词：sein（是）**
-
-| 人称 | 过去时 |
-|------|--------|
-| ich | war |
-| du | war**st** |
-| er/sie/es | war |
-| wir | war**en** |
-| ihr | war**t** |
-| sie/Sie | war**en** |
-
 **例词：haben（有）**
 
-| 人称 | 过去时 |
-|------|--------|
-| ich | hatte |
-| du |hatt**est** |
-| er/sie/es | hatte |
-| wir | hatt**en** |
-| ihr | hatt**et** |
-| sie/Sie | hatt**en** |
+| 人称        | 过去时         |
+| --------- | ----------- |
+| ich       | hatte       |
+| du        | hatt**est** |
+| er/sie/es | hatte       |
+| wir       | hatt**en**  |
+| ihr       | hatt**et**  |
+| sie/Sie   | hatt**en**  |
 
 **例词：werden（变成）**
 
