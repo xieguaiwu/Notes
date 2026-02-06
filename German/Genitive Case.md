@@ -8,7 +8,6 @@ title: Genitive Case
 created: 2026-02-05T14:22:00
 modified:
 ---
-
 # 德语第二格
 
 ## 一、定义与用途
