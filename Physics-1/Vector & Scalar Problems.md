@@ -9,6 +9,7 @@ created: 2025-12-13T15:35:00
 modified:
 ---
 # Vector & Scalar Problems
+[[向量运算与向量方程求导]]
 ## 1. Change in Speed to Change in Velocity
 >在$t_0$时，小车以$v_0$的**speed**向右前进，而$t_1$时，它则以$v_1$的**speed**向左行进，求$t_0$到$t_1$之间的$\Delta\vec{v}$
 
@@ -28,6 +29,8 @@ $$\Delta x=x_f-x_i=\frac{v_f^2-v_i^2}{-2a}$$
 $$\Rightarrow x_f=\frac{v_i^2-v_f^2}{2a}+x_i$$
 
 ## 3. Same Quantities in v-t Graph
+[[Definite Integrals]]
+
 >在下方v-t图中展示了两段运动A和B，求它们当中相同的物理量
 
 ![[same_quantities_in_v-t_graph.png]]

@@ -7,6 +7,7 @@ created: 2025-11-25T10:02:00
 modified:
 ---
 # Reference Frames Problems
+[[FBD Problems]]
 ## 0. 相对速度
 
 相对速度公式：v_{A相对B} = v_A - v_B

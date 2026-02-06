@@ -8,6 +8,8 @@ created: 2026-01-14T08:43:00
 modified:
 ---
 # Escape Velocity
+[[Energy & Work Problems]]
+[[Circular Motion & Gravitation]]
 当物体位于星球表面时，先设定星球质量为$M$，且其半径为$R$：
 $$E_{k1}=\frac{1}{2}mv^2$$
 $$E_{p1}=-G\frac{Mm}{R}$$
