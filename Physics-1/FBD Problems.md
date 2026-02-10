@@ -9,6 +9,8 @@ created: 2025-12-04T09:29:00
 modified:
 ---
 # FBD Problems
+[[Reference Frames Problems]]
+
 ## IMP 1. Contact Force in Non-contact Situation
 >The figure presents a diagram of 3 blocks on a horizontal **rough surface**. From left to right the blocks are labeled Block 1, Block 2, and Block 3. Block 1 is the smallest and Block 2 is the largest. **The blocks are touching**. A rightward pointing arrow labeled P points toward the left side of Block 1.
 
@@ -86,3 +88,18 @@ $$F_{fr}=F_N$$
 
 这是一种可能的受力分析图
 ![[box_and_changing_fiction_factor2.png]]
+
+## 8. IMP 移动不与地面直接接触的物体
+>盒子A放在盒子B上，盒子B放在平坦粗糙的地板上，如图1所示。一根质量可忽略的绳子拉动盒子A，盒子一起以恒定速度向右运动。盒子A与盒子B之间的摩擦力大小为 $f_{\text{A-B}}$，盒子B与地板之间的摩擦力大小为 $f_{\text{B-F}}$。如图2所示，另一块放在盒子A的顶部，绳子再次拉动盒子，使它们一起以**恒定速度**运动。在图1和图2之间，$f_{\text{A-B}}$ 和 $f_{\text{B-F}}$ 如何变化？
+
+
+![[five_boxes_and_friction.png]]
+
+
+- 因为 A 和 B **无相对运动**，A 的加速度为 0 $\Rightarrow$ A 所受合力为 0
+- A 受到向右的拉力 $T$，必须有向左的摩擦力 $f_{\text{A-B}} = T$
+- 而 $T$ 必须**等于地面摩擦力** $f_{\text{B-F}}$（整体合力为 0）
+- 地面摩擦力 $f_{\text{B-F}} = \mu_k \times$ 总压力
+- 加了块后，总正压力增加 → $f_{\text{B-F}}$ 增加 $\Rightarrow$ $T$ 增加 $\Rightarrow$ $f_{\text{A-B}}$ 增加
+
+**答案**：$f_{\text{A-B}}$ 和 $f_{\text{B-F}}$ 都增加

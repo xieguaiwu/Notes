@@ -9,6 +9,9 @@ modified:
 ---
 # Basic Motion Problems
 ## 0. 平衡力与相互作用力的区别
+[[FBD Problems]]
+[[Reference Frames Problems]]
+[[Vector & Scalar Problems]]
 
 | 比较项目 | 平衡力 | 相互作用力（作用力与反作用力） |
 |---------|--------|--------------------------|

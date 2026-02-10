@@ -8,6 +8,8 @@ created: 2026-01-04T17:10:00
 modified:
 ---
 # Oscillation Problems
+[[Circular Motion & Gravitation]]
+
 ## 1. 弹簧和物体模型
 >图中展示了弹簧与弹簧的基本模型，在这个模型下，**物体和弹簧是连为一体的**
 
