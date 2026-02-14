@@ -5,6 +5,7 @@ tags:
   - 定义性
   - 基本原理
   - GermanVerb
+  - GermanSentence
 title: Kausative Verb
 created: 2026-02-05T16:20:00
 modified:

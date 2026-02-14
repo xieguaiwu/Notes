@@ -3,6 +3,7 @@ tags:
   - German
   - Linguistics
   - 定义性
+  - GermanSentence
 title: Konjunktiv
 created: 2026-02-06T19:17:00
 modified:

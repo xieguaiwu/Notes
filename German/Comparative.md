@@ -2,6 +2,9 @@
 tags:
   - German
   - Linguistics
+  - 定义性
+  - 基本原理
+  - GermanAdj
 title: Comparative
 created: 2026-02-05T14:26:00
 modified:

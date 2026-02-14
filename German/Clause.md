@@ -4,6 +4,7 @@ tags:
   - Linguistics
   - 基本原理
   - 定义性
+  - GermanSentence 
 title: Clause
 created: 2026-02-05T14:31:00
 modified:
@@ -104,6 +105,7 @@ modified:
 | **damit** | 为了 | **Ich arbeite viel, damit ich Geld spare.**（我努力工作，为了省钱。）|
 | **um...zu...** | 为了（不定式） | **Ich arbeite viel, um Geld zu sparen.**（我努力工作，为了省钱。）|
 
+[[Infinitiv]]
 ### 5. 间接引语（Indirekte Rede）
 
 间接引语是一种特殊的从句，用于转述他人所说的话。

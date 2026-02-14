@@ -4,6 +4,7 @@ tags:
   - Linguistics
   - 基本原理
   - 定义性
+  - GermanSentence
 title: Preposition
 created: 2026-02-05T15:47:00
 modified:
