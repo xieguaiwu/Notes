@@ -115,3 +115,60 @@ modified:
 
 **例3：第二格所有格**
 - *Das Buch des großen Mannes*（那个大人的书）
+
+---
+
+## 指示代词 "dieser" 的变化规律
+
+### 与定冠词的关系
+
+**核心规律：** "dieser" = "dies-" + 定冠词词尾
+
+| 性/数 | 定冠词 | dieser | 规律 |
+|---|---|---|---|
+| 阳性 N | der | dies**er** | dies- + -er |
+| 阳性 A | den | dies**en** | dies- + -en |
+| 阳性 D | dem | dies**em** | dies- + -em |
+| 阳性 G | des | dies**es** | dies- + -es |
+| 阴性 N/A | die | dies**e** | dies- + -e |
+| 阴性 D | der | dies**er** | dies- + -er |
+| 阴性 G | der | dies**er** | dies- + -er |
+| 中性 N/A | das | dies**es** | dies- + -es |
+| 中性 D | dem | dies**em** | dies- + -em |
+| 中性 G | des | dies**es** | dies- + -es |
+| 复数 N/A | die | dies**e** | dies- + -e |
+| 复数 D | den | dies**en** | dies- + -en |
+| 复数 G | der | dies**er** | dies- + -er |
+
+### "dieser" 与 "der/das" 的区别
+
+| | der/das | dieser/dieses |
+|---|---|---|
+| **词性** | 定冠词 | 指示代词 |
+| **含义** | 特指某事物 | 强调"这个/这些" |
+| **语气** | 中性 | 强调，有"就是这个"的意味 |
+| **距离** | 无距离暗示 | 暗示较近的距离 |
+
+**示例：**
+- *Das Lied* = 那首歌（泛指某首特定的歌）
+- *Dieses Lied* = 这首歌（强调眼前这首歌）
+
+### 完整变格表
+
+**单数：**
+
+| 格 | 阳性 | 阴性 | 中性 |
+|---|---|---|---|
+| **N** | dieser Mann | diese Frau | dieses Kind |
+| **A** | diesen Mann | diese Frau | dieses Kind |
+| **D** | diesem Mann | dieser Frau | diesem Kind |
+| **G** | dieses Mannes | dieser Frau | dieses Kindes |
+
+**复数：**
+
+| 格 | 形式 |
+|---|---|
+| **N** | diese Leute |
+| **A** | diese Leute |
+| **D** | diesen Leuten |
+| **G** | dieser Leute |
