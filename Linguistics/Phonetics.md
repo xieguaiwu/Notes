@@ -3,6 +3,7 @@ tags:
   - Linguistics
   - 基本原理
   - 定义性
+  - Voice
 title: Phonetics
 created: 2026-02-16T19:41:00
 modified:
