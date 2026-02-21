@@ -180,5 +180,13 @@ a = \frac{2m_0g}{5m_0}
 a = \frac{2}{5} g
 $$
 
+## 7. 弹性势能、张力与重力势能
+>情景如图所示，忽略摩擦力
 
+![[spring_tension_and_GPE.png]]
+在图中，悬空的物块所受的张力$T$有特殊关系：
+$$T=F_{\text{spring}}=k_0\cdot\Delta x$$
+从能量角度来看，此图中出现了**弹性势能转换为重力势能**的情况
+$$\Delta U_g=\Delta U_{el}$$
+$$\Rightarrow mgh=\frac{1}{2}k_0x^2$$
 
