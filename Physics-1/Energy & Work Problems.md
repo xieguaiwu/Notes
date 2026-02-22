@@ -9,8 +9,8 @@ modified:
 ---
 # Energy & Work Problems
 
-最重要的问题是：当只有conservative force做功时，**只看最初和最终状态即可展开分析**
-
+1. 最重要的问题是：当只有conservative force做功时，**只看最初和最终状态即可展开分析**
+2. 摩擦力是内部的力，**不是外力**，所以不影响系统总动量
 ## 1. 基本的斜面+物体模型
 第一个情况下，物体没有重力势能，此时其**动能最大**
 ![[slide_model_ke_max.png]]
