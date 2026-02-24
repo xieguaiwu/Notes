@@ -115,4 +115,23 @@ Phrase: von etwas umgeben sein
 
 此处使用了[[Infinitiv]]中提及的"um...zu"不定式
 
+>"Unter dem Haus gibt es einen Keller voll eßbarer Sachen und unter dem Dach eine Kammer"
+
+1. 'Unter dem' $\Rightarrow$ 静态Dativ
+2. 'voll' $\Rightarrow$ Genitiv
+
+形容词带第二格补足语：见[[Adj + Genitive Case]]
+
+>"seit wir die Leiter angesägt haben und sie sich beim Fallen weh getan hat."
+
+$$\text{weh·tun }\Rightarrow^{\text{past}} \text{weh ge·tan }\to\text{weh getan}$$
+
+其中后半部分所使用的句型是"sie hat sich"
+
+```
+sie (主语, 第一格)
+     └─ hat sich (反身代词, 第四格)
+          └─ weh getan (过去分词)
+```
+
 
