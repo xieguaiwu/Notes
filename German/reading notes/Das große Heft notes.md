@@ -86,7 +86,6 @@ da + über = drüber
 ---
 
 ## Großmutters Haus
-
 >"Großmutters Haus ist fünf Minuten Fußmarsch von den letzten
 Häusern der Kleinen Stadt entfernt."
 
@@ -100,7 +99,7 @@ Phrase: von etwas umgeben sein
 
 1. 最高级形容词变化（见[[Superlativ]]）：am dicksten 作表语，但作定语时变为der/das/die dickst- + 形容词词尾。这里是中性名词 Schwein的第二格，所以是 des dicksten Schweins。
 
-2. zu 不定式：德语中 zu + 不定式
+2. zu 不定式：德语中 zu + Infinitiv
     可作宾语或主语。这里出现了两次：
         - versucht, ... zu steigen（作宾语）
         - unmöglich, ... sitzen zu bleiben（作真正的主语，es是形式主语）
@@ -132,6 +131,57 @@ $$\text{weh·tun }\Rightarrow^{\text{past}} \text{weh ge·tan }\to\text{weh geta
 sie (主语, 第一格)
      └─ hat sich (反身代词, 第四格)
           └─ weh getan (过去分词)
+```
+
+>"Dank dem Schlüssel können wir uns frei im Haus bewegen, wenn niemand da ist, und dank den Löchern können wir Großmutter und den Offizier in
+ihren Zimmern beobachten, ohne daß sie es merken."
+
+1. "Dank dem..." $\Rightarrow$ Thanks for... (Dativ)
+2. hne daß + 从句
+
+---
+
+## Großmutter
+>"Bevor wir zu ihr zogen, wußten wir nicht, daß unsere Mutter noch eine Mutter hatte"
+
+"zu ihr zogen" $\Rightarrow$ move to her place. $$\text{ziehen }\Rightarrow^{\text{past}} \text{zogen}$$
+
+>"Ihr Gesicht ist voll Runzeln, brauner Flecke und Warzen, aus denen Haare sprießen."
+
+1. 如前所述，此处的voll出现了形容词带第二格补足语的现象
+2. "aus denen" $\Rightarrow$ from which...
+3. 介词 aus 支配第三格 → denen（第三格复数）
+
+>"Großmutter wäscht sich nie. Sie wischt sich den Mund mit dem Zipfel ihres Kopftuchs ab"
+
+Love it!
+
+>"In dieser unbekannten Sprache stellt Großmutter sich Fragen und antwortet darauf."
+
+1. 'sich Fragen stellen' $\Rightarrow$ 自问
+2. 'antwortet darauf' $\Rightarrow$ answer 'on' it
+
+>"Am Schluß beginnt sie fast immer zu weinen, sie torkelt in ihr Zimmer, sie fällt auf ihr Bett, und wir hören sie in der Nacht lange schnarchen."
+
+- hören + 宾语 + 不定式 = 听见某人做某事（不加 zu）这是感官动词不定式结构，类似动词还有：sehen, fühlen, spüren
+- 正如英语中的'hear sb. do sth.'，结尾的动词需要保持原形
+
+---
+
+## Die Arbeiten
+>"Wir müssen einige Arbeiten für Großmutter verrichten, sonst gibt sie uns nichts zu essen und läßt uns die Nacht draußen verbringen."
+
+1. nichts zu essen = nichts + zu + Infinitiv
+2. (sie) läßt uns die Nacht draußen verbringen (lassen + 宾语 + 不定式 = 让某人做某事（无 zu）)
+
+```
+läßt (动词)
+  │
+  ├── uns (Akkusativ) ← lassen的宾语
+  │
+  └── die Nacht draußen verbringen (不定式短语)
+              │
+              └── die Nacht (Akkusativ) ← verbringen的宾语
 ```
 
 
