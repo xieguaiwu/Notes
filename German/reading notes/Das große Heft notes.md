@@ -184,4 +184,12 @@ läßt (动词)
               └── die Nacht (Akkusativ) ← verbringen的宾语
 ```
 
+>"Sie füttert die Tiere, sie melkt die Ziegen, führt sie dann zum Fluß, wo sie sie an einen Baum bindet"
+
+'wo sie sie an einen Baum bindet' $\Rightarrow$ where they are tied up by her on a tree (sie=her/animals)
+
+>"einen kleinen Käfig mit einem Kaninchen und einem Huhn oder einer Ente mit zusammengebundenen Beinen."
+
+In 'zusammengebundenen': $$\text{binden}\Rightarrow^{\text{past}}\text{gebunden}$$
+
 
