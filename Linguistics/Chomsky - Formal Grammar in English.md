@@ -9,6 +9,8 @@ created: 2025-12-08T12:46:00
 modified:
 ---
 # Chomsky - Formal Grammar in English
+[[Noun and noun phrase]]
+[[Verb and verb phrase]]
 在乔姆斯基的理论中，英语的语法如下，此处以句子"the boy hit the ball"的生成过程为例：
 ## 1. Def
 $$G=(V_N,V_T,S,P)$$

@@ -9,7 +9,7 @@ created: 2026-02-20T20:27:00
 modified:
 ---
 # Number Systems
-
+[[Writing Systems]]
 ## 1. 引言
 
 数字系统问题涉及**进位制（base）**的概念和特征。
