@@ -12,7 +12,7 @@ modified:
 # Comparative
 
 ## 一、比较级的构成
-
+[[Superlativ]]
 ### 1. 基本规则
 形容词比较级一般在词尾加 **-er**
 

@@ -10,7 +10,7 @@ created: 2026-02-05T14:46:00
 modified:
 ---
 # Reflexive Verb
-
+[[Reflexive Relation]]
 ## 定义
 
 反身动词（Reflexivverb）是指动词动作返回到主语本身的动词。在德语中，反身动词必须与反身代词（Reflexivpronomen）一起使用。

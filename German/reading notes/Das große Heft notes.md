@@ -86,10 +86,11 @@ da + über = drüber
 ---
 
 ## Großmutters Haus
->"Großmutters Haus ist fünf Minuten Fußmarsch von den letzten
-Häusern der Kleinen Stadt entfernt."
+>"Großmutters Haus ist fünf Minuten Fußmarsch von den letzten Häusern der Kleinen Stadt entfernt."
 
 Phrase: Jemand/etwas + sein + Zeit + Fußmarsch + von + Dativ + entfernt
+
+entfernt 是形容词/分词，源自动词 entfernen（移开、使远离）
 
 >"Großmutters Haus ist von einem Garten umgeben..."
 
@@ -191,5 +192,25 @@ läßt (动词)
 >"einen kleinen Käfig mit einem Kaninchen und einem Huhn oder einer Ente mit zusammengebundenen Beinen."
 
 In 'zusammengebundenen': $$\text{binden}\Rightarrow^{\text{past}}\text{gebunden}$$
+
+>"Sie geht auf den Markt, ihren Schubkarren schiebend, dessen Gurt, um den mageren Hals gelegt, ihren Kopf herabdrückt."
+
+1. "ihren Schubkarren schiebend" - 现在分词作状语
+    - schiebend 是动词 schieben 的现在分词
+    - 德语中现在分词可作状语，表示伴随动作
+    - 相当于："während sie ihren Schubkarren schiebt"
+2. "dessen" - 关系代词，指代 Schubkarren，**第二格**
+3. "um den mageren Hals": 由于 Hals是阳性，并且此处是第四格
+4. 如前所述，$$\text{legen}\Rightarrow^{\text{past}}\text{gelegt}$$
+
+这个句子不涉及复杂的格位，除却中间"dessen Gurt"在第二格上进行的修饰外完全一马平川
+
+> "Die Unebenheiten des Wegs und die Steine bringen sie aus dem Gleichgewicht, aber sie geht mit einwärts gedrehten Füßen, wie die Enten."
+
+"The burdens from the roads and rocks brings her equilibrium, but she goes with pigeon toes, like ducks."
+
+1. 'aus dem Gleichgewicht bringen' - 使失去平衡
+    - aus + Dativ + bringen: 固定搭配，脱离某种状态。此处aus 不是"出来"，而是"脱离、离开某种状态"
+2. $$\text{drehen}\Rightarrow^{\text{past}}\text{gedrehten}$$
 
 

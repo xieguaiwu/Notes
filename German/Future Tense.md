@@ -11,6 +11,7 @@ modified:
 ---
 # Future Tense
 
+[[Past Tense]]
 ## 定义
 
 德语未来时（Zukunft/Futur）用于表达将要发生的动作或状态。德语有两种将来时态：
