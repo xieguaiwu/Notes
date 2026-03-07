@@ -2,9 +2,8 @@
 tags:
   - Linguistics
   - Math
-  - 计算语言学
-  - 形式语言
   - 定义性
+  - Chomsky
 title: Finite State Automata
 created: 2026-03-07T11:00:00
 modified:
