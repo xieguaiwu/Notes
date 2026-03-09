@@ -111,19 +111,99 @@ modified:
 
 ---
 
-## 四、弱变化名词
+## 四、名词变化类型（强变化、弱变化、混合变化）
 
-部分阳性名词在第二格时词尾加 **-n**（有时加 **-en**）。
+德语名词根据属格单数和复数的变化分为**强变化**、**弱变化**和**混合变化**三种类型。
 
-**常见弱变化名词：**
-- der Student → des Student**en**
-- der Name → des Namen
+### 4.1 强变化名词（Starke Deklination）
+
+大多数阳性名词和所有中性名词属于此类。
+
+**特点**：属格单数加 `-s` 或 `-es`，复数变化多样
+
+| 单数 | 复数 | 属格单数 |
+|------|------|----------|
+| der Tag | die Tage | des Tag**es** |
+| der Mann | die Männer | des Mann**es** |
+| das Buch | die Bücher | des Buch**es** |
+
+**加 -es 的情况**：
+- 单音节词：des Mannes, des Buches
+- 以 -s, -ß, -sch, -x, -z, -tz 结尾：des Glases, des Prozesses
+
+**加 -s 的情况**：
+- 多音节词：des Tages, des Lehrers
+- 以元音结尾（除 -e）：des Kaisers
+
+---
+
+### 4.2 弱变化名词（Schwache Deklination）
+
+主要是部分阳性名词（极少数中性名词如 *das Herz*）。
+
+**特点**：除主格外，所有格都加 `-n` 或 `-en`
+
+| 主格 | 属格 | 与格 | 宾格 |
+|------|------|------|------|
+| der Student | des Student**en** | dem Student**en** | den Student**en** |
+| der Name | des Name**ns** | dem Name**n** | den Name**n** |
+
+**常见弱变化阳性名词类型**：
+
+**1. 以 `-e` 结尾的阳性名词**：
+- der Junge → des Jungen
+- der Löwe → des Löwen
+- der Chinese → des Chinesen
+- der Kollege → des Kollegen
+
+**2. 以 `-ant, -ent, -ist, -at, -ot` 结尾**：
+- der Student → des Studenten
+- der Polizist → des Polizisten
+- der Demokrat → des Demokraten
+- der Automat → des Automaten
+
+**3. 不规则弱变化（主格加 -s）**：
+这些名词在主格以 -s/-e 结尾，属格再加 -ns/-n：
+- der Name → des Namens
+- der Buchstabe → des Buchstabens
+- der Gedanke → des Gedankens
+- der Wille → des Willens
+
+**其他常见弱变化名词**：
 - der Mensch → des Menschen
 - der Herr → des Herren
-- der Junge → des Jungen
 - der Nachbar → des Nachbarn
 - der Held → des Helden
 - der Prinz → des Prinzen
+- der Bauer → des Bauern
+- der Bär → des Bären
+
+---
+
+### 4.3 混合变化名词（Gemischte Deklination）
+
+主要是中性名词 *das Herz*
+
+| 主格 | 属格 | 与格 | 宾格 |
+|------|------|------|------|
+| das Herz | des Herz**ens** | dem Herz**en** | das Herz |
+
+*注：*das Herz* 是唯一一个混合变化的中性名词，属格加 -ens，与格加 -en，但宾格不变。
+
+---
+
+### 4.4 快速判别技巧
+
+| 类型 | 判别特征 | 属格变化 |
+|------|----------|----------|
+| **强变化** | 大多数阳性名词、所有中性名词 | 加 -s/-es |
+| **弱变化** | 以 -e, -ant, -ent, -ist 结尾的阳性名词 | 加 -n/-en |
+| **混合变化** | das Herz | 加 -ens |
+
+**记忆口诀**：
+- **强**：只有属格单数变（加 -s/-es），复数变化多样
+- **弱**：所有非主格都变（加 -n/-en），复数通常加 -n/-en
+- **混合**：仅 *das Herz*，属格 -ens
 
 ---
 
