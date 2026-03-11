@@ -107,6 +107,31 @@ modified:
 
 - **sich (Dat.) etwas (Akk.) merken** - 记住
   - Ich merke mir seinen Namen. （我记住他的名字。）
+  
+  **命令式用法：**
+  | 人称 | 命令式 | 含义 |
+  |------|--------|------|
+  | du | Merke dir ... / Merk dir ... | 记住... |
+  | ihr | Merkt euch ... | 记住... |
+  | Sie | Merken Sie sich ... | 请记住... |
+  
+  **例句：**
+  - *Merke dir alles!* （把这一切都记住！）
+  - *Merk dir das gut!* （好好记住这个！）
+  - *Merkt euch die Regel.* （你们记住这条规则。）
+  - *Merken Sie sich meine Worte.* （请记住我的话。）
+  
+  **完成时：**
+  - *Ich habe es mir gemerkt.* （我已经记住了。）
+  - *Das habe ich mir nicht gemerkt.* （这个我没记住。）
+  
+  **与普通及物用法的区别：**
+  | 用法 | 例句 | 含义 |
+  |------|------|------|
+  | 反身用法 | Ich merke **mir** den Weg. | 我（给自己）记住这条路。 |
+  | 及物用法 | Ich merke den Unterschied. | 我注意到区别。 |
+  
+  **注意**：反身用法强调"为我自己记住"，及物用法表示"感知到、注意到"。
 
 - **sich (Dat.) etwas (Akk.) überlegen** - 考虑
   - Ich überlege mir einen Plan. （我在考虑一个计划。）
