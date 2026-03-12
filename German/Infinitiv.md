@@ -361,4 +361,50 @@ Die Arbeit ist schnell zu erledigen.
 
 ---
 
+## 十二、常见错误补充
+
+### 1. 不定式位置错误
+
+❌ *Ich versuche zu kommen morgen.*
+✅ Ich versuche, morgen **zu kommen**.（不定式在句末）
+
+❌ *Es ist wichtig, zu lernen Deutsch.*
+✅ Es ist wichtig, Deutsch **zu lernen**.（不定式短语在句末）
+
+### 2. 忘记逗号
+
+❌ *Ich hoffe dich bald zu sehen.*
+✅ Ich hoffe**,** dich bald zu sehen.（不定式短语前通常加逗号）
+
+### 3. 与 dass 从句混淆
+
+❌ *Ich hoffe, dass dich bald zu sehen.*
+✅ Ich hoffe, dich bald **zu sehen**.（不定式不是从句）
+
+❌ *Ich hoffe zu, dass du kommst.*
+✅ Ich hoffe**,** dass du kommst.（dass 从句前不加 zu）
+
+### 4. um...zu 结构错误
+
+❌ *Ich gehe zum Supermarkt, für einzukaufen.*
+✅ Ich gehe zum Supermarkt, **um einzukaufen**.（目的用 um...zu）
+
+❌ *Um zu lernen Deutsch...*
+✅ **Um Deutsch zu lernen**...（宾语在 zu 之前）
+
+### 5. ohne...zu 与 ohne dass 混淆
+
+❌ *Er ging weg, ohne dass ein Wort zu sagen.*
+✅ Er ging weg, **ohne ein Wort zu sagen**.（不定式用 ohne...zu）
+
+❌ *Er ging weg, ohne zu sagen dass er geht.*（可接受但不自然）
+✅ Er ging weg, **ohne zu sagen**, dass er geht.（更清晰）
+
+### 6. 完成时不定式错误
+
+❌ *Er behauptet, das Buch zu gelesen haben.*
+✅ Er behauptet, das Buch **gelesen zu haben**.（第二分词在 haben 之前）
+
+---
+
 *整理时间：2026-02-14*

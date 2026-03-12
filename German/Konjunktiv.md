@@ -217,3 +217,71 @@ Konjunktiv II 通常由动词的过去时词干 + 虚拟式词尾构成：
 | 主要用途 | 间接引语 | 非现实陈述、假设、愿望 |
 | 构成基础 | 现在时词干 | 过去时词干 |
 | 常见形式 | 词尾变化 | 词尾变化/特殊形式 |
+
+---
+
+## 常见错误
+
+### 1. 混淆 Konjunktiv I 和 Konjunktiv II
+
+❌ *Er sagt, dass er käme.*（与直陈式不同时应使用 Konjunktiv I）
+✅ Er sagt, dass er **komme**.（Konjunktiv I 用于间接引语）
+
+❌ *Wenn ich Zeit habe, würde ich kommen.*（现实条件句）
+✅ Wenn ich Zeit **hätte**, **würde** ich kommen.（非现实用 Konjunktiv II）
+
+### 2. wäre 和 hätte 混淆
+
+❌ *Wenn ich ein Auto wäre...*
+✅ Wenn ich ein Auto **hätte**...（拥有用 hätte）
+
+❌ *Wenn ich zu Hause hätte...*
+✅ Wenn ich zu Hause **wäre**...（位置/存在用 wäre）
+
+### 3. 间接引语时态错误
+
+❌ *Er sagt, dass er gestern komme.*
+✅ Er sagt, dass er gestern **gekommen sei**.（过去事件用完成时形式）
+
+❌ *Er sagte, dass er krank ist.*
+✅ Er sagte, dass er **krank sei**.（间接引语用 Konjunktiv）
+
+### 4. würde 形式过度使用
+
+❌ *Wenn ich würde mehr Zeit haben...*
+✅ Wenn ich mehr Zeit **hätte**...（优先使用 Konjunktiv II 原形）
+
+❌ *Ich würde gerne gehen, wenn ich würde können.*
+✅ Ich würde gerne gehen, wenn ich **könnte**.
+
+### 5. 非现实条件句语序错误
+
+❌ *Ich würde kommen, wenn ich hätte Zeit.*
+✅ Ich würde kommen, wenn ich Zeit **hätte**.（从句动词在末尾）
+
+❌ *Hätte ich Zeit, ich würde kommen.*
+✅ **Hätte** ich Zeit, **würde** ich kommen.（省略 wenn 时动词在句首）
+
+### 6. 情态动词虚拟式错误
+
+❌ *Wenn ich kann...*
+✅ Wenn ich **könnte**...（非现实用虚拟式）
+
+❌ *Ich möchte, dass er kommt.*（表达愿望）
+✅ Ich **wünschte**, er **käme**.（虚拟式表达愿望）
+
+### 7. 间接引语中 dass 省略错误
+
+❌ *Er sagt er komme nicht.*（口语可接受，但正式书写应加逗号）
+✅ Er sagt**,** er komme nicht.
+✅ Er sagt**,** dass er nicht komme.
+
+### 8. 虚拟式与直陈式混淆
+
+❌ *Wenn er Zeit hat, kommt er.*（现实条件）
+❌ *Wenn er Zeit hätte, kommt er.*（时态不一致）
+✅ Wenn er Zeit **hätte**, **käme** er. / **würde** er kommen.（非现实条件）
+
+---
+
+*整理时间：2026-02-06*

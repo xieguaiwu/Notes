@@ -166,3 +166,60 @@ modified:
 **疑问用 wo/wor**
 - 元音开头用 **wor-**（worüber）
 - 辅音开头用 **wo-**（womit）
+
+---
+
+## 常见错误
+
+### 1. 指代人时错误使用代副词
+
+❌ *Ich denke daran.*（指代人时）
+✅ Ich denke **an ihn**.（指代人用介词 + 人称代词）
+
+❌ *Ich spreche damit.*（指代人时）
+✅ Ich spreche **mit ihm**.（指代人用介词 + 人称代词）
+
+### 2. da-/dar- 选择错误
+
+❌ *daüber*（元音开头）
+✅ **dar**über（元音开头用 dar-）
+
+❌ *darmit*（辅音开头）
+✅ **da**mit（辅音开头用 da-）
+
+### 3. 代副词格错误
+
+❌ *Ich denke auf das.*（介词错误）
+✅ Ich denke **daran**.（denken an 用 daran）
+
+❌ *Ich warte darauf, dass er kommt.*（正确，但介词选择）
+✅ Ich warte **darauf**, dass er kommt.（warten auf 用 darauf）
+
+### 4. 前置与后置位置错误
+
+❌ *Damit ich bin einverstanden.*（作为宾语应在句末）
+✅ **Damit** bin ich einverstanden.（前置强调话题）
+✅ Ich bin **damit** einverstanden.（后置作为宾语）
+
+### 5. 疑问代副词使用错误
+
+❌ *Mit was schreibst du?*（口语可接受但不正式）
+✅ **Womit** schreibst du?（正式使用 wo- + 介词）
+
+❌ *Über was sprecht ihr?*
+✅ **Worüber** sprecht ihr?（元音开头用 wor-）
+
+### 6. 代副词与介词短语混淆
+
+❌ *Ich denke an das Problem.* → *Ich denke daran das Problem.*
+✅ Ich denke **daran**.（代副词替代整个介词短语，不能再接名词）
+
+### 7. drüber 与 darüber 混淆
+
+❌ *Darüber muss ich nachdenken.*（正式书面语用 darüber）
+✅ **Darüber** muss ich nachdenken.
+✅ Ich muss **drüber** nachdenken.（口语常用缩略形式 drüber）
+
+---
+
+*整理时间：2026-02-11*

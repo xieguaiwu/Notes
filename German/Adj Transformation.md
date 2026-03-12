@@ -172,3 +172,55 @@ modified:
 | **A** | diese Leute |
 | **D** | diesen Leuten |
 | **G** | dieser Leute |
+
+---
+
+## 常见错误
+
+### 1. 词尾变化错误
+
+❌ *der groß Mann*
+✅ der groß**e** Mann（弱变格第一格阳性加 -e）
+
+❌ *ein groß Mann*
+✅ ein groß**er** Mann（混合变格第一格阳性加 -er）
+
+❌ *mit groß Mann*
+✅ mit groß**em** Mann（强变格第三格阳性加 -em）
+
+### 2. 弱变格与强变格混淆
+
+❌ *ein großen Mann*（第一格）
+✅ ein groß**er** Mann（混合变格第一格）
+
+❌ *der großer Mann*（定冠词后）
+✅ der groß**e** Mann（弱变格）
+
+### 3. 形容词词尾与冠词词尾混淆
+
+❌ *den großen Mannes*（第四格）
+✅ den groß**en** Mann**es**（冠词是 den，形容词是 -en，名词加 -es）
+
+### 4. 零冠词时词尾错误
+
+❌ *gut Mann*（无冠词）
+✅ gut**er** Mann（强变格第一格阳性）
+
+❌ *gute Frau*（无冠词第一格）
+✅ gut**e** Frau（强变格第一格阴性，词尾正确）
+
+### 5. dieser 变格错误
+
+❌ *dieser Mannes*（第一格）
+✅ dies**es** Mannes（第二格）
+
+❌ *mit dieser Mann*
+✅ mit dies**em** Mann（第三格）
+
+### 6. 复数词尾错误
+
+❌ *die groß Frauen*
+✅ die groß**en** Frauen（复数弱变格）
+
+❌ *mit groß Frauen*
+✅ mit groß**en** Frauen（强变格第三格复数）

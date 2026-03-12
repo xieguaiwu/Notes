@@ -99,3 +99,74 @@ modified:
 2. **第三格介词记忆法**（ABNVZ）：aus, bei, mit, nach, seit, von, zu
 3. **静三动四介词**（空间介词）：in, an, auf, unter, über, vor, hinter, neben, zwischen
 
+---
+
+## 常见错误
+
+### 1. 介词支配的格错误
+
+❌ *Ich gehe in dem Zimmer.*（动态方向）
+✅ Ich gehe in **das** Zimmer.（动态用第四格）
+
+❌ *Ich bin in das Zimmer.*（静态位置）
+✅ Ich bin in **dem** Zimmer.（静态用第三格）
+
+### 2. 第三格介词错误
+
+❌ *Ich komme mit du.*
+✅ Ich komme mit **dir**.（mit 支配第三格）
+
+❌ *Er kommt aus Berlin.* → *Er kommt aus den Berlin.*
+✅ Er kommt aus **Berlin**.（城市名不加冠词）
+
+### 3. 第四格介词错误
+
+❌ *Ich bin gegen dem Plan.*
+✅ Ich bin gegen **den** Plan.（gegen 支配第四格）
+
+❌ *Das ist für dich.* → *Das ist für dir.*
+✅ Das ist für **dich**.（für 支配第四格）
+
+### 4. 第二格介词错误
+
+❌ *Wegen dem Wetter...*（口语可接受但不标准）
+✅ Wegen **des Wetters**...（wegen 支配第二格）
+
+❌ *Trotz dem Regen...*
+✅ Trotz **des Regens**...（trotz 支配第二格）
+
+### 5. 静三动四判断错误
+
+❌ *Das Buch liegt auf den Tisch.*（静态位置）
+✅ Das Buch liegt auf **dem** Tisch.（静态用第三格）
+
+❌ *Ich lege das Buch auf dem Tisch.*（动态方向）
+✅ Ich lege das Buch auf **den** Tisch.（动态用第四格）
+
+### 6. 介词与冠词融合错误
+
+❌ *Ich gehe zu dem Bahnhof.*
+✅ Ich gehe **zum** Bahnhof.（zu dem → zum）
+
+❌ *Ich bin in dem Haus.*
+✅ Ich bin **im** Haus.（in dem → im）
+
+### 7. 特殊介词用法错误
+
+❌ *Ich fahre nach Deutschland.* → *Ich fahre in Deutschland.*（国家名）
+✅ Ich fahre **nach** Deutschland.（中性国家名用 nach）
+
+❌ *Ich fahre in die Schweiz.* → *Ich fahre nach Schweiz.*（带冠词的国名）
+✅ Ich fahre **in die** Schweiz.（带冠词的国名用 in）
+
+### 8. 时间介词错误
+
+❌ *am Montag* → *im Montag*
+✅ **am** Montag.（星期用 am）
+
+❌ *im Januar* → *am Januar*
+✅ **im** Januar.（月份用 im）
+
+❌ *um 3 Uhr* → *am 3 Uhr*
+✅ **um** 3 Uhr.（具体时间点用 um）
+

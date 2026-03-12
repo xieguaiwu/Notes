@@ -280,3 +280,65 @@ modified:
 7. 区分"让某人做"和"使某人成为"的不同表达
 8. 注意时态变化和被动语态的使用
 
+## 常见错误
+
+### 1. 不定式加 zu
+
+❌ *Ich lasse ihn zu kommen.*
+✅ Ich lasse ihn **kommen**.（lassen 后不加 zu）
+
+❌ *Ich sehe ihn zu gehen.*
+✅ Ich sehe ihn **gehen**.（感官动词后不加 zu）
+
+### 2. 宾语的格错误
+
+❌ *Ich helfe ihn packen.*
+✅ Ich helfe **ihm** packen.（helfen 接第三格）
+
+❌ *Ich lasse mir warten.*
+✅ Ich lasse **mich** warten.（lassen 接第四格）
+
+### 3. 完成时结构错误
+
+❌ *Ich habe ihn lassen kommen.*
+✅ Ich habe ihn kommen **lassen**.（lassen 在完成时中放在句末）
+
+❌ *Ich habe kommen lassen ihn.*
+✅ Ich habe ihn kommen **lassen**.（宾语在 lassen 之前）
+
+### 4. 与情态动词混淆
+
+❌ *Ich muss ihn kommen lassen.*（语法正确但语义别扭）
+✅ Ich **lasse** ihn kommen.（直接用使役动词表达）
+
+### 5. 反身结构错误
+
+❌ *Ich lasse mich nicht beeindrucken zu werden.*
+✅ Ich lasse mich nicht **beeindrucken**.（不加 zu，不需要被动）
+
+❌ *Er lässt sich nicht zu helfen.*
+✅ Er lässt sich nicht **helfen**.（不加 zu）
+
+### 6. machen 用法错误
+
+❌ *Das macht mich zu glücklich.*
+✅ Das macht mich **glücklich**.（machen + 形容词，不加 zu）
+
+❌ *Er macht seinen Sohn zum Arzt werden.*
+✅ Er macht seinen Sohn **zum Arzt**.（直接用名词）
+
+### 7. 感知动词与lassen混淆
+
+❌ *Ich sehe das Auto reparieren.*（看见车在修）
+✅ Ich **sehe** das Auto reparier**t werden**.（被动）
+✅ Ich **lasse** das Auto reparieren.（让人修车）
+
+### 8. 语序错误
+
+❌ *Ich lasse kommen ihn.*
+✅ Ich lasse ihn **kommen**.（宾语在不定式之前）
+
+---
+
+*整理时间：2026-02-05*
+

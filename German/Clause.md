@@ -163,3 +163,40 @@ modified:
    - ❌ Wenn es regnet, wir bleiben zu Hause.
    - ✅ Wenn es regnet, bleiben wir zu Hause.
 
+### 4. 关系代词选择错误
+
+❌ *Der Mann, den hier wohnt, ist Arzt.*
+✅ Der Mann, **der** hier wohnt, ist Arzt.（关系代词在从句中作主语，用第一格）
+
+❌ *Die Frau, der ich kenne, ist Lehrerin.*
+✅ Die Frau, **die** ich kenne, ist Lehrerin.（关系代词在从句中作宾语，阴性第一格和第四格都是 die）
+
+### 5. 宾语从句连词错误
+
+❌ *Ich weiß nicht, dass er kommt.*（想知道是否）
+✅ Ich weiß nicht, **ob** er kommt.（是否用 ob，不是 dass）
+
+❌ *Er fragt mich, dass ich wohne.*
+✅ Er fragt mich, **wo** ich wohne.（疑问词从句）
+
+### 6. 时间状语从句 wenn/als 混淆
+
+❌ *Wenn ich ein Kind war, spielte ich Fußball.*
+✅ **Als** ich ein Kind war, spielte ich Fußball.（过去一次性事件用 als）
+
+❌ *Als ich Zeit habe, besuche ich dich.*
+✅ **Wenn** ich Zeit habe, besuche ich dich.（反复或将来用 wenn）
+
+### 7. 目的从句 damit 与 um...zu 混淆
+
+❌ *Ich lerne Deutsch, um ich in Deutschland studieren kann.*
+✅ Ich lerne Deutsch, **damit** ich in Deutschland studieren kann.（从句用 damit）
+
+❌ *Ich lerne Deutsch, damit in Deutschland zu studieren.*
+✅ Ich lerne Deutsch, **um** in Deutschland **zu studieren**.（不定式用 um...zu）
+
+### 8. 从句中情态动词位置错误
+
+❌ *Ich hoffe, dass du kannst mir helfen.*
+✅ Ich hoffe, dass du mir helfen **kannst**.（情态动词在从句末尾）
+
