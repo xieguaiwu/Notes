@@ -315,7 +315,137 @@ modified:
 
 ---
 
-## 九、常见错误
+## 九、少见代词 (Seltenere Pronomen)
+
+这些代词在现代德语中使用频率较低，多见于书面语或文学作品中。
+
+### 1. jener / jene / jenes（那个）
+
+表示远指，与 dieser（这个）相对，现代口语中常用 der/die/das 替代。
+
+| 格 | 阳性 | 阴性 | 中性 | 复数 |
+|----|------|------|------|------|
+| N | jener | jene | jenes | jene |
+| G | jenes | jener | jenes | jener |
+| D | jenem | jener | jenem | jenen |
+| A | jenen | jene | jenes | jene |
+
+**示例**：
+- **Jener** Mann dort ist mein Onkel.（那边那个男人是我的叔叔。）
+- **Jenes** Haus am Berg ist sehr alt.（山上的那所房子很古老。）
+- Ich erinnere mich an **jene** Tage.（我回忆起那些日子。）
+
+### 2. derjenige / diejenige / dasjenige（那个人/物）
+
+强调特指，意为"那个人"、"那个物"。
+
+| 格 | 阳性 | 阴性 | 中性 | 复数 |
+|----|------|------|------|------|
+| N | derjenige | diejenige | dasjenige | diejenigen |
+| G | desjenigen | derjenigen | desjenigen | derjenigen |
+| D | demjenigen | derjenigen | demjenigen | denenjenigen |
+| A | denjenigen | diejenige | dasjenige | diejenigen |
+
+**示例**：
+- **Derjenige**, der zuerst kommt, gewinnt.（先到的人获胜。）
+- Ich spreche mit **derjenigen**, die das Projekt leitet.（我和负责那个项目的人交谈。）
+
+### 3. ein jeder / eine jede（每一个）
+
+强调每一个个体，比单纯的 jeder 语气更强。
+
+**示例**：
+- **Ein jeder** muss seine Pflicht tun.（每个人都必须履行职责。）
+- **Eine jede** Entscheidung hat Folgen.（每一个决定都有后果。）
+
+### 4. jeglicher / jegliche / jegliches（任何）
+
+表示"任何"、"各种"，多用于书面语。
+
+| 格 | 阳性 | 阴性 | 中性 | 复数 |
+|----|------|------|------|------|
+| N | jeglicher | jegliche | jegliches | jegliche |
+| G | jeglichen | jeglicher | jeglichen | jeglicher |
+| D | jeglichem | jeglicher | jeglichem | jeglichen |
+| A | jeglichen | jegliche | jegliches | jegliche |
+
+**示例**：
+- Er hat **jegliche** Hilfe abgelehnt.（他拒绝了一切帮助。）
+- **Jegliches** Misstrauen ist unbegründet.（任何怀疑都是没有根据的。）
+
+### 5. irgend- 系列不定代词
+
+表示"某个"、"任何"，强调不确定性。
+
+| 代词 | 含义 | 示例 |
+|------|------|------|
+| irgendein / irgendeine | 某个 | Nimm **irgendein** Buch. |
+| irgendjemand | 某人 | Da war **irgendjemand**. |
+| irgendwas | 某物、某事 | Ich habe **irgendwas** vergessen. |
+| irgendwelche | 某些 | **Irgendwelche** Leute waren da. |
+| irgendeiner | 某个人 | **Irgendeiner** wird schon helfen. |
+
+**示例**：
+- Ruf mich an, wenn du **irgendwelche** Probleme hast.（如果你有任何问题，给我打电话。）
+- Das muss **irgendjemand** gesehen haben.（这肯定有人看见了。）
+
+### 6. so ein / so eine（这样的）
+
+表示"这样的"、"这种"，口语常用。
+
+| 格 | 阳性 | 阴性 | 中性 | 复数 |
+|----|------|------|------|------|
+| N | so ein | so eine | so ein | so welche |
+| G | so eines | so einer | so eines | so welcher |
+| D | so einem | so einer | so einem | so welchen |
+| A | so einen | so eine | so ein | so welche |
+
+**示例**：
+- **So ein** Glück!（这样的运气！/ 真幸运！）
+- Ich will **so ein** Auto nicht.（我不想要这种车。）
+- **So eine** Frechheit!（竟如此无礼！）
+
+### 7. selbst / selber（自己）
+
+强调代词，表示"亲自"、"自己"。selbst 更正式，selber 更口语化。
+
+**示例**：
+- Ich habe das **selbst** / **selber** gemacht.（这是我自己做的。）
+- Der Chef **selbst** kam zu uns.（老板亲自来找我们。）
+
+### 8. gegenseitig（相互）
+
+表示相互关系，相当于英语的 each other。
+
+**示例**：
+- Wir helfen uns **gegenseitig**.（我们互相帮助。）
+- Sie lieben sich **gegenseitig**.（他们彼此相爱。）
+
+### 9. ein ander- / einander（彼此）
+
+表示相互关系，较正式。
+
+| 格 | 形式 |
+|----|------|
+| N | — |
+| G | einander |
+| D | einander |
+| A | einander |
+
+与介词连用时合并：
+- mit**einander**（一起）
+- vonein**ander**（互相）
+- aufein**ander**（相互）
+- fürein**ander**（为彼此）
+
+**示例**：
+- Wir kennen **einander**.（我们彼此认识。）
+- Sie arbeiten **miteinander**.（他们一起工作。）
+- Wir müssen **aufeinander** Rücksicht nehmen.（我们要互相体谅。）
+
+---
+
+## 十、常见错误
 
 ### 1. 人称代词格错误
 
@@ -362,7 +492,7 @@ modified:
 
 ---
 
-## 十、记忆技巧
+## 十一、记忆技巧
 
 ### 1. 人称代词变格口诀
 
@@ -392,7 +522,7 @@ modified:
 
 ---
 
-## 十一、练习题
+## 十二、练习题
 
 ### 填空题
 
@@ -418,7 +548,7 @@ modified:
 
 ---
 
-## 十二、相关笔记
+## 十三、相关笔记
 
 - [[Article]] - 冠词（变格与代词相关）
 - [[Reflexive Verb]] - 反身动词
