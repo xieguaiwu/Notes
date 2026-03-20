@@ -41,3 +41,6 @@ $$\log_a(1+x)\sim\frac{x}{\ln a}$$
 $$(1+x)^a-1\sim ax$$
 $$^n\sqrt{1+x}-1\sim\frac{x}{n}$$
 $$\ln(1+x)-x\sim -\frac{1}{2}x^2$$
+
+## 3. 幂函数极限
+![[power function limit.png]]
