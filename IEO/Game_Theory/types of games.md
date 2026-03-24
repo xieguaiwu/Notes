@@ -1,3 +1,4 @@
+#Economics #定义性 #GameTheory 
 ## **一、按行动顺序划分**
 
 ### **1. 静态博弈（Simultaneous Games）**
