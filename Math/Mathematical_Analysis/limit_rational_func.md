@@ -2,6 +2,10 @@
 attachments:
   - limit_rational_func.png
 tags:
+  - Math
+  - Calculus
+  - 基本原理
+  - 定义性
 title: limit_rational_func
 created: 2025-09-20
 modified: 2025-09-20
