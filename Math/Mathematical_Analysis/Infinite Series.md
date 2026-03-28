@@ -72,6 +72,20 @@ $$\sum_{n=1}^{\infty} \frac{1}{n^p}$$
 - $p = 1$ 时为调和级数，发散
 - $p = 2$ 时，$\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$（收敛）
 
+### 2.4 望远镜级数
+
+**定义**：形如 $\sum_{n=1}^{\infty} (a_n - a_{n+1})$ 的级数，其部分和中中间项相互抵消。
+
+**部分和**：$S_n = a_1 - a_{n+1}$
+
+**收敛条件**：$\lim_{n \to \infty} a_n$ 存在且有限
+
+**常见裂项**：
+- $\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$
+- $\frac{1}{n(n+k)} = \frac{1}{k}\left(\frac{1}{n} - \frac{1}{n+k}\right)$
+
+详见 [[Telescoping Series]]
+
 ## 3. 级数收敛判别法
 
 ### 3.1 积分判别法

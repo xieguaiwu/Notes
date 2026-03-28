@@ -26,6 +26,14 @@ $$a=x_0<x_1<\ldots<x_n=b$$
 结合[[continuity]]以及[[Differentiability and Continuity]]：
 只要函数$f$在区间$[a,b]$上是连续的，那么$f$ is **integrable on $[a,b]$**，于是$\exists\int^b_af(x)dx$
 
+核心公式
+  $$\sum_{i=1}^{n} f(u_i) \Delta x_i$$
+  一般性假设（比初等微积分更宽松）
+   1. $f$ 不必连续 — **允许有间断点**
+   2. $f$ 可取负值 — 面积是有向的
+   3. 子区间宽度可不等 — $\Delta x_i$ 不必相同
+   4. 样本点任意选取 — 左端点、右端点、中点均可
+
 ---
 
 ## 2. Rules of Integrals

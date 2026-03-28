@@ -105,3 +105,5 @@ $$\text{Upper Sum}=\lim_{n\to\infty}\sum_{i=1}^n(M_i\times (t_x-t_{x-1}))$$
 于是会形成两种估计：
 ![[lower_and_upper_sum2.png]]
 $$\text{Lower Sum}\leq\text{Real Area}\leq\text{Upper Sum}$$
+
+ 
