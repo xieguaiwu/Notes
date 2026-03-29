@@ -3,6 +3,7 @@ tags:
   - Physics
   - 定义性
   - 证明
+  - Exercise
 title: Basic Motion Problems
 created: 2026-01-02T15:01:00
 modified:
@@ -102,3 +103,117 @@ $$2x = \frac{2v_0^2 \sin\theta \cos\theta}{g}$$
 那么
 $$x = \frac{v_0^2 \sin\theta \cos\theta}{g}$$
 
+
+## 4. IMP 不同的摩擦力导致不同运动时间 （最简洁的解法）
+>木块在两个场景中受到不一样的摩擦力，但是其初始速度恒定。在图一中它需要$t_1$的时间来减速静止，在图二中则需要$t_2$，求$t_1$ & $t_2$的关系
+
+![[different_frictions_different_times.png]]
+
+匀减速运动中，平均速度 $\bar{v} = \frac{v_0-v}{2}$ 相同，由于$v=0$，那么平均速度是$\bar{v} = \frac{v_0}{2}$则：
+ - $t_1 = \frac{D}{v_0/2} = \frac{2D}{v_0}$
+ - $t_2 = \frac{4D}{v_0/2} = \frac{8D}{v_0}$
+
+同样得 $t_1 : t_2 = 1 : 4$
+
+## 5. 斜面摩擦系数
+>一个物块以 $20 \, \text{m/s}$ 的初速度沿粗糙斜面向上滑动。物块滑动 $2.0 \, \text{s}$ 后瞬时静止。求物块与斜面之间的动摩擦因数。
+
+![[kinetic_friction_of_a_ramp.png]]
+
+沿斜面方向的分力：
+ - 重力沿斜面分量：$mg\sin\theta$（沿斜面向下）
+ - 摩擦力：$\mu_k mg\cos\theta$（沿斜面向下）
+
+列牛顿第二定律方程
+沿斜面方向（取沿斜面向下为正）：
+
+$$mg\sin\theta + \mu_k mg\cos\theta = ma$$
+$$g\sin\theta + \mu_k g\cos\theta = a$$
+
+求解动摩擦因数
+代入数值：
+
+$$10 \times \sin 30^\circ + \mu_k \times 10 \times \cos 30^\circ = 10$$
+$$\mu_k \times 5\sqrt{3} = 5$$
+$$\mu_k = \frac{5}{5\sqrt{3}} = \frac{1}{\sqrt{3}} \approx 0.577 \approx 0.58$$
+
+## 6. 渡河问题-最短时间，理清楚分量
+>一艘船在静水中的最大速度为 $5 \, \text{km/h}$，河宽 $1 \, \text{km}$，水流速度为 $4 \, \text{km/h}$。若要到达正对岸，求最短渡河时间。
+
+关键理解
+
+题目要求到达正对岸（位移垂直于河岸），因此船的**合速度必须垂直于河岸**。
+
+船速分解：
+ - 垂直河岸方向：$v_\perp = 5\sin\alpha$
+ - 沿河岸方向：$v_\parallel = 5\cos\alpha$
+
+抵消水流条件：
+$$5\cos\alpha = 4$$
+$$\cos\alpha = \frac{4}{5}$$
+
+求垂直分速度
+
+由 $\cos\alpha = \frac{4}{5}$，得：
+$$\sin\alpha = \sqrt{1 - \cos^2\alpha} = \sqrt{1 - \frac{16}{25}} = \frac{3}{5}$$
+
+垂直河岸的分速度：
+$$v_\perp = 5 \times \frac{3}{5} = 3 \, \text{km/h}$$
+
+求渡河时间
+$$t = \frac{\text{河宽}}{v_\perp} = \frac{1}{3} \, \text{h}$$
+✦ > 注意区分：
+  > - 若只求最短渡河时间（允许漂移）：船头垂直对岸，$t = \frac{1}{5} \, \text{h}$
+  > - 若要求到达正对岸（合位移垂直）：$t = \frac{1}{3} \, \text{h}$
+
+## IMP 7. 火箭的运动方程
+>一枚模型火箭从地面竖直发射。火箭从静止开始，以加速度 $a$ 向上加速时间 $t$，然后发动机关闭，火箭继续向上运动。求火箭能达到的最大高度。
+
+第一阶段：发动机工作
+
+位移：
+$$h_1 = \frac{1}{2}at^2$$
+
+末速度：
+$$v = v_0 + at = at$$
+
+第二阶段：惯性上升
+
+已知：
+ - 初速度：$v = at$
+ - 末速度：$v' = 0$（最高点）
+ - 加速度：$-g$（仅受重力）
+
+求附加高度：
+$$0 - (at)^2 = 2(-g)h_2$$
+$$h_2 = \frac{(at)^2}{2g} = \frac{a^2t^2}{2g}$$
+
+总高度
+$$h_{\max} = h_1 + h_2 = \frac{at^2}{2} + \frac{a^2t^2}{2g}$$
+
+## 8. 较难的图像识别题目，将v-t graph转换成a-t graph
+>根据给定的 $v\text{-}t$ 图像，判断正确的 $a\text{-}t$ 图像。
+
+![[from_vt_graph_to_at_graph.png]]
+
+**分段分析：**
+
+| 时间段 | $v\text{-}t$ 特征 | 加速度 |
+|---|---|---|
+| $0 \leq t < 1$ s | 水平线，速度恒定 | $a = 0$ |
+| $1 \leq t \leq 4$ s | 曲线下降，斜率为负 | $a < 0$ |
+| $t > 4$ s | $v \approx 0$，静止 | $a = 0$ |
+
+
+### 关键分析：$1 \sim 4$ s 段
+
+加速度 $a = \dfrac{dv}{dt}$，即 $v\text{-}t$ 曲线的**切线斜率**。
+
+观察 $v\text{-}t$ 曲线的变化趋势：
+- $t = 1$ s：切线较陡，斜率为较大负值
+- $t = 4$ s：切线趋于水平，斜率趋近于 0
+
+**结论：加速度从较大负值逐渐增大到 0**
+
+即 $a(t)$ 是**负值且单调递增**的函数。
+![[from_vt_graph_to_at_graph2.png]]

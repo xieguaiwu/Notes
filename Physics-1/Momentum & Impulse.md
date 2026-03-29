@@ -2,8 +2,7 @@
 tags:
   - Physics
   - 定义性
-  - 证明
-  - Dynamics
+  - 基本原理
 title: Momentum & Impulse (动量与冲量)
 created: 2026-03-21T10:00:00
 modified:

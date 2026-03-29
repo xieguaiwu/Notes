@@ -2,6 +2,8 @@
 tags:
   - Physics
   - 定义性
+  - 证明
+  - Exercise
 title: Reference Frames Problems
 created: 2025-11-25T10:02:00
 modified:

@@ -1,5 +1,9 @@
 ---
 tags:
+  - Physics
+  - 证明
+  - Exercise
+  - 定义性
 title: Gravitation Problems
 created: 2026-02-10T19:43:00
 modified:

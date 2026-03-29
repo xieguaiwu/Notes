@@ -1,3 +1,11 @@
+---
+tags:
+  - Physics
+  - 定义性
+title: Reference Frames Problems
+created: 2026-02-13T10:00:00
+modified:
+---
 # Rotational Inertia (转动惯量) - AP Physics 1
 
 ## 1. 基本定义

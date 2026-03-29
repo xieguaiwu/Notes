@@ -3,6 +3,7 @@ tags:
   - 基本原理
   - 定义性
   - Physics
+  - Exercise
 title: Oscillation Problems
 created: 2026-01-04T17:10:00
 modified:

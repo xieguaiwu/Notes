@@ -8,6 +8,8 @@ created: 2025-11-26T08:50:00
 modified:
 ---
 # Dynamic & Friction
+> 牛顿第二定律的更普遍形式：$\vec{F} = \frac{d\vec{p}}{dt}$，详见[[Momentum & Impulse|动量与冲量]]
+
 ## 1. Def
 Friction:
 - Kinetic Friction
