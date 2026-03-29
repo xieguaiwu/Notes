@@ -2,7 +2,7 @@
 tags:
   - Math
   - Calculus
-  - 级数
+  - 定义性
 title: Telescoping Series (望远镜级数)
 created: 2026-03-28T00:00:00
 modified:
