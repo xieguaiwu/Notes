@@ -138,16 +138,25 @@ $$L = \lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right|$$
 - $\lim_{n \to \infty} \frac{n+1}{10} = \infty > 1$
 - 因此级数发散
 
-### 3.5 根值判别法
+### 3.5 根值判别法（Root Test）
 
-**计算**：
-$$L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$$
+#### 定理陈述
 
-- 如果 $L < 1$，级数绝对收敛
-- 如果 $L > 1$（或 $L = \infty$），级数发散
-- 如果 $L = 1$，判别法失效
+设 $\displaystyle\sum_{k=1}^{\infty} a_k$ 是一个非零项级数，且 $\displaystyle\lim_{n\to\infty} \sqrt[n]{|a_n|} = L$，其中 $L$ 是一个实数。
 
-**例子**：判断 $\sum_{n=1}^{\infty} \left(\frac{n}{2n+1}\right)^n$ 的收敛性
+#### 结论
+
+- 若 $L < 1$，则级数 $\displaystyle\sum_{k=1}^{\infty} a_k$ **绝对收敛**，因此该级数收敛。
+- 若 $L > 1$，则级数 $\displaystyle\sum_{k=1}^{\infty} a_k$ **发散**。
+- 若 $L = 1$，该判别法**无法给出结论**，需用其他方法判断敛散性。
+
+#### 说明
+
+根值判别法（Cauchy's Root Test）是判断无穷级数收敛性的重要方法。$L = 1$ 是临界情况，例如调和级数 $\sum \frac{1}{n}$（发散）与 $p$-级数 $\sum \frac{1}{n^2}$（收敛）都满足 $\lim_{n\to\infty} \sqrt[n]{|a_n|} = 1$。
+
+#### 例子
+
+判断 $\sum_{n=1}^{\infty} \left(\frac{n}{2n+1}\right)^n$ 的收敛性：
 - $\sqrt[n]{a_n} = \frac{n}{2n+1}$
 - $\lim_{n \to \infty} \frac{n}{2n+1} = \frac{1}{2} < 1$
 - 因此级数收敛
@@ -190,9 +199,39 @@ $$\sum_{n=0}^{\infty} c_n (x - a)^n = c_0 + c_1(x - a) + c_2(x - a)^2 + \cdots$$
 
 的级数，其中 $c_n$ 是系数，$a$ 是中心点。
 
-### 5.2 收敛半径与收敛区间
+### 5.2 幂级数的收敛/发散性质
 
-**收敛半径 R**：幂级数在 $|x - a| < R$ 时绝对收敛，在 $|x - a| > R$ 时发散。
+#### 定理
+
+**(a)** 若幂级数 $\displaystyle\sum_{k=0}^{\infty} a_k x^k$ 在某数 $x_0 \ne 0$ 处收敛，则对于所有满足 $|x| < |x_0|$ 的数 $x$，该级数**绝对收敛**。
+
+**(b)** 若幂级数 $\displaystyle\sum_{k=0}^{\infty} a_k x^k$ 在某数 $x_1$ 处发散，则对于所有满足 $|x| > |x_1|$ 的数 $x$，该级数**发散**。
+
+#### 说明
+
+该定理描述了幂级数收敛域的基本性质：收敛点内部区域绝对收敛，发散点外部区域发散。这是定义收敛半径的基础定理。
+
+### 5.3 收敛半径与收敛区间
+
+#### 收敛半径存在性定理
+
+对于幂级数 $\displaystyle \sum_{k=0}^{\infty} a_k (x - c)^k$，以下三种情况**有且仅有一种**成立：
+
+1. 级数仅在 $x = c$ 处收敛。（收敛半径 $R = 0$）
+2. 级数对所有 $x$ 都绝对收敛。（收敛半径 $R = \infty$）
+3. 存在一个正数 $R$，使得：
+   - 当 $|x - c| < R$ 时，级数**绝对收敛**
+   - 当 $|x - c| > R$ 时，级数**发散**
+   - 在边界 $|x - c| = R$ 处的收敛性需**单独检验**
+
+此定理也称为**收敛半径存在性定理**，它保证了任何幂级数的收敛域必为以下三种形式之一：
+- 单点集 $\{c\}$（$R = 0$）
+- 整个实数轴 $\mathbb{R}$ 或复平面 $\mathbb{C}$（$R = \infty$）
+- 开区间 $(c - R, c + R)$，边界需单独分析
+
+#### 收敛半径 R
+
+幂级数在 $|x - a| < R$ 时绝对收敛，在 $|x - a| > R$ 时发散。
 
 **收敛半径的计算**（使用比值判别法）：
 $$R = \lim_{n \to \infty} \left|\frac{c_n}{c_{n+1}}\right| \quad \text{或} \quad R = \lim_{n \to \infty} \frac{1}{\sqrt[n]{|c_n|}}$$
@@ -207,7 +246,7 @@ $$R = \lim_{n \to \infty} \left|\frac{c_n}{c_{n+1}}\right| \quad \text{或} \qua
 - 收敛半径 $R = \infty$
 - 收敛区间：$(-\infty, \infty)$
 
-### 5.3 幂级数的运算
+### 5.4 幂级数的运算
 
 **逐项求导**：
 $$\frac{d}{dx}\left[\sum_{n=0}^{\infty} c_n (x - a)^n\right] = \sum_{n=1}^{\infty} n c_n (x - a)^{n-1}$$
