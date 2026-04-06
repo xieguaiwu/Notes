@@ -182,6 +182,8 @@ $$0 = \Delta\vec{p}_1 + \Delta\vec{p}_2 = \Delta\vec{p}_{total}$$
 
 ## 5. 碰撞 (Collisions)
 
+> 详细碰撞问题与例题见 [[Collision Problems|碰撞问题]]
+
 ### 5.1 碰撞的分类
 
 ```mermaid
