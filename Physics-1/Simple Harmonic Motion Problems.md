@@ -26,4 +26,14 @@ modified:
 $$\left(\frac{x}{A}\right)^2 = \frac{3}{4}$$
 $$|x| = A \cdot \frac{\sqrt{3}}{2} = 0.5 \times \frac{\sqrt{3}}{2} = \frac{\sqrt{3}}{4} \approx 0.433 \, \text{m}$$
 
+## Q2 （基本读图题）
+>一个物体被连接在弹簧上做简谐运动，请找到与其位置图对应的能量图
 
+![[pos_change_and_ke_change.png]]
+
+问题的关键是要注意到**物体在一开始时是处于平衡态的**，只有**当位置小于振幅才会有能量**
+
+另一方面，尽管位置有正有负，但是能量始终$\geq 0$
+
+能量图如下：
+![[pos_change_and_ke_change2.png]]

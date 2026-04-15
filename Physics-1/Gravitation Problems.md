@@ -29,3 +29,19 @@ $$U = -\frac{G m_1 m_2}{d}$$
 - 月球 $\leftrightarrow$ 恒星$U_{ms} = -\dfrac{G M_m M_s}{D-r}$
 $$U_{\text{total}} = U_{Pm} + U_{Ps} + U_{ms}$$
 $$U_{\text{total}} = -\frac{G M_P M_m}{r} - \frac{G M_P M_s}{D} - \frac{G M_m M_s}{D-r}$$
+
+## 2. IMP Two-Body in Circle
+> 两颗质量均为 $M$ 的相同恒星，相距为 $D$。它们绕系统的质心做圆周运动，线速度大小为 $v$，如图所示。求 $v$ 的表达式。
+- 由于两颗恒星质量相等（均为 $M$），系统质心位于两星连线的中点
+- 每颗星到质心的轨道半径 $r = \dfrac{D}{2}$
+- 每颗星受到的万有引力来自另一颗星，距离为 $D$
+
+![[two_body_system.png]]
+
+对任一恒星，万有引力提供向心力$$\frac{GM^2}{D^2} = M \cdot \frac{v^2}{r}$$
+
+代入 $r = \dfrac{D}{2}$：$$\frac{GM^2}{D^2} = M \cdot \frac{v^2}{D/2} = \frac{2Mv^2}{D}$$
+$$v^2 = \frac{GM}{2D}$$
+$$v = \sqrt{\frac{GM}{2D}}$$
+
+

@@ -10,6 +10,8 @@ modified:
 ---
 # Circular Motion Problems
 [[Circular Motion & Gravitation]]
+
+
 ## 1.
 >一枚硬币以恒定速度 $v_0$ 在圆锥内表面上沿圆形路径滚动，如图所示。硬币路径的曲率半径为 $r_0$，圆锥表面与水平面的夹角为 $\theta_0$。然后将硬币移到另一个圆锥，该圆锥表面与水平面的夹角为 $\theta_1$，使得$\tan\theta_1 = 9 \tan\theta_0$。且硬币以恒定速度 $v_1$ 沿曲率半径为 $r_1 = \dfrac{1}{4} r_0$ 的圆周运动。如何表示 $v_1$ 与 $v_0$ 的关系？
 

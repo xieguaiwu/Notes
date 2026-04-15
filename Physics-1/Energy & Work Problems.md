@@ -183,4 +183,10 @@ $h = L(1 - \cos\theta)$
 - 新行星上$$g' = \dfrac{1}{2}g$$
 $$K_P = mg'L(1 - \cos\theta) = m \cdot \frac{g}{2} \cdot L(1 - \cos\theta) = \frac{1}{2}K_E$$
 
+## 8
+>已知两个小球$X$和$Y$质量相同，各自都为$m_0$，它们以$v_0$的速度前进。若不计摩擦力，求第二部分的机械能表达式
 
+![[connected_balls_and_gpe.png]]
+首先，两个球每个都有着**相同的机械能**，所以它们的总机械能$$K_E=2\times\frac{1}{2}m_0\cdot v_0^2$$
+另一方面，考虑到只有球$Y$有高度差，所以总势能只有单球的重力势能$$U_{total}=m_0gh$$
+故总机械能为$$m_0v_0^2+m_0gh$$
