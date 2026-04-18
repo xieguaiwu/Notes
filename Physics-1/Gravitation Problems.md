@@ -1,0 +1,65 @@
+---
+tags:
+  - Physics
+  - 证明
+  - Exercise
+  - 定义性
+title: Gravitation Problems
+created: 2026-02-10T19:43:00
+modified:
+---
+# Gravitation Problems
+
+## 1. IMP Three-Body Gravitation
+>计算一个三体系统的引力势能：
+- $\textbf{行星}（Planet）$：质量 $M_P$
+- $\textbf{月球}（Moon）$：质量 $M_m$，位于行星右侧，距离行星中心为 $r$
+- $\textbf{恒星}（Star）$：质量 $M_s$，位于月球右侧，与行星中心的距离为 $D$
+
+![[three_body_gravity_problem.png]]
+关键知识点在于引力势能公式，其推导过程见[[Gravitational Potential Energy]]：
+对于两个质量分别为 $m_1$、$m_2$，相距为 $d$ 的质点，其引力势能为：
+$$U = -\frac{G m_1 m_2}{d}$$
+
+多体系统的总引力势能等于所有$**无序对**的引力势能之和（每对只计算一次）。
+对于 $n$ 个质点的系统，共有 $\dfrac{n(n-1)}{2}$ 对相互作用。
+在题目中：
+- 行星 $\leftrightarrow$ 月球 $U_{Pm} = -\dfrac{G M_P M_m}{r}$
+- 行星 $\leftrightarrow$ 恒星$U_{Ps} = -\dfrac{G M_P M_s}{D}$ 
+- 月球 $\leftrightarrow$ 恒星$U_{ms} = -\dfrac{G M_m M_s}{D-r}$
+$$U_{\text{total}} = U_{Pm} + U_{Ps} + U_{ms}$$
+$$U_{\text{total}} = -\frac{G M_P M_m}{r} - \frac{G M_P M_s}{D} - \frac{G M_m M_s}{D-r}$$
+
+## 2. IMP Two-Body in Circle
+> 两颗质量均为 $M$ 的相同恒星，相距为 $D$。它们绕系统的质心做圆周运动，线速度大小为 $v$，如图所示。求 $v$ 的表达式。
+- 由于两颗恒星质量相等（均为 $M$），系统质心位于两星连线的中点
+- 每颗星到质心的轨道半径 $r = \dfrac{D}{2}$
+- 每颗星受到的万有引力来自另一颗星，距离为 $D$
+
+![[two_body_system.png]]
+
+对任一恒星，万有引力提供向心力$$\frac{GM^2}{D^2} = M \cdot \frac{v^2}{r}$$
+
+代入 $r = \dfrac{D}{2}$：$$\frac{GM^2}{D^2} = M \cdot \frac{v^2}{D/2} = \frac{2Mv^2}{D}$$
+$$v^2 = \frac{GM}{2D}$$
+$$v = \sqrt{\frac{GM}{2D}}$$
+
+## 3.
+>有三个球体，每个球体与其他两个球体的距离均为 $r$，如图所示。
+
+![[three_balls_with_gpe.png]]
+
+三球构成等边三角形，共3对质点：
+
+| 球体对 | 质量 | 间距 |
+|--------|------|------|
+| 左下 ↔ 右下 | $m$ 和 $m$ | $r$ |
+| 左下 ↔ 顶部 | $m$ 和 $2m$ | $r$ |
+| 右下 ↔ 顶部 | $m$ 和 $2m$ | $r$ |
+
+$$U_1 = -\frac{G \cdot m \cdot m}{r} = -\frac{Gm^2}{r}$$
+$$U_2 = -\frac{G \cdot m \cdot 2m}{r} = -\frac{2Gm^2}{r}$$
+$$U_3 = -\frac{G \cdot m \cdot 2m}{r} = -\frac{2Gm^2}{r}$$
+$$U_{\text{总}} = U_1 + U_2 + U_3 = -\frac{Gm^2}{r} - \frac{2Gm^2}{r} - \frac{2Gm^2}{r} = -\frac{5Gm^2}{r}$$
+
+

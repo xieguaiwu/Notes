@@ -1,0 +1,139 @@
+---
+tags:
+  - Physics
+  - 定义性
+  - Exercise
+  - 证明
+title: FBD Problems
+created: 2025-12-04T09:29:00
+modified:
+---
+# FBD Problems
+[[Reference Frames Problems]]
+
+## IMP 1. Contact Force in Non-contact Situation
+>The figure presents a diagram of 3 blocks on a horizontal **rough surface**. From left to right the blocks are labeled Block 1, Block 2, and Block 3. Block 1 is the smallest and Block 2 is the largest. **The blocks are touching**. A rightward pointing arrow labeled P points toward the left side of Block 1.
+
+![[FBD_for_3_blocks.png]]
+有$\vec{P}$推动三个方块，$\vec{F_C}$是方块2和方块3之间的contact force，另一方面，已知还存在$F_f$，$F_N$和$F_G$三个力
+对方块2做受力分析
+
+注意：由于$P$并不与方块2直接接触，所以**方块2在左侧并不直接受$P$，而只受方块1的$F_C$**
+于是其受力分析如下：
+![[FBD_for_3_blocks_Answer.png]]
+
+## 2.
+>在figure 1的情况中对Pin做受力分析，其形式如figure 2
+
+
+![[FBD_Table_Acceleration.png]]
+若要知道其加速度，须先计算合力，合力方向即加速度方向
+$$\sum F_y=3-1=2N$$
+$$\sum F_x=-8+5=-3N$$
+注意：考虑到右侧是正方向，所以必须意识到 **$|\vec{F_4}|$是负数**，即$\vec{F_4}=-8N$
+
+## IMP 3. Intermediate Static Friction
+![[intermediate_friction_when_moving_together.png]]
+联系[[Dynamic & Friction]]的**1.2**中关于静摩擦的知识点
+
+若A和B**不受加速度**，那么**A不受摩擦力**
+在A和B共同运动时：
+- 若有共同加速度，且没有相对滑动，那么**A受static friction，提供加速度**
+
+在A和B间有相对滑动时，**A受kinetic friction**
+
+另一方面，直接与地面接触的B会受到摩擦力
+
+## IMP 4. Gravity & Friction
+>在这个系统的两边分别给予外力，考虑中间四个相互挤压的质量相同物体之间的摩擦力
+![[friction_by_gravity_and_squeezing.png]]
+注意：必须意识到这些物体之间除了压力之外**还受到重力**
+
+首先，**1和4会受到摩擦力作用**，这是自然的。
+另一方面，1和4会受到重力作用，从而**令1、2和3、4间存在相对运动**，因此2的左侧和3的右侧**都受到竖直向上的摩擦力**
+2和3也会受到竖直向下的重力作用，但是它们两侧的竖直向上的摩擦力会抵消掉重力作用，因此，**2和3之间没有相对运动**，它们之间**没有摩擦力**
+
+## IMP 5. 有角度的外力和支持力
+![[exerted_force_and_normal_force.png]]
+如图所示，一个物体G被一个与水平面有夹角$\theta=40^\circ$的外力作用
+外力包括垂直分量$\vec{w}$和水平分量$\vec{v}$，**其中$\vec{w}$与支持力$\vec{F_N}$方向一致**
+
+此时，物体的**支持力小于重力**，因为一部分支持力被垂直分量分担了：
+$$F_N=m\cdot g-F\cdot\sin\theta$$
+
+## IMP 6. 墙上的梯子
+>如图所示，有一个梯子斜在墙面和地面间，求其在地面上受到的摩擦力$F_{fr}$的情况
+
+![[ladder_on_the_wall.png]]
+在受力分析中，必须意识到的是，**摩擦力所抵消掉的是墙面对梯子的支持力**，只有当
+$$\vec{F_{fr}}+\vec{F_N}=0N$$
+时，梯子才能静止地立在原地，所以自然，在数值上
+$$F_{fr}=F_N$$
+
+## 7. 
+>一个箱子通过绳子以一定角度被拉动，在粗糙水平面上保持恒定速度移动。当摩擦系数增加但**速度仍保持不变时**，需要重新分析受力情况。
+
+原先的受力分析如下
+![[box_and_changing_fiction_factor.png]]
+
+在初始状态下，箱子匀速运动，说明：
+- $$\sum F=T-(mg-T\cdot\sin\theta)\mu_k=0N$$
+- 水平方向：牵引力的水平分量等于摩擦力 $T\cdot\cos\theta = f_k = \mu_k N$
+- 垂直方向：支持力加上绳子的垂直分量等于重力 $F_N + T\cdot\sin\theta = mg$，因此 $F_N = mg - T\cdot\sin\theta$
+
+当摩擦系数$\mu_k$增加但仍保持匀速运动时：
+- 由于要保持匀速，水平方向仍需满足 $T'\cdot\cos\theta' = f_k' = \mu_k'\cdot F_N'$
+- 由于$\mu_k' > \mu_k$，为了保持平衡，**牵引力$T$必须增加**
+- 同时，由于摩擦力等于$(mg-T'\cdot\sin\theta')\mu_k'$，**所以为了增大摩擦力以保持和外力为零，$\theta$要么不变，要么变小**
+
+这是一种可能的受力分析图
+![[box_and_changing_fiction_factor2.png]]
+
+## 8. IMP 移动不与地面直接接触的物体
+>盒子A放在盒子B上，盒子B放在平坦粗糙的地板上，如图1所示。一根质量可忽略的绳子拉动盒子A，盒子一起以恒定速度向右运动。盒子A与盒子B之间的摩擦力大小为 $f_{\text{A-B}}$，盒子B与地板之间的摩擦力大小为 $f_{\text{B-F}}$。如图2所示，另一块放在盒子A的顶部，绳子再次拉动盒子，使它们一起以**恒定速度**运动。在图1和图2之间，$f_{\text{A-B}}$ 和 $f_{\text{B-F}}$ 如何变化？
+
+![[five_boxes_and_friction.png]]
+
+- 因为 A 和 B **无相对运动**，A 的加速度为 0 $\Rightarrow$ A 所受合力为 0
+- A 受到向右的拉力 $T$，必须有向左的摩擦力 $f_{\text{A-B}} = T$
+- 而 $T$ 必须**等于地面摩擦力** $f_{\text{B-F}}$（整体合力为 0）
+- 地面摩擦力 $f_{\text{B-F}} = \mu_k \times$ 总压力
+- 加了块后，总正压力增加 → $f_{\text{B-F}}$ 增加 $\Rightarrow$ $T$ 增加 $\Rightarrow$ $f_{\text{A-B}}$ 增加
+
+**答案**：$f_{\text{A-B}}$ 和 $f_{\text{B-F}}$ 都增加
+
+## 9.  IMP
+>物块与水平表面之间的摩擦可忽略不计。当一个小圆盘附着在物块 B 的顶部时，物块 A 与 B 之间的法向力大小为 $F_{AB}$，物块 B 与 C 之间的法向力大小为 $F_{BC}$。
+>如果将小圆盘移至物块 C 的顶部，并用相同的恒力 $F$ 作用在物块 A 上重复实验，描述 $F_{AB}$ 和 $F_{BC}$ 的变化情况
+
+![[change_of_single_body_and_same_net_force.png]]
+
+### 基本分析
+
+设小圆盘质量为 $m_d$，系统总质量为：
+$$M = m_A + m_B + m_C + m_d$$
+
+由于总质量和推力 $F$ 都不变，**系统加速度始终保持不变**：
+$$a = \frac{F}{M}$$
+
+### 情况一：圆盘在 B 上
+
+- **$F_{AB}$**：A 推着 B（含圆盘）和 C 一起运动
+  $$F_{AB} = (m_B + m_d + m_C) \cdot a$$
+
+- **$F_{BC}$**：B 推着 C 运动（圆盘在 B 上，不随 C）
+  $$F_{BC} = m_C \cdot a$$
+
+### 情况二：圆盘在 C 上
+
+- **$F_{AB}'$**：A 推着 B 和 C（含圆盘）一起运动
+  $$F_{AB}' = (m_B + m_C + m_d) \cdot a = F_{AB}$$
+  
+  **$F_{AB}$ 不变**
+
+- **$F_{BC}'$**：B 推着 C（含圆盘）运动
+  $$F_{BC}' = (m_C + m_d) \cdot a > m_C \cdot a = F_{BC}$$
+  
+  **$F_{BC}$ 增加**
+
+**归根结底，这道题目的关键在于总净力大小不变**
