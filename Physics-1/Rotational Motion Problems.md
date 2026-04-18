@@ -8,7 +8,27 @@ created: 2026-03-29T10:58:00
 modified:
 ---
 # Rotational Motion Problems
-## Q1
+
+**相关笔记：**
+- [[AP 1 Rotation - Complete Review]] - 转动完整复习笔记
+- [[Rotational Inertia]] - 转动惯量详解
+- [[Rotational Equilibrium]] - 转动平衡
+- [[Circular Motion Problems]] - 圆周运动问题
+
+---
+## 平行轴定理（Parallel Axis Theorem）
+平行轴定理描述了刚体绕不同平行轴的转动惯量之间的关系。设刚体的质心为$C$，刚体对通过质心且与某轴平行的轴的转动惯量为$I_{\text{cm}}$，两轴之间的垂直距离为$d$，则刚体对另一轴的转动惯量$I$满足：
+
+$$I = I_{\text{cm}} + Md^2$$
+
+其中，$M$为刚体的总质量，$d$是两平行轴之间的垂直距离。
+
+**说明**：  
+- 该定理仅适用于**平行轴**（两轴方向相同，仅位置不同）。  
+- 质心轴（通过质心的轴）是转动惯量最小的轴（对于给定方向的平行轴而言）。  
+- 应用场景：当已知刚体对质心轴的转动惯量时，可快速计算其对其他平行轴的转动惯量，无需重新积分。
+
+## 1
 >一个摩天轮半径为 $R$，以恒定周期在竖直平面内逆时针匀速转动，车厢以恒定速率 $v$ 运动。当学生随车厢经过最高点 A时，其线速度和角速度是否恒定？
 
 ![[different_points_of_rotational_motion.png]]
@@ -31,7 +51,7 @@ modified:
 
 结论：角速度 **Constant**
 
-## Q2
+## 2
 > 一根均匀杆在点 P 通过枢轴固定。一根与水平方向成 30° 角的绳子将杆保持在平衡状态，如图所示（侧视图）。表示枢轴对杆施加的力的方向
 
 ![[peviot_bar_and_string.png]]
@@ -54,3 +74,86 @@ modified:
 
 合方向为
 ![[peviot_bar_and_string2.png]]
+
+## 3. 计算复杂旋转的转动惯量
+>两个质量分别为$2.0 \, \text{kg}$和$3.0 \, \text{kg}$的球体安装在一个$3.0 \, \text{m}$长的轻杆上（杆的质量可忽略），位置如图所示。求杆左端的球体 - 杆系统的转动惯量
+
+![[two_spheres_on_rod_and_interia.png]]
+
+转动惯量的计算公式为 $I = \sum m_i r_i^2$（$m_i$ 为质点质量，$r_i$ 为质点到转轴的距离）。  
+关键在于要**分开计算惯量**
+
+1. **确定各球到转轴（左端）的距离**：  
+   - 左边球（$m_1 = 2.0 \, \text{kg}$）：距离左端 $r_1 = 0.5 \, \text{m}$。  
+   - 右边球（$m_2 = 3.0 \, \text{kg}$）：杆长$3.0 \, \text{m}$，右边球距离右端$0.5 \, \text{m}$，因此到左端的距离 $r_2 = 3.0 \, \text{m} - 0.5 \, \text{m} = 2.5 \, \text{m}$。  
+
+2. **计算转动惯量**：  
+   $$I = m_1 r_1^2 + m_2 r_2^2 = 2.0 \, \text{kg} \times (0.5 \, \text{m})^2 + 3.0 \, \text{kg} \times (2.5 \, \text{m})^2$$  
+   $$= 2.0 \times 0.25 + 3.0 \times 6.25 = 0.5 + 18.75 = 19.25 \, \text{kg} \cdot \text{m}^2 \approx 19 \, \text{kg} \cdot \text{m}^2$$  
+
+## 4. 计算点在旋转中的位移量
+>点A位于地球赤道，距离地轴$R_E = 6.38 \times 10^6 \, \text{m}$。点B位于北纬$53^\circ$，距离地轴$r$。地球自转一周时，求点B运动的总距离
+
+![[point_on_earth_rotation.png]]
+
+点B绕地轴做圆周运动，轨迹半径为$r = R_E \cos53^\circ$（纬度$53^\circ$，地轴到点B的距离为地球半径在垂直地轴方向的投影）。圆周运动的周长公式为$C = 2\pi r$。  
+
+1. **计算点B到地轴的距离**：  
+   已知$\cos53^\circ \approx 0.6$，$R_E = 6.38 \times 10^6 \, \text{m}$，因此：  
+   $$r = 6.38 \times 10^6 \, \text{m} \times 0.6 \approx 3.828 \times 10^6 \, \text{m}$$ 
+2. **计算周长（运动距离）**：  
+   $$C = 2\pi r \approx 2 \times 3.14 \times 3.828 \times 10^6 \, \text{m} \approx 24.04 \times 10^6 \, \text{m} \approx 2.4 \times 10^7 \, \text{m}$$
+ 
+## 5. IMP 不同点的旋转惯量
+> 一根均匀的米尺在图中所示位置有三个标记点。米尺绕其中心的转动惯量为$\frac{1}{12}ML^2$。比较米尺绕A、B、C点的转动惯量$I_A$、$I_B$、$I_C$的大小关系
+
+![[different_points_with_different_interias.png]]
+
+转动惯量的计算需用**平行轴定理**：$I = I_{\text{cm}} + Md^2$，其中$I_{\text{cm}}$是绕质心的转动惯量，$d$是转轴到质心的距离。  
+
+1. **确定质心位置**：  
+   均匀米尺的质心在中心（$L/2$处，即$50 \, \text{cm}$）。  
+
+2. **计算各点到质心的距离**：  
+   - 点A（$20 \, \text{cm}$）：$d_A = |50 - 20| = 30 \, \text{cm} = 0.3L$。  
+   - 点B（$40 \, \text{cm}$）：$d_B = |50 - 40| = 10 \, \text{cm} = 0.1L$。  
+   - 点C（$60 \, \text{cm}$）：$d_C = |50 - 60| = 10 \, \text{cm} = 0.1L$。  
+
+3. **应用平行轴定理**：  
+   绕质心的转动惯量$I_{\text{cm}} = \frac{1}{12}ML^2$（题目给定）。  
+   - $I_A = I_{\text{cm}} + M d_A^2 = \frac{1}{12}ML^2 + M(0.3L)^2 = \frac{1}{12}ML^2 + 0.09ML^2 \approx 0.173ML^2$。  
+   - $I_B = I_{\text{cm}} + M d_B^2 = \frac{1}{12}ML^2 + M(0.1L)^2 = \frac{1}{12}ML^2 + 0.01ML^2 \approx 0.093ML^2$。  
+   - $I_C = I_{\text{cm}} + M d_C^2 = \frac{1}{12}ML^2 + M(0.1L)^2 = 0.093ML^2$（与$I_B$相等）。  
+
+因此，$I_A > I_B = I_C$。  
+
+## 6. 不同作用点下的不同力矩
+> 一个质量为 $m$ 的标志悬挂在质量也为 $m$ 的水平杆的右端，杆左端绕轴转动。如图1所示，一根竖直绳子连接到杆的右端，绳子施加的力矩大小为$\tau_1$以保持杆和标志平衡。在图2中，**绳子和标志移到杆的中点**，系统再次平衡，绳子施加的力矩大小为$\tau_2$。表示$\tau_2$与$\tau_1$的关系
+
+![[rotational_equilibrium_at_different_points.png]]
+
+### Figure 1 分析（绳子和标志在右端）：  
+- 杆的重心在杆的中点（距离左端$L/2$，$L$为杆长），杆的重力力矩：$mg \cdot \frac{L}{2}$（顺时针）。  
+- 标志的重力力矩：$mg \cdot L$（顺时针，因标志在右端，距离左端$L$）。 $T=mg$
+- 绳子的拉力力矩$\tau_1$（逆时针）平衡总顺时针力矩：  
+  $$\tau_1 = mg \cdot \frac{L}{2} + mg \cdot L = \frac{3}{2}mgL$$  
+
+### Figure 2 分析（绳子和标志在中点，距离左端$L/2$）：  
+- 杆的重力力矩仍为$mg \cdot \frac{L}{2}$（顺时针）。  
+- 标志的重力力矩：$mg \cdot \frac{L}{2}$（顺时针，因标志在中点，距离左端$L/2$）。  
+- 绳子的拉力力矩$\tau_2$（逆时针）平衡总顺时针力矩：  
+  $$\tau_2 = mg \cdot \frac{L}{2} + mg \cdot \frac{L}{2} = mgL$$  
+
+### 比较$\tau_2$与$\tau_1$：  
+由$\tau_1 = \frac{3}{2}mgL$，得$mgL = \frac{2}{3} \cdot \frac{3}{2}mgL = \frac{2}{3}\tau_1$，即$$\tau_2 = \frac{2}{3}\tau_1$$
+
+## 7. 不同点的旋转与线速度
+> 两个硬币放在半径为$R$的旋转圆形平台上，如图所示。硬币逆时针旋转，无滑动，角速度恒定。硬币A距离平台中心$R$，线速度为$v_A$；硬币B距离平台中心$\frac{R}{2}$，线速度为$v_B$。求$\frac{v_A}{v_B}$的比值 
+
+![[linear_speed_from_different_points_when_rotating.png]]
+
+   - 硬币A的线速度：$v_A = \omega r_A = \omega R$  
+   - 硬币B的线速度：$v_B = \omega r_B = \omega \cdot \frac{R}{2}$  
+  $$\frac{v_A}{v_B} = \frac{\omega R}{\omega \cdot \frac{R}{2}} = \frac{R}{\frac{R}{2}} = 2$$  
+
+
