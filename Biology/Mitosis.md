@@ -185,12 +185,14 @@ graph TB
 
 | 组合 | 活动阶段 | 功能 |
 |------|----------|------|
-| Cyclin + CDK | G₁ 期 | 启动细胞周期 |
-| 不同 Cyclin/CDK 组合 | S 期 | 启动 DNA 复制 |
-| 不同 Cyclin/CDK 组合 | G₂ 期 | 准备有丝分裂 |
-| 不同 Cyclin/CDK 组合 | M 期 | 启动核分裂 |
+| Cyclin D + CDK4/6 | G₁ 期 | 启动细胞周期，磷酸化 Rb 蛋白 |
+| Cyclin E + CDK2 | G₁/S 转换 | 启动 DNA 复制 |
+| Cyclin A + CDK2 | S 期 | 维持 DNA 复制，防止重复复制 |
+| Cyclin B + CDK1 | M 期 | 启动核分裂（MPF） |
 
 $$\text{Cyclin} + \text{CDK} \rightarrow \text{启动特定细胞周期活动}$$
+
+> **详细内容**：[[Cyclin and CDK|Cyclin & CDK 详细机制]] - 包含完整的调控机制、检查点控制、与癌症的关系
 
 ### 4.2 检查点 (Checkpoints)
 
@@ -389,5 +391,6 @@ graph TB
 ## 11. 相关笔记
 
 - [[Cellular Growth|细胞生长]] - 细胞周期与间期的详细内容
+- [[Cyclin and CDK|Cyclin & CDK]] - 细胞周期蛋白与周期蛋白依赖性激酶的详细机制
 - [[Meiosis|减数分裂]] - 产生配子的减数分裂过程（与有丝分裂对比）
 - [[Mendelian Genetics|孟德尔遗传学]] - 遗传的基本规律
