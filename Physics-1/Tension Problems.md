@@ -180,26 +180,16 @@ a = \frac{2m_0g}{5m_0}
 a = \frac{2}{5} g
 $$
 
-## 7. 求三个连通体中间的张力
+## 7. IMP 求三个连通体中间的张力
 >下列哪个表达式正确表示连接质量为 $m_2$ 和 $m_3$ 的物块之间绳子的张力 $T$？
 
 ![[intermediate_tension_between_three_connected_bodies.png]]
 
 ### 受力分析
-设系统加速度大小为 $a$（$m_2$ 和 $m_3$ 向右加速，$m_1$ 向下加速）。
-- 对 $m_1$：$m_1 g - T_2 = m_1 a$
-- 对 $m_2$：$T_2 - T = m_2 a$
-- 对 $m_3$：$T = m_3 a$
+总动力$$\sum F=m_1g$$
 
-由第三式得：
-$$a = \frac{T}{m_3}$$
-代入第二式：$$T_2 = T + m_2 a = T + m_2 \cdot \frac{T}{m_3} = T\left(1 + \frac{m_2}{m_3}\right)$$
-
-代入第一式：$$m_1 g - T\left(1 + \frac{m_2}{m_3}\right) = m_1 \cdot \frac{T}{m_3}$$
-
-整理得：$$m_1 g = T\left(1 + \frac{m_2}{m_3} + \frac{m_1}{m_3}\right) = T \cdot \frac{m_1 + m_2 + m_3}{m_3}$$
-
-$$T = \frac{m_1 m_3 g}{m_1 + m_2 + m_3}$$
+由于系统共享加速度，所以$$a=\frac{m_1g}{m_1+m_2+m_3}$$
+由于要求的绳子张力直接对质量为$m_3$的木块起作用，所以应用牛顿第二定律$$T=m_3a=\frac{m_3\cdot m_1g}{m_1+m_2+m_3}$$
 
 ## 8. 弹性势能、张力与重力势能
 >情景如图所示，忽略摩擦力

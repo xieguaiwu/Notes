@@ -91,7 +91,7 @@ $$D_2 = \frac{1}{k-1} \cdot D_1$$
 关键点：物块在斜面上匀速下滑时，受力平衡：**重力沿斜面分量等于摩擦力**。
 
 匀速运动时合力为零$$f = mg\sin\theta$$
-因此区间2和区间4的摩擦力大小相同。
+因此区间2和区间4的**摩擦力大小相同**。
 
 - 区间2：位移 $s_2 = 3v_0 \cdot t_0$
 - 区间4：位移 $s_4 = 2v_0 \cdot t_0$
@@ -122,5 +122,20 @@ $$g\sin\theta + \mu_k g\cos\theta = a$$
 $$10 \times \sin 30^\circ + \mu_k \times 10 \times \cos 30^\circ = 10$$
 $$\mu_k \times 5\sqrt{3} = 5$$
 $$\mu_k = \frac{5}{5\sqrt{3}} = \frac{1}{\sqrt{3}} \approx 0.577 \approx 0.58$$
+
+## 5. 机械能总量
+>一个物块从静止释放，沿无摩擦的$30^\circ$斜面滑下。当物块到达底部时，block - Earth系统的机械能为$E_0$。重复实验时，在物块滑动过程中施加大小为$F$的水平力和竖直力，当物块到达底部时，求block - Earth系统的机械能与$E_0$的大小关系
+
+![[Mechanical_energy_block-Earth_system_sliding_block.png]]
+
+机械能的变化由**除重力外的其他力做功**决定（功能关系：$\Delta E = W_{\text{其他力}}$）。  
+
+- 第一次实验：无摩擦，只有重力做功，机械能守恒，故$E_0$等于初始重力势能（初始动能为0，机械能 = 重力势能）。  
+- 第二次实验：施加水平力$F$和竖直力$F$。物块位移沿斜面向下，设位移大小为$d$
+  - 水平力$F$与位移的夹角为$30^\circ$（因斜面倾角$30^\circ$，水平力与位移方向的夹角为$30^\circ$），做功$W_{\text{水平}} = F \cdot d \cdot \cos30^\circ$（正功，因$\cos30^\circ > 0$）。  
+  - 竖直力$F$（假设向下）与位移的夹角为$30^\circ$，做功$W_{\text{竖直}} = F \cdot d \cdot \cos30^\circ$
+  - 总功$W_{\text{其他力}} = W_{\text{水平}} + W_{\text{竖直}} = Fd (\cos30^\circ + \cos30^\circ) > 0$（正功）。  
+
+根据功能关系，机械能变化$\Delta E = W_{\text{其他力}} > 0$，即第二次实验的机械能$E = E_0 + \Delta E > E_0$。  
 
 

@@ -1,10 +1,9 @@
 ---
 tags:
   - Physics
-  - AP1
-  - Review
-  - Rotation
-  - 填空练习
+  - 基本原理
+  - 定义性
+  - Exercise
 title: AP 1 Rotation - Complete Review
 created: 2026-04-18
 modified:

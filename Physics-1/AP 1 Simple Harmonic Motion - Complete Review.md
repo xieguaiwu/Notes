@@ -1,10 +1,9 @@
 ---
 tags:
   - Physics
-  - AP1
-  - Review
-  - SHM
-  - 填空练习
+  - Exercise
+  - 定义性
+  - 基本原理
 title: AP 1 Simple Harmonic Motion - Complete Review
 created: 2026-04-18
 modified:

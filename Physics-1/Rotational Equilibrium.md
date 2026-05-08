@@ -11,6 +11,8 @@ modified:
 当物体做**纯滚动**时，接触点无相对滑动，不受到滑动摩擦力，但可能受到静摩擦力
 
 ![[pure_rotational_motion_demo.png]]
+![[pure_rotational_motion_demo2.png]]
+
 图中的两个向量分别表达
 - 质心的速度向量$\vec{v_c}$
 - 切向向量$\vec{v_{\tan}}$
