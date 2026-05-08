@@ -2,6 +2,8 @@
 tags:
   - MachineLearning
   - 定义性
+  - Calculus
+  - Math
 title: Neural Network
 created: 2025-11-29T09:12:00
 modified:

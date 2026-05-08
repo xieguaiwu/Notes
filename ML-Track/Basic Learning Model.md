@@ -3,6 +3,7 @@ tags:
   - MachineLearning
   - Math
   - Algorithm
+  - LinearAlgebra
 title: Basic Learning Model
 created: 2025-11-21T09:35:00
 modified:

@@ -1,8 +1,8 @@
 ---
 tags:
-  - ML
   - 定义性
   - 基本原理
+  - MachineLearning
 title: Per-Seed Concept
 created: 2026-04-27
 modified: 2026-04-27

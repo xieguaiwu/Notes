@@ -1,7 +1,9 @@
 ---
 tags:
-  - MachineLearning
   - 定义性
+  - MachineLearning
+  - Combinatorics
+  - Math
 title: Language Models
 created: 2025-12-20T09:06:00
 modified:
