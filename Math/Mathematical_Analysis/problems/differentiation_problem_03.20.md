@@ -19,7 +19,7 @@ $$\ln y=\ln x^2+\ln(5x+1)^{\frac{1}{2}}-\ln (3x-2)^3$$
 $$\ln y=2\ln x+\frac{1}{2}\ln(5x+1)-3\ln(3x-2)$$
 
 两边对$x$求导：
-$$\frac{1}{y}\cdot \frac{dx}{dy}=\frac{2}{x}+\frac{1}{2}\cdot\frac{5}{5x+1}-3\cdot\frac{3}{3x-2}$$
+$$\frac{1}{y}\cdot \frac{dy}{dx}=\frac{2}{x}+\frac{1}{2}\cdot\frac{5}{5x+1}-3\cdot\frac{3}{3x-2}$$
 
 整理得：
 $$\frac{y'}{y}=\frac{2}{x}+\frac{5}{2(5x+1)}-\frac{9}{3x-2}$$
