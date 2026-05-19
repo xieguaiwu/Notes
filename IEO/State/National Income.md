@@ -16,6 +16,8 @@ GDP (Gross Domestic Product): 所有人的**总收入**和商品/服务产出的
 其大致形态可以用[[Simple Models]]中的**1**中所展示的Circular Flow衡量：
 ![[circular_flow_of_GDP.png]]
 
+额外：
+**Gross National Income (GNI)** 同时衡量本国居民在国内**和国外**获得的收入
 ### 1.1 About GDP
 关于GDP：
 - **GDP只包括最终物品的价值**，因为中间物品的价值已经包括在了最终价格中

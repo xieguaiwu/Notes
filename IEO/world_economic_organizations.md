@@ -1,14 +1,14 @@
 #Economics #定义性 
 # World Economic Organization
 
-| Feature | **World Trade Organization (WTO)** | **International Monetary Fund (IMF)** | **World Bank Group** | **Organisation for Economic Co-operation and Development (OECD)** |
-| :--- | :--- | :--- | :--- | :--- |
-| **Core Mandate** | Create and enforce global trade rules | Ensure monetary and financial stability | Reduce poverty and promote shared prosperity through sustainable development | Promote policies to improve economic and social well-being globally |
-| **Established** | 1995 (successor to GATT of 1947) | 1945 (began operations in 1947) | 1944 (IBRD) | 1961 (successor to the OEEC) |
-| **Headquarters** | Geneva, Switzerland | Washington, D.C., U.S.A. | Washington, D.C., U.S.A. | Paris, France |
-| **Membership** | 164 Members | 191 Member Countries | 189 Member Countries | 38 Member Countries (mostly advanced economies) & the European Union |
-| **Governance Structure** | • Ministerial Conference<br>• General Council & subsidiary bodies<br>• Secretariat | • Board of Governors<br>• Executive Board (24 Directors)<br>• Managing Director | • Board of Governors<br>• Executive Directors (25 Directors)<br>• President | • Council (supreme body)<br>• Substantive Committees (300+ bodies)<br>• Secretariat |
-| **Key Financing** | N/A (No lending function) | Member Quotas (determines voting power and access to financing) | Capital from member subscriptions and financial markets (IBRD); donor contributions (IDA) | Member Assessed Contributions (and voluntary contributions) |
+| Feature                  | **World Trade Organization (WTO)**                                                 | **International Monetary Fund (IMF)**                                           | **World Bank Group**                                                                      | **Organisation for Economic Co-operation and Development (OECD)**                   |
+| :----------------------- | :--------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
+| **Core Mandate**         | Create and enforce global trade rules                                              | Ensure monetary and financial stability                                         | Reduce poverty and promote shared prosperity through sustainable development              | Promote policies to improve economic and social well-being globally                 |
+| **Established**          | 1995 (successor to GATT of 1947)                                                   | 1945 (began operations in 1947)                                                 | 1944 (IBRD)                                                                               | 1961 (successor to the OEEC)                                                        |
+| **Headquarters**         | Geneva, Switzerland                                                                | Washington, D.C., U.S.A.                                                        | Washington, D.C., U.S.A.                                                                  | Paris, France                                                                       |
+| **Membership**           | 164 Members                                                                        | 191 Member Countries                                                            | 189 Member Countries                                                                      | 38 Member Countries (mostly advanced economies) & the European Union                |
+| **Governance Structure** | • Ministerial Conference<br>• General Council & subsidiary bodies<br>• Secretariat | • Board of Governors<br>• Executive Board (24 Directors)<br>• Managing Director | • Board of Governors<br>• Executive Directors (25 Directors)<br>• President               | • Council (supreme body)<br>• Substantive Committees (300+ bodies)<br>• Secretariat |
+| **Key Financing**        | N/A (No lending function)                                                          | Member Quotas (determines voting power and access to financing)                 | Capital from member subscriptions and financial markets (IBRD); donor contributions (IDA) | Member Assessed Contributions (and voluntary contributions)                         |
 
 ---
 

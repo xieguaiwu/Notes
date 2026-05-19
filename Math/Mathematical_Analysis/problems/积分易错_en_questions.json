@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "topic": "u-substitution sign error",
+    "question": "\\item Compute \\(\\displaystyle\\int\\frac{1}{5-2x}\\,dx\\).",
+    "options": [
+      "(A) \\(-\\dfrac{1}{2}\\ln|5-2x|+C\\)",
+      "(B) \\(\\dfrac{1}{2}\\ln|5-2x|+C\\)",
+      "(C) \\(-\\dfrac{1}{2}\\ln(5-2x)+C\\)",
+      "(D) \\(-\\ln|5-2x|+C\\)"
+    ],
+    "correct": "A",
+    "distractor_errors": [
+      "Forgets the negative sign from \\(du=-2dx\\), giving positive coefficient",
+      "Forgets the absolute value in the logarithm result",
+      "Forgets to divide by the coefficient \\(-2\\) from \\(du=-2dx\\), omitting the \\(1/2\\) factor"
+    ]
+  },
+  {
+    "id": 2,
+    "topic": "Integral interval splitting: \\\\(c\\\\) need not be in \\\\([a,b]\\\\)",
+    "question": "\\item Suppose \\(f\\) is continuous on \\(\\mathbb{R}\\). For which value(s) of \\(c\\) does the identity \\(\\displaystyle\\int_{1}^{5}f(x)\\,dx = \\int_{1}^{c}f(x)\\,dx + \\int_{c}^{5}f(x)\\,dx\\) hold?",
+    "options": [
+      "(A) Only for \\(c=1\\) or \\(c=5\\)",
+      "(B) Only for \\(c\\in[1,5]\\)",
+      "(C) For any real number \\(c\\)",
+      "(D) Only for integer values of \\(c\\)"
+    ],
+    "correct": "C",
+    "distractor_errors": [
+      "Thinks only the endpoints work (confusing with degenerate zero-area integrals)",
+      "Believes \\(c\\) must lie in the closed interval \\([a,b]\\) to split the integral",
+      "Confuses the partition requirement of Riemann sums (endpoints must be ordered) with the additive property of definite integrals"
+    ]
+  },
+  {
+    "id": 3,
+    "topic": "Fundamental Theorem of Calculus \\\\(+\\\\) chain rule",
+    "question": "\\item Compute \\(\\displaystyle\\frac{d}{dx}\\int_{6}^{5x^{2}+2}\\sqrt{e^{t}+t}\\,dt\\).",
+    "options": [
+      "(A) \\(\\sqrt{e^{5x^{2}+2}+5x^{2}+2}\\cdot10x\\)",
+      "(B) \\(\\sqrt{e^{5x^{2}+2}+5x^{2}+2}\\)",
+      "(C) \\(\\sqrt{e^{5x^{2}+2}+5x^{2}+2}\\cdot5x\\)",
+      "(D) \\(\\sqrt{e^{t}+t}\\cdot10x\\)"
+    ],
+    "correct": "A",
+    "distractor_errors": [
+      "Forgets to multiply by the derivative of the upper bound (the chain rule factor)",
+      "Uses only half the correct derivative \\(d/dx(5x^{2}+2)=10x\\) but writes \\(5x\\)",
+      "Substitutes the upper bound into the integrand but retains the dummy variable \\(t\\) unchanged"
+    ]
+  },
+  {
+    "id": 4,
+    "topic": "Integral bounds theorem: \\\\(m(b-a)\\leq\\int f\\leq M(b-a)\\\\)",
+    "question": "\\item Let \\(f(x)=3x^{2}+1\\) on \\([0,3]\\). Using the theorem \\(m(b-a)\\leq\\int_{a}^{b}f(x)\\,dx\\leq M(b-a)\\) where \\(m=\\min f\\) and \\(M=\\max f\\) on \\([a,b]\\), which inequality correctly bounds the integral?",
+    "options": [
+      "(A) \\(3\\leq\\displaystyle\\int_{0}^{3}(3x^{2}+1)\\,dx\\leq84\\)",
+      "(B) \\(1\\leq\\displaystyle\\int_{0}^{3}(3x^{2}+1)\\,dx\\leq28\\)",
+      "(C) \\(3\\leq\\displaystyle\\int_{0}^{3}(3x^{2}+1)\\,dx\\leq28\\)",
+      "(D) \\(84\\leq\\displaystyle\\int_{0}^{3}(3x^{2}+1)\\,dx\\leq3\\)"
+    ],
+    "correct": "A",
+    "distractor_errors": [
+      "Forgets to multiply the min and max by the interval length \\((b-a)=3\\), giving just \\(m\\leq I\\leq M\\)",
+      "Applies the interval length only to the lower bound and forgets it for the upper bound",
+      "Reverses the inequality direction"
+    ]
+  },
+  {
+    "id": 5,
+    "topic": "Improper integrals: interior discontinuities",
+    "question": "\\item Which statement correctly identifies all improper integrals from the list below?\n\\[\\text{(I)}\\quad\\int_{1}^{\\infty}\\frac{1}{x^{2}}\\,dx\\qquad\\text{(II)}\\quad\\int_{-2}^{2}\\frac{1}{x}\\,dx\\qquad\\text{(III)}\\quad\\int_{0}^{1}x^{3}\\,dx\\]",
+    "options": [
+      "(A) Only (I) is improper",
+      "(B) Both (I) and (II) are improper",
+      "(C) All three are improper",
+      "(D) Only (II) is improper"
+    ],
+    "correct": "B",
+    "distractor_errors": [
+      "Believes only integrals with infinite limits can be improper, ignoring interior discontinuities",
+      "Thinks every rational function with a denominator is improper regardless of where the discontinuity lies",
+      "Fails to recognize that (I) with an infinite upper limit is improper"
+    ]
+  },
+  {
+    "id": 6,
+    "topic": "Completing the square for integration",
+    "question": "\\item To evaluate \\(\\displaystyle\\int\\frac{dx}{4x^{2}-24x+40}\\), one must first complete the square for the denominator. Which of the following is the correct completed-square form?",
+    "options": [
+      "(A) \\(4(x-3)^{2}+4\\)",
+      "(B) \\(4(x-6)^{2}+40\\)",
+      "(C) \\((x-3)^{2}+10\\)",
+      "(D) \\(4(x-3)^{2}+40\\)"
+    ],
+    "correct": "A",
+    "distractor_errors": [
+      "Merely factors out the leading coefficient without completing the square correctly",
+      "Completes the square correctly but drops the leading coefficient factor",
+      "Completes the square but fails to adjust the constant term (does not subtract \\(b^{2}/(4a)\\))"
+    ]
+  },
+  {
+    "id": 7,
+    "topic": "Riemann sum comparison: monotonicity and concavity",
+    "question": "\\item Let \\(f(x)=3\\sqrt{x}\\) on \\([1,4]\\). The function is increasing and concave down on this interval. Let \\(L_{n},R_{n},T_{n}\\) be the left Riemann sum, right Riemann sum, and trapezoidal approximation with \\(n\\) subintervals, and let \\(I=\\int_{1}^{4}3\\sqrt{x}\\,dx\\). Which inequality is correct?",
+    "options": [
+      "(A) \\(L_{n} < R_{n} < T_{n} < I\\)",
+      "(B) \\(L_{n} < T_{n} < I < R_{n}\\)",
+      "(C) \\(I < L_{n} < T_{n} < R_{n}\\)",
+      "(D) \\(R_{n} < I < T_{n} < L_{n}\\)"
+    ],
+    "correct": "B",
+    "distractor_errors": [
+      "Reverses the relationship between the trapezoidal sum and the true integral for a concave-down function",
+      "Reverses the monotonicity relationship (thinks the function is decreasing instead of increasing)",
+      "Reverses both monotonicity and concavity judgments simultaneously"
+    ]
+  }
+]
