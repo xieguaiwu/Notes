@@ -213,4 +213,24 @@ In 'zusammengebundenen': $$\text{binden}\Rightarrow^{\text{past}}\text{gebunden}
     - aus + Dativ + bringen: 固定搭配，脱离某种状态。此处aus 不是"出来"，而是"脱离、离开某种状态"
 2. $$\text{drehen}\Rightarrow^{\text{past}}\text{gedrehten}$$
 
+> "Nein, Großmutter. Wir haben uns über uns selbst geschämt."
+
+1. 反身动词固定搭配：**sich (Akk.) + schämen + über + Akk.** = 为……感到羞愧
+2. 完成时助动词用 **haben**（反身动词及物化，始终用 haben）
+   $$\text{sich schämen}\Rightarrow^{\text{Perfekt}}\text{hat sich geschämt}$$
+3. **uns**（反身代词，Akkusativ）是 schämen 的反身宾语，与 **über uns selbst**（介词宾语）指向同一对象，通过 **selbst** 强调"我们对我们自己"——羞愧的指向是自身而非他人
+
+```
+Wir (主语)
+  └─ haben ... geschämt（完成时谓语）
+      ├─ uns（反身代词，第四格：schämen的宾语）
+      └─ über uns selbst（介词短语，über + Akkusativ：羞愧的对象）
+```
+
+[[Reflexive Verb]] 
+[[Preposition]]
+
+---
+
+## Der Wald und der Fluß
 
