@@ -12,7 +12,3 @@ Thumbs.db
 
 # Documents
 *.pdf
-
-# Anki decks
-*.apkg
-*.colpkg
