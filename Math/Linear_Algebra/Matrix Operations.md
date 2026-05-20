@@ -418,8 +418,6 @@ $$
 
 矩阵乘方 $\mathbf{A}^k$（$\mathbf{A}$ 为 $n\times n$ 方阵，$k$ 为正整数）即 $\mathbf{A}$ 自乘 $k$ 次。直接逐次相乘 $O(k n^3)$ 太慢，需要更聪明的方法。
 
----
-
 ### 9.1 二进制快速幂（Binary Exponentiation）— 通用首选
 
 将 $k$ 拆为二进制表示，反复平方：
@@ -446,8 +444,6 @@ $$
 $$
 
 > **复杂度**：$O(\log k)$ 次乘法，每次 $O(n^3)$。**对任意方阵都适用**，是最通用的方法。
-
----
 
 ### 9.2 对角化法（Diagonalization）— 最快，但有条件
 
@@ -488,8 +484,6 @@ $$
 >
 > **优势**：对角化只做一次 $O(n^3)$，之后对**任意 $k$ 都只需 $\mathbf{P}\mathbf{D}^k\mathbf{P}^{-1}$**，适合多次计算不同指数。
 
----
-
 ### 9.3 Cayley-Hamilton 递推法
 
 **Cayley-Hamilton 定理**：矩阵 $\mathbf{A}$ 满足其特征多项式 $p(\lambda) = \det(\lambda\mathbf{I} - \mathbf{A})$，即：
@@ -504,8 +498,6 @@ $$
 
 > **适用场景**：不需要对角化条件，但不适合手算，通常用于编程实现。
 
----
-
 ### 9.4 特殊矩阵的闭式解
 
 | 矩阵类型 | 条件 | 乘方结果 |
@@ -515,8 +507,6 @@ $$
 | **幂零矩阵** | $\mathbf{A}^m = \mathbf{0}$ | $k \ge m$ 时 $\mathbf{A}^k = \mathbf{0}$ |
 | **旋转矩阵** | $R(\theta) = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$ | $R(\theta)^k = R(k\theta)$ |
 | **Jordan 块** | $J(\lambda) = \begin{bmatrix} \lambda & 1 & & \\ & \lambda & \ddots & \\ & & \ddots & 1 \\ & & & \lambda \end{bmatrix}$ | 二项式展开形式（含组合数） |
-
----
 
 ### 9.5 方法对比
 
