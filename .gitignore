@@ -10,5 +10,10 @@ Thumbs.db
 *.swo
 *~
 
+# Skill files
+obsidian_note_generation.md
+mistake-practice-generation.md
+git_safety_net.md
+
 # Documents
 *.pdf
