@@ -3,6 +3,7 @@ tags:
   - Math
   - LinearAlgebra
   - 概念性
+  - 定义性
 title: Eigenvalues and Eigenvectors
 created: 2026-05-20
 modified:
