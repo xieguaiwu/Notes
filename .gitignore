@@ -17,3 +17,6 @@ git_safety_net.md
 
 # Documents
 *.pdf
+
+# OpenCode internal state
+.omo/
