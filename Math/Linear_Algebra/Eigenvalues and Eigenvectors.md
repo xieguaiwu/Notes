@@ -19,9 +19,19 @@ $$
 \boxed{\mathbf{A}\mathbf{v} = \lambda\mathbf{v}}
 $$
 
+可以这样直观想象：在二维平面上随机取一个向量，用矩阵 $\mathbf{A}$ 对它做线性变换——大多数向量的方向和长度都会改变。但存在某些特殊方向，$\mathbf{A}$ 的作用仅仅是拉伸（或压缩），方向保持不变。这些特殊方向就是特征向量，拉伸倍数就是特征值。
+
 ## 2. 为什么重要？
 
 特征值和特征向量揭示了线性变换的"内在结构"：尽管矩阵可以作用于无穷多个向量，但其中只有某些特殊方向（特征向量）在经过变换后保持方向不变。找到这些方向，就能极大地简化对矩阵的理解和计算。
+
+### 2.1 典型应用
+
+- **Google PageRank**：互联网网页的排名本质上是一个超大规模矩阵的主特征向量问题——排名最高的网页对应最大特征值的特征向量
+- **PCA（主成分分析）**：对数据的协方差矩阵做特征分解，取最大特征值对应的方向作为方差最大的方向，用于降维和可视化
+- **量子力学**：物理系统的可观测量由算符表示，其可能的取值就是算符的特征值——"本征值问题"是整个量子力学的数学根基
+- **振动分析**：桥梁、建筑、机械结构的固有频率由动力学矩阵的特征值决定；工程设计需要确保固有频率远离外部激励频率，避免共振
+- **谱聚类**：将图的拉普拉斯矩阵的特征向量作为聚类依据，可以处理非凸形状的聚类问题
 
 ## 3. 定义
 
@@ -54,18 +64,20 @@ $$
 
 ### 4.1 特征多项式
 
-由 $\mathbf{A}\mathbf{v} = \lambda\mathbf{v}$ 得：
+由 $\mathbf{A}\mathbf{v} = \lambda\mathbf{v}$ 出发：
 
 $$
 \mathbf{A}\mathbf{v} - \lambda\mathbf{v} = \mathbf{0}
 \implies (\mathbf{A} - \lambda\mathbf{I})\mathbf{v} = \mathbf{0}
 $$
 
-由于 $\mathbf{v} \neq \mathbf{0}$，系数矩阵 $\mathbf{A} - \lambda\mathbf{I}$ 必须**不可逆**，即行列式为 0：
+这里的关键推理：如果存在非零向量 $\mathbf{v}$ 满足 $(\mathbf{A} - \lambda\mathbf{I})\mathbf{v} = \mathbf{0}$，那么矩阵 $\mathbf{A} - \lambda\mathbf{I}$ 一定有一个非平凡的零空间——这意味着 $\mathbf{A} - \lambda\mathbf{I}$ 不可逆（奇异）。对矩阵来说，不可逆等价于行列式为 0。因此：
 
 $$
 \det(\mathbf{A} - \lambda\mathbf{I}) = 0
 $$
+
+**直觉**：方程 $(\mathbf{A} - \lambda\mathbf{I})\mathbf{v} = \mathbf{0}$ 是一个齐次线性方程组。如果 $\lambda$ 是特征值，该方程组有非零解（特征向量），所以系数矩阵 $\mathbf{A} - \lambda\mathbf{I}$ 的秩不足，行列式必然为零。反之，使行列式为零的 $\lambda$ 一定是特征值。
 
 这个关于 $\lambda$ 的 $n$ 次多项式称为**特征多项式**（characteristic polynomial）。
 
@@ -115,6 +127,63 @@ $$
 $$
 
 特征向量：$\mathbf{v}_2 = t\begin{bmatrix} 1 \\ 1 \end{bmatrix}$（$t \neq 0$）。
+
+### 4.4 举例：$3\times3$ 矩阵
+
+求 $\mathbf{A} = \begin{bmatrix} 5 & 0 & 0 \\ 0 & 3 & 1 \\ 0 & 1 & 3 \end{bmatrix}$ 的特征值和特征向量。
+
+**Step 1: 特征多项式**
+
+$$
+\det(\mathbf{A} - \lambda\mathbf{I}) = \det\begin{bmatrix}
+5-\lambda & 0 & 0 \\
+0 & 3-\lambda & 1 \\
+0 & 1 & 3-\lambda
+\end{bmatrix}
+= (5-\lambda)[(3-\lambda)^2 - 1] = (5-\lambda)(\lambda^2 - 6\lambda + 8) = 0
+$$
+
+即 $(5-\lambda)(\lambda-2)(\lambda-4) = 0$。
+
+**Step 2: 解特征值**
+
+$$
+\lambda_1 = 5,\; \lambda_2 = 2,\; \lambda_3 = 4
+$$
+
+三个不同的实特征值。
+
+**Step 3: 求特征向量**
+
+$\lambda = 5$：
+
+$$
+(\mathbf{A} - 5\mathbf{I})\mathbf{v} = \begin{bmatrix} 0 & 0 & 0 \\ 0 & -2 & 1 \\ 0 & 1 & -2 \end{bmatrix}\mathbf{v} = \mathbf{0}
+\implies v_2 = v_3 = 0
+$$
+
+特征向量：$\mathbf{v}_1 = t\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}$（$t \neq 0$）。
+
+$\lambda = 2$：
+
+$$
+(\mathbf{A} - 2\mathbf{I})\mathbf{v} = \begin{bmatrix} 3 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 1 & 1 \end{bmatrix}\mathbf{v} = \mathbf{0}
+\implies v_1 = 0,\; v_2 + v_3 = 0
+$$
+
+特征向量：$\mathbf{v}_2 = t\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}$（$t \neq 0$）。
+
+$\lambda = 4$：
+
+$$
+(\mathbf{A} - 4\mathbf{I})\mathbf{v} = \begin{bmatrix} 1 & 0 & 0 \\ 0 & -1 & 1 \\ 0 & 1 & -1 \end{bmatrix}\mathbf{v} = \mathbf{0}
+\implies v_1 = 0,\; -v_2 + v_3 = 0
+$$
+
+特征向量：$\mathbf{v}_3 = t\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix}$（$t \neq 0$）。
+
+> [!note] 观察
+> 这是一个对称矩阵，三个特征值全是实数，且特征向量 $(1,0,0), (0,1,-1), (0,1,1)$ 相互正交——这正是实对称矩阵的性质。
 
 ## 5. 重要性质
 
@@ -171,16 +240,31 @@ $$
 > [!warning] 缺陷矩阵
 > 如果某个特征值的几何重数 < 代数重数，则矩阵**不可对角化**。这称为**缺陷矩阵**（defective matrix）。
 
+### 6.4 缺陷矩阵的例子
+
+考虑 $\mathbf{A} = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$（一个剪切变换矩阵）。
+
+特征多项式：$\det(\mathbf{A} - \lambda\mathbf{I}) = (1-\lambda)^2 = 0$，特征值 $\lambda = 1$ 的代数重数为 2。
+
+求特征向量：$(\mathbf{A} - \mathbf{I})\mathbf{v} = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}\mathbf{v} = \mathbf{0} \implies v_2 = 0$，特征向量为 $\mathbf{v} = t\begin{bmatrix} 1 \\ 0 \end{bmatrix}$。
+
+只有一个线性无关的特征方向 $(1,0)^T$，几何重数 = 1 < 代数重数 = 2。这就是一个缺陷矩阵。
+
+**几何理解**：剪切变换将水平方向拉伸的同时斜向扭曲，只在水平方向上有不变方向，缺少第二个独立特征方向——因此无法通过对角化来简化。
+
+> [!tip] 直观判断
+> 代数重数告诉你"应该有多少个特征方向"，几何重数告诉你"实际有多少个"。两者不相等时，矩阵缺少足够的特征方向来构成一组基，自然无法对角化。
+
 ## 7. 特征值的几何含义
 
-| 特征值 | 几何含义 |
-|-------|---------|
-| $\lambda > 1$ | 沿特征向量方向**拉伸** |
-| $0 < \lambda < 1$ | 沿特征向量方向**压缩** |
-| $\lambda < 0$ | 沿特征向量方向**翻转** |
-| $\lambda = 0$ | 沿特征向量方向**压缩到零**（矩阵奇异） |
-| $\lambda = 1$ | 沿特征向量方向**保持不变** |
-| $\lambda = a + bi$（复数） | **旋转 + 缩放** |
+| 特征值 | 几何含义 | 详细描述 |
+|-------|---------|---------|
+| $\lambda > 1$ | 沿特征向量方向**拉伸** | 向量被拉长为 $|\lambda|$ 倍，方向不变——$\lambda$ 越大，拉伸越剧烈 |
+| $0 < \lambda < 1$ | 沿特征向量方向**压缩** | 向量被缩短到原长度的 $\lambda$ 倍，方向不变——$\lambda$ 越接近 0，压缩越厉害 |
+| $\lambda < 0$ | 沿特征向量方向**翻转** | 方向反转（反向），长度变为 $|\lambda|$ 倍——负号相当于附加了 $180^\circ$ 旋转 |
+| $\lambda = 0$ | 沿特征向量方向**压缩到零** | 该方向上的向量被映射为零向量——矩阵有非平凡零空间，不可逆 |
+| $\lambda = 1$ | 沿特征向量方向**保持不变** | 该方向上的每个向量都是变换的不动点——恒等变换的特征 |
+| $\lambda = a+bi$（复数） | **旋转 + 缩放** | 实数特征方向不存在；复平面上模长 $|\lambda| = \sqrt{a^2+b^2}$ 决定缩放量，辐角决定旋转角度 |
 
 ## 8. 特征空间（Eigenspace）
 
@@ -231,6 +315,21 @@ for i in range(len(eigenvalues)):
 print(f"tr(A) = {np.trace(A)}, sum(λ) = {np.sum(eigenvalues):.2f}")
 print(f"det(A) = {np.linalg.det(A):.2f}, prod(λ) = {np.prod(eigenvalues):.2f}")
 ```
+
+## 11. Quick Reference
+
+| 概念 | 公式 / 要点 |
+|------|------------|
+| 定义 | $\mathbf{A}\mathbf{v} = \lambda\mathbf{v}$，$\mathbf{v} \neq \mathbf{0}$ |
+| 特征多项式 | $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$ |
+| 迹 = 特征值之和 | $\text{tr}(\mathbf{A}) = \sum a_{ii} = \sum \lambda_i$ |
+| 行列式 = 特征值之积 | $\det(\mathbf{A}) = \prod \lambda_i$ |
+| 代数重数 | 特征值作为多项式根的重数 |
+| 几何重数 | $\dim\text{Null}(\mathbf{A} - \lambda\mathbf{I})$，即线性无关特征向量个数 |
+| 重数关系 | $1 \le \text{几何重数} \le \text{代数重数}$ |
+| 实对称矩阵 | 特征值全实数，特征向量可正交 |
+| 特征值几何 | $\lambda>1$ 拉伸，$0<\lambda<1$ 压缩，$\lambda<0$ 翻转，$\lambda=0$ 奇异，复数 = 旋转+缩放 |
+| 缺陷矩阵 | 几何重数 < 代数重数 → 不可对角化 |
 
 ## 相关链接
 - [[Matrix Operations]]（行列式、逆矩阵）

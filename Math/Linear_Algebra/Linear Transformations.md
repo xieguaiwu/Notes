@@ -27,6 +27,9 @@ modified:
 
 $$T(c_1 v_1 + c_2 v_2) = c_1 T(v_1) + c_2 T(v_2)$$
 
+> [!info] Why This Matters
+> Linear transformations are the mathematical backbone of computer graphics (every 3D rotation, camera view, and scale is a linear transformation), machine learning (each layer in a neural network computes a linear transformation followed by a nonlinearity), and physics (quantum operators, coordinate transforms in relativity). Whenever you see a matrix, think: "this is a machine that takes in vectors and outputs transformed vectors — a linear transformation encoded as a grid of numbers."
+
 ### 2.2 等价说法
 
 - T 保持**线性组合**
@@ -43,6 +46,8 @@ $$T(c_1 v_1 + c_2 v_2) = c_1 T(v_1) + c_2 T(v_2)$$
 | 投影到 x 轴 | T(x,y) = (x, 0) | 投影到 x 轴 |
 | 反射 | T(x,y) = (x, -y) | 关于 x 轴对称 |
 
+Each transformation has a characteristic geometric signature. A **rotation** spins the entire plane around the origin — a vector (1,0) rotating by 90 degrees lands at (0,1). A **shear** slides one axis relative to the other: a square becomes a parallelogram of equal area. A **projection** collapses one dimension entirely — like squashing a 3D object onto a flat sheet of paper, losing depth information forever. A **reflection** creates a mirror image across a line, preserving distances and angles. Keeping these geometric pictures in mind makes the abstract algebra that follows feel intuitive rather than arbitrary.
+
 ## 3. 线性变换的矩阵表示
 
 ### 3.1 标准矩阵
@@ -57,6 +62,9 @@ $$T(x) = A x$$
 
 $$A = [ T(e_1)  T(e_2)  ...  T(e_n) ]$$
 
+> [!info] Why This Matters: The Matrix as a Compact Encoding
+> The correspondence between matrices and linear transformations is the central bridge from geometry to computation. To describe a transformation completely, you only need to answer one question: "where do the basis vectors go?" Everything else follows by linearity. If you know T(e1) and T(e2), then for any vector (x,y) you can compute T(x,y) = x T(e1) + y T(e2). The matrix is simply a table storing those answers — column j is T(ej). This is why matrix-vector multiplication is defined as it is: each coordinate of x scales the corresponding column, and the results are added. **A matrix is not just a grid of numbers — it is the DNA of a linear transformation.**
+
 ### 3.2 例子
 
 求逆时针旋转 90 度的矩阵。
@@ -66,6 +74,14 @@ $$T(e_1) = T(1,0) = (0,1), T(e_2) = T(0,1) = (-1,0)$$
 $$A = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$$
 
 验证：A [x; y] = [-y; x]
+
+> [!tip] From Concrete to Abstract: See the Pattern
+> Let's trace a concrete transformation: **reflection across the y-axis**. Take a test point v = (3, 2). You know the answer intuitively — it flips to (-3, 2). Now watch how linearity answers the same question:
+> - e1 = (1, 0) → (-1, 0) (flipped)
+> - e2 = (0, 1) → (0, 1) (unchanged)
+> Stack these outputs as columns: A = [[-1, 0], [0, 1]]. Verify: A * [3; 2] = [-3; 2]. Matches intuition.
+>
+> This is the universal pattern: **feed in the basis vectors, record what comes out, arrange as columns**. The matrix is simply this recipe written down. Once internalized, a matrix stops being a mysterious grid and starts being a transparent description of how each coordinate contributes to the output.
 
 ### 3.3 一般基下的矩阵表示
 
@@ -86,7 +102,10 @@ $$\ker(T) = \{ v \in V \mid T(v) = 0 \}$$
 
 当 T 由矩阵 A 表示时，ker(T) = Null(A)（见 [[Rank and Nullity#2.3 零空间]]）。
 
-**几何意义**：所有被 T 压缩到零的向量。
+**几何意义**：所有被 T 压缩到零的向量。如果 T 是投影到 x 轴，那么所有 y 轴方向的向量都被"压碎"到零 — ker(T) 就是 y 轴。如果 T 是零变换，整个空间都被压碎。把 kernel 想象成"变换的盲区"：在这些方向上，无论输入是什么，输出都是零 — 信息完全丢失了。
+
+> [!info] Why This Matters
+> The kernel tells you whether a transformation destroys information. If ker(T) = {0}, different inputs always produce different outputs (the transformation is **injective** / one-to-one). If ker(T) is nontrivial, multiple inputs collapse to the same output — solving T(v) = b either has no solution or infinitely many. This is the geometric meaning of "solving a homogeneous system": you are finding all the directions that get crushed to zero.
 
 ### 4.2 像（Image）/ 值域
 
@@ -94,7 +113,7 @@ $$\text{Im}(T) = \{ T(v) \mid v \in V \}$$
 
 当 T 由矩阵 A 表示时，Im(T) = Col(A)（见 [[Rank and Nullity#2.1 列空间]]）。
 
-**几何意义**：T 所有可能的输出。
+**几何意义**：T 所有可能的输出。如果 T 是投影到 x 轴，Im(T) 就是 x 轴本身 — 所有输出都落在 x 轴上。像的维数（称为**秩**）告诉你变换"保留了多少维度的信息"：秩越大，保留的信息越多。
 
 ### 4.3 秩-零化度定理（线性变换版本）
 
@@ -226,6 +245,33 @@ else:
 # 像（列空间的维数 = 秩）
 print("像的维数 = 秩 =", np.linalg.matrix_rank(A))
 ```
+
+## Quick Reference / Cheatsheet
+
+### Key Ideas at a Glance
+
+| Concept | Intuition | Formula |
+|---------|-----------|---------|
+| Linear transformation | A function that preserves lines and the origin | T(cu + v) = cT(u) + T(v) |
+| Standard matrix | Table storing what happens to each basis vector | A = [T(e1) T(e2) ... T(en)] |
+| Kernel (null space) | Directions crushed to zero | ker(T) = {v : T(v) = 0} |
+| Image (column space) | All possible outputs | Im(T) = {T(v) : v in V} |
+| Rank | Dimension of the image | rank = dim(Im(T)) |
+| Nullity | Dimension of the kernel | nullity = dim(ker(T)) |
+| Rank-Nullity | Conservation of dimensions | dim(V) = rank + nullity |
+
+### How to Think About...
+
+- **A matrix as a transformation**: Each column says where the corresponding basis vector goes. Multiplying A by x combines those columns according to x's entries.
+- **Kernel as "blind spots"**: Directions the transformation cannot "see" — they all map to zero. A nonzero kernel means information loss.
+- **Image as "reachable outputs"**: Every output the transformation can produce. Rank = how many independent output dimensions exist.
+- **Composition as matrix multiplication**: Applying T then S is the same as multiplying by BA. Order matters because transformations apply sequentially.
+
+### Common Pitfalls
+
+- **Kernel of T vs. null space of A**: They are the same thing. ker(T) = Null(A) when A is the standard matrix of T.
+- **Not all functions on vectors are linear**: T(x) = x + b (translation) fails because T(0) != 0. T(x) = |x| (norm) fails because T(-v) != -T(v).
+- **The origin is sacred**: Every linear transformation must send 0 to 0. If T(0) != 0, it is not linear.
 
 ## 相关链接
 - [[Vector Spaces and Subspaces]]（变换的定义域与值域）

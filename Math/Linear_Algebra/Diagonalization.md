@@ -14,6 +14,18 @@ modified:
 
 **对角化**（Diagonalization）是将一个方阵 $\mathbf{A}$ 分解为 $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$ 的形式，其中 $\mathbf{D}$ 是对角矩阵（非对角元全为 0）。这种分解能极大简化矩阵乘方、求解微分方程等计算——因为对角矩阵的运算极其简单。
 
+### 1.1 为什么要对角化？（Why Diagonalize?）
+
+对角化不仅仅是一个代数技巧——它解决了实际问题中最重要的计算需求：**把一个复杂的矩阵运算转化为简单的标量运算**。
+
+核心思想：对角化 = 寻找一个"好的坐标系"，在这个坐标系中，原本复杂的线性变换简化为各方向独立的伸缩。
+
+具体好处：
+
+- **快速计算矩阵的幂** $\mathbf{A}^k$：直接做矩阵乘法需要 $O(k n^3)$，对角化后只需要 $O(n^3)$ 一次预处理，然后对每个对角元算 $k$ 次幂即可。PageRank（Google 的网页排序算法）本质上就是计算一个巨大矩阵的幂来提取网页排名的稳态分布。
+- **解耦线性系统**：耦合的微分方程组 $\mathbf{x}' = \mathbf{A}\mathbf{x}$ 对角化后变成 $n$ 个独立的标量微分方程 $\mathbf{y}' = \mathbf{D}\mathbf{y}$，每个方程的解 $e^{\lambda_i t}$ 一眼看出。
+- **简化矩阵函数**：计算 $e^{\mathbf{A}}$、$\sin(\mathbf{A})$ 等矩阵函数时，对角化将问题简化为对每个特征值计算相同的标量函数 $f(\lambda_i)$。
+
 ## 2. 对角化的定义
 
 $n \times n$ 矩阵 $\mathbf{A}$ **可对角化**（diagonalizable），如果存在可逆矩阵 $\mathbf{P}$ 和对角矩阵 $\mathbf{D}$ 使得：
@@ -30,6 +42,26 @@ $$
 
 > [!note] 相似变换
 > 这个过程称为**相似对角化**。$\mathbf{A}$ 与 $\mathbf{D}$ 是**相似矩阵**（similar matrices）——它们代表了同一个线性变换在不同基下的矩阵表示（见 [[Linear Transformations#7. 基变换与坐标变换]]）。
+
+### 2.1 可视化理解 $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$
+
+将 $\mathbf{A}$ 作用于向量 $\mathbf{v}$ 的过程，可拆解为三个清晰步骤：
+
+$$
+\begin{aligned}
+\mathbf{v} &\xrightarrow{\mathbf{P}^{-1}} \mathbf{P}^{-1}\mathbf{v} \;(\text{转换到特征基坐标}) \\[2pt]
+&\xrightarrow{\mathbf{D}} \mathbf{D}\mathbf{P}^{-1}\mathbf{v} \;(\text{各分量被对应 }\lambda_i\text{ 独立缩放}) \\[2pt]
+&\xrightarrow{\mathbf{P}} \mathbf{P}\mathbf{D}\mathbf{P}^{-1}\mathbf{v} = \mathbf{A}\mathbf{v}
+\end{aligned}
+$$
+
+1. **$\mathbf{P}^{-1}\mathbf{v}$** —— 将 $\mathbf{v}$ 从标准基坐标转换到**特征基**（eigenbasis）坐标。在特征基下，$\mathbf{A}$ 看起来最简单。
+2. **$\mathbf{D}(\mathbf{P}^{-1}\mathbf{v})$** —— 在特征基下，$\mathbf{A}$ 就是对角的：每个坐标分量被对应的特征值 $\lambda_i$ 缩放。
+3. **$\mathbf{P}(\mathbf{D}\mathbf{P}^{-1}\mathbf{v})$** —— 将结果从特征基坐标映射回标准基坐标。
+
+> $\mathbf{P}$ 的列就是特征向量，因此 $\mathbf{P}$ 是将"特征基下的坐标"转换为"标准基下的坐标"的矩阵。$\mathbf{P}^{-1}$ 则相反，将标准基坐标转换到特征基。
+
+这正是"**对角化 = 找到正确的坐标系**"这一核心直觉的数学表达。
 
 ## 3. 对角化的条件
 
@@ -54,6 +86,20 @@ $$
 
 特征值 $\lambda$ 代数重数 2，几何重数 1，不可对角化。
 
+**为什么 Jordan 块不可对角化？——一个直观理解**
+
+要对角化一个 $2\times 2$ 矩阵，我们需要 2 个线性无关的特征向量。但 $\mathbf{J}$ 的特征方程 $(\lambda - \lambda)^2 = 0$ 给出唯一特征值 $\lambda$（代数重数 2）。
+
+求解特征向量：$(\mathbf{J} - \lambda\mathbf{I})\mathbf{v} = \mathbf{0}$ 即：
+$$
+\begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} \mathbf{v} = \mathbf{0}
+$$
+解得 $\mathbf{v} = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$ 及其倍数——只有**一个**独立方向！几何重数为 1。
+
+换句话说，$\mathbf{J}$ 右上角的 $1$ 引入了一个**剪切**（shear）分量：这个剪切方向没有自己的特征向量，所有向量最终都被"推向"同一个方向，无法形成 2 个独立的坐标轴。因此不存在足够的特征向量来张成 $\mathbb{R}^2$，也就不可能找到可逆的 $\mathbf{P}$ 将其对角化。
+
+> **直觉总结**：可对角化 = 特征向量构成一组完整的"新坐标轴"；不可对角化 = 至少缺失一个坐标轴，总有一些方向在变换下不是被缩放，而是被剪切或扭曲。
+
 ## 4. 如何对角化一个矩阵
 
 ### 4.1 步骤
@@ -62,6 +108,8 @@ $$
 2. 将特征向量作为列构成矩阵 $\mathbf{P} = [\mathbf{v}_1 \; \mathbf{v}_2 \; \cdots \; \mathbf{v}_n]$
 3. 特征值按对应顺序构成对角矩阵 $\mathbf{D} = \text{diag}(\lambda_1, \lambda_2, \dots, \lambda_n)$
 4. 于是 $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$
+
+> **几何视角**：$\mathbf{P}$ 是将特征基坐标转换成标准基坐标的矩阵。第 $i$ 个特征向量 $\mathbf{v}_i$ 就是特征基的第 $i$ 个基向量在标准基下的表示。乘以 $\mathbf{P}$ 就是在说："用特征向量的线性组合来还原标准基下的向量"。
 
 ### 4.2 完整例子
 
@@ -148,6 +196,29 @@ $$
 
 对角化后，$n$ 维耦合系统解耦为 $n$ 个独立的一维系统——每个特征值 $\lambda_i$ 对应一个独立的演化模式。
 
+### 5.4 经典案例：斐波那契数列
+
+斐波那契数列 $F_{k+2} = F_{k+1} + F_k$（$F_0 = 0, F_1 = 1$）是一个**线性递推**，可写成矩阵形式：
+
+$$
+\begin{bmatrix} F_{k+1} \\ F_k \end{bmatrix} = \underbrace{\begin{bmatrix} 1 & 1 \\ 1 & 0 \end{bmatrix}}_{\mathbf{A}} \begin{bmatrix} F_k \\ F_{k-1} \end{bmatrix},\quad
+\text{于是 } \begin{bmatrix} F_{k+1} \\ F_k \end{bmatrix} = \mathbf{A}^k \begin{bmatrix} 1 \\ 0 \end{bmatrix}
+$$
+
+$\mathbf{A}$ 的特征值和特征向量：
+- $\lambda_1 = \phi = \dfrac{1+\sqrt{5}}{2}$（黄金比例），$\mathbf{v}_1 = \begin{bmatrix} \phi \\ 1 \end{bmatrix}$
+- $\lambda_2 = \psi = \dfrac{1-\sqrt{5}}{2} = -\phi^{-1}$，$\mathbf{v}_2 = \begin{bmatrix} \psi \\ 1 \end{bmatrix}$
+
+对角化 $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$，则 $\mathbf{A}^k = \mathbf{P}\mathbf{D}^k\mathbf{P}^{-1}$。代入计算即得**比奈公式（Binet's formula）**：
+
+$$
+F_k = \frac{\phi^k - \psi^k}{\sqrt{5}}
+$$
+
+这个公式直接给出了斐波那契数列的闭式解——无需循环迭代，$O(1)$ 即可计算任意 $F_k$。
+
+> **启示**：任何线性递推 $a_{n+m} = c_1 a_{n+m-1} + \cdots + c_m a_n$ 都可表示为矩阵形式，对角化后即可得到闭式解。这就是对角化在组合数学和算法分析中的典型应用。
+
 ## 6. 对角化与相似性
 
 ### 6.1 相似矩阵
@@ -211,6 +282,22 @@ A_exp = P @ np.diag(np.exp(eigenvalues)) @ P_inv
 A_exp_scipy = funm(A, np.exp)  # scipy 标准结果
 print("exp(A) 一致?", np.allclose(A_exp, A_exp_scipy))
 ```
+
+## Quick Reference 速查表
+
+| 概念 | 公式 / 条件 | 关键直觉 |
+|------|------------|---------|
+| 对角化定义 | $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$ | $\mathbf{A}$ 在特征基下就是对角的 |
+| $\mathbf{P}$ 的含义 | 列 = 特征向量 | 从特征基转换到标准基 |
+| $\mathbf{D}$ 的含义 | 对角元 = 特征值 | 在特征基下各方向独立缩放 |
+| 可对角化条件 | $n$ 个线性无关特征向量 | 有完整的"新坐标轴"集合 |
+| 充分条件 | $n$ 个互异特征值 | 每个特征值贡献一个独立方向 |
+| 不可对角化 | 几何重数 < 代数重数 | 坐标轴缺失，存在剪切 |
+| 矩阵幂 | $\mathbf{A}^k = \mathbf{P}\mathbf{D}^k\mathbf{P}^{-1}$ | 只需对特征值求幂 |
+| 矩阵函数 | $f(\mathbf{A}) = \mathbf{P}f(\mathbf{D})\mathbf{P}^{-1}$ | 转化为标量函数 $f(\lambda_i)$ |
+| 差分方程 | $\mathbf{x}_k = \mathbf{P}\mathbf{D}^k\mathbf{P}^{-1}\mathbf{x}_0$ | $n$ 维耦合 $\rightarrow$ $n$ 个独立演化 |
+| 正交对角化 | $\mathbf{A} = \mathbf{Q}\mathbf{D}\mathbf{Q}^T$（$\mathbf{Q}^{-1} = \mathbf{Q}^T$） | 实对称矩阵的特权，数值更稳定 |
+| Jordan 标准形 | $\mathbf{A} = \mathbf{P}\mathbf{J}\mathbf{P}^{-1}$ | 不可对角化时的"次优"替代 |
 
 ## 相关链接
 - [[Eigenvalues and Eigenvectors]]（对角化的前提知识）
