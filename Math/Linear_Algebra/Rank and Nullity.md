@@ -2,7 +2,7 @@
 tags:
   - Math
   - LinearAlgebra
-  - 定理性
+  - 定义性
 title: Rank and Nullity
 created: 2026-05-20
 modified:
