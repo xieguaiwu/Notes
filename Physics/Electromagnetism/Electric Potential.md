@@ -112,10 +112,10 @@ graph LR
 
 ## 相关链接
 
-- [[Electromagnetism/Electrostatics|Electrostatics]]
-- [[Electromagnetism/Electric Fields|Electric Fields]]
-- [[Electromagnetism/Gauss's Law|Gauss's Law]]
-- [[Electromagnetism/Capacitance|Capacitance]]
+- [[Physics/Electromagnetism/Electrostatics|Electrostatics]]
+- [[Physics/Electromagnetism/Electric Fields|Electric Fields]]
+- [[Physics/Electromagnetism/Gauss's Law|Gauss's Law]]
+- [[Physics/Electromagnetism/Capacitance|Capacitance]]
 - [[Math/Mathematical_Analysis/differentiation|微积分 — 微分]]
 
 ## 注意事项

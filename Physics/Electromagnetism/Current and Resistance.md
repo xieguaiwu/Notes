@@ -118,13 +118,13 @@ $$\sigma = \frac{ne^2\tau}{m}$$
 > 节点处电流的代数和为零：
 > $$\sum I_{\text{in}} = \sum I_{\text{out}}$$
 
-这是电荷守恒定律的直接推论。详见 [[Electromagnetism/DC Circuits|DC Circuits]]。
+这是电荷守恒定律的直接推论。详见 [[Physics/Electromagnetism/DC Circuits|DC Circuits]]。
 
 ## 相关链接
 
-- [[Electromagnetism/DC Circuits|DC Circuits]]
-- [[Electromagnetism/Capacitance|Capacitance]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/DC Circuits|DC Circuits]]
+- [[Physics/Electromagnetism/Capacitance|Capacitance]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 
 ## 注意事项
 

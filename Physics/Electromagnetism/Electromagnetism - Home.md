@@ -15,25 +15,25 @@ modified: 2026-06-10
 ## 知识地图
 
 ### 静电学 (Electrostatics)
-- [[Electromagnetism/Electrostatics|Electrostatics]] — 静电荷、库仑定律、叠加原理
-- [[Electromagnetism/Electric Fields|Electric Fields]] — 电场强度、电场线、点电荷电场
-- [[Electromagnetism/Gauss's Law|Gauss's Law]] — 电通量、高斯定理及应用
-- [[Electromagnetism/Electric Potential|Electric Potential]] — 电势、电势差、等势面
+- [[Physics/Electromagnetism/Electrostatics|Electrostatics]] — 静电荷、库仑定律、叠加原理
+- [[Physics/Electromagnetism/Electric Fields|Electric Fields]] — 电场强度、电场线、点电荷电场
+- [[Physics/Electromagnetism/Gauss's Law|Gauss's Law]] — 电通量、高斯定理及应用
+- [[Physics/Electromagnetism/Electric Potential|Electric Potential]] — 电势、电势差、等势面
 
 ### 导体与电路 (Conductors & Circuits)
-- [[Electromagnetism/Capacitance|Capacitance]] — 电容器、介电质、储能
-- [[Electromagnetism/Current and Resistance|Current and Resistance]] — 电流、电阻、欧姆定律
-- [[Electromagnetism/DC Circuits|DC Circuits]] — 基尔霍夫定律、RC 电路
+- [[Physics/Electromagnetism/Capacitance|Capacitance]] — 电容器、介电质、储能
+- [[Physics/Electromagnetism/Current and Resistance|Current and Resistance]] — 电流、电阻、欧姆定律
+- [[Physics/Electromagnetism/DC Circuits|DC Circuits]] — 基尔霍夫定律、RC 电路
 
 ### 磁学 (Magnetism)
-- [[Electromagnetism/Magnetic Fields|Magnetic Fields]] — 磁场强度、毕奥-萨伐尔定律
-- [[Electromagnetism/Magnetic Forces|Magnetic Forces]] — 洛伦兹力、安培力
-- [[Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]] — 法拉第定律、楞次定律
-- [[Electromagnetism/Inductance|Inductance]] — 自感、互感、RL 电路、LC 振荡
+- [[Physics/Electromagnetism/Magnetic Fields|Magnetic Fields]] — 磁场强度、毕奥-萨伐尔定律
+- [[Physics/Electromagnetism/Magnetic Forces|Magnetic Forces]] — 洛伦兹力、安培力
+- [[Physics/Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]] — 法拉第定律、楞次定律
+- [[Physics/Electromagnetism/Inductance|Inductance]] — 自感、互感、RL 电路、LC 振荡
 
 ### 麦克斯韦与电磁波 (Maxwell & EM Waves)
-- [[Electromagnetism/Maxwell's Equations|Maxwell's Equations]] — 积分与微分形式的麦克斯韦方程组
-- [[Electromagnetism/Electromagnetic Waves|Electromagnetic Waves]] — 波动方程、能流密度、光谱
+- [[Physics/Electromagnetism/Maxwell's Equations|Maxwell's Equations]] — 积分与微分形式的麦克斯韦方程组
+- [[Physics/Electromagnetism/Electromagnetic Waves|Electromagnetic Waves]] — 波动方程、能流密度、光谱
 
 ## 前置知识
 

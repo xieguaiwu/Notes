@@ -89,10 +89,10 @@ $$E = \frac{\sigma}{2\varepsilon_0}\left(1 - \frac{x}{\sqrt{x^2 + R^2}}\right)$$
 
 ## 相关链接
 
-- [[Electromagnetism/Electrostatics|Electrostatics]]
-- [[Electromagnetism/Gauss's Law|Gauss's Law]]
-- [[Electromagnetism/Electric Potential|Electric Potential]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Electrostatics|Electrostatics]]
+- [[Physics/Electromagnetism/Gauss's Law|Gauss's Law]]
+- [[Physics/Electromagnetism/Electric Potential|Electric Potential]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 
 ## 注意事项
 

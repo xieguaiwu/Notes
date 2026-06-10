@@ -122,15 +122,15 @@ flowchart LR
 > 
 > 变化的电场也产生磁场，使电磁理论统一。
 
-详见 [[Electromagnetism/Maxwell's Equations|Maxwell's Equations]]。
+详见 [[Physics/Electromagnetism/Maxwell's Equations|Maxwell's Equations]]。
 
 ## 相关链接
 
-- [[Electromagnetism/Magnetic Fields|Magnetic Fields]]
-- [[Electromagnetism/Magnetic Forces|Magnetic Forces]]
-- [[Electromagnetism/Inductance|Inductance]]
-- [[Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Magnetic Fields|Magnetic Fields]]
+- [[Physics/Electromagnetism/Magnetic Forces|Magnetic Forces]]
+- [[Physics/Electromagnetism/Inductance|Inductance]]
+- [[Physics/Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 
 ## 注意事项
 

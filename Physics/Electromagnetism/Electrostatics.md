@@ -96,10 +96,10 @@ $$E = \frac{\sigma}{2\varepsilon_0}$$
 
 ## 相关链接
 
-- [[Electromagnetism/Electric Fields|Electric Fields]]
-- [[Electromagnetism/Gauss's Law|Gauss's Law]]
-- [[Electromagnetism/Electric Potential|Electric Potential]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Electric Fields|Electric Fields]]
+- [[Physics/Electromagnetism/Gauss's Law|Gauss's Law]]
+- [[Physics/Electromagnetism/Electric Potential|Electric Potential]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 - [[Math/Linear_Algebra/Vector and Matrix|向量分析]]
 
 ## 注意事项

@@ -143,10 +143,10 @@ $$\alpha = \frac{R}{2L}$$
 
 ## 相关链接
 
-- [[Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]]
-- [[Electromagnetism/Magnetic Fields|Magnetic Fields]]
-- [[Electromagnetism/DC Circuits|DC Circuits]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]]
+- [[Physics/Electromagnetism/Magnetic Fields|Magnetic Fields]]
+- [[Physics/Electromagnetism/DC Circuits|DC Circuits]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 
 ## 注意事项
 

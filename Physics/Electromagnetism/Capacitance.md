@@ -117,10 +117,10 @@ $$C = \kappa C_0$$
 
 ## 相关链接
 
-- [[Electromagnetism/Gauss's Law|Gauss's Law]]
-- [[Electromagnetism/Electric Potential|Electric Potential]]
-- [[Electromagnetism/DC Circuits|DC Circuits]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Gauss's Law|Gauss's Law]]
+- [[Physics/Electromagnetism/Electric Potential|Electric Potential]]
+- [[Physics/Electromagnetism/DC Circuits|DC Circuits]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 
 ## 注意事项
 

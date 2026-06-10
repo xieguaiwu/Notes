@@ -99,10 +99,10 @@ $$\nabla \times \vec{B} = \mu_0 \vec{J}$$
 
 ## 相关链接
 
-- [[Electromagnetism/Magnetic Forces|Magnetic Forces]]
-- [[Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]]
-- [[Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Magnetic Forces|Magnetic Forces]]
+- [[Physics/Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]]
+- [[Physics/Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 
 ## 注意事项
 

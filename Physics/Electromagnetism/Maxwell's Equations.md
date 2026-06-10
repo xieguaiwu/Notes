@@ -99,11 +99,11 @@ $$\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t},\quad \nabla \tim
 
 ## 相关链接
 
-- [[Electromagnetism/Gauss's Law|Gauss's Law]]
-- [[Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]]
-- [[Electromagnetism/Magnetic Fields|Magnetic Fields]]
-- [[Electromagnetism/Electromagnetic Waves|Electromagnetic Waves]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Gauss's Law|Gauss's Law]]
+- [[Physics/Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]]
+- [[Physics/Electromagnetism/Magnetic Fields|Magnetic Fields]]
+- [[Physics/Electromagnetism/Electromagnetic Waves|Electromagnetic Waves]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 
 ## 注意事项
 

@@ -129,10 +129,10 @@ graph TD
 
 ## 相关链接
 
-- [[Electromagnetism/Magnetic Fields|Magnetic Fields]]
-- [[Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]]
-- [[Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Magnetic Fields|Magnetic Fields]]
+- [[Physics/Electromagnetism/Electromagnetic Induction|Electromagnetic Induction]]
+- [[Physics/Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 
 ## 注意事项
 

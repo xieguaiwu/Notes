@@ -129,8 +129,8 @@ flowchart LR
 
 ## 相关链接
 
-- [[Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 - [[Math/Mathematical_Analysis/Infinite Series|微积分 — 级数与微分方程]]
 
 ## 注意事项

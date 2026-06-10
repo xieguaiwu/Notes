@@ -110,10 +110,10 @@ $$E = \frac{\sigma}{\varepsilon_0}$$
 
 ## 相关链接
 
-- [[Electromagnetism/Electrostatics|Electrostatics]]
-- [[Electromagnetism/Electric Fields|Electric Fields]]
-- [[Electromagnetism/Electric Potential|Electric Potential]]
-- [[Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
+- [[Physics/Electromagnetism/Electrostatics|Electrostatics]]
+- [[Physics/Electromagnetism/Electric Fields|Electric Fields]]
+- [[Physics/Electromagnetism/Electric Potential|Electric Potential]]
+- [[Physics/Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
 
 ## 注意事项
 

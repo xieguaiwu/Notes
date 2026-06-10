@@ -128,10 +128,10 @@ $$U_C = \frac{1}{2}CV_C^2$$
 
 ## 相关链接
 
-- [[Electromagnetism/Current and Resistance|Current and Resistance]]
-- [[Electromagnetism/Capacitance|Capacitance]]
-- [[Electromagnetism/Inductance|Inductance]]
-- [[Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
+- [[Physics/Electromagnetism/Current and Resistance|Current and Resistance]]
+- [[Physics/Electromagnetism/Capacitance|Capacitance]]
+- [[Physics/Electromagnetism/Inductance|Inductance]]
+- [[Physics/Electromagnetism/Electromagnetism - Home|Electromagnetism - Home]]
 
 ## 注意事项
 
