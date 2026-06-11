@@ -2,6 +2,7 @@
 tags:
   - Economics
   - Finance
+  - FinancialModeling
   - 基本原理
   - 概念性
 title: Finance - Efficient Market Hypothesis
@@ -11,7 +12,9 @@ created: 2026-06-11
 # Finance — Efficient Market Hypothesis
 
 > [!abstract] 概述
-> 有效市场假说（Efficient Market Hypothesis, EMH）由 Eugene Fama 在其 1965 年论文《The Behavior of Stock-Market Prices》中系统阐述，是该论文最核心的理论贡献。EMH 认为，在有效市场中，证券价格在任何时点都**充分反映所有可用信息**，因此连续价格变化是独立的随机变量，无法通过历史价格预测未来。
+> 有效市场假说（Efficient Market Hypothesis, EMH）认为，在有效市场中，证券价格在任何时点都**充分反映所有可用信息**，因此连续价格变化是独立的随机变量，无法通过历史价格预测未来。
+>
+> Fama 1965 年论文为 EMH 奠定了**关键的实证基础**——他系统检验了弱式有效市场的核心命题（历史价格能否预测未来），结论是明确的否定。正式提出 EMH 名称与三形式分类的是 Fama 1970 年的后续论文《Efficient Capital Markets: A Review of Theory and Empirical Work》。
 
 ## 1. 三种市场效率形式
 
@@ -74,15 +77,28 @@ flowchart LR
 
 ## 5. 实践检验：共同基金业绩
 
-Fama 检验了 39 只开放式共同基金在 1950–1960 年的表现：
+Fama 报告了其学生 Gerhard T. Roth 对 39 只开放式共同基金在 1950–1960 年表现的分析：
 
-- 毛回报率：**14.1%**（vs 市场 14.7%）
-- 扣除买入费用后：**14.9%**（vs 市场 14.7%，差异不显著）
+- 毛回报率（扣除买入费用前，按总投入计算）：**14.1%**（vs 市场 14.7%）
+- 净回报率（扣除买入费用后，按实际管理资金计算）：**14.9%**（vs 市场 14.7%，差异不显著）
 - 基金年度排名高度不稳定——无任何基金能持续跻身前 20 或后 20
 
 结论：**精明的分析师尚未被检测到**（Sophisticated analysts have not yet been detected）。
 
-## 6. 历史影响与争议
+## 6. 有效市场对普通投资者的启示
+
+Fama 论证了在有效市场中普通投资者的理性策略：
+
+> 投资者应专注于**投资组合分析**（Markowitz 框架），而非选股。
+
+具体而言包含三步：
+1. 确定愿意接受的风险-回报权衡
+2. 按风险对证券分类
+3. 在不同风险类别中**随机选择**证券构建组合
+
+由于所有证券在任意时点的价格都是内在价值的良好估计，**随机选择与精心选股的平均效果相同**——这一推论直接指向指数化投资的合理性。
+
+## 7. 历史影响与争议
 
 - **正面**：EMH 奠定了现代金融学的基石，推动了指数基金革命
 - **挑战**：行为金融学（De Bondt, Thaler, Shiller）发现了市场异象——动量效应、价值效应、日历效应等
@@ -94,3 +110,7 @@ Fama 检验了 39 只开放式共同基金在 1950–1960 年的表现：
 - [[Finance - Stable Paretian Distribution]] — 价格变化的数学分布
 - [[Finance - Stock Price Behavior]] — Fama 1965 论文全景
 - [[Finance - Quantitative Trading Fundamentals]] — 量化交易中的 Alpha 研究
+
+## 深入阅读
+
+- Fama (1965) 

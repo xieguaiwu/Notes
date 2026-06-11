@@ -85,16 +85,18 @@ flowchart TB
 
 | 作者 | 年份 | 贡献 |
 |:----|:----:|:-----|
-| Louis Bachelier | 1900 | 首次提出价格变化的正态假设与随机游走 |
+| Louis Bachelier | 1900 | 首次提出价格变化的**正态假设**与随机游走 |
 | M. F. Osborne | 1959 | 重新发现并形式化 Bachelier 的随机游走模型 |
-| Benoit Mandelbrot | 1960s | 稳定帕累托分布假设与无穷大方差 |
+| Benoit Mandelbrot | 1963 | **投机价格的**稳定帕累托分布假设与无穷大方差 |
 | S. S. Alexander | 1961 | 过滤技术 (filter technique) |
 
 ## 历史影响
 
-- **1970**：Fama 正式提出三形式 EMH（弱式/半强式/强式）
+- **1970**：Fama 在《Efficient Capital Markets: A Review of Theory and Empirical Work》中正式提出三形式 EMH（弱式/半强式/强式）——直接建立在 1965 年的实证基础之上
 - **1970s–80s**：指数基金兴起，被动投资理念深入人心
-- **1990s–2000s**：行为金融学挑战 EMH（动量、反转、日历效应等异象）
+- **1990s**：行为金融学（De Bondt & Thaler 动量反转、Jegadeesh & Titman 动量效应、Shiller 波动率）挑战 EMH
+- **1991**：Fama 发表《Efficient Capital Markets: II》，承认部分异象，但认为它们反映了风险或数据挖掘
+- **2013**：Fama、Hansen、Shiller 共同获得诺贝尔经济学奖——表彰他们对资产价格的实证分析；诺奖委员会直接引用了本文
 - **当代共识**：市场**基本有效**但存在**有限套利**可解释的异象
 
 > [!quote] Fama 1965 原文

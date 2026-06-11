@@ -1,6 +1,7 @@
 ---
 tags:
   - Economics
+  - Finance
   - FinancialModeling
   - 定义性
   - 概念性

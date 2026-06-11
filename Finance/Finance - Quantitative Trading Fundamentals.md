@@ -1,6 +1,7 @@
 ---
 tags:
   - Economics
+  - Finance
   - TradingSystems
   - FinancialML
   - FinancialModeling
