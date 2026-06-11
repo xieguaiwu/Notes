@@ -328,6 +328,8 @@ mindmap
 ## 12. 相关链接
 
 - [[Finance - Market Greeks]] — 市场希腊字母全面介绍
+- [[Finance - Random Walk in Stock Prices]] — 股票价格随机游走的统计检验
+- [[Finance - Stable Paretian Distribution]] — 股票收益的稳定帕累托分布
 - [[ML-Track/CTM - Feature Engineering]] — 金融特征工程
 - [[ML-Track/CTM - MultiAsset Model]] — 多资产交叉注意力建模
 - [[ML-Track/CTM - Walk-Forward Validation]] — Walk-Forward 验证
@@ -340,9 +342,10 @@ mindmap
 ## 13. 推荐学习路径
 
 1. 金融市场基础（供需、均衡）→ [[IEO/Supply_Demand/Equilibrium]]
-2. 市场 Greeks 与衍生品 → [[Finance - Market Greeks]]
-3. 时间序列分析 → [[ML-Track/Time Series Fundamentals]]
-4. 金融特征工程 → [[ML-Track/CTM - Feature Engineering]]
-5. 机器学习在金融中的应用
-6. 执行系统与风险管理 → [[ML-Track/CTM - Trading Execution]]
-7. 策略研究与回测框架搭建
+2. 有效市场假说 → [[Finance - Efficient Market Hypothesis]]
+3. 市场 Greeks 与衍生品 → [[Finance - Market Greeks]]
+4. 时间序列分析 → [[ML-Track/Time Series Fundamentals]]
+5. 金融特征工程 → [[ML-Track/CTM - Feature Engineering]]
+6. 机器学习在金融中的应用
+7. 执行系统与风险管理 → [[ML-Track/CTM - Trading Execution]]
+8. 策略研究与回测框架搭建

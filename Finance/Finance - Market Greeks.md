@@ -217,6 +217,8 @@ $$\Delta_{\Pi} = \sum_i w_i \Delta_i, \quad \Gamma_{\Pi} = \sum_i w_i \Gamma_i, 
 ## 4. 相关链接
 
 - [[Finance - Quantitative Trading Fundamentals]] — 量化交易核心概念
+- [[Finance - Efficient Market Hypothesis]] — 有效市场假说（EMH）
+- [[Finance - Stable Paretian Distribution]] — 股票收益的稳定帕累托分布
 - [[ML-Track/CTM - Feature Engineering]] — 金融特征工程
 - [[ML-Track/CTM - MultiAsset Model]] — 多资产建模与交叉注意力
 - [[ML-Track/CTM - Trading Execution]] — 交易系统架构
