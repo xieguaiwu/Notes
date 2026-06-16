@@ -16,7 +16,7 @@ created: 2026-06-14
 
 When we perform a hypothesis test, there are **four possible outcomes** — two correct, two incorrect.
 
-### 2×2 Decision Table
+### $2 \times 2$ Decision Table
 
 | | $H_0$ is **True** | $H_0$ is **False** |
 |:---|:---:|:---:|

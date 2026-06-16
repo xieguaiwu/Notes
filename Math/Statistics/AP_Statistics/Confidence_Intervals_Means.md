@@ -26,7 +26,7 @@ $$ \bar{x} \pm t^*_{n-1} \cdot \frac{s}{\sqrt{n}} $$
 ### Conditions
 
 1. **Random** — Data from a random sample or randomized experiment.
-2. **Independence / 10%** — $n < 0.10N$ (population at least 10× sample size).
+2. **Independence / 10%** — $n < 0.10N$ (population at least $10 \times$ sample size).
 3. **Nearly Normal** — Either the population is Normal, $n \ge 30$ (CLT), or a graph shows no strong skew/outliers.
 
 ### Interpreting the Interval

@@ -61,8 +61,9 @@ For data that are approximately normal:
         │   99.7%   │     └─────┘     │   99.7%   │
         │           └─────────────────┘           │
         └─────────────────────────────────────────┘
-       μ-3σ      μ-2σ     μ-σ     μ    μ+σ     μ+2σ    μ+3σ
 ```
+
+$$ \mu-3\sigma \qquad \mu-2\sigma \qquad \mu-\sigma \qquad \mu \qquad \mu+\sigma \qquad \mu+2\sigma \qquad \mu+3\sigma $$
 
 ### Applying the Rule: An Example
 

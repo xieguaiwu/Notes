@@ -154,7 +154,7 @@ $$SE_{b_1} = \frac{s_e}{\sqrt{\sum (x-x̄)^2}} = \frac{\sqrt{\frac{\sum(y-ŷ)^2}
 | 1-proportion $z$ | ✅ SRS | ✅ $n \le 0.1N$ | ✅ $np_0 \ge 10,\ n(1-p_0) \ge 10$ |
 | 2-proportion $z$ | ✅ SRS | ✅ both | ✅ Test: $n_i\hat{p}_c \ge 10,\ n_i(1-\hat{p}_c) \ge 10$ each; CI: $n_i\hat{p}_i \ge 10,\ n_i(1-\hat{p}_i) \ge 10$ each |
 | 1-mean $t$ | ✅ SRS | ✅ $n \le 0.1N$ | ✅ $n \ge 30$ or pop. normal or no strong skew/outliers |
-| 2-mean $t$ | ✅ SRS | ✅ both | ✅ both ≥30 or pop. normal or no skew/outliers |
+| 2-mean $t$ | ✅ SRS | ✅ both | ✅ both $\ge 30$ or pop. normal or no skew/outliers |
 | Matched pairs $t$ | ✅ random assignment/pairs | — | ✅ $n_d \ge 30$ or diff. pop. normal |
 | $χ^2$ GOF | ✅ random | — | ✅ all $E \ge 5$ |
 | $χ^2$ homogeneity/indep | ✅ SRS | — | ✅ all $E \ge 5$ |

@@ -102,7 +102,7 @@ Any point outside these fences is flagged as a potential outlier and plotted ind
 Given a distribution, describe it with **four components**:
 
 1. **S**hape — symmetric? skewed left/right? unimodal/bimodal? any gaps or clusters?
-2. **O**utliers — are there any? use the 1.5×IQR rule or look for isolated points on a dotplot.
+2. **O**utliers — are there any? use the $1.5 \times \text{IQR}$ rule or look for isolated points on a dotplot.
 3. **C**enter — report the appropriate measure (median for skewed, mean for symmetric).
 4. **S**pread — report the companion measure (IQR with median, standard deviation with mean).
 

@@ -12,6 +12,16 @@ modified: 2026-06-10
 > [!abstract] 电磁学概述
 > 电磁学（Electromagnetism）是物理学中研究电磁相互作用的分支，涵盖电场、磁场、电磁感应、电磁波等现象。麦克斯韦方程组统一了电学和磁学，揭示了光本质上是一种电磁波。
 
+> [!tip] 💡 学习地图建议
+> 按这个顺序学习效果最佳：
+> 1. **[[Physics/Electromagnetism/Electrostatics|静电学]]** → 静止电荷的基本规律
+> 2. **[[Physics/Electromagnetism/Electric Fields|电场]] + [[Physics/Electromagnetism/Gauss's Law|高斯定律]]** → 电场的描述和计算
+> 3. **[[Physics/Electromagnetism/Electric Potential|电势]] + [[Physics/Electromagnetism/Capacitance|电容]]** → 电场的能量视角
+> 4. **[[Physics/Electromagnetism/Current and Resistance|电流与电阻]] + [[Physics/Electromagnetism/DC Circuits|直流电路]]** → 电荷运动的宏观表现
+> 5. **[[Physics/Electromagnetism/Magnetic Fields|磁场]] + [[Physics/Electromagnetism/Magnetic Forces|磁力]]** → 运动电荷的磁效应
+> 6. **[[Physics/Electromagnetism/Electromagnetic Induction|电磁感应]] + [[Physics/Electromagnetism/Inductance|电感]]** → 磁与电的动态耦合
+> 7. **[[Physics/Electromagnetism/Maxwell's Equations|麦克斯韦方程组]] + [[Physics/Electromagnetism/Electromagnetic Waves|电磁波]]** → 电磁理论的统一与顶峰
+
 ## 知识地图
 
 ### 静电学 (Electrostatics)
