@@ -5,7 +5,7 @@ tags:
   - 基本原理
 title: Electric Potential
 created: 2026-06-10
-modified: 2026-06-10
+modified: 2026-06-29
 ---
 
 # Electric Potential
@@ -47,9 +47,12 @@ $$\Delta U = U_b - U_a = -W_{a \to b} = -q \int_a^b \vec{E} \cdot d\vec{l}$$
 > - **闪电** = 云层和地面之间的电势差高达数亿伏，突然放电
 > - **静电接地** = 将电势拉到和地球相同（取大地为零电势参考点）
 
-### 3. 电势差
+### 3. 电势差 (Electric Potential Difference / Voltage)
 
 $$V_{ab} = V_a - V_b = \int_a^b \vec{E} \cdot d\vec{l}$$
+
+> [!info] 💡 电压 / Voltage
+> **电压（voltage）** 是电势差的工程常用名，物理含义完全相同。日常说的"220V 电压"就是指火线与零线之间的电势差。
 
 > [!important] 静电场的保守性
 > 静电场中，电场力做功与路径无关，只取决于起点和终点。因此：

@@ -5,7 +5,7 @@ tags:
   - 证明
 title: Electric Fields
 created: 2026-06-10
-modified: 2026-06-10
+modified: 2026-06-29
 ---
 
 # Electric Fields
@@ -25,11 +25,30 @@ modified: 2026-06-10
 > - 单位：$\text{N/C}$ 或 $\text{V/m}$
 > - 方向：正电荷所受力的方向
 
-### 点电荷的电场
+> [!question] 🤔 为什么是"微小正检验电荷"（small positive test charge）？
+>
+> 电场定义中的检验电荷 $q_0$ 有**两个严格约束**：
+>
+> 1. **正（positive）** — 电场方向**约定**为**正**电荷所受力的方向（direction of force on a *positive* charge）。若用负电荷测，受力方向相反，电场方向将反号——所以这个约定保证 $⃗{E}$ 的方向唯一且直观。
+> 2. **小（infinitesimally small, $q_0 \to 0$）** — 检验电荷必须足够小，以**不干扰原电场分布**（without disturbing the original field）。若 $q_0$ 太大，它会极化附近导体/电介质、或重分布自由电荷，使测得的场偏离真实的原电场。极限 $\lim_{q_0 \to 0}$ 就是数学上表达"无限小，但不为零"。
+>
+> 这个思想实验（thought experiment）贯穿整个电磁学：用一个**理想探针**（ideal probe）去测量物理量，探针本身不应改变被测系统。
+
+### 库仑定律与点电荷电场 (Coulomb's Law → Point Charge Field)
+
+点电荷的电场公式可从**库仑定律**（Coulomb's law）直接导出：
+
+$$
+\vec{F} = \frac{1}{4\pi\varepsilon_0} \frac{q \, q_0}{r^2} \hat{r} \quad \Longrightarrow \quad \vec{E} = \frac{\vec{F}}{q_0} = \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2} \hat{r}
+$$
+
+即：库仑定律给出两个点电荷间的力 → 除以检验电荷 $q_0$ → 得到源电荷 $q$ 产生的电场。
+
+### 点电荷的电场 (Point Charge Field)
 
 $$\vec{E}(\vec{r}) = \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2} \hat{r}$$
 
-### 电场叠加
+### 电场叠加 (Superposition of Electric Fields)
 
 $$\vec{E}(\vec{r}) = \frac{1}{4\pi\varepsilon_0} \sum_{i=1}^n \frac{q_i}{|\vec{r} - \vec{r}_i|^2} \hat{\mathcal{R}}_i$$
 
