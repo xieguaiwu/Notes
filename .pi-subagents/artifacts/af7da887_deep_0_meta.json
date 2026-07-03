@@ -1,0 +1,39 @@
+{
+  "runId": "af7da887",
+  "agent": "deep",
+  "task": "生成一篇关于**数论 (Number Theory) 初等数论**的Obsidian笔记，保存到 /home/xieguiawu/Documents/Obsidian Vault/Math/Number_Theory/Number_Theory.md\n\n这是数学Vault中完全缺失的一个重要分支。请严格遵循以下格式规范：\n\n## YAML front matter\n```yaml\n---\ntitle: Number Theory\ntags:\n  - Math\n  - NumberTheory\n  - 定义性\n  - 基本原理\ncreated: 2026-07-03\n---\n```\n- 标题英文Title Case\n- 标签：`Math`, `NumberTheory`（学科标签），功能标签用中文：`定义性`, `基本原理`, `证明`, `方法性`, `定理性`, `概念性`\n- 优先复用已有功能标签\n\n## 格式要求\n1. 数学公式全部 LaTeX（$...$ 行内, $$...$$ 块级），禁止任何Unicode数学符号\n2. 使用Mermaid图表展示概念关系/分类\n3. 使用Callout: >[!note], >[!definition], >[!example], >[!theorem], >[!warning], >[!tip]\n4. 内部链接到已有笔记：[[Abstract_Algebra/Ring]], [[Abstract_Algebra/Field]], [[Abstract_Algebra/Group]], [[Boolean Algebra]], [[Linear_Algebra/Determinant]]\n5. 不要使用 `---` 水平分割线\n6. 文件路径已确定，用 write 写入\n\n## 内容要求\n- 整除性与带余除法、最大公因数与Euclid算法\n- 素数（无限性证明、素数定理简述、素数分布）\n- 算术基本定理\n- 同余、同余方程、中国剩余定理\n- 完全剩余系与简化剩余系、Euler函数 φ(n)\n- Wilson定理、Fermat小定理、Euler定理\n- 二次互反律（简述）\n- 连分数与丢番图逼近（简介）\n- 至少10个具体数例\n- 深度中等，约1500-2500字\n\n输出方式：使用 write 工具写入文件。",
+  "exitCode": 0,
+  "usage": {
+    "input": 20161,
+    "output": 13944,
+    "cacheRead": 170112,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 12
+  },
+  "model": "opencode-go/deepseek-v4-pro:xhigh",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-pro:xhigh"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-pro:xhigh",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 20161,
+        "output": 13944,
+        "cacheRead": 170112,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 12
+      }
+    }
+  ],
+  "durationMs": 214257,
+  "toolCount": 20,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783013507267
+}

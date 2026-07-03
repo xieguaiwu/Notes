@@ -1,0 +1,39 @@
+{
+  "runId": "623d8e0a",
+  "agent": "momus",
+  "task": "审查以下4篇Obsidian数学笔记的质量。请严格检查以下几方面，并以结构化报告呈现发现的问题和修复建议。\n\n## 待审查文件\n\n1. Topology: /home/xieguiawu/Documents/Obsidian Vault/Math/Topology/Topology.md\n2. Number Theory: /home/xieguiawu/Documents/Obsidian Vault/Math/Number_Theory/Number_Theory.md\n3. Mathematical Logic: /home/xieguiawu/Documents/Obsidian Vault/Math/Mathematical_Logic/Mathematical_Logic.md\n4. Complex Analysis: /home/xieguiawu/Documents/Obsidian Vault/Math/Complex_Analysis/Complex_Analysis.md\n\n## 审查标准\n\n### 数学正确性 (权重最高)\n- 概念定义是否准确？\n- 定理表述是否精确？\n- 是否存在数学错误或误导性表述？\n\n### 格式合规性\n- YAML front matter是否符合 vault 规范？（标签：学科用英文首字母大写驼峰，功能用中文）\n- 数学公式是否全部用 LaTeX（$...$/$$...$$），无 Unicode 数学符号替代？（如 $\\to$ 正确，→ 错误；$\\forall$ 正确，∀ 错误；$\\in$ 正确，∈ 错误等）\n- Mermaid 图表是否渲染有效？\n- Callout 语法是否正确？\n- 内部链接是否指向确实存在或合理应存在的笔记？\n\n### 内容完整性\n- 覆盖深度是否合理？\n- 例子数量是否充足（要求≥8个）？\n- 与其他笔记的交叉引用是否充分？\n\n## 输出要求\n- 对每篇笔记给出独立评价\n- 列出具体问题（如果有）并附上行号或位置\n- 按严重度分级：Critical（必须修复）/ Minor（建议修复）/ Nitpick（可忽略）\n- 最后给出整体综合评价和优先修复建议\n\n使用 read 工具读取文件内容进行审查。",
+  "exitCode": 0,
+  "usage": {
+    "input": 29655,
+    "output": 19160,
+    "cacheRead": 134400,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 5
+  },
+  "model": "opencode-go/deepseek-v4-pro:xhigh",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-pro:xhigh"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-pro:xhigh",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 29655,
+        "output": 19160,
+        "cacheRead": 134400,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 5
+      }
+    }
+  ],
+  "durationMs": 286167,
+  "toolCount": 19,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783013863572
+}

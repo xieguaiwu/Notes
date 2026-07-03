@@ -1,0 +1,39 @@
+{
+  "runId": "af7da887",
+  "agent": "deep",
+  "task": "生成一篇关于**复分析 (Complex Analysis)** 的Obsidian笔记，保存到 /home/xieguiawu/Documents/Obsidian Vault/Math/Complex_Analysis/Complex_Analysis.md\n\n这是数学Vault中缺失的重要领域。已有 [[Mathematical_Analysis/Complex Field]] 但内容很浅。请严格遵循以下格式规范：\n\n## YAML front matter\n```yaml\n---\ntitle: Complex Analysis\ntags:\n  - Math\n  - ComplexAnalysis\n  - 定义性\n  - 基本原理\ncreated: 2026-07-03\n---\n```\n- 标题英文Title Case\n- 标签：`Math`, `ComplexAnalysis`（学科标签），功能标签用中文：`定义性`, `基本原理`, `证明`, `方法性`, `定理性`, `概念性`\n- 优先复用已有功能标签\n\n## 格式要求\n1. 数学公式全部 LaTeX（$...$ 行内, $$...$$ 块级），禁止任何Unicode数学符号\n2. 使用Mermaid图表展示概念关系/分类\n3. 使用Callout: >[!note], >[!definition], >[!example], >[!theorem], >[!warning], >[!tip]\n4. 内部链接到已有笔记：[[Mathematical_Analysis/Complex Field]], [[Mathematical_Analysis/Differentiability and Continuity]], [[Mathematical_Analysis/Definite Integrals]], [[Linear_Algebra/Bilinear Forms]]\n5. 不要使用 `---` 水平分割线\n6. 文件路径已确定，用 write 写入\n\n## 内容要求\n- 复变函数基础：复平面、复函数、极限、连续性\n- 解析函数与Cauchy-Riemann方程\n- 初等多值函数（对数、幂函数、复指数）\n- 复积分与Cauchy积分定理\n- Cauchy积分公式及其推论（Liouville定理、代数基本定理的复证明）\n- 留数定理与实积分的计算\n- Taylor展开与Laurent展开\n- 孤立奇点分类\n- 深度中等，约1500-2500字\n- 至少8个具体函数例子\n\n输出方式：使用 write 工具写入文件。",
+  "exitCode": 0,
+  "usage": {
+    "input": 26318,
+    "output": 14178,
+    "cacheRead": 374784,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 17
+  },
+  "model": "opencode-go/deepseek-v4-pro:xhigh",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-pro:xhigh"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-pro:xhigh",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 26318,
+        "output": 14178,
+        "cacheRead": 374784,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 17
+      }
+    }
+  ],
+  "durationMs": 249363,
+  "toolCount": 22,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783013542387
+}

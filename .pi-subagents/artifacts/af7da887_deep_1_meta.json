@@ -1,0 +1,39 @@
+{
+  "runId": "af7da887",
+  "agent": "deep",
+  "task": "生成一篇关于**数理逻辑 (Mathematical Logic)** 的Obsidian笔记，保存到 /home/xieguiawu/Documents/Obsidian Vault/Math/Mathematical_Logic/Mathematical_Logic.md\n\n这是数学Vault中完全缺失的重要领域。请严格遵循以下格式规范：\n\n## YAML front matter\n```yaml\n---\ntitle: Mathematical Logic\ntags:\n  - Math\n  - Logic\n  - 定义性\n  - 基本原理\ncreated: 2026-07-03\n---\n```\n- 标题英文Title Case\n- 标签：`Math`, `Logic`（学科标签），功能标签用中文：`定义性`, `基本原理`, `证明`, `方法性`, `定理性`, `概念性`\n- 优先复用已有功能标签\n\n## 格式要求\n1. 数学公式全部 LaTeX（$...$ 行内, $$...$$ 块级），禁止任何Unicode数学符号\n2. 使用Mermaid图表展示概念关系\n3. 使用Callout: >[!note], >[!definition], >[!example], >[!theorem], >[!warning], >[!tip]\n4. 内部链接到已有笔记：[[Lambda Calculus]], [[Boolean Algebra]], [[Category Theory]], [[Set_Theory/Cartesian product]], [[Category Theory/Natural Transformation]], [[Boolean Algebra]]\n5. 不要使用 `---` 水平分割线\n6. 特别注意：模态逻辑算子必须用 $\\Box$, $\\Diamond$, $\\lnot$, $\\land$, $\\lor$, $\\to$, $\\models$, $\\vdash$，禁止ASCII替代\n7. 文件路径已确定，用 write 写入\n\n## 内容要求\n- 命题逻辑：语法、语义、真值表、重言式\n- 一阶逻辑：谓词、量词、Free/bound variables\n- 语义与语法后承（$\\models$ vs $\\vdash$）\n- Gödel完备性定理（陈述）\n- Gödel不完备性定理（第一、第二，非正式陈述）\n- 可计算性：图灵机、停机问题、判定问题\n- 与[[Lambda Calculus]]的联系（λ演算与递归函数等价）\n- 与[[Category Theory]]的联系（Curry-Howard对应）\n- 深度中等，约1500-2500字\n- 至少8个具体逻辑例子\n\n输出方式：使用 write 工具写入文件。",
+  "exitCode": 0,
+  "usage": {
+    "input": 28005,
+    "output": 17470,
+    "cacheRead": 316928,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 20
+  },
+  "model": "opencode-go/deepseek-v4-pro:xhigh",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-pro:xhigh"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-pro:xhigh",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 28005,
+        "output": 17470,
+        "cacheRead": 316928,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 20
+      }
+    }
+  ],
+  "durationMs": 271327,
+  "toolCount": 38,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783013564343
+}

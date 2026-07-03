@@ -5,7 +5,7 @@ tags:
   - 证明
 title: Electric Fields
 created: 2026-06-10
-modified: 2026-06-29
+modified: 2026-06-30
 ---
 
 # Electric Fields
@@ -44,6 +44,17 @@ $$
 
 即：库仑定律给出两个点电荷间的力 → 除以检验电荷 $q_0$ → 得到源电荷 $q$ 产生的电场。
 
+> [!info] 🎯 单位矢量 $\hat{r}$（Unit Radial Vector）
+> $\hat{r}$（读作"r-hat"）是**径向单位矢量**（unit radial vector），表示从源电荷（source charge）指向场点（field point）的方向，长度为 1。
+> $$\hat{r} = \frac{\vec{r}}{|\vec{r}|}$$
+> 它只标明**方向**，不携带大小信息。点电荷电场公式中用 $\hat{r}$ 而不用 $\vec{r}$，是因为场强大小已由 $\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}$ 表达，$\hat{r}$ 仅负责指明电场的方向（正电荷向外、负电荷向内）。
+
+> [!info] 🧷 真空介电常数 $\varepsilon_0$（Vacuum Permittivity）
+> $$\varepsilon_0 = 8.854 \times 10^{-12} \,\text{C}^2/(\text{N·m}^2)$$
+> - **物理含义**：衡量真空"允许"电场线通过的能力——$\varepsilon_0$ 越大，同样电荷产生的电场越弱
+> - **为什么有 $\varepsilon_0$**：库仑定律 $F = \frac{1}{4\pi\varepsilon_0}\frac{q_1 q_2}{r^2}$ 中的 $4\pi$ 是特意引入的，为的是让高斯定律 $\oint \vec{E} \cdot d\vec{A} = Q_{\text{enc}}/\varepsilon_0$ 形式简洁（无需 $4\pi$ 系数），而非巧合
+> - **与光速的关系**：$\varepsilon_0$ 与真空磁导率 $\mu_0$ 共同决定了光速——$c = 1/\sqrt{\mu_0\varepsilon_0}$，这个关系直接**预言了光就是电磁波**
+
 ### 点电荷的电场 (Point Charge Field)
 
 $$\vec{E}(\vec{r}) = \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2} \hat{r}$$
@@ -81,6 +92,19 @@ graph TD
 > $$\Phi_E = \int_S \vec{E} \cdot d\vec{A} = \int_S E\cos\theta \, dA$$
 > 
 > 其中 $d\vec{A}$ 的方向为曲面的法线方向。
+
+## 电荷密度 (Charge Density)
+
+实际带电体常需描述电荷在空间中的**分布密集程度**，有三种电荷密度：
+
+| 类型 | 符号 | 定义 | 电荷元 | 单位 | 适用场景 |
+|------|------|------|-------|------|---------|
+| **线电荷密度** (linear charge density) | $\lambda$ | $\lambda = \dfrac{dq}{dl}$ | $dq = \lambda\,dl'$ | $\text{C/m}$ | 细长带电体（杆、环、线） |
+| **面电荷密度** (surface charge density) | $\sigma$ | $\sigma = \dfrac{dq}{dA}$ | $dq = \sigma\,dA'$ | $\text{C/m}^2$ | 带电薄板、导体表面 |
+| **体电荷密度** (volume charge density) | $\rho$ | $\rho = \dfrac{dq}{dV}$ | $dq = \rho\,dV'$ | $\text{C/m}^3$ | 三维带电体（球、柱） |
+
+> [!tip] 💡 从离散到连续
+> 点电荷是理想化模型；真实物体中的电荷是连续分布的。将电荷离散求和 $\sum$ 替换为积分 $\int$，电荷元 $dq$ 按分布类型代入对应表达式即可。
 
 ## 特殊电场分布
 
