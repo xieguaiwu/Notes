@@ -21,3 +21,16 @@ new.md
 
 # OpenCode internal state
 .omo/
+
+# Build artifacts
+rhel-9-x86_64/
+
+# Subagent temp artifacts
+.pi-subagents/artifacts/
+
+# pi-agent session temp
+.pi-subagents/
+
+# Anki package backups
+*.apkg.bak
+*.colpkg.bak
