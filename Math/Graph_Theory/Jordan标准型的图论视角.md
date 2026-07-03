@@ -5,7 +5,7 @@ tags:
   - LinearAlgebra
   - 定理性
   - 概念性
-title: Jordan Form through Graph Theory
+title: Jordan标准型的图论视角
 created: 2026-07-03
 modified:
 aliases:
@@ -14,7 +14,7 @@ aliases:
   - Jordan链图的图论视角
 ---
 
-# Jordan Form through Graph Theory
+# Jordan 标准型的图论视角 (Jordan Form through Graph Theory)
 
 > **Path C 视角** — 用图论重新理解 Jordan 标准型。每个 Jordan 块对应一个基本"链图"（directed path with self-loops）；Jordan 标准型就是一个矩阵的有向图分解为这些不可约链图的不交并。
 
@@ -42,7 +42,7 @@ Jordan 标准型通常被理解为"最佳的对角化近似"——当特征向�
 
 ---
 
-## 2. Jordan Block as Basic Graph
+## 2. Jordan 块作为基本图 (Jordan Block as Basic Graph)
 
 ### 2.1 定义
 
@@ -101,9 +101,9 @@ graph LR
 
 ---
 
-## 3. Generalized Eigenvectors as Path Walks
+## 3. 广义特征向量作为路径行走 (Generalized Eigenvectors as Path Walks)
 
-### 3.1 The Shift Matrix
+### 3.1 移位矩阵 (The Shift Matrix)
 
 定义 Jordan 块的**幂零移位矩阵**：
 
@@ -120,7 +120,7 @@ $$
 
 在图论语言中：$N_k$ 就是移除了所有自环的图——一条纯粹的有向路径。
 
-### 3.2 Powers as Walk Lengths
+### 3.2 幂作为行走长度 (Powers as Walk Lengths)
 
 $N_k$ 的幂在图上对应不同长度的行走：
 
@@ -169,7 +169,7 @@ graph LR
 
 > 上图展示了 $J_4(0)$ 的幂在路径图上的行走解释：$J_4(0)^2$ 对应两步行走（$v_1\to v_3$，$v_2\to v_4$），$J_4(0)^3$ 对应三步行走（仅 $v_1\to v_4$），$J_4(0)^4 = 0$ 因为路径不够长。
 
-### 3.3 Generalized Eigenvectors as Positions on the Chain
+### 3.3 广义特征向量作为链上的位置 (Generalized Eigenvectors as Positions on the Chain)
 
 **定义**（广义特征向量）。向量 $\mathbf{v} \neq \mathbf{0}$ 是 $A$ 关于 $\lambda$ 的**秩 $r$ 的广义特征向量**，如果：
 
@@ -206,7 +206,7 @@ graph LR
 
 ---
 
-## 4. Direct Sum as Disjoint Union
+## 4. 直和作为不交并 (Direct Sum as Disjoint Union)
 
 ### 4.1 直和 = 图的不交并
 
@@ -304,7 +304,7 @@ graph LR
 
 ---
 
-## 5. Algebraic vs. Geometric Multiplicity
+## 5. 代数重数与几何重数 (Algebraic vs. Geometric Multiplicity)
 
 ### 5.1 图论定义
 
@@ -405,7 +405,7 @@ graph LR
 
 ---
 
-## 6. Nilpotent Operators as Directed Paths
+## 6. 幂零算子作为有向路径 (Nilpotent Operators as Directed Paths)
 
 ### 6.1 幂零矩阵 = 所有自环权重为零
 
@@ -508,7 +508,7 @@ $$
 
 ---
 
-## 7. Minimal Polynomial as Graph Property
+## 7. 极小多项式作为图性质 (Minimal Polynomial as Graph Property)
 
 ### 7.1 定义回顾
 
@@ -615,12 +615,12 @@ graph TD
 
 ## 相关笔记
 
-- [[Every Matrix is a Graph]] — Path C 基础：矩阵-图二元性的完整建立
-- [[Linear Transformations as Graph Morphisms]] — 线性变换的图态射视角
+- [[矩阵即图]] — Path C 基础：矩阵-图二元性的完整建立
+- [[线性变换即图同态]] — 线性变换的图态射视角
 - [[Linear_Algebra/Jordan Canonical Form]] — Jordan 标准型的标准代数处理
 - [[Linear_Algebra/Eigenvalues and Eigenvectors]] — 特征值与特征向量的基础理论
 - [[Linear_Algebra/Diagonalization]] — 对角化：Jordan 块大小全为 1 的特殊情形
-- [[Graph - Adjacency Matrix & Spectrum]] — 邻接矩阵与图谱理论
-- [[Graph - Walks, Cycles & Connectivity]] — 图上行走、圈与连通的图论基础
+- [[Adjacency Matrix & Spectrum]] — 邻接矩阵与图谱理论
+- [[Walks, Cycles & Connectivity]] — 图上行走、圈与连通的图论基础
 
 ---

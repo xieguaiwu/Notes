@@ -5,11 +5,11 @@ tags:
   - ComputerScience
   - 定义性
   - 基本原理
-title: Graph - Definitions
+title: Definitions
 created: 2026-03-09T11:20:00
 modified:
 ---
-# Graph - Definations
+# 图的基本定义 (Basic Definitions)
 ## 1. 图 (Graph)
 
 **定义 1.2**：图是一个二元组 $G = (V, E)$，其中：
