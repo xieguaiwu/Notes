@@ -1,0 +1,39 @@
+{
+  "runId": "16c42022",
+  "agent": "momus",
+  "task": "You are a CRITICAL REVIEWER. Your job is to rigorously audit all 14 graph theory notes in /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/ for quality.\n\nRead ALL .md files in that directory (exclude PDFs). For each file, check:\n\n1. **YAML Front Matter**: \n   - Must have title, tags, created fields\n   - Tags must match vault conventions (学科英文驼峰 + 功能中文)\n   - No single quotes in tags\n   - Title format: Title Case in English\n\n2. **Mathematical Content**:\n   - All math must use proper LaTeX (no Unicode replacements like →, ∀, ∃, ∈, etc.)\n   - All LaTeX delimiters must be balanced ($...$ and $$...$$)\n   - No ASCII substitute symbols\n\n3. **Mermaid Diagrams**:\n   - Should render properly (correct syntax)\n   - At least 3-6 per file depending on topic\n\n4. **Internal Links**: \n   - [[links]] should point to existing notes in the vault\n   - Check that references to other graph theory notes use correct filenames\n\n5. **Structure**:\n   - Proper heading hierarchy (# → ## → ###)\n   - Callout usage ([!note], [!tip], [!warning], etc.)\n   - No unnecessary horizontal rules\n   - 符号速查 section present\n   - 相关链接 section present\n\n6. **Completeness**: \n   - Content matches what was specified for each note\n   - No truncated/empty sections\n   - Complete sentences, not stubs\n\n7. **Content Accuracy**:\n   - Verify the content matches actual graph theory (Griffin textbook, Ch1-10)\n   - No major mathematical errors\n\nFor each file found, either:\n- APPROVE: if all quality standards are met\n- FLAG: specific issues found with exact file + line reference\n\nGive a FINAL VERDICT: PASS or FAIL for the entire set.\n\nFocus especially on these critical notes:\n- Graph - Adjacency Matrix & Spectrum.md (core algebraic graph theory)\n- Every Matrix is a Graph.md (core insight note)\n- Jordan Form through Graph Theory.md (complex connection)\n- Graph - Laplacian & Spectral Clustering.md (important applications)\n\nWrite your review COMPLETELY. Do not truncate.",
+  "exitCode": 0,
+  "usage": {
+    "input": 120112,
+    "output": 13194,
+    "cacheRead": 420608,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 7
+  },
+  "model": "opencode-go/deepseek-v4-pro:xhigh",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-pro:xhigh"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-pro:xhigh",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 120112,
+        "output": 13194,
+        "cacheRead": 420608,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 7
+      }
+    }
+  ],
+  "durationMs": 209307,
+  "toolCount": 24,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783058127873
+}

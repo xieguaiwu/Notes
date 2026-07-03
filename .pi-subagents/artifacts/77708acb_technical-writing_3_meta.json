@@ -1,0 +1,39 @@
+{
+  "runId": "77708acb",
+  "agent": "technical-writing",
+  "task": "Write COMPLETE file at: /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/Every Matrix is a Graph.md\n\nThis is the first of the unique perspective notes (Path C) — the user's core idea: using graph theory to understand linear algebra. This is NOT from the Griffin textbook; it's a synthesis perspective.\n\n**Tags**: [Math, GraphTheory, LinearAlgebra, Idea, 概念性]\n\n**Content**:\n\n1. **核心思想 (The Core Insight)**:\n   - Any matrix IS a directed bipartite graph (if rectangular) or directed graph (if square)\n   - The non-zero entries define the edges\n   - Conversely, any graph has an adjacency matrix\n   - This duality is the bridge between combinatorial and algebraic thinking\n\n2. **Every Matrix as a Bipartite Graph**:\n   - An m×n matrix M can be represented as a weighted bipartite graph:\n     - Left vertices: rows 1..m\n     - Right vertices: columns 1..n\n     - Edge from row i to column j with weight M_{ij} if M_{ij} ≠ 0\n   - Mermaid: small 3×4 matrix and its bipartite graph side-by-side\n\n3. **Square Matrices as Directed Graphs**:\n   - n×n matrix A → directed graph on n vertices\n   - Edge i→j exists iff A_{ij} ≠ 0, weight = A_{ij}\n   - Mermaid: 3×3 matrix with its directed graph\n\n4. **Matrix Multiplication as Path Counting**:\n   - (AB)_{ij} = Σ_k A_{ik} B_{kj} = sum of paths of length 2 from i to j (through k)\n   - A^k_{ij} = number of walks of length k from i to j\n   - This is the FUNDAMENTAL connection: algebraic operation = combinatorial enumeration\n   - Mermaid: path counting interpretation of (A²)_{ij}\n\n5. **Rank and the Structure of Graphs**:\n   - Rank of adjacency matrix A relates to graph properties\n   - Relationship between rank and number of vertices (lower bounds)\n   - Nullspace of A = vectors orthogonal to incident edges\n   - Mermaid: visualizing nullspace vectors on a graph\n\n6. **Transpose as Reversal**:\n   - A^T corresponds to reversing all edge directions\n   - A + A^T = symmetrization = underlying undirected graph\n   - A - A^T = signed directed edges (skew-symmetric part)\n\n7. **Spectral Decomposition = Graph Decomposition**:\n   - A = Σ λ_i v_i v_i^T (spectral theorem for symmetric A)\n   - Each eigenvector v_i defines a weighting on vertices\n   - The eigenvalue λ_i measures how much the graph 'amplifies' along that direction\n   - This is the deepest connection: eigenvectors are \"natural modes\" of the graph\n\nLinks: [[Graph - Adjacency Matrix & Spectrum]], [[Linear_Algebra/Matrix Operations]], [[Linear_Algebra/Rank and Nullity]], [[Linear_Algebra/Eigenvalues and Eigenvectors]], [[Graph - Laplacian & Spectral Clustering]]\nInclude 相关笔记 and 延伸阅读 sections.\nAt least 3 Mermaid diagrams.\nWrite COMPLETE file with write tool.",
+  "exitCode": 0,
+  "usage": {
+    "input": 29170,
+    "output": 11919,
+    "cacheRead": 224256,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 12
+  },
+  "model": "opencode-go/deepseek-v4-flash:medium",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-flash:medium"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-flash:medium",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 29170,
+        "output": 11919,
+        "cacheRead": 224256,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 12
+      }
+    }
+  ],
+  "durationMs": 137147,
+  "toolCount": 18,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783057571066
+}

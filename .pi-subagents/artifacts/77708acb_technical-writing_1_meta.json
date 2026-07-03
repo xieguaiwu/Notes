@@ -1,0 +1,39 @@
+{
+  "runId": "77708acb",
+  "agent": "technical-writing",
+  "task": "Write COMPLETE file at: /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/Graph - Random Walks & PageRank.md\n\nBased on Griffin Ch10.1-10.3 (Eigenvector Centrality, Markov Chains and Random Walks, PageRank).\n\n**Tags**: [Math, GraphTheory, Probability, 概念性, 方法性]\n\n**Content**:\n\n1. **Eigenvector Centrality** (10.1):\n   - Definition: x_i proportional to sum of neighbors' centralities => Ax = λx\n   - Principal eigenvector gives scores\n   - Perron-Frobenius ensures uniqueness for connected graphs\n   - Comparison with degree centrality (Mermaid diagram)\n   - Limitation: zero centrality for acyclic digraphs\n\n2. **Markov Chains and Random Walks** (10.2):\n   - Random walk on graph: from vertex i, choose neighbor uniformly at random\n   - Transition matrix P = D^{-1}A (row-stochastic)\n   - Markov chain properties: irreducible = connected, aperiodic = not bipartite\n   - Stationary distribution π: πP = π\n   - For undirected connected non-bipartite: π_i = deg(i)/(2|E|)\n   - Mixing time and spectral gap\n   - Mermaid: random walk example with probability transitions\n\n3. **PageRank** (10.3):\n   - Problem: dangling nodes, non-stationary PDF\n   - PageRank model: random surfer with damping factor α (typically 0.85)\n   - PageRank equation: r = αP^T r + (1-α)v (where v is teleportation vector)\n   - Solution: iterative power method\n   - Relationship to eigenvector centrality\n   - Mermaid: PageRank computation flowchart\n   - Mermaid: small web graph with PageRank scores\n\n4. **Applications**:\n   - Web search ranking\n   - Recommendation systems\n   - Network science (Google's original algorithm)\n\nTags: [Math, GraphTheory, Probability, 概念性, 方法性].\nLaTeX: $P = D^{-1}A$, $\\pi$, $\\alpha$, $r = \\alpha P^T r + (1-\\alpha)\\mathbf{v}$\nLinks: [[Graph - Adjacency Matrix & Spectrum]], [[Graph - Centrality Measures]], [[Graph - Laplacian & Spectral Clustering]]\nAlso link to [[Linear_Algebra/Eigenvalues and Eigenvectors]]\nAt least 4 Mermaid diagrams.\nWrite COMPLETE file.",
+  "exitCode": 0,
+  "usage": {
+    "input": 30234,
+    "output": 10329,
+    "cacheRead": 342016,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 14
+  },
+  "model": "opencode-go/deepseek-v4-flash:medium",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-flash:medium"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-flash:medium",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 30234,
+        "output": 10329,
+        "cacheRead": 342016,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 14
+      }
+    }
+  ],
+  "durationMs": 125037,
+  "toolCount": 16,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783057558937
+}

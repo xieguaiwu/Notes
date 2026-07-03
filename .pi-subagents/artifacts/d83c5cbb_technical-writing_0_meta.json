@@ -1,0 +1,39 @@
+{
+  "runId": "d83c5cbb",
+  "agent": "technical-writing",
+  "task": "Create a comprehensive Obsidian markdown note file at: /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/Graph - Degree Sequences & Subgraphs.md\n\nABSOLUTE REQUIREMENTS — Follow these exactly:\n1. Write the COMPLETE file content — do not truncate, do not use placeholders\n2. Use ONLY the write tool to create the file\n3. Output ONLY the final content, no commentary\n\nCONTENT SPECIFICATION:\n\n--- TAGS ---\ntitle: Graph - Degree Sequences & Subgraphs\ntags:\n  - Math\n  - GraphTheory\n  - 定义性\n  - 基本原理\ncreated: 2026-07-03\n\n--- BASED ON ---\nChristopher Griffin, Applied Graph Theory (2023), Chapter 2: Degree Sequences and Subgraphs\n\n--- CONTENT TO COVER ---\n\n## 1. Degree Sequences\n### 1.1 Definition of Degree Sequence\n- Definition 2.1: degree sequence of G = nonincreasing list of vertex degrees\n- Example: K_4 has degree sequence (3,3,3,3); path P_4 has (2,2,1,1)\n- Include Mermaid diagram of example graphs\n\n### 1.2 Handshaking Lemma\n- Theorem 2.2 (Handshaking Lemma): sum of degrees = 2|E|\n- Corollary: In any graph, number of odd-degree vertices is even\n- Proof via double counting\n- Show examples\n\n### 1.3 Graphic Sequences\n- Definition: a sequence is graphic if there exists a graph with that degree sequence\n- Havel-Hakimi Theorem (Thm 2.3): characterization of graphic sequences\n- Algorithm description with Mermaid flowchart\n- Example: (3,3,2,2,2) is graphic? Walk through Havel-Hakimi\n\n### 1.4 Regular Graphs\n- Definition 2.5: k-regular graph (all vertices degree k)\n- Examples: 0-regular (empty), 1-regular (matching), 2-regular (cycles)\n- Complete graphs K_n are (n-1)-regular\n- Mermaid: K_5 as 4-regular graph\n\n## 2. Subgraphs\n### 2.1 Definitions\n- Definition 2.7: subgraph G' = (V', E') where V' ⊆ V, E' ⊆ E\n- Spanning subgraph: V' = V\n- Induced subgraph G[S]: V' = S, E' = all edges with both ends in S\n- Include Mermaid diagrams showing subgraph extraction\n\n### 2.2 Graph Operations\n- Edge deletion, vertex deletion, edge contraction\n\n## 3. Cliques, Independent Sets, Complements & Covers\n### 3.1 Cliques\n- Definition 2.11: clique = set of mutually adjacent vertices\n- Maximum clique vs maximal clique\n- Clique number ω(G)\n- Example with Mermaid\n\n### 3.2 Independent Sets\n- Definition 2.14: independent set = no two adjacent vertices\n- Independence number α(G)\n- Relationship: S is clique in G iff S is independent in complement\n\n### 3.3 Graph Complement\n- Definition 2.16: complement G̅ has edge between non-adjacent vertices in G\n- Include Mermaid: G and G̅ side by side\n\n### 3.4 Vertex Covers\n- Definition 2.18: vertex cover = set of vertices touching all edges\n- Relation: S is vertex cover iff V\\S is independent set\n- König's theorem (for bipartite graphs): size of min vertex cover = size of max matching\n\n## 4. Practice Examples\n- Work through 2-3 examples connecting these concepts\n- Include complete Mermaid visualizations\n\n--- FORMATTING RULES ---\n1. YAML front matter MUST use double-quoted strings or bare strings (no single quotes for tags)\n2. All math MUST use proper LaTeX: $\\deg(v)$, $\\Delta(G)$, $\\delta(G)$, $\\omega(G)$, $\\alpha(G)$, $\\overline{G}$\n3. Use === for Mermaid section headers when needed\n4. Use > [!note], > [!tip], > [!warning] callouts appropriately\n5. Internal links: [[Graph - Definations]], [[../Linear_Algebra/Linear_Algebra_MOC]], etc.\n6. Add '## 符号速查' section at end with a table of symbols used\n7. Add '## 相关链接' section with links to [[Graph - Definations]], [[Graph - Walks, Cycles & Connectivity]]\n8. NO horizontal rules (---) except after YAML front matter\n9. File location: /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/Graph - Degree Sequences & Subgraphs.md\n10. Output the COMPLETE content - every section filled out completely",
+  "exitCode": 0,
+  "usage": {
+    "input": 24081,
+    "output": 14918,
+    "cacheRead": 480128,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 18
+  },
+  "model": "opencode-go/deepseek-v4-flash:medium",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-flash:medium"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-flash:medium",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 24081,
+        "output": 14918,
+        "cacheRead": 480128,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 18
+      }
+    }
+  ],
+  "durationMs": 175726,
+  "toolCount": 30,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783057176716
+}

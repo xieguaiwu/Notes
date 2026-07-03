@@ -1,0 +1,39 @@
+{
+  "runId": "77708acb",
+  "agent": "technical-writing",
+  "task": "Write COMPLETE file at: /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/Graph - Adjacency Matrix & Spectrum.md\n\nBased on Griffin Ch9. This is the CORE algebraic graph theory note connecting graphs to linear algebra.\n\n**Tags**: [Math, GraphTheory, LinearAlgebra, 定理性, 概念性]\n\n**Content**:\n\n1. **Matrix Representations of Graphs** (9.1):\n   - Adjacency matrix A: (i,j) entry = 1 if edge, 0 otherwise. For undirected graphs, A is symmetric.\n   - Incidence matrix M: n×m matrix where M_{v,e}=1 if v incident to e\n   - Degree matrix D = diag(deg(v_1), ..., deg(v_n))\n   - Include Mermaid: graph with its adjacency matrix side-by-side\n\n2. **Properties of Adjacency Matrix**:\n   - A^k_{ij} = number of walks of length k from i to j (Theorem — prove via induction)\n   - Trace properties: tr(A) = 0 (simple graph), tr(A^2) = 2|E|\n   - For regular k-regular graphs: A has eigenvalue k with eigenvector (1,1,...,1)\n   - Include Mermaid: 3-regular graph with walk counting example\n\n3. **Eigenvalues of Adjacency Matrix** (9.2):\n   - Spectrum Sp(G) = multiset of eigenvalues of A\n   - For undirected graphs, A is real symmetric => all eigenvalues real\n   - Spectral radius ρ(G) = max|λ_i|\n   - Bounds: δ(G) ≤ ρ(G) ≤ Δ(G), and for connected graphs ρ(G) < Δ(G) unless regular\n   - Perron-Frobenius theorem for nonnegative irreducible matrices\n   - Include Mermaid: eigenvalue distribution plot for example graph\n\n4. **Spectral Graph Properties**:\n   - Number of eigenvalues = n, sum = 0 (trace-free), sum of squares = 2|E|\n   - Graph is bipartite iff spectrum symmetric about 0\n   - Cospectral graphs: same spectrum but non-isomorphic (example with Mermaid)\n   - Characteristic polynomial\n\n5. **Strongly Regular Graphs**:\n   - Parameters (n, k, λ, μ): SRG(n, k, λ, μ)\n   - Eigenvalues expressed in terms of parameters\n   - Example: Petersen graph as SRG(10,3,0,1)\n\n6. **Connection to existing notes**:\n   - Link to [[Linear_Algebra/Eigenvalues and Eigenvectors]]\n   - Link to [[Linear_Algebra/Spectral Theorem]]\n   - Link to [[Linear_Algebra/Diagonalization]]\n   - Link to [[Abstract_Algebra/Group]] for Perron-Frobenius\n\nUse proper LaTeX for all math. At least 4 Mermaid diagrams. Callouts for Theorem 9.1 and Perron-Frobenius.\nInclude 符号速查 and 相关链接 sections.\nWrite COMPLETE file using write tool.",
+  "exitCode": 0,
+  "usage": {
+    "input": 15078,
+    "output": 17068,
+    "cacheRead": 276480,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 14
+  },
+  "model": "opencode-go/deepseek-v4-flash:medium",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-flash:medium"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-flash:medium",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 15078,
+        "output": 17068,
+        "cacheRead": 276480,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 14
+      }
+    }
+  ],
+  "durationMs": 172277,
+  "toolCount": 24,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783057606168
+}

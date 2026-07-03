@@ -1,0 +1,39 @@
+{
+  "runId": "7b4f70bb",
+  "agent": "technical-writing",
+  "task": "Write COMPLETE file at: /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/Linear Transformations as Graph Morphisms.md\n\n**Tags**: [Math, GraphTheory, LinearAlgebra, CategoryTheory, 概念性, Idea]\n\nThis is Path C note #2 — extending the core idea that 'Every Matrix is a Graph' to transformations.\n\n**Content**:\n\n1. **核心思想**: Linear transformations between vector spaces can be viewed as morphisms between graphs. When we choose bases, a linear transformation T: V→W becomes a matrix M. That matrix M is a weighted directed bipartite graph. So T IS a graph homomorphism between the trivial complete graphs on the basis vectors.\n\n2. **Basis Selection = Graph Representation**:\n   - Choosing a basis for V and W is like choosing vertex labels\n   - The matrix M_T = [T]_{basis} is the adjacency matrix of a bipartite graph\n   - Change of basis = graph relabeling (isomorphism)\n   - Similar matrices = isomorphic graphs (they represent the same linear transformation in different bases)\n   - Mermaid: T: R^2 → R^3 with two different basis choices, showing the same T as two different bipartite graphs\n\n3. **Kernel and Image Graphically**:\n   - ker(T): vectors in domain that map to zero; in graph terms, these are weight assignments on left vertices such that the sum to each right vertex is zero\n   - im(T): subspace of codomain reachable from left vertices\n   - Rank-nullity theorem: sum of dimensions of left nullspace and image = dim(domain)\n   - Mermaid: bipartite graph with kernel basis vectors shown as weight assignments\n\n4. **Composition as Graph Composition**:\n   - T: V→W, S: W→U => S∘T: V→U\n   - In graph terms: compose two bipartite graphs, resulting in a new bipartite graph\n   - Matrix multiplication (S∘T)_{ik} = Σ_j S_{ij} T_{jk} is path counting!\n   - This is the SAME formula as counting walks in a 3-partite graph\n   - Mermaid: composition of two linear transformations as a 3-layer graph\n\n5. **Dual Space as Reversed Graph**:\n   - T^T: W^* → V^* corresponds to reversing all edges in the bipartite graph\n   - The transpose corresponds to reversing directions\n   - If T is injective, T^T is surjective (graph-theoretic duality)\n   - Mermaid: T and T^T as reversed bipartite graphs\n\n6. **Spectral Theory as Graph Decomposition**:\n   - A linear operator T: V→V is a single graph (not bipartite), i.e., a directed graph\n   - Eigenvectors x with Tx = λx = self-loops with weight λ in the graph\n   - Diagonalizable = graph decomposes into independent self-loops\n   - Jordan blocks = paths in the graph (a Jordan chain is a directed path)\n   - Mermaid: diagonalizable matrix as a set of self-loops\n\nLinks: [[Every Matrix is a Graph]], [[Graph - Adjacency Matrix & Spectrum]], [[Linear_Algebra/Linear Transformations]], [[Linear_Algebra/Vector Spaces and Subspaces]], [[Linear_Algebra/Rank and Nullity]], [[Linear_Algebra/Dual Space]], [[Category_Theory/Functor]]\nAt least 4 Mermaid diagrams.\nUse LaTeX for all math.\nWrite COMPLETE file with write tool.",
+  "exitCode": 0,
+  "usage": {
+    "input": 27475,
+    "output": 16471,
+    "cacheRead": 297088,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 16
+  },
+  "model": "opencode-go/deepseek-v4-flash:medium",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-flash:medium"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-flash:medium",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 27475,
+        "output": 16471,
+        "cacheRead": 297088,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 16
+      }
+    }
+  ],
+  "durationMs": 183411,
+  "toolCount": 25,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783057833447
+}

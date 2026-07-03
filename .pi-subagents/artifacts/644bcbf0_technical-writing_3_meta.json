@@ -1,0 +1,39 @@
+{
+  "runId": "644bcbf0",
+  "agent": "technical-writing",
+  "task": "Write the COMPLETE file at: /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/Graph - Isomorphism & Automorphism.md\n\nBased on Griffin Ch8. Cover:\n\n1. Graph Isomorphism: definition (bijection preserving adjacency), isomorphic vs non-isomorphic examples with Mermaid, isomorphism invariants (degree sequence, number of cycles, spectrum), necessary vs sufficient conditions.\n\n2. Graph Automorphism: definition (isomorphism from G to itself), automorphism group Aut(G), vertex orbits, examples (complete graphs Aut(K_n) = S_n, cycle graphs Aut(C_n) = D_n).\n\n3. Groups in Graph Theory: brief review of group axioms connected to existing [[Abstract_Algebra/Group]] note, permutation groups [[Abstract_Algebra/Permutation Groups]].\n\n4. Permutation Groups and Graph Automorphisms: Cayley's theorem (every group is a permutation group), Cayley graphs (Cay(G,S) has automorphism group containing G), Frucht's theorem (every finite group is Aut(G) for some graph).\n\n5. Fixed points, transitivity, vertex/orbit structure.\n\nTags: [Math, GraphTheory, AbstractAlgebra, 概念性, 定理性].\nLaTeX: $\\operatorname{Aut}(G)$, $S_n$, $D_n$, $\\operatorname{Cay}(G,S)$. At least 4 Mermaid diagrams.\nLinks: [[Graph - Definations]], [[Abstract_Algebra/Group]], [[Abstract_Algebra/Permutation Groups]], [[Graph - Adjacency Matrix & Spectrum]]\nWrite COMPLETE file.",
+  "exitCode": 0,
+  "usage": {
+    "input": 25802,
+    "output": 10857,
+    "cacheRead": 262528,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 14
+  },
+  "model": "opencode-go/deepseek-v4-flash:medium",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-flash:medium"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-flash:medium",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 25802,
+        "output": 10857,
+        "cacheRead": 262528,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 14
+      }
+    }
+  ],
+  "durationMs": 123499,
+  "toolCount": 20,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783057333165
+}

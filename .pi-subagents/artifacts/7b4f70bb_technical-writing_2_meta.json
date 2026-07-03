@@ -1,0 +1,39 @@
+{
+  "runId": "7b4f70bb",
+  "agent": "technical-writing",
+  "task": "Write COMPLETE file at: /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/Tensor Products as Graph Products.md\n\n**Tags**: [Math, LinearAlgebra, GraphTheory, 概念性, Idea]\n\nThis is Path C note #4 — understanding tensor products through graph products.\n\n**Content**:\n\n1. **核心思想**: The tensor product (Kronecker product) A⊗B of two matrices corresponds to a graph product of their underlying graphs. This creates a powerful visual/combinatorial way to understand tensor operations.\n\n2. **Kronecker Product of Graphs**:\n   - Definition: G × H (tensor/categorical product of graphs): vertex set V(G) × V(H), edges (u,v)~(u',v') if u~u' in G AND v~v' in H\n   - If A is adjacency of G and B is adjacency of H, then A⊗B is adjacency of G×H (with ordering)\n   - Mermaid: K_2 × K_3 as a 6-vertex graph\n\n3. **Tensor Product of Matrices = Graph of Pairs**:\n   - (A⊗B)_{(i,i'),(j,j')} = A_{ij} · B_{i'j'}\n   - This IS the adjacency of the product graph\n   - The non-zero pattern encodes combinatorial pair relationships\n   - Mermaid: 2×2 matrix ⊗ 2×2 matrix with product graph visualization\n\n4. **Spectral Properties of Tensor Products**:\n   - Eigenvalues of A⊗B are products λ_i · μ_j of eigenvalues of A and B\n   - Eigenvectors are tensor products v_i ⊗ w_j\n   - This means the spectrum of the product graph is the product of spectra!\n   - If G and H are regular, G×H is regular with degree deg(G)·deg(H)\n   - Include table: all eigenvalues for K_2 × K_3\n\n5. **The Linear Algebra-Graph Dictionary**:\n   - Vector space V ⊗ W = space of functions on product of basis graphs\n   - Bilinear forms B: V×W→k correspond to weighted complete bipartite graphs\n   - Symmetric ⊗ Symmetric = the graph of pairs of edges\n   - Include a dictionary table (linear algebra concept ↔ graph theory concept)\n\n6. **Mixed Product Property**:\n   - (A⊗B)(C⊗D) = (AC)⊗(BD) when dimensions match\n   - In graph terms: composition of product graphs = product of compositions\n   - This enables decomposition of large matrices as products of smaller graphs\n\n7. **Connection to Quantum Mechanics**:\n   - Bell states as 4-cycle (C_4)\n   - Entanglement = non-separable graphs\n   - Mermaid: Bell state as a simple 4-vertex graph\n\nLinks: [[Every Matrix is a Graph]], [[Linear Transformations as Graph Morphisms]], [[Linear_Algebra/Tensor Products]], [[Linear_Algebra/Eigenvalues and Eigenvectors]], [[Linear_Algebra/Bilinear Forms]], [[Graph - Adjacency Matrix & Spectrum]]\nAt least 3 Mermaid diagrams.\nUse LaTeX for all math.\nWrite COMPLETE file.",
+  "exitCode": 0,
+  "usage": {
+    "input": 28613,
+    "output": 25421,
+    "cacheRead": 300160,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 12
+  },
+  "model": "opencode-go/deepseek-v4-flash:medium",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-flash:medium"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-flash:medium",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 28613,
+        "output": 25421,
+        "cacheRead": 300160,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 12
+      }
+    }
+  ],
+  "durationMs": 245460,
+  "toolCount": 13,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783057895511
+}

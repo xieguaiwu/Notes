@@ -1,0 +1,39 @@
+{
+  "runId": "77708acb",
+  "agent": "technical-writing",
+  "task": "Write COMPLETE file at: /home/xieguiawu/Documents/Obsidian Vault/Math/Graph_Theory/Graph - Laplacian & Spectral Clustering.md\n\nBased on Griffin Ch10.4 (The Graph Laplacian) + extensions.\n\n**Tags**: [Math, GraphTheory, LinearAlgebra, 定理性, 概念性]\n\n**Content**:\n\n1. **The Graph Laplacian** (10.4):\n   - Definition: L = D - A (unnormalized Laplacian)\n   - Quadratic form: x^T L x = Σ_{(i,j)∈E} (x_i - x_j)^2 (the fundamental connection!)\n   - Properties: L is symmetric positive semidefinite, eigenvalues λ_1 ≤ λ_2 ≤ ... ≤ λ_n\n   - λ_1 = 0 with eigenvector (1,1,...,1)\n   - Mermaid: graph with Laplacian matrix shown\n\n2. **Spectral Properties of Laplacian**:\n   - Multiplicity of eigenvalue 0 = number of connected components (Theorem!)\n   - λ_2 = Fiedler value / algebraic connectivity > 0 iff graph is connected\n   - λ_2 is a measure of how well-connected the graph is\n   - Fiedler vector: eigenvector of λ_2, gives spectral partitioning\n   - Bounds: λ_2 ≤ (n/(n-1)) δ(G) ≤ ... \n   - Include Mermaid: graph with Fiedler vector values (color/size coding)\n\n3. **Normalized Laplacian**:\n   - L_sym = D^{-1/2} L D^{-1/2} = I - D^{-1/2} A D^{-1/2}\n   - L_rw = D^{-1}L = I - D^{-1}A = I - P\n   - Spectral properties differ slightly\n\n4. **Matrix-Tree Theorem**:\n   - Kirchhoff's theorem: number of spanning trees = any cofactor of L\n   - Laplace expansion determinant computation\n   - Example: count spanning trees of K_4 (result: 16)\n   - Mermaid: K_4 with all spanning trees concept\n\n5. **Spectral Clustering**:\n   - Algorithm: compute Fiedler vector, threshold to partition\n   - k-way spectral clustering: use k smallest eigenvectors, run k-means\n   - Connection to ratio cut minimization\n   - Relaxation of normalized cut (Ncut) problem\n   - Comparison with traditional clustering (k-means limitations)\n   - Mermaid: spectral clustering example with non-convex clusters\n\n6. **Applications**:\n   - Image segmentation\n   - Community detection in social networks\n   - Graph partitioning for parallel computing\n\nUse LaTeX for all math: $L = D - A$, $x^T L x = \\sum (x_i - x_j)^2$, $\\lambda_2$, $\\tau(G)$\nLinks: [[Graph - Adjacency Matrix & Spectrum]], [[Graph - Random Walks & PageRank]], [[Linear_Algebra/Eigenvalues and Eigenvectors]], [[Linear_Algebra/Spectral Theorem]], [[Linear_Algebra/Diagonalization]]\nAt least 5 Mermaid diagrams.\nWrite COMPLETE file.",
+  "exitCode": 0,
+  "usage": {
+    "input": 15557,
+    "output": 11339,
+    "cacheRead": 186112,
+    "cacheWrite": 0,
+    "cost": 0,
+    "turns": 13
+  },
+  "model": "opencode-go/deepseek-v4-flash:medium",
+  "attemptedModels": [
+    "opencode-go/deepseek-v4-flash:medium"
+  ],
+  "modelAttempts": [
+    {
+      "model": "opencode-go/deepseek-v4-flash:medium",
+      "success": true,
+      "exitCode": 0,
+      "usage": {
+        "input": 15557,
+        "output": 11339,
+        "cacheRead": 186112,
+        "cacheWrite": 0,
+        "cost": 0,
+        "turns": 13
+      }
+    }
+  ],
+  "durationMs": 128974,
+  "toolCount": 20,
+  "skills": [
+    "graphify"
+  ],
+  "timestamp": 1783057562886
+}

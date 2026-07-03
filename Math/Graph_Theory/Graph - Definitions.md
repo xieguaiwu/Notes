@@ -5,7 +5,7 @@ tags:
   - ComputerScience
   - 定义性
   - 基本原理
-title: Graph - Definations
+title: Graph - Definitions
 created: 2026-03-09T11:20:00
 modified:
 ---
@@ -218,11 +218,11 @@ graph LR
     D --> E
 ```
 
-> - $\deg_{\text{out}}(A) = 2$（A→B, A→C），$\deg_{\text{in}}(A) = 1$（C→A）
-> - $\deg_{\text{out}}(B) = 1$（B→C），$\deg_{\text{in}}(B) = 1$（A→B）
-> - $\deg_{\text{out}}(C) = 1$（C→A），$\deg_{\text{in}}(C) = 3$（A→C, B→C, D→C）
-> - $\deg_{\text{out}}(D) = 2$（D→C, D→E），$\deg_{\text{in}}(D) = 0$
-> - $\deg_{\text{out}}(E) = 0$，$\deg_{\text{in}}(E) = 1$（D→E）
+> - $\deg_{\text{out}}(A) = 2$（$A \to B$, $A \to C$），$\deg_{\text{in}}(A) = 1$（$C \to A$）
+> - $\deg_{\text{out}}(B) = 1$（$B \to C$），$\deg_{\text{in}}(B) = 1$（$A \to B$）
+> - $\deg_{\text{out}}(C) = 1$（$C \to A$），$\deg_{\text{in}}(C) = 3$（$A \to C$, $B \to C$, $D \to C$）
+> - $\deg_{\text{out}}(D) = 2$（$D \to C$, $D \to E$），$\deg_{\text{in}}(D) = 0$
+> - $\deg_{\text{out}}(E) = 0$，$\deg_{\text{in}}(E) = 1$（$D \to E$）
 
 ### 6.2 底层图 (Underlying Graph)
 

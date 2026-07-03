@@ -12,7 +12,7 @@ modified: 2026-04-27
 # Graph Theory and Search
 
 > [!abstract] 图的存储与遍历
-> 图论中常见的存储结构（邻接矩阵、邻接表、链式前向星）和搜索算法（DFS、BFS）的 C++ 实现。[[Graph - Definations]]
+> 图论中常见的存储结构（邻接矩阵、邻接表、链式前向星）和搜索算法（DFS、BFS）的 C++ 实现。[[Graph - Definitions]]
 
 ## 1. 基本概念
 
