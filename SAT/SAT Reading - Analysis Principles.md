@@ -4,7 +4,6 @@ tags:
   - SAT
   - Reading
   - 方法性
-  - 解题原则
 created: 2026-07-17
 ---
 
