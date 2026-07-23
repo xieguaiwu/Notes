@@ -12,9 +12,13 @@ created: 2026-07-21
 > [!abstract] 试卷信息
 > - **试卷**: 2025年5月第4套 SAT Reading & Writing
 > - **来源**: `0715_ocr_raw.txt` / `0715_answer_key.md` / `25.5-4_answers.md`
-> - **本次实际错题**: 7 道（Module 1: Q9, Q10, Q17；Module 2: Q1, Q11, Q12, Q13）
+> - **本次实际错题**: 8 道（Module 1: Q9, Q10, Q17；Module 2: Q1, Q11, Q12, Q13, Q15）
 > - **Module 1 正确率**: 24/27 (88.9%)
-> - **Module 2 正确率**: 8/13 (61.5%)（含1题未作答）
+> - **Module 2 正确率**: 7/13 (53.8%)（含2题未作答）
+> - **薄弱技能**: Central Ideas and Details, Words in Context, Command of Evidence (Scientific & Quantitative), Standard English Conventions
+> - **说明**: 本版为修正版——根据标准答案 `0715_answer_key.md` 重新核对，覆盖所有**实际错误**的题目。原样本中 M1Q24、M2Q2、M2Q9 经自修正后实际正确，本版不再纳入。
+> - **Module 1 正确率**: 24/27 (88.9%)
+> - **Module 2 正确率**: 7/13 (53.8%)（含2题未作答）
 > - **薄弱技能**: Central Ideas and Details, Words in Context, Command of Evidence (Scientific & Quantitative), Standard English Conventions
 > - **说明**: 本版为修正版——根据标准答案 `0715_answer_key.md` 重新核对，覆盖所有**实际错误**的题目。原样本中 M1Q24、M2Q2、M2Q9 经自修正后实际正确，本版不再纳入。
 
@@ -32,6 +36,7 @@ created: 2026-07-21
 - [[#5. Module 2 Q11 — 支持结论（阿拉斯加早雪与净CO₂增加）]]
 - [[#6. Module 2 Q12 — 图表数据解读（哥斯达黎加森林砍伐）]]
 - [[#7. Module 2 Q13 — 削弱论证（美国硬币铸币税）]]
+- [[#8. Module 2 Q15 — 因果推断（品牌延伸与市场份额的反向关系）]]
 
 ---
 
@@ -478,6 +483,96 @@ flowchart LR
 
 ---
 
+---
+
+# 8. Module 2 Q15 — 因果推断（品牌延伸与市场份额的反向关系）
+
+> [!info] 标记: 未作答 — 空题
+
+## 题干
+
+The Virgin Group's introduction of the Virgin Atlantic airline in 1984 is an instance of **brand extension**—the company leveraged its brand recognition as a music retailer to enter a new product category. To investigate how market share affects consumers' likelihood of purchasing brand extensions, Alicia Grasby et al identified 30 extended brand pairs (e.g., the same brand of vacuum cleaner and microwave) in household purchasing data; for each pair, Grasby et al. calculated the branded products' **market share** and calculated the **increase in probability** of a brand in one category being purchased if the same brand was purchased in the other category. **A broad inverse relationship between the two values emerged**, which can most reasonably be attributed to the fact that ___
+
+**我的答案**: 未作答 &nbsp;&nbsp; **正确答案**: C
+
+## 选项分析
+
+| 选项 | 内容 | 评价 |
+|:---|:---|:---|
+| **A** | The purchase probability of a brand is affected by the purchase probability of the particular product category to which it belongs, and thus brands in categories that are rarely purchased tend to have low purchase probabilities **regardless of market share**. | ❌ 最后 "regardless of market share" 直接否定研究发现——研究发现的恰恰是市场份额与增幅的关系 |
+| **B** | As a brand's market share increases, the number of competing brands in the same product category tends to decrease, and thus the rate of increase in market share tends to accelerate as a brand's market share grows. | ❌ 完全跑题：研究是关于**跨品类**品牌延伸的购买概率增幅，不是同品类内的竞争动态 |
+| **C** ✅ | Brands with high market share have high purchase probability regardless of whether the other product in the pair is purchased and thus have **less potential to increase** in purchase probability than brands with low market share do. | ✅ 天花板效应的精确表述：高基线 → 增量空间小 |
+| **D** | Consumers tend to be less familiar with brands with low market share than brands with high market share and thus may purchase both products in a pair with low market share without recognizing that the products are the same brand. | ❌ 引入"品牌识别/熟悉度"作为解释变量，但研究没有讨论这个机制——SAT 不允许脑补因果 |
+
+## 解题思路
+
+### 考点：Command of Evidence — Scientific Reasoning（因果机制推断）
+
+这道题的核心不是读图表，而是**给定相关关系，推断最合理的因果解释**。
+
+### 先拆解研究
+
+```mermaid
+flowchart LR
+    A["30对品牌延伸对<br/>例: 同品牌吸尘器+微波炉"] --> B["计算: 市场份额<br/>market share"]
+    A --> C["计算: 购买概率增幅<br/>increase in probability"]
+    B --> D{"反向关系<br/>inverse relationship"}
+    C --> D
+    D --> E["市场份额越大<br/>→ 增幅越小"]
+    D --> F["市场份额越小<br/>→ 增幅越大"]
+```
+
+研究发现了「**inverse relationship between the two values**」：
+- 值 1：市场份额（market share）
+- 值 2：购买概率增幅（买了 A 类别该品牌 → 也买 B 类别该品牌的概率提升了多少）
+
+### 为什么是反向？——天花板效应
+
+```mermaid
+flowchart TD
+    A[高市场份额品牌] --> B["本来就很多人买<br/>high baseline purchase probability"]
+    B --> C["品牌延伸能带来的<br/>额外购买空间很小"]
+    C --> D["→ 增幅小 📉"]
+    
+    E[低市场份额品牌] --> F["本来买的人少<br/>low baseline"]
+    F --> G["品牌延伸有大量<br/>潜在新顾客"]
+    G --> H["→ 增幅大 📈"]
+```
+
+**类比**：一个拿了 95 分的学生再努力「提分空间」只有 5 分；一个只拿了 50 分的学生提升空间却有 50 分。市场份额就是那个「初始分数」——高份额品牌已经饱和，品牌延伸带来的增量自然有限。
+
+### 为什么 C 正确
+
+> *"brands with high market share have high purchase probability regardless of whether the other product in the pair is purchased and thus have **less potential to increase**..."*
+
+C 精确描述了天花板效应的因果链：
+1. 高市场份额 = 已经在目标人群中广泛购买（high purchase probability）
+2. 因此（thus）= 品牌延伸带来的**额外增量空间更小**
+3. 低市场份额品牌反之 = 增量空间更大
+
+→ 完美解释了为什么市场份额与增幅呈反向关系。
+
+### 为什么 A、B、D 不对
+
+| 选项 | 错在哪 | 陷阱类型 |
+|:---|:---|:---|
+| **A** | 最后 "regardless of market share" 直接否定研究的核心发现 | **否定研究发现** |
+| **B** | 把「跨品类品牌延伸」偷换成「同品类竞争动态」 | **偷换研究主题** |
+| **D** | "consumers less familiar with low-share brands"——研究从未讨论 familiarity | **编造因果机制** |
+
+> [!warning] 陷阱识别
+> **编造因果机制**是 SAT 科学推理题的高频陷阱。选项 D 看起来逻辑通顺（知名度低 → 没意识到同品牌 → 多买），但文中**没有任何关于 brand familiarity 的讨论**。SAT 科学推理题的正确答案必须基于文内讨论的机制，不允许从外部引入新的解释变量。
+
+### 解题策略
+
+面对「解释相关/反向关系」类题目：
+
+1. **精确定义两个变量**：值 1 = 市场份额，值 2 = 增幅
+2. **明确关系方向**：反向 = 一高一低
+3. **找天花板/地板效应**：哪个方向有自然上限？高份额 → 已经饱和 → 增幅空间自然小。这是 SAT 科学推理中反复出现的模式
+
+---
+
 ## 总结：薄弱技能分布
 
 | # | 题目 | 技能类别 | 错误类型 | 优先级 |
@@ -488,20 +583,21 @@ flowchart LR
 | 4 | M2 Q1 | Words in Context | 选反义词（orthodox vs. intermediate） | ⭐⭐⭐ |
 | 5 | M2 Q11 | Command of Evidence — Supporting Conclusion | 净效应抵消（双向效应无法判定方向） | ⭐⭐⭐⭐ |
 | 6 | M2 Q12 | Command of Evidence — Quantitative | 时间窗口错位（选了恢复期数据） | ⭐⭐⭐ |
-| 7 | M2 Q13 | Command of Evidence — Weakening | 未作答（可能时间不足/读表耗时） | ⭐⭐⭐ |
+| 7 | M2 Q13 | Command of Evidence — Weakening | 未作答 | ⭐⭐⭐ |
+| 8 | M2 Q15 | Command of Evidence — Causal Inference | 未作答（品牌延伸天花板效应） | ⭐⭐⭐⭐ |
 
 ### 汇总
 
 | 技能大类 | 错题数 | 占比 |
 |:---|:---:|:---:|
-| Central Ideas and Details | 2 | 29% |
-| Words in Context | 1 | 14% |
-| Standard English Conventions | 1 | 14% |
-| Command of Evidence (Scientific/Quantitative) | 3 | 43% |
+| Central Ideas and Details | 2 | 25% |
+| Words in Context | 1 | 13% |
+| Standard English Conventions | 1 | 13% |
+| Command of Evidence (Scientific/Quantitative) | 4 | 50% |
 
 ### 行动建议
 
-1. **Command of Evidence 是最大短板**（3/7 = 43%）：Q11（支持结论）、Q12（图表解读）、Q13（削弱论证）分属不同子类型，说明需要系统训练科学论证的各类题型
+1. **Command of Evidence 是最大短板**（4/8 = 50%）：Q11（支持结论）、Q12（图表解读）、Q13（削弱论证）、Q15（因果推断）覆盖了四个不同子类型，说明需要系统训练科学论证的各类题型，尤其是新增的 Q15 暴露出的「因果机制推断」弱点——给定相关关系推断因果解释
 2. **主旨题注意区分"背景手段"与"核心发现"**（Q10）：定位 "They found that..." 之后的内容
 3. **主旨题注意覆盖全文所有主体**（Q9）：当文本讨论两个人物/事物的共同点时，正确选项必须涵盖二者
 4. **词汇题利用上下文同义替换**（Q1）："intergeneric" → "intermediate"，"straddle the line" → "介于之间"
