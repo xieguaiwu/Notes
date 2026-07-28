@@ -152,9 +152,32 @@ flowchart TD
 
 ## 相关笔记
 
-- [[SAT RW 25.5-4 错题分析]]
-- [[SAT Reading - Command of Evidence 全解]]
-- [[SAT Reading - Words in Context 逻辑关系分类]]
+- [[SAT RW 2023年12月第一套 错题分析]]
+- [[SAT RW 2025年5月第4套 错题分析]]
+- [[SAT RW 2025年6月第3套（北美）错题分析]]
+- [[SAT RW Four Parts Practice Boundaries 错题分析]]
+
+## 错题总览
+
+| 试卷 | 错题数 | 主要薄弱技能 | 最近更新 |
+|:---|:---:|:---|:---|
+| [[SAT RW 2023年12月第一套 错题分析\|2023年12月第一套]] | 4 | Standard English Conventions, Command of Evidence | 2026-07-22 |
+| [[SAT RW 2025年5月第4套 错题分析\|2025年5月第4套]] | 8 | Command of Evidence, Central Ideas | 2026-07-23 |
+| [[SAT RW 2025年6月第3套（北美）错题分析\|2025年6月第3套（北美）]] | 8 | Scientific Reasoning, Words in Context | 2026-07-21 |
+| [[SAT RW Four Parts Practice Boundaries 错题分析\|FourParts Boundaries]] | 7 | Boundaries (100%) | 2026-07-28 |
+| **合计** | **27** | — | — |
+
+### 跨卷重复错误模式
+
+| 错误模式 | 出现卷次 | 频次 |
+|:---|:---|:---:|
+| **Comma splice** | 23.12-1 (Q17, Q19), FourParts P2 Q18 | 3 |
+| **冒号使用**（前无独立分句 / while替代冒号） | FourParts P2 Q9, P3 Q11 | 2 |
+| **分号滥用**（连接短语/从句而非主句） | FourParts P3 Q15, P3 Q17 | 2 |
+| **并列结构多余逗号** | FourParts P2 Q30, P3 Q8 | 2 |
+
+> [!warning] 最大弱点
+> **Standard English Conventions — Boundaries（标点边界）**在 27 道错题中占 15+ 道，是绝对的第一薄弱项。Comma splice 更是跨卷复现 3 次。建议在后续练习中优先训练 Boundaries 专项。
 
 ## 注意事项
 

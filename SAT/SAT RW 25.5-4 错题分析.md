@@ -17,10 +17,7 @@ created: 2026-07-21
 > - **Module 2 正确率**: 7/13 (53.8%)（含2题未作答）
 > - **薄弱技能**: Central Ideas and Details, Words in Context, Command of Evidence (Scientific & Quantitative), Standard English Conventions
 > - **说明**: 本版为修正版——根据标准答案 `0715_answer_key.md` 重新核对，覆盖所有**实际错误**的题目。原样本中 M1Q24、M2Q2、M2Q9 经自修正后实际正确，本版不再纳入。
-> - **Module 1 正确率**: 24/27 (88.9%)
-> - **Module 2 正确率**: 7/13 (53.8%)（含2题未作答）
-> - **薄弱技能**: Central Ideas and Details, Words in Context, Command of Evidence (Scientific & Quantitative), Standard English Conventions
-> - **说明**: 本版为修正版——根据标准答案 `0715_answer_key.md` 重新核对，覆盖所有**实际错误**的题目。原样本中 M1Q24、M2Q2、M2Q9 经自修正后实际正确，本版不再纳入。
+
 
 ---
 
@@ -602,6 +599,7 @@ C 精确描述了天花板效应的因果链：
 3. **主旨题注意覆盖全文所有主体**（Q9）：当文本讨论两个人物/事物的共同点时，正确选项必须涵盖二者
 4. **词汇题利用上下文同义替换**（Q1）："intergeneric" → "intermediate"，"straddle the line" → "介于之间"
 5. **语法题牢记 comma splice 规则**（Q17）：两个独立分句之间不能只用逗号
+   - ⚠️ Comma splice 是跨卷高频错误（也出现在 [[SAT RW 2023年12月第一套 错题分析|2023年12月第一套]] 和 [[SAT RW Four Parts Practice Boundaries 错题分析|FourParts Boundaries]]）
 6. **图表题注意时间窗口对齐**（Q12）：题干中的时间段必须与选项描述的数据区间严格匹配
 
 ---

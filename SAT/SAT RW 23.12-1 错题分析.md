@@ -3,6 +3,7 @@ title: SAT RW 2023年12月第一套 错题分析
 tags:
   - SAT
   - Reading
+  - 错题
 created: 2026-07-22
 ---
 
@@ -300,6 +301,7 @@ pie title 错题技能分布
 ### 行动建议
 
 1. **Comma Splice 专项突破** — Q17 和 Q19 均涉及 comma splice，是 SAT 语法最高频考点之一
+   - ⚠️ 同一错误模式在后续练习中反复出现：[[SAT RW Four Parts Practice Boundaries 错题分析#2. P2 Q18]]（Machu Picchu dating — `earlier, which in`）。跨卷已累计 3 次
    - 核心判断法：检查逗号两侧是否各有完整的主谓结构 → 如果是，必为 comma splice
    - 两种正确修复法：① 改逗号为句号（断句）、② 改逗号为分号
    - Q17 选用句号（因为前后句意群独立），Q19 选用分号（因为前后句有逻辑关联："for example"）
