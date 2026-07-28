@@ -1,12 +1,12 @@
 ---
-title: SAT RW 23.12-1 错题分析
+title: SAT RW 2023年12月第一套 错题分析
 tags:
   - SAT
   - Reading
 created: 2026-07-22
 ---
 
-# SAT RW 23.12-1 错题分析
+# SAT RW 2023年12月第一套 错题分析
 
 > [!abstract] 试卷信息
 > - **试卷**: 2023年12月第一套 SAT Reading & Writing
