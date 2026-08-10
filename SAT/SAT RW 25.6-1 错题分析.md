@@ -12,8 +12,8 @@ created: 2026-08-04
 > [!abstract] 试卷信息
 > - **试卷**: 2025年6月第1套（亚太A）SAT Reading & Writing（分享版，无数学）
 > - **来源**: `~/高一/英语/SAT/0728hw/2025.6-1_answers.md` / `2025.6-1_亚太A_OCR.txt`
-> - **本次错题/标记题**: 3 道（Module 1: 1 道, Module 2: 2 道）
-> - **薄弱技能**: Standard English Conventions — 修饰语位置（非限制性定语从句）; Rhetorical Purpose — 句子功能分析; Central Ideas and Details — 主旨题
+> - **本次错题/标记题**: 4 道（Module 1: 1 道, Module 2: 3 道）
+> - **薄弱技能**: Standard English Conventions — 修饰语位置（非限制性定语从句）; Rhetorical Purpose — 句子功能分析; Central Ideas and Details — 主旨题; Command of Evidence — 引用题（讽刺对象定位）
 > - **说明**: 本笔记为积累式，后续错题可继续追加
 
 ---
@@ -26,6 +26,7 @@ created: 2026-08-04
 - [[#1. Module 1 Q17 — 语法：非限制性定语从句位置（which 修饰语）]]
 - [[#2. Module 2 Q7 — Rhetorical Purpose（划线句功能）]]
 - [[#3. Module 2 Q9 — 主旨题（说谎的道德辩护）]]
+- [[#4. Module 2 Q13 — Command of Evidence（引用题：讽刺对象定位）]]
 
 ---
 
@@ -198,6 +199,72 @@ D 说文本的中心问题是"缺乏辨认哪些情形可以说谎的原则性�
 
 ---
 
+# 4. Module 2 Q13 — Command of Evidence（引用题：讽刺对象定位）
+
+> [!info] 标记: `A` — 错误
+> 正确答案: **D**
+
+## 题干
+
+*The Clouds* is a 423 BCE play by Aristophanes, originally written in ancient Greek. At the time, professional intellectuals called sophists taught paying customers a variety of subjects and sometimes engaged in what would now be described as research. Aristophanes satirizes sophists' practices and views as foolish, as seen when the character ___
+
+Which choice most effectively uses a quotation from a translation of *The Clouds* to illustrate the claim?
+
+- **A**: Strepsiades, after taking lessons from a sophist, says to his son, "Approach, that you may know more; and I will tell you a thing, by learning which you will be a man. But see that you do not teach this to any one."
+- **B**: Socrates, a sophist, says to a potential customer, "I wish to briefly learn from you if you are possessed of a good memory."
+- **C**: Strepsiades encourages his son to learn to be a sophist, saying, "If you have any concern for your father's patrimony, become one of them."
+- **D**: Socrates, a sophist, explains why he studies astronomy while sitting in a basket hanging a few feet off the ground, saying, "I should not have rightly discovered things celestial if I had not suspended the intellect, and mixed the thought in a subtle form with its kindred air."
+
+**我的答案**: A
+
+## 选项分析
+
+| 选项 | 内容 | 评价 |
+|:---|:---|:---|
+| **A** ✏️ | Strepsiades（学生）学完课后向儿子炫耀 | ❌ 说话者是**学生**而非智者——展示的是"被忽悠的学生的蠢"，不是智者本人的 practice/views 愚蠢 |
+| **B** | 苏格拉底问潜在客户记性好不好 | ❌ 平淡的问答，无荒诞性，无法支撑 "as foolish" |
+| **C** | Strepsiades 劝儿子为家产去当智者 | ❌ 说明的是**投机的动机**（钱），不是智者言行的愚蠢 |
+| **D** ✅ | 苏格拉底坐在吊篮里观星并给出伪科学解释 | ✅ 智者本人做出荒诞行为 + 荒诞解释 → 直接展示其 practice 与 views 的愚蠢 |
+
+## 解题思路
+
+### 考点：Command of Evidence — 引用题（quotation support）
+
+### 推理过程
+
+```mermaid
+flowchart LR
+    A[Claim: 讽刺智者的<br>practice 和 views 愚蠢] --> B{引用必须出自谁?}
+    B --> C[智者本人 sophist]
+    B --> D[学生/其他角色 ❌]
+    C --> E[D: 苏格拉底吊篮观星<br>practice 荒诞 + 解释伪科学]
+    E --> F[✓ D 直接展示智者的愚蠢]
+    D --> G[A: Strepsiades 炫耀本事<br>展示的是学生的蠢 ❌]
+```
+
+### 为什么 D 正确
+
+D 的引用出自**智者本人**（"Socrates, a sophist"），且同时覆盖 claim 的两个要素：
+
+1. **practice 愚蠢**：坐在离地几英尺的吊篮里研究天文——行为本身就荒诞可笑（"sitting in a basket hanging a few feet off the ground"）
+2. **views 愚蠢**：他一本正经给出伪科学解释——"要不是把理智悬在空中、与同类的空气混合，就无法正确发现天上之物"——用"与空气为伴"论证观星的合理性
+
+这正是《云》最经典的讽刺场景：**吊篮 = 智者脱离实际的"悬空"学问**。引用直接呈现智者的言行本身 → 直接支撑 "satirizes sophists' practices and views as foolish"。
+
+### 为什么 A 不对
+
+A 的引用虽然生动（"学了这个你会成为男子汉"），但有两个关键错位：
+
+1. **说话者错位**：Strepsiades 是**学生**（付钱求学的农民），不是智者。他炫耀的是自己学到的"歪理"——被讽刺的是**上当受骗的学生**，而不是智者本人的言行
+2. **对象错位**：claim 要求证明"智者的言行愚蠢"，A 只能证明"学生学了智者的话后变得愚蠢"——讽刺的矛头指向受骗者，不是施骗者
+
+选 A 的典型心理：看到"由学习而成为男子汉"这种荒诞承诺就判定"这够蠢了"——但忽略了 claim 的主语是 **sophists**，引用必须出自/关于智者本人的言行。
+
+> [!warning] 陷阱识别
+> **讽刺对象错位（Target Mismatch）**：引用题先划出 claim 的主语和谓语——本 claim 的被讽刺对象 = **sophists**（智者的 practice 和 views）。凡是引用出自非智者角色（学生、路人）的选项，即使内容再荒诞，也只证明了"别人蠢 / 被忽悠"，无法支撑 claim。检查三步：① claim 讽刺谁？② 引用出自谁之口？③ 引用是否直接展示该对象的 practice/view 本身愚蠢？三问全中才算支撑。
+
+---
+
 ## 总结：薄弱技能分布
 
 | # | 题目 | 模块 | 技能类别 | 学生错误类型 | 优先级 |
@@ -205,6 +272,7 @@ D 说文本的中心问题是"缺乏辨认哪些情形可以说谎的原则性�
 | 1 | Q17 Brachialis | Mod1 | Standard English Conventions — 修饰语位置 | 未识别非限制性定语从句须紧贴先行词（选 A） | ⭐⭐⭐ |
 | 2 | Q7 收敛进化 | Mod2 | Rhetorical Purpose — 句子功能 | 把"举例说明先前研究"误判为"澄清概念"（选 D） | ⭐⭐⭐⭐ |
 | 3 | Q9 说谎道德 | Mod2 | Central Ideas and Details — 主旨题 | 把 set-up 背景误认为中心问题，话题偷换（选 D） | ⭐⭐⭐⭐ |
+| 4 | Q13 云·智者讽刺 | Mod2 | Command of Evidence — 引用题 | 讽刺对象错位：选学生 Strepsiades 的台词，而非智者苏格拉底的荒诞言行（选 A） | ⭐⭐⭐⭐ |
 
 ### 行动建议
 
@@ -212,9 +280,11 @@ D 说文本的中心问题是"缺乏辨认哪些情形可以说谎的原则性�
 2. **做题检查法** — ① 划掉 which 从句验证主句主干 ② 确认 which 的先行词（就近原则 + 数的一致）③ 检查主谓一致
 3. **Rhetorical Purpose 功能题** — 划线句功能 = 它在段落逻辑链中的角色（背景举例 / 转折 / 结论），不是句内局部信息；重点看它与前后句的连接词（Meanwhile / However / This motivated）
 4. **主旨题定位中心问题** — 文本开头往往只是 set-up / 背景，真正的中心问题通常在**修辞性反问或转折后**（如此处的 "what grounds opposition to lying?" + "Pallikkathayil has advanced one answer"）。D、A、B 分别偷换了 D 的话题 / A 的矛盾副词 / B 的结论方向
+5. **Command of Evidence 引用题** — 先锁定 claim 的主语/对象（讽刺谁？支持谁？），再核对引用的**说话者身份**与**内容指向**是否与该对象直接对应；"内容够荒诞" ≠ "支撑 claim"（如 Q13 的 A：荒诞的是学生，不是智者）
 
 ## 待创建的相关笔记
 
 - [[SAT Grammar - 定语从句与修饰语位置]]
 - [[SAT Reading - Rhetorical Purpose 功能题策略]]
 - [[SAT Reading - Central Ideas and Details 主旨题策略]]
+- [[SAT Reading - Command of Evidence 引用题策略]]
