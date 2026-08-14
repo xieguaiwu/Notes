@@ -238,7 +238,9 @@ flowchart TD
 - [[SAT RW 23.12-1 错题分析]]
 - [[SAT RW 25.5-4 错题分析]]
 - [[SAT RW 25.6-1 错题分析]]
+- [[SAT RW 25.6-2 错题分析]]
 - [[SAT RW 25.6-3 错题分析]]
+- [[SAT RW 26.6-1 错题分析]]
 - [[SAT RW Four Parts Practice Boundaries 错题分析]]
 
 ## 错题总览
@@ -248,9 +250,11 @@ flowchart TD
 | [[SAT RW 23.12-1 错题分析\|2023年12月第一套]] | 4 | Standard English Conventions, Command of Evidence | 2026-07-22 |
 | [[SAT RW 25.5-4 错题分析\|2025年5月第4套]] | 8 | Command of Evidence, Central Ideas | 2026-07-23 |
 | [[SAT RW 25.6-1 错题分析\|2025年6月第1套（亚太A）]] | 3 | 修饰语位置, Rhetorical Purpose, Central Ideas | 2026-08-04 |
+| [[SAT RW 25.6-2 错题分析\|2025年6月第2套（亚太B）]] | 6 | Main Idea, Command of Evidence, SEC 标点, Transitions, 笔记题 | 2026-08-13 |
 | [[SAT RW 25.6-3 错题分析\|2025年6月第3套（北美）]] | 8 | Scientific Reasoning, Words in Context | 2026-07-21 |
+| [[SAT RW 26.6-1 错题分析\|2026年6月第1套]] | 8 | Command of Evidence (表格/笔记), SEC 动词形式, Rhetorical Purpose, Transitions | 2026-08-13 |
 | [[SAT RW Four Parts Practice Boundaries 错题分析\|FourParts Boundaries]] | 7 | Boundaries (100%) | 2026-07-28 |
-| **合计** | **30** | — | — |
+| **合计** | **44** | — | — |
 
 ### 跨卷重复错误模式
 
@@ -261,9 +265,12 @@ flowchart TD
 | **分号滥用**（连接短语/从句而非主句） | FourParts P3 Q15, P3 Q17 | 2 |
 | **并列结构多余逗号** | FourParts P2 Q30, P3 Q8 | 2 |
 | **修饰语错位**（which 从句未紧贴先行词） | 25.6-1 Q17 | 1（新出现） |
+| **双谓语**（同句两个有限动词：with 结构内 / 长修饰语遮蔽谓语） | 26.6-1 (Q16, Q20) | 2 |
+| **表格变量偷换**（绝对量 vs 占比） | 26.6-1 Q12 | 1（新出现） |
+| **表格单点以偏概全**（cherry-pick 单行） | 26.6-1 Q11 | 1（新出现） |
 
 > [!warning] 最大弱点
-> **Standard English Conventions — Boundaries（标点边界）**在 30 道错题中占 15+ 道，是绝对的第一薄弱项。Comma splice 更是跨卷复现 3 次。25.6-1 新增**修饰语错位**（which 从句未紧贴先行词）同类语法薄弱点。建议在后续练习中优先训练 Boundaries 与修饰语位置专项。
+> **Standard English Conventions — Boundaries（标点边界）**在 44 道错题中占 15+ 道，是绝对的第一薄弱项。Comma splice 更是跨卷复现 3 次。25.6-1 新增**修饰语错位**（which 从句未紧贴先行词）；26.6-1 新增**双谓语**（同卷 Q16/Q20 两次：with 结构内有限动词、长修饰语遮蔽谓语）——SEC 动词结构成为第二语法薄弱点。表格题方面，26.6-1 暴露**变量偷换**与**单点以偏概全**两个新错误模式（Q11/Q12）。建议优先训练 Boundaries、修饰语位置与动词结构专项，表格题按 D1.3 三查法加固。
 
 ## 注意事项
 
