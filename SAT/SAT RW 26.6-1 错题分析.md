@@ -15,6 +15,7 @@ created: 2026-08-13
 > - **本次错题**: 8 道（Module 2: Q5, Q11, Q12, Q15, Q16, Q20, Q25, Q27）
 > - **薄弱技能**: Rhetorical Purpose（下划线功能）, Command of Evidence（表格数据/科学推理/笔记题）, 逻辑补全, Standard English Conventions（分词/独立主格）, Transitions（过渡词）
 > - **备注**: 扫描版试卷，无官方 Question ID；M2 Q17/Q24 原卷缺题。答案键经 AI 三轮独立求解并与原卷答案页核对 52/52 一致。重判卷曾记 12 道错题（Q2, Q3, Q5, Q7, Q10, Q11, Q12, Q15, Q16, Q20, Q25, Q27），其中 **Q2/Q3/Q7/Q10 答题记录已订正为正确答案**，未收入本笔记，建议回 Bluebook 自行复查一遍。
+> - **备注**: 按 v3.3 标准模板重塑（2026-08-17）
 
 ---
 
@@ -36,10 +37,9 @@ created: 2026-08-13
 
 # 1. Module 2 Q5 — 下划线功能题（Newcomb 专家意见）
 
-> [!info] 标记: `B` — 错误
-> 正确答案: **C**
+> [!info] 我的答案: B — 错误 | 正确答案: **C**
 
-## 题干
+## Task（题干与选项）
 
 Early television analysis in the 1970s and 1980s was shaped by film studies, though media scholar Horace Newcomb notes that tools borrowed from that field often proved inadequate when applied to TV. **<u>media scholar Horace Newcomb notes that tools borrowed from that field often proved inadequate when applied to TV</u>**（下划线部分）. A recognition of the limitations led researchers to approaches that accounted for a domestic viewing context, embedded advertisements, and serialized narratives, and to a shift in audience research toward ethnographic methods that emphasized viewer engagement. By the 1990s, television studies had emerged as a widely recognized academic field, with scholars founding dedicated journals.
 
@@ -50,57 +50,51 @@ Which choice best states the function of the underlined portion in the text as a
 - **C** It introduces an expert opinion that establishes the impetus for a change in scholarly methods of studying television.
 - **D** It questions the extent to which the methodologies of film studies informed methodologies in the emerging field of television studies.
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
-|:---|:---|:---|
-| **A** | 暗示电视研究学科发展因学者不愿承认影视差异而被拖延 | ❌ 文本从未说学科发展"被拖延"；且"学者不愿承认差异"无文本依据 |
-| **B** ✏️ | Newcomb 的观察是电视研究成为正式学科的 **primary catalyst**（首要催化剂） | ❌ 程度夸大——下划线只是引入一位专家的观点；"学科最终确立"是后文的多因素结果，不是 Newcomb 一人之功 |
-| **C** ✅ | 引入专家意见，为电视研究方法转变提供了动因（impetus） | ✅ 精确定位：下划线句提供"工具不适用"的专家判断 → 后文"对局限的认识"（recognition of the limitations）正是方法转变的动因 |
-| **D** | 质疑电影研究方法论对电视研究的影响程度 | ❌ 下划线句不是"质疑"，而是直接陈述工具不适用；且 D 与后文"转向新方法"的推进方向不符 |
+- 句 1（Early television analysis... shaped by film studies）= **set-up**（背景：电影研究主导）
+- 下划线句（Newcomb notes... inadequate）= **claim**（专家判断，转折点：工具不适用）
+- 句 3（A recognition of the limitations led researchers to...）= **evidence/consequence**（对 claim 的反应：方法转变）
+- 句 4（By the 1990s... emerged...）= **conclusion**（结果：学科确立）
 
-## 解题思路
+## Step 2 — Mark（T / F / NG 判定）
 
-### 考点：Rhetorical Purpose — 下划线句功能
+| 选项 | 判定 | 依据 |
+|:---|:---:|:---|
+| A | NG | 引入原文从未出现的元素："被拖延"（slowed）与"学者不愿承认差异"在全文无文本依据 |
+| B | F | 程度夸大——原文因果主体是 "A recognition of the limitations"（多因素），B 把 Newcomb 的观察说成 primary catalyst，因果力度与原文矛盾 |
+| C | T | 下划线句 = 专家判断（工具不适用）→ 后文 "recognition of the limitations led researchers to..." 的方法转变动因，逐元素吻合 |
+| D | F | 下划线句是直接陈述（notes that... proved inadequate），不是"质疑"（questions）；且与后文"转向新方法"的推进方向不符 |
 
-### 推理过程
+## Step 3 — Source-check（溯源）
 
-```mermaid
-flowchart TD
-    A["下划线: Newcomb 指出<br/>电影工具不适用电视"] --> B["认识局限<br/>(recognition of the limitations)"]
-    B --> C["方法转变: 家庭观看语境/广告/连续剧<br/>+ 民族志受众研究"]
-    C --> D["1990s 电视研究成为公认学科"]
-    E["B 型: Newcomb 是 primary catalyst"] --> F["夸大——专家意见是动因之一,<br/>不是学科确立的唯一催化"]
-```
+- **C 幸存元素**：introduces an expert opinion ← 下划线句 "media scholar Horace Newcomb notes that..."（专家身份 + notes 动作）；establishes the impetus for a change in scholarly methods ← 后文 "A recognition of the limitations led researchers to approaches that accounted for a domestic viewing context..."——下划线句正是那个"被认识到的局限"的来源，功能与后果完全对位。
+- **B 的矛盾点**："A recognition of the limitations led researchers to..."（动因是 recognition，且学科确立是 1990s 更宏观的多因素结果）≠ "Newcomb's observations were the primary catalyst"。
+- **A 的缺失元素**：学科发展"被拖延"（slowed）与"学者不愿承认差异"在原文任何一句都未出现。
 
-下划线句处于"背景（电影研究主导）→ **转折（工具不适用）** → 反应（方法转变）→ 结果（学科确立）"链条的转折点上。功能题答案必须回答"这句话在文中**做什么**"：它引入专家判断，为后文的方法转变提供**动因**。
+## Step 4 — Chain-check（链条验证）
 
-### 为什么 C 正确
+文本链：背景（电影研究主导）→ 转折（下划线：工具不适用）→ 反应（认识局限 → 方法转变）→ 结果（1990s 学科确立）。
 
-C 的 "introduces an expert opinion"（引入专家意见）精确描述了句子的动作；"establishes the impetus for a change in scholarly methods"（为方法转变确立动因）精确对应后文 "A recognition of the limitations led researchers to..."——下划线句正是那个"被认识到的局限"的来源。功能与后果完全对位。
+- C 是"转折 → 反应"的接口一环：下划线句引入的判断，正是后文被认识到的局限。
+- B 跳链：把整条链的终点（学科确立）归因给链上的单个环节（Newcomb 的观察），因果力度与原文不符（led to ≠ primary catalyst）。
 
-### 为什么 B 错误（我的错选）
+## Trap（陷阱命名）
 
-B 里 "primary catalyst"（首要催化剂）是程度夸大：下划线句只是说"工具常显不足"（often proved inadequate），是方法转变的**一个**动因；而"电视研究成为正式学科"（By the 1990s... emerged）是更宏观的结果，不能归因于 Newcomb 一个人的观察。功能题对"因果力度"敏感——原文是"促成"（contributed），选项说成"首要原因"（primary）就是过度断言。
+> [!warning] 程度夸大陷阱
+> 功能题中把"专家意见作为动因之一"偷换为 "primary catalyst / 直接导致学科确立" = 程度夸大。防法：圈出原文因果词（led to / recognition / emerged）的主语，选项的因果主体与力度必须和原文一致。
 
-> [!warning] 陷阱识别
-> **程度夸大陷阱**：功能/目的题中，把"专家意见作为动因之一"偷换为"primary catalyst / 直接导致学科确立"的选项极具迷惑性。判断标准：原文的因果词（led to / recognition / emerged）是谁发出的？选项的因果主体和力度必须与原文一致。
+## Principle（对应原则）
 
-## 解题策略
-
-1. 先定位下划线句在"背景→转折→反应→结果"链条中的位置
-2. 用一句话说出下划线句的动作（引入/质疑/支持/对比…）
-3. 检查选项的因果力度：原文 led to ≠ 选项 primary catalyst
-4. 验证后果指向：下划线句的"结果"是否与后文实际描述一致（方法转变，而非学科确立本身）
+原则三 功能定位（答案必须回答"这句话在文中做什么"）+ 原则二 逻辑优先（核对因果力度）。
 
 ---
 
 # 2. Module 2 Q11 — 表格数据题（模块化施工）
 
-> [!info] 标记: `B` — 错误
-> 正确答案: **D**
+> [!info] 我的答案: B — 错误 | 正确答案: **D**
 
-## 题干
+## Task（题干与选项）
 
 The rapid completion of the Specialty Granules Field Office, a modular structure (a structure built in pieces elsewhere and assembled on site) located in the United States, led an employee at another company to collect data on other facilities built using modular construction methods. The employee concluded that modular construction is more efficient than other construction methods.
 
@@ -118,58 +112,49 @@ Based on the text and the table, is the employee's conclusion supported?
 - **C** Yes, because even the project with the longest construction time shown in the table was completed more quickly than it would have been if a different method had been used
 - **D** No, because not enough information has been provided to allow a comparison of different construction methods' efficiency
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
-|:---|:---|:---|
-| **A** | 否：表中模块化项目工期差异很大 | ❌ 数据确实差异大，但这本身不构成"结论不成立"的理由——结论是"比其他方法更高效"，与模块化项目之间的差异无关 |
-| **B** ✏️ | 是：因为 Constitutional Hill 只用了 23 天 | ❌ **以偏概全**——用单个最快案例（23 天）证明"模块化更高效"，但 443 天的反例同样在表中；单点数据无法支撑一般性结论 |
-| **C** | 是：最慢的项目也比其他方法快 | ❌ 表格根本没有"其他方法"的对照数据，"比不同方法更快"无从判断 |
-| **D** ✅ | 否：没有足够信息比较不同施工方法的效率 | ✅ 结论是**比较性**的（modular vs other methods），但表格只有模块化项目（23/106/136/443 天），缺对照组 → 无法支持 |
+- 句 1（Specialty Granules Field Office... led an employee... to collect data）= **set-up**（案例与数据来源）
+- 句 2（The employee concluded...）= **claim**（结论：模块化比其他方法更高效——比较性命题）
+- 表格 = **evidence**（数据源：全部是模块化项目，23/106/136/443 天）
 
-## 解题思路
+## Step 2 — Mark（T / F / NG 判定）
 
-### 考点：Command of Evidence — 科学推理（数据支持结论）
+| 选项 | 判定 | 依据 |
+|:---|:---:|:---|
+| A | F | 表内工期差异大（23 vs 443 天）是事实，但"差异大"本身不构成"结论不成立"的理由——选项推理与结论的比较结构不对应 |
+| B | F | 以偏概全——用单个最快案例（23 天）证明"模块化更高效"，忽略同表反例（St. Regis Residences 443 天） |
+| C | NG | 引入表格没有的元素："其他方法"的工期数据——表中全是模块化项目，无对照组，"比不同方法更快"无从判断 |
+| D | T | 结论是模块化 vs 其他方法的比较，表格无其他方法数据 → "not enough information... to allow a comparison" 逐元素吻合 |
 
-### 推理过程
+## Step 3 — Source-check（溯源）
 
-```mermaid
-flowchart TD
-    A["员工结论: 模块化比<br/>其他方法更高效"] --> B{"需要什么证据?"}
-    B -->|"模块化项目工期"| C["表内有: 23/106/136/443 天"]
-    B -->|"其他方法工期<br/>(对照组)"| D["表内没有 ❌"]
-    D --> E["结论: 无法比较 → 不支持 (D)"]
-    F["B 型: 23 天最快案例"] --> G["以偏概全——忽略 443 天反例"]
-```
+- **D 幸存元素**：not enough information ← 表格四行全是模块化项目（23/106/136/443 天），没有任何非模块化方法的数据；comparison of different construction methods' efficiency ← 对应题干结论 "more efficient than other construction methods" 的比较结构。
+- **B 的矛盾点**：同表 St. Regis Residences—Rye 443 天——模块化项目自身差异巨大，单点 23 天不能支撑一般性结论。
+- **C 的缺失元素**："a different method had been used" 的对照数据——表格里根本没有。
 
-这类题的核心：**结论需要什么数据，表格给没给**。员工结论是比较句（A 比 B 高效），比较就必须有 B 方的数据。
+## Step 4 — Chain-check（链条验证）
 
-### 为什么 D 正确
+文本链：结论（模块化比其他方法更高效）→ 需要证据 = 模块化工期 ✓（表内有 23/106/136/443）+ 其他方法工期 ✗（表内无对照组）→ 缺环 → 无法比较 → 不支持（D）。
 
-D 直接指出证据缺口：表内全是模块化项目（且彼此工期差异巨大：23~443 天），没有任何非模块化项目的对照数据。"not enough information... to allow a comparison" 精确对应题干结论的比较结构。
+- B 跳链：从单点 23 天直接跳到一般性结论，跳过"代表性"与"反例检查"两环。
 
-### 为什么 B 错误（我的错选）
+## Trap（陷阱命名）
 
-B 抓住表中最亮眼的数字（23 天）就下结论"是"，犯了**以偏概全**：同一张表里还有 443 天的 St. Regis Residences，如果模块化"一定"更高效，为何自身差异如此之大？单点数据（尤其最有利的点）不能支持一般性结论。同时 B 忽略了结论的**比较对象**——没有其他方法的数据，任何"更快"的说法都无锚点。
+> [!warning] 单点 cherry-pick 陷阱
+> 数据题用表格里"最好看的单个数字"直接支撑结论 = 以偏概全。防法：先看结论是描述性还是比较性，比较性结论必须有对照组数据，且检查选项是否忽略反例（如 443 天）。
 
-> [!warning] 陷阱识别
-> **单点 cherry-pick 陷阱**：数据题中最常见的错误选项 = 用表格里的"最好看的单个数字"直接支持结论。正确做法：① 先看结论是描述性还是比较性；② 比较性结论必须有对照组数据；③ 检查选项是否忽略反例（如 443 天）。
+## Principle（对应原则）
 
-## 解题策略
-
-1. 把结论改写成"需要什么证据"的问句（比较 → 需要双方数据）
-2. 检查表格是否包含对照组——缺对照组 = 结论无法支持
-3. 警惕用单个数据点（尤其最有利的点）下结论的选项
-4. 注意反例：结论若要成立，表内不应存在明显矛盾的数据
+原则一 文本依据（证据必须来自文本+表格，缺对照组 = 不支持）+ 原则二 逻辑优先（比较性结论的证据要求）。
 
 ---
 
 # 3. Module 2 Q12 — 表格数据题（绿氢直接用电占比）
 
-> [!info] 标记: `D` — 错误
-> 正确答案: **B**
+> [!info] 我的答案: D — 错误 | 正确答案: **B**
 
-## 题干
+## Task（题干与选项）
 
 In 2020, most hydrogen was produced through steam methane reforming, which emits carbon gases. Using electricity from renewable sources to produce green hydrogen sourced from water would enable countries to reduce industrial carbon emissions, but doing so depends on countries' capacity for direct-use electricity (electricity produced and used at the same facility). Researchers estimated the amount of electricity needed in 2020 if green hydrogen had been adopted and the amount needed to meet projected green hydrogen demand in 2050. Comparison between these estimates and estimates of capacity suggests that in most countries, projected green hydrogen production would require a larger share of electricity produced on-site. One exception is ______.
 
@@ -189,56 +174,51 @@ Which choice most effectively uses data from the table to complete the statement
 - **C** South Africa, since the estimated electricity needed for green hydrogen production in 2050 is expected to be lower there than in any other country listed.
 - **D** Indonesia, since the estimated electricity needed for green hydrogen production in 2050 is expected to be the same as it was in 2020.
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
-|:---|:---|:---|
-| **A** | 台湾：2050 年直接用电占比最低 | ❌ 台湾 2050 占比 17% 确实最低，但"最低"不是"例外"——题目要的是**占比不上升**的国家，台湾 1%→17% 是大幅上升 |
-| **B** ✅ | 荷兰：2050 年直接用电占比与 2020 年相同 | ✅ 题干"多数国家占比上升，一个例外"→ 例外 = 占比未升的国家；荷兰 79% → 79% 持平，唯一例外 |
-| **C** | 南非：2050 年所需电量比其他国家都低 | ❌ 变量错误——南非 0.3 并非最低（印尼 0.1 更低）；且题目问的是占比变化，不是绝对电量 |
-| **D** ✏️ | 印尼：2050 年所需电量与 2020 年相同 | ❌ **变量偷换**——印尼绝对电量 0.1 = 0.1 确实相同，但题干说的是"share of electricity produced on-site"（**占比**）；印尼占比 51%→63% 在上升，不是例外 |
+- 句 1（In 2020, most hydrogen... steam methane reforming...）= **set-up**（现状：氢生产排放碳）
+- 句 2（Using electricity from renewable sources... green hydrogen...）= **claim**（绿氢可减排，但依赖直接用电能力）
+- 句 3（Comparison... suggests that in most countries... larger share... One exception is ___）= **answer 缺口**（例外 = 占比未上升的国家）
+- 表格 = **evidence**（数据源：% 2020 与 % 2050 两列是关键变量）
 
-## 解题思路
+## Step 2 — Mark（T / F / NG 判定）
 
-### 考点：Command of Evidence — 定量数据（表格补全）
+| 选项 | 判定 | 依据 |
+|:---|:---:|:---|
+| A | F | 台湾 2050 占比 17% 确为最低，但"最低"不是"例外"——题干例外 = 占比未上升的国家；台湾 1%→17% 是大幅上升 |
+| B | T | 荷兰 % 2020=79 与 % 2050=79 持平，唯一占比未上升的例外，与题干"One exception"逐元素吻合 |
+| C | F | 与表格矛盾：南非 0.3 并非最低（印尼 0.1 更低）；且题目问的是占比变化，不是绝对电量 |
+| D | F | 变量偷换：印尼绝对电量 0.1→0.1 相同，但占比 51%→63% 在上升——题干要求的是占比（share）列 |
 
-### 推理过程
+## Step 3 — Source-check（溯源）
 
-```mermaid
-flowchart TD
-    A["题干关键词: larger SHARE of electricity<br/>produced on-site"] --> B["例外 = 占比未上升的国家"]
-    B --> C["荷兰: 79% → 79% 持平 ✅"]
-    D["印尼: 0.1 → 0.1 绝对量相同"] --> E["占比 51% → 63% 上升 ❌<br/>(变量偷换)"]
-```
+- **B 幸存元素**：percentage of direct-use electricity needed... in 2050 the same as in 2020 ← 荷兰行 % 2050=79 与 % 2020=79，逐格核对成立，且与题干变量（share of electricity produced on-site）一致。
+- **D 的问题点**：0.1→0.1 来自 **Electricity 列**（绝对电量 kW per capita），题干核心变量是 **% 列**（占比）；按占比标准印尼 51%→63% 恰恰是"非例外"的典型。
+- **A 的问题点**：Taiwan % 2050=17 最低是表中事实，但"最低"≠"例外"，例外定义来自题干（占比不上升），台湾 1→17 上升。
+- **C 的矛盾点**：南非 0.3 > 印尼 0.1，"比任何国家都低"与表格直接矛盾。
 
-关键在读题：题干说 "require a **larger share** of electricity produced on-site"——比较的是**占比（%）**，不是绝对电量（kWh per capita）。例外 = 2050 占比不高于 2020 占比的国家。
+## Step 4 — Chain-check（链条验证）
 
-### 为什么 B 正确
+文本链：题干标准（多数国家占比上升）→ 例外 = 占比未上升 → 扫描 % 列：印尼 51→63、南非 9→30、台湾 1→17、荷兰 79→79 → 荷兰唯一 → B。
 
-荷兰是唯一 2050 占比（79%）与 2020 占比（79%）相同的国家，即唯一不需要更大占比的例外。B 完整复述了这个数据关系，且用了与题干一致的变量（percentage of direct-use electricity）。
+- D 跳链：被"数字相同"的表面（0.1=0.1）带跑，但链条需要的是**占比列**的比对——没有核对表格的列名与题干变量。
 
-### 为什么 D 错误（我的错选）
+## Trap（陷阱命名）
 
-D 与 B 结构对称，但偷换了变量：印尼的**绝对电量**（0.1 → 0.1 kW/capita）持平，但**占比**（51% → 63%）在上升——按题干的"占比"标准，印尼恰恰是"非例外"的典型。错选 D 说明只盯着数字相同的表面（0.1=0.1），没有核对表格的**列名**与题干的核心变量。
+> [!warning] 变量偷换陷阱
+> 表格题干扰项常把"绝对量相同/最低"包装成与"占比变化"同构的表述。防法：圈出题干核心变量（share / percentage / total），逐列核对选项引用的数字属于哪一列，再用题干变量重述选项验证。
 
-> [!warning] 陷阱识别
-> **变量偷换陷阱**：表格题的干扰项常把"绝对量相同/最低"包装成与"占比变化"同构的表述。对策：① 圈出题干的核心变量（share / percentage / total…）；② 逐列核对选项引用的数字属于哪一列；③ 用题干变量重述选项，看是否成立（"印尼占比是否持平？"→ 否）。
+## Principle（对应原则）
 
-## 解题策略
-
-1. 圈出题干关键词：比较的是哪个变量（占比 vs 绝对量）
-2. 明确"例外"的定义（本题 = 占比未上升）
-3. 逐列扫描表格，找出满足"例外"条件的行（荷兰 79=79）
-4. 反向验证干扰项：它引用的数字是否属于题干变量所在列（印尼 0.1=0.1 是绝对量列）
+原则一 文本依据（数据必须逐格溯源，列名即证据边界）+ 原则二 逻辑优先（先明确"例外"定义再扫描数据）。
 
 ---
 
 # 4. Module 2 Q15 — 逻辑补全（阿拉伯半岛化石缺口）
 
-> [!info] 标记: `A` — 错误
-> 正确答案: **D**
+> [!info] 我的答案: A — 错误 | 正确答案: **D**
 
-## 题干
+## Task（题干与选项）
 
 Animal fossils from the Arabian Peninsula come primarily from two time periods and locations: a late Miocene (7.0-7.7 million years ago) site in the Baynunah Formation and a Pleistocene (12,000-500,000 years ago) site in the Nefud Desert. The 6.5-million-year gap between these fossil assemblages occurs in the context of considerable evidence of concurrent African-Eurasian faunal exchange. While limited exchange may have occurred via island hopping across the 5.3-million-year-old Mediterranean Sea, many of the species that moved between the continents were adapted to grasslands that could not have existed in sufficient size on Mediterranean islands, leaving only the Peninsula as a viable exchange route, a fact suggesting that ______.
 
@@ -249,57 +229,52 @@ Which choice most logically completes the text?
 - **C** conditions in the Arabian Peninsula were likely more conducive to fossilization before 7.7 million years ago and after 500,000 years ago than they were in the intervening period.
 - **D** the absence of any evidence for African-Eurasian faunal exchange between 7.7 million years ago and 500,000 years ago should not be taken as evidence that the Arabian Peninsula formed a barrier to such exchange.
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
-|:---|:---|:---|
-| **A** ✏️ | 化石缺口可能反映保存条件差、发掘不足或两者兼有 | ❌ **无关归因**——文本逻辑链是"交换存在 + 半岛是唯一通道 → 缺口不该视为屏障"；A 转向文中从未提及的"保存条件/发掘努力"，是凭空引入的新解释 |
-| **B** | 即便草原在半岛繁盛，半岛也不是唯一通道 | ❌ 与文本直接矛盾——原文明确"leaving only the Peninsula as a viable exchange route"（半岛是唯一可行通道） |
-| **C** | 7.7 Ma 之前和 500 ka 之后的条件更利于化石形成 | ❌ 无文本依据——文本没有比较不同时期的化石形成条件 |
-| **D** ✅ | 7.7 Ma–500 ka 之间缺乏交流证据，不应视为半岛构成屏障的证据 | ✅ 完整承接逻辑链：有交流证据 + 半岛唯一通道 → 中间 650 万年的化石空白**恰恰说明**空白不等于屏障（absence of evidence ≠ evidence of absence） |
+- 句 1（fossils... from two time periods... 6.5-million-year gap）= **evidence**（事实 1：化石分布与缺口）
+- 句 2（The 6.5-million-year gap... in the context of considerable evidence of... faunal exchange）= **evidence**（事实 2：同期存在大量非欧交流证据）
+- 句 3（While limited exchange... island hopping... only the Peninsula as a viable exchange route）= **contrast + evidence**（事实 3：岛屿路线排除，半岛唯一通道）
+- 空格（a fact suggesting that ___）= **conclusion**（对三事实的收束）
 
-## 解题思路
+## Step 2 — Mark（T / F / NG 判定）
 
-### 考点：逻辑补全 — 科学推理（化石证据缺口）
+| 选项 | 判定 | 依据 |
+|:---|:---:|:---|
+| A | NG | 引入原文从未出现的元素："保存条件差/发掘不足"——空格只能由前文因果链推出，A 凭空引入新解释 |
+| B | F | 与原文直接矛盾："leaving only the Peninsula as a viable exchange route" vs "the Peninsula was not the only route" |
+| C | NG | 引入原文从未出现的元素：不同时期化石形成条件的比较（7.7 Ma 之前 / 500 ka 之后更利于成化石） |
+| D | T | 前文三事实（化石两期+缺口 / 大量交流证据 / 半岛唯一通道）共同指向"证据缺口 ≠ 屏障"，逐元素吻合 |
 
-### 推理过程
+## Step 3 — Source-check（溯源）
 
-```mermaid
-flowchart TD
-    A["事实1: 化石仅来自两个时期,<br/>中间有 650 万年空缺"] --> C["逻辑: 空缺 ≠ 半岛是屏障"]
-    B["事实2: 同期存在大量<br/>非欧动物交流证据"] --> C
-    D["事实3: 草原物种无法经岛屿,<br/>半岛是唯一可行通道"] --> C
-    E["A 型: 保存条件差/发掘不足"] --> F["文中未提的归因 → 偏离文本逻辑"]
-```
+- **D 幸存元素**：absence of any evidence... between 7.7 million years ago and 500,000 years ago ← 句 1（两个时期化石 + 650 万年缺口）；should not be taken as evidence that the Peninsula formed a barrier ← 句 2（存在大量交流证据）+ 句 3（半岛是唯一可行通道）——交流在发生、通道只有半岛，"半岛没有交流化石"只能说明化石记录不完整，而非半岛阻隔。
+- **A 的缺失元素**：保存条件（preservation conditions）、发掘努力（fossil recovery efforts）在原文从未出现——逻辑补全只能使用文本给出的信息。
+- **B 的矛盾句**："leaving only the Peninsula as a viable exchange route"。
+- **C 的缺失元素**：不同时期化石形成条件的比较。
 
-逻辑补全题的答案必须**紧跟前文给出的理由**，不能引入新原因。前文三个事实全部指向同一结论：交流在发生、通道只有半岛，那么"半岛没有交流化石"只能说明化石记录不完整——而非半岛阻隔了交流。
+## Step 4 — Chain-check（链条验证）
 
-### 为什么 D 正确
+文本链：事实 1（化石仅两期 + 650 万年缺口）∧ 事实 2（同期大量交流证据）∧ 事实 3（草原物种无法经岛屿，半岛唯一通道）→ 缺口 ≠ 屏障（D）。
 
-D 用 "absence of any evidence... should not be taken as evidence that the Peninsula formed a barrier" 完整概括了"证据缺口 ≠ 屏障"的推理，且与题干 "a fact suggesting that ___" 的预期结论严丝合缝——前文的"事实"（exchange + only route）直接支持的就是 D。
+- A 跳链：把论证方向从"缺口不能证明什么"（D）偷换成"缺口可能由什么造成"（A）——A 是对缺口的新解释，不在三事实构成的链上。
+- B 断链：直接否定链上的事实 3（半岛唯一通道）。
 
-### 为什么 A 错误（我的错选）
+## Trap（陷阱命名）
 
-A 看上去在"解释缺口成因"（保存条件、发掘不足），听起来合理，但：① 这些原因在文中**从未出现**——逻辑补全只能使用文本给出的信息；② A 把论证方向从"缺口不能证明什么"（D）偷换成"缺口可能由什么造成"（A）。两句话都在谈缺口，但 A 是对缺口的新解释，D 是对缺口**逻辑含义**的收束——题目要的是后者。
+> [!warning] 无关归因陷阱
+> 逻辑补全题中，"貌似合理的背景解释"（保存条件/气候/发掘不足）若是文中未提及的，就是干扰项。防法：空格只能由前文因果链推出，任何引入新信息源的选项先怀疑；"证据缺口 ≠ 屏障"（absence of evidence ≠ evidence of absence）是高频正确形态。
 
-> [!warning] 陷阱识别
-> **无关归因陷阱**：逻辑补全题中，"貌似合理的背景解释"（保存条件/气候/人为因素）若是文中未提及的，就是干扰项。铁律：空格只能由前文的因果链推出，任何引入新信息源的选项先怀疑。
+## Principle（对应原则）
 
-## 解题策略
-
-1. 把前文拆成事实清单（化石分布 / 交流证据 / 通道唯一性）
-2. 找出三个事实共同指向的结论（缺口 ≠ 屏障）
-3. 检查选项是否引入文中未提及的信息（A 的保存条件/发掘）→ 排除
-4. 用"因此"把选项接回原文读一遍，语感通顺且不引入新前提的才是答案
+原则二 逻辑优先（答案必须紧跟前文给出的理由，不能引入新原因）+ 原则一 文本依据（只使用文本信息）。
 
 ---
 
 # 5. Module 2 Q16 — SEC 动词形式（with 独立主格）
 
-> [!info] 标记: `D` — 错误
-> 正确答案: **C**
+> [!info] 我的答案: D — 错误 | 正确答案: **C**
 
-## 题干
+## Task（题干与选项）
 
 According to Roxana Silbert, former artistic director of Hampstead Theatre, the past five decades have seen UK theater companies—once operated as artist cooperatives like the Royal Exchange (with its five founding artistic directors)—evolving toward increasingly corporate structures, with executives rather than creatives ______ decision-making power over programming.
 
@@ -310,57 +285,50 @@ Which choice completes the text so that it conforms to the conventions of Standa
 - **C** being given
 - **D** are being given
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
-|:---|:---|:---|
-| **A** | have been given | ❌ 有限动词（现在完成时）——with 结构内不能出现谓语，且与主句时态体系冲突 |
-| **B** | been given | ❌ 缺助动词的裸过去分词——不构成合法的 with 结构 |
-| **C** ✅ | being given | ✅ with + 名词（executives）+ 现在分词（being given）构成**独立主格**（absolute construction），作伴随状语修饰主句 |
-| **D** ✏️ | are being given | ❌ 有限动词（现在进行时被动）——在 with 之后形成第二个谓语，与主句 "have seen... evolving" 构成无连词的双谓语错误 |
+- 主句谓语 = **have seen**（the past five decades have seen UK theater companies... evolving...）——全句唯一主谓结构
+- 破折号插入语（once operated as artist cooperatives...）= 非谓语修饰，不影响主句结构
+- 空格所在 = **with + executives rather than creatives + ______**（独立主格结构）
+- 边界测试对象：with 之后只能接非谓语（分词/介词短语），不能接有限动词
 
-## 解题思路
+## Step 2 — Mark（T / F / NG 判定）
 
-### 考点：Standard English Conventions — 独立主格（with + 名词 + 分词）
+| 选项 | 判定 | 依据 |
+|:---|:---:|:---|
+| A | F | 有限动词（现在完成时被动）——with 后出现谓语 = 双谓语；违反 Checklist **A1.7**（一分句一有限动词；介词后非谓语化） |
+| B | F | 缺 being 的裸过去分词——不构成合法的 with 结构（with + 名词后分词短语不完整） |
+| C | T | with + executives + being given = 独立主格（现在分词被动式），作主句伴随状语；主句唯一谓语 have seen 不变（A1.7 合规） |
+| D | F | 有限动词（现在进行时被动）——with 后形成第二个谓语 = 无连词双谓语；违反 Checklist **A1.7** |
 
-### 推理过程
+## Step 3 — Source-check（溯源）
 
-```mermaid
-flowchart TD
-    A["主句谓语: have seen ... evolving<br/>(句子唯一主谓结构)"] --> B["with + executives + ______"]
-    B --> C{"空格需要什么?"}
-    C -->|"分词(非谓语)"| D["being given ✅"]
-    C -->|"有限动词"| E["are being given ❌<br/>→ 无连词双谓语"]
-```
+- **C 的结构依据**：with + 名词短语（executives rather than creatives）+ 现在分词被动（being given）+ 宾语（decision-making power over programming）= 合法独立主格（absolute construction），描述公司结构演变的伴随状态。规则出处 = Checklist A1.7（"after with/without/despite: no finite verb"）。
+- **A/D 的违规点**：have been given / are being given 是完整有限动词短语，放进 with 结构内使全句出现两个谓语（have seen + 第二谓语）→ 双谓语病句。
+- **B 的违规点**：been given 缺助动词 being，分词短语不完整，with 结构无法成立。
 
-"with + 名词 + 分词"是 SAT 常考的**独立主格**结构：with 之后不能放有限动词（am/is/are/has/have 类），只能放分词/介词短语等非谓语成分。全句已有主谓（companies have seen... evolving），空格若再放谓语即成病句。
+## Step 4 — Chain-check（结构验证）
 
-### 为什么 C 正确
+结构链：主句（have seen ... evolving，唯一谓语）→ 伴随状语（with + 名词 + being given）。
 
-C "with executives rather than creatives being given decision-making power" = with + 名词短语 + 现在分词被动式，构成合法的独立主格，作主句的伴随状语（描述公司结构演变的伴随状态）。句子完整、单主谓、语法正确。
+- 边界测试：A/D 在 with 后引入有限动词 = 分句边界破坏（一个分句两个谓语）；B 结构残缺；C 是唯一补全 with 独立主格的选项。
 
-### 为什么 D 错误（我的错选）
+## Trap（陷阱命名）
 
-D "are being given" 是完整的有限动词短语（现在进行时被动）。放进句中后，"the past five decades have seen UK theater companies... evolving..." 与 "with executives are being given..." 形成**双谓语**——with 结构内的成分必须是非谓语。错选 D 说明对"with + 名词后只能接分词"这一结构不熟，被 "are being given" 的完整被动语态"语感正确"所吸引，忽略了它制造了第二个谓语。
+> [!warning] with 后双谓语陷阱
+> 见到 "with + 名词 + 空格"，空格处绝不可能是有限动词（am/is/are/was/were/has/have 开头）。防法：先找主句谓语确认句子已有主谓，再淘汰所有"有限动词"选项，剩余选项中选结构合法的分词形式。
 
-> [!warning] 陷阱识别
-> **双谓语陷阱（with 结构）**：见到 "with + 名词 + 空格"，空格处**绝不可能是**有限动词（am/is/are/was/were/has/have 开头）。同理可推广：介词后（with/without/despite 等）的动词一律非谓语化。
+## Principle（对应原则）
 
-## 解题策略
-
-1. 先找主句的主谓（have seen... evolving），确认句子已有谓语
-2. 空格前的结构词（with/without/despite）决定后面只能是非谓语
-3. 在 A–D 中先淘汰所有"有限动词"选项（have been given / are being given）
-4. 剩余选项中选结构合法的分词形式（being given）
+结构优先（逻辑优先的语法版）——一个分句只有一个有限动词（Checklist A1.7）。
 
 ---
 
 # 6. Module 2 Q20 — SEC 动词形式（分词 vs 谓语）
 
-> [!info] 标记: `A` — 错误
-> 正确答案: **C**
+> [!info] 我的答案: A — 错误 | 正确答案: **C**
 
-## 题干
+## Task（题干与选项）
 
 In recent years, the English writer Mary Robinson (1758-1800), whose poetry was widely read during her lifetime, has been rediscovered by contemporary audiences—a resurgence of interest that is largely due to literary scholars such as Anne Janowitz, whose work ______ the richness of Robinson's poems and the poet's historical importance to the Romantic literary movement encourages a broader rethinking of British Romanticism itself.
 
@@ -371,57 +339,50 @@ Which choice completes the text so that it conforms to the conventions of Standa
 - **C** highlighting
 - **D** is highlighting
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
-|:---|:---|:---|
-| **A** ✏️ | highlights | ❌ 有限动词（一般现在时第三人称单数）——与后面的 encourages 形成**双谓语**：whose work highlights... encourages... |
-| **B** | has highlighted | ❌ 有限动词（现在完成时）——同样制造双谓语，且时态与句子框架不匹配 |
-| **C** ✅ | highlighting | ✅ 分词短语作定语修饰 work：whose work **highlighting** the richness... and the importance... **encourages** a broader rethinking——encourages 才是关系从句的谓语 |
-| **D** | is highlighting | ❌ 有限动词（现在进行时）——双谓语错误 |
+- 主句谓语 = **has been rediscovered**（Mary Robinson... has been rediscovered by contemporary audiences）
+- 关系从句 1（whose poetry was widely read...）= 修饰 Robinson
+- 关系从句 2（whose work ______ ... encourages a broader rethinking）= **谓语 = encourages**（被长宾语成分隔开）
+- 空格所在 = work 与 encourages 之间 → 只能是非谓语（修饰 work 的分词），不能再放谓语
 
-## 解题思路
+## Step 2 — Mark（T / F / NG 判定）
 
-### 考点：Standard English Conventions — 分词短语 vs 谓语动词
+| 选项 | 判定 | 依据 |
+|:---|:---:|:---|
+| A | F | 有限动词（一般现在时三单）——与后文 encourages 构成同一关系从句内的双谓语，无连词；违反 Checklist **A1.7** |
+| B | F | 有限动词（现在完成时）——同样制造双谓语，且时态与句子框架不匹配（A1.7） |
+| C | T | highlighting 分词短语作 work 的后置定语，encourages 为关系从句唯一谓语——单谓语结构完整（A1.7 合规） |
+| D | F | 有限动词（现在进行时）——双谓语错误（A1.7） |
 
-### 推理过程
+## Step 3 — Source-check（溯源）
 
-```mermaid
-flowchart TD
-    A["whose work ______ ... encourages a broader rethinking"] --> B{"encourages 是谁的谓语?"}
-    B -->|"work 的谓语"| C["空格必须是修饰成分<br/>→ highlighting ✅"]
-    B -->|"空格也是谓语"| D["highlights + encourages<br/>双谓语 ❌"]
-    E["长插入成分: the richness of Robinson's poems<br/>and the poet's historical importance"] --> F["把 work 与 encourages 隔开<br/>→ 易漏看主谓关系"]
-```
+- **C 的结构依据**：whose work [highlighting the richness of Robinson's poems and the poet's historical importance to the Romantic literary movement] encourages a broader rethinking——and 连接的是两个宾语（the richness... and the importance...），不是两个谓语；encourages 是关系从句真正谓语。规则出处 = Checklist A1.7（Double Predicate：one clause, one finite verb）。
+- **A 的违规点**：work highlights ... encourages ... = 两个有限动词无连词 → 双谓语病句；"whose work highlights..." 的局部语感是视线陷阱。
+- **B/D 的违规点**：has highlighted / is highlighting 同为有限动词，与 A 同型。
 
-句子骨架：... scholars such as Anne Janowitz, **whose work** ______ the richness... and the importance... **encourages** a broader rethinking. 关系从句主语是 work，谓语是 encourages（被长宾语成分隔开）。空格只能是修饰 work 的分词。
+## Step 4 — Chain-check（结构验证）
 
-### 为什么 C 正确
+结构链：关系从句 2 = work（主语）→ highlighting 短语（后置定语，长插入）→ encourages（谓语）。
 
-C "whose work highlighting the richness... and the historical importance... encourages a broader rethinking" 结构完整：highlighting 短语作 work 的后置定语，encourages 作关系从句谓语。长句的"主语（work）+ 定语（highlighting...）+ 谓语（encourages）"正是 SAT 高频考法。
+- 边界测试：空格换成有限动词则从句出现两个谓语 → 双谓语；长插入成分（the richness of Robinson's poems and the poet's historical importance）把 work 与 encourages 隔开，是本题设计的"视线陷阱"——先找全句/从句真正谓语再判断空格填谓语还是分词。
 
-### 为什么 A 错误（我的错选）
+## Trap（陷阱命名）
 
-A "highlights" 与后文 "encourages" 构成**两个并列谓语**却无连词（and 连接的是 the richness... and the historical importance，不是两个谓语）→ 双谓语病句。错选 A 说明被 "whose work highlights..." 的局部语感带跑，没有看到句子末尾的 encourages 才是真正谓语——长插入成分（the richness of Robinson's poems and the poet's historical importance）把 work 和 encourages 隔开，是本题设计的"视线陷阱"。
+> [!warning] 长句双谓语陷阱
+> 空格后远处还有一个明显的谓语动词（encourages）→ 空格大概率是分词。防法：通读全句先圈出主句/从句的谓语，若空格前后已各有谓语，空格处只能是分词/介词短语等修饰成分。
 
-> [!warning] 陷阱识别
-> **长句双谓语陷阱**：当句子包含长宾语/插入成分时，先找全句（或从句）真正的谓语，再判断空格该填谓语还是分词。标志词：空格后远处还有一个明显的谓语动词（encourages）→ 空格大概率是分词。
+## Principle（对应原则）
 
-## 解题策略
-
-1. 通读全句，先圈出主句/从句的谓语动词（has been rediscovered / encourages）
-2. 若空格前后已各有谓语，空格处只能是分词/介词短语等修饰成分
-3. 留意"主语 + 长修饰语 + 谓语"结构——谓语常被宾语成分隔开
-4. 把选中的形式代入，画出句子主干验证单谓语
+结构优先（逻辑优先的语法版）——一个分句只有一个有限动词（Checklist A1.7）；长插入成分不改变主谓关系。
 
 ---
 
 # 7. Module 2 Q25 — 逻辑过渡词（That is 解释说明）
 
-> [!info] 标记: `B` — 错误
-> 正确答案: **A**
+> [!info] 我的答案: B — 错误 | 正确答案: **A**
 
-## 题干
+## Task（题干与选项）
 
 In a 2003 study, Hall and Fransson identified a distinct time-pressure effect on avian molting behaviors in lesser whitethroats, with potential implications for migration fitness. ______ the researchers observed that birds exposed to shifted daylight patterns suggesting a more imminent departure molted quicker and grew shorter wing feathers than did the controls, likely resulting in decreased migration speeds.
 
@@ -432,57 +393,50 @@ Which choice completes the text with the most logical transition?
 - **C** Granted,
 - **D** Therefore,
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
-|:---|:---|:---|
-| **A** ✅ | That is, | ✅ 前句提出抽象判断（identified a distinct time-pressure effect），后句用具体观察**解释/重述**该效应是什么 → 解释说明关系 |
-| **B** ✏️ | In addition, | ❌ 后句不是"额外的另一件事"，而是对前句所提效应的**具体展开**——Addition 需要两个并列的独立要点 |
-| **C** | Granted, | ❌ Granted 引出"承认/让步"（虽然后句确实如此…），后文没有转折回应 |
-| **D** | Therefore, | ❌ Therefore 表示因果推论（因为 A 所以 B）——但观察结果不是从前句"推出"的，前句本身就是"发现了这个效应"的概括，后句是它的内容 |
+- 句 1（Hall and Fransson identified a distinct time-pressure effect...）= **claim**（抽象判断：识别出效应）
+- 句 2（the researchers observed that birds... molted quicker and grew shorter wing feathers）= **evidence/展开**（具体化该效应的内容）
+- 关系 = 解释说明（概括 → 具体重述），不是并列 / 因果 / 让步
 
-## 解题思路
+## Step 2 — Mark（T / F / NG 判定）
 
-### 考点：Transitions — 逻辑过渡词（解释说明）
+| 选项 | 判定 | 依据 |
+|:---|:---:|:---|
+| A | T | 前句抽象判断（identified a distinct time-pressure effect）+ 后句具体观察（molted quicker, shorter wing feathers）= 解释/重述关系，That is 逐元素吻合 |
+| B | F | In addition 要求两个并列的独立要点——后句不是"额外的另一件事"，而是前句效应的内容展开（同一信息的不同粒度） |
+| C | F | Granted 引出让步（"虽然后句确实如此…"），后文没有转折回应——与两句关系矛盾 |
+| D | F | Therefore 表示因果推论——观察结果不是从前句"推出"的，前句本身就是"发现了这个效应"的概括，后句是它的内容 |
 
-### 推理过程
+## Step 3 — Source-check（溯源）
 
-```mermaid
-flowchart TD
-    A["句1: 研究识别出时间压力效应<br/>(抽象概括)"] --> B{"句2 与句1 的关系?"}
-    B -->|"具体说明效应内容"| C["That is, ✅<br/>(重述/解释)"]
-    B -->|"并列新要点"| D["In addition ❌<br/>(句2 不是新要点)"]
-    B -->|"因果推论"| E["Therefore ❌<br/>(句2 不是句1 的结果)"]
-```
+- **A 幸存元素**：前句 "identified a distinct time-pressure effect"（抽象动词 + 概括主张）→ 后句具体观察（molted quicker, grew shorter wing feathers than did the controls）——句 2 就是在具体化句 1 提到的效应到底发生了什么，That is 的"换句话说/具体来说"功能精确对位。
+- **B 的问题点**：In addition 需要新增独立信息点；后句是对同一效应不同粒度的复述，不满足"并列新要点"的条件。
+- **C 的问题点**：Granted 要求后文有转折回应，原文没有。
+- **D 的问题点**：句 2 是句 1 效应的内容，不是从句 1 推导出的结果。
 
-判断过渡词的唯一方法：弄清**两句之间的真实关系**。句1 说"识别出一个效应"，句2 说"研究人员观察到……"——句2 就是在具体化句1 提到的效应（到底发生了什么），这是典型的**解释/重述**（That is / In other words）。
+## Step 4 — Chain-check（链条验证）
 
-### 为什么 A 正确
+文本链：概括（识别出时间压力效应）→ 具体化（效应是什么：换羽更快、翼羽更短）→ That is 是连接两个粒度的胶水。
 
-A "That is," 的功能 = "换句话说，具体来说"。前句的抽象主张（a distinct time-pressure effect）由后句的具体观察（molted quicker, grew shorter wing feathers）展开说明，正是 That is 的经典用法。
+- B 假设两条平行链（并列）——实际只有一条链的两个层次（概括 vs 展开）；A 是链上的衔接环。
 
-### 为什么 B 错误（我的错选）
+## Trap（陷阱命名）
 
-B "In addition," 要求后句是与前句**并列的独立信息**。但后句并非独立要点，而是前句"效应"的展开内容——两者是同一信息的不同粒度，不是两个并列点。错选 B 说明只看"前后都有内容"就当作并列，没有判断**内容层级**（概括 vs 具体展开）。
+> [!warning] 概括-展开误判为并列陷阱
+> 前句给抽象结论、后句给具体细节时，常被误选 In addition / Furthermore。防法：把后句替换为"例如/具体来说"读一遍——通顺 → That is 型（解释），不通顺再排查并列/因果/让步。
 
-> [!warning] 陷阱识别
-> **概括-展开误判为并列**：前句给抽象结论、后句给具体细节时，常被误选 In addition / Furthermore。区分标准：把后句替换为"例如/具体来说"是否通顺？通顺 → That is 型（解释），不通顺 → 再看并列/因果/让步。
+## Principle（对应原则）
 
-## 解题策略
-
-1. 分别用一句话概括前句与后句的核心内容
-2. 判断关系：解释（That is）/ 并列（In addition）/ 因果（Therefore）/ 让步（Granted）
-3. 特征词法：前句出现 identified/concluded/claimed 等抽象动词，后句给观察/数据 → 解释说明
-4. 代入验证：用"换句话说/具体来说"替换该过渡词读一遍，通顺即对
+原则二 逻辑优先——先判断两句之间的真实关系（解释/并列/因果/让步），再选过渡词。
 
 ---
 
 # 8. Module 2 Q27 — 笔记题（引文支持目的）
 
-> [!info] 标记: `B` — 错误
-> 正确答案: **C**
+> [!info] 我的答案: B — 错误 | 正确答案: **C**
 
-## 题干
+## Task（题干与选项）
 
 While researching a topic, a student has taken the following notes:
 
@@ -498,82 +452,72 @@ The student wants to cite a historian to explain why Digby wrote *De Arte Natand
 - **C** Valosik claims that, by writing *De Arte Natandi*, "Digby hoped to revive swimming... and elevate it from a crude, mechanical function... to an artful science."
 - **D** As Valosik claims, with *De Arte Natandi*, Digby developed the first modern swimming manual in order to illustrate why "a once revered skill... had all but died out during Europe's Dark Ages."
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
-|:---|:---|:---|
-| **A** | 引用 Digby 本人"希望把游泳提升为艺术科学" | ❌ 引文归属错误——"hoped to... elevate" 是 **Valosik 对 Digby 的论断**，不是 Digby 自己写的；且题干要求 cite a **historian** |
-| **B** ✏️ | 据 Valosik，Digby 写此书是为了描述并图解"古罗马时代备受推崇的"水上特技 | ❌ **目的错位 + 事实扭曲**——特技是 Digby **自己开发的**（stunts that he had developed），不是"from ancient Rome"；且"描述图解特技"不是 Valosik 给出的写作目的（目的是复兴+提升） |
-| **C** ✅ | Valosik 声称，写《论游泳技艺》时 Digby 希望复兴游泳并将其从粗陋机械技能提升为艺术科学 | ✅ 直接回答"why"：目的 = revive + elevate；引用出自历史学家 Valosik；引文与笔记原文一致 |
-| **D** | 据 Valosik，Digby 写此书是为了说明游泳为何在黑暗时代消亡 | ❌ **目的倒置**——Valosik 说的是 Digby 想**复兴**游泳（revive），不是"illustrate why... had died out"（说明为何消亡） |
+- goal = **cite a historian to explain why Digby wrote De Arte Natandi**（答案必须含：历史学家 + 写作目的）
+- 笔记 1/2/3 = **set-up + evidence**（背景：罗马游泳/黑暗时代衰落；事实：Digby 手册）
+- 笔记 4（Valosik 引文）= **evidence/answer 来源**（唯一给出写作目的：revive + elevate，且出自历史学家）
 
-## 解题思路
+## Step 2 — Mark（T / F / NG 判定）
 
-### 考点：Command of Evidence — 笔记题（引文支持目的）
+| 选项 | 判定 | 依据 |
+|:---|:---:|:---|
+| A | NG | 引文归属错误——"hoped to... elevate" 是 Valosik 对 Digby 的论断（笔记第 4 条引号句），不是 Digby 自己写的；且题干要求 cite a **historian**，选项缺失该元素 |
+| B | F | 与笔记直接矛盾：笔记说特技是 Digby "that he had developed"（自己开发的），选项却说 "from ancient Rome"；且目的错位（describe and illustrate 是书的内容，不是 Valosik 给出的写作目的） |
+| C | T | 归属（Valosik claims）+ 目的（hoped to revive... and elevate it... to an artful science）+ 与笔记引文逐字一致——三要素齐全，直接回答 why |
+| D | F | 目的倒置——Valosik 说的是 Digby 想**复兴**游泳（revive），选项说 illustrate why... had died out（说明为何消亡） |
 
-### 推理过程
+## Step 3 — Source-check（溯源）
 
-```mermaid
-flowchart TD
-    A["goal: 引用历史学家解释<br/>Digby 为何写 De Arte Natandi"] --> B{"需要什么?"}
-    B -->|"目的表述"| C["revive 复兴 + elevate 提升 ✅"]
-    B -->|"归属正确"| D["Valosik(历史学家) 的话 ✅"]
-    E["B 型: 特技 from ancient Rome"] --> F["笔记原文: stunts he had developed<br/>(自己开发的) → 扭曲事实"]
-    G["D 型: illustrate why died out"] --> H["原文: revive(复兴) → 目的倒置"]
-```
+- **C 幸存元素**：Valosik claims ← 笔记第 4 条（Historian Vicki Valosik claims...）；"Digby hoped to revive swimming... and elevate it from a crude, mechanical function... to an artful science" ← 笔记引文原文逐字一致；hoped to revive + elevate = 直接回答 why Digby wrote。
+- **A 的缺失/归属错误**："hoped to... elevate" 是笔记引号内 **Valosik 的话**，不是 Digby 亲笔；选项张冠李戴且未引用历史学家。
+- **B 的矛盾点**："from ancient Rome" vs 笔记 "stunts that he had developed"（Digby 自己开发）；"to describe and illustrate stunts" 是内容描述，不是 Valosik 给出的写作目的。
+- **D 的矛盾点**："illustrate why... had died out" vs 笔记 "hoped to revive swimming"（目的倒置）。
 
-笔记题的黄金法则：**goal 动词决定答案形态**。goal = explain **why** Digby wrote → 答案必须包含"写作目的"（revive + elevate），且必须是历史学家 Valosik 的话。
+## Step 4 — Chain-check（链条验证）
 
-### 为什么 C 正确
+文本链：goal（引用历史学家解释为何写 De Arte Natandi）→ 答案要素 = 目的（revive + elevate）∧ 归属（Valosik）→ C 是唯一两环齐全的选项。
 
-C 三要素齐全：① 归属（Valosik claims）；② 目的（hoped to revive swimming... and elevate it... to an artful science——直接回答 why）；③ 与笔记原文一致（未篡改引文）。是唯一完整达成 goal 的选项。
+- B 跳链：归属对（According to Valosik）但目的链跳到了"内容描述"（describe/illustrate），且细节链扭曲（developed → from ancient Rome）。
+- D 反链：目的方向反了（复兴 vs 说明消亡）。
 
-### 为什么 B 错误（我的错选）
+## Trap（陷阱命名）
 
-B 有双重问题：① **目的错位**——"to describe and illustrate stunts" 是笔记里 Digby 书的内容描述，不是 Valosik 给出的写作目的；② **事实扭曲**——笔记明确说特技是 Digby "that he had developed"（自己开发的），B 却说 "from ancient Rome"（源自古罗马），把笔记信息改错了。错选 B 说明被 "According to Valosik" 的归属正确性迷惑，没有核对目的与笔记细节。
+> [!warning] 笔记题三查陷阱
+> 笔记题必查三项：查归属（引文是否出自目标身份）、查目的（是否匹配 goal 动词）、查细节（是否与笔记逐字一致）。防法：复述笔记"内容"（describe/illustrate）的选项几乎总不是"目的"题的答案；"According to 正确身份 + 目的/细节错误"是最高频干扰组合。
 
-> [!warning] 陷阱识别
-> **笔记题三查**：查归属（引文是否出自目标身份）、查目的（是否匹配 goal 动词）、查细节（是否与笔记原文一致）。B 型干扰项 = 归属对、目的偏、细节错；D 型 = 目的倒置。复述笔记"内容"（describe/illustrate）的选项几乎总不是"目的"题的答案。
+## Principle（对应原则）
 
-## 解题策略
-
-1. 读 goal 动词，确定答案必须包含什么（explain why → 目的表述）
-2. 核对引文归属：历史学家的话 vs 作者自己的话（A 型排除）
-3. 核对目的方向：revive（复兴）≠ illustrate why died out（说明消亡）
-4. 核对细节：stunts that he had developed ≠ from ancient Rome
-5. 三者都通过才选；只满足归属的选项（B）不选
+原则一 文本依据——goal 动词决定答案形态，引文必须与笔记逐字一致、归属正确。
 
 ---
 
-## 总结：薄弱技能分布
+## 积累小结
 
-| # | 题目 | 模块 | 技能类别 | 学生错误类型 | 优先级 |
-|:---|:---|:---:|:---|:---|:---:|
-| 1 | Q5 Newcomb 电视研究 | Mod2 | Rhetorical Purpose — 下划线功能 | 因果力度夸大（primary catalyst，选 B） | ⭐⭐⭐ |
-| 2 | Q11 模块化施工 | Mod2 | Command of Evidence — 表格数据 | 单点 cherry-pick 以偏概全（选 B） | ⭐⭐⭐⭐ |
-| 3 | Q12 绿氢占比 | Mod2 | Command of Evidence — 表格数据 | 变量偷换：绝对量当占比（选 D） | ⭐⭐⭐⭐ |
-| 4 | Q15 半岛化石 | Mod2 | 逻辑补全 — 科学推理 | 无关归因：引入未提及的保存/发掘原因（选 A） | ⭐⭐⭐⭐ |
-| 5 | Q16 独立主格 | Mod2 | SEC — 动词形式 | with 结构内放有限动词 → 双谓语（选 D） | ⭐⭐⭐ |
-| 6 | Q20 Robinson 分词 | Mod2 | SEC — 动词形式 | 长插入语遮蔽 → 双谓语（选 A） | ⭐⭐⭐ |
-| 7 | Q25 换羽时间压力 | Mod2 | Transitions — 过渡词 | 概括-展开误判为并列（选 B） | ⭐⭐⭐ |
-| 8 | Q27 Valosik 笔记 | Mod2 | Command of Evidence — 笔记题 | 归属对但目的错位 + 细节扭曲（选 B） | ⭐⭐⭐⭐ |
+| 题号 | 考点 | 我的答案 | 正确答案 | 错误类型 |
+|:---|:---|:---:|:---:|:---|
+| 1. M2 Q5 Newcomb 电视研究 | Rhetorical Purpose — 下划线功能 | B | C | 因果力度夸大（primary catalyst） ⭐⭐⭐ |
+| 2. M2 Q11 模块化施工 | Command of Evidence — 表格数据 | B | D | 单点 cherry-pick 以偏概全 ⭐⭐⭐⭐ |
+| 3. M2 Q12 绿氢占比 | Command of Evidence — 表格数据 | D | B | 变量偷换：绝对量当占比 ⭐⭐⭐⭐ |
+| 4. M2 Q15 半岛化石 | 逻辑补全 — 科学推理 | A | D | 无关归因：引入未提及的保存/发掘原因 ⭐⭐⭐⭐ |
+| 5. M2 Q16 独立主格 | SEC — 动词形式 | D | C | with 结构内放有限动词 → 双谓语 ⭐⭐⭐ |
+| 6. M2 Q20 Robinson 分词 | SEC — 动词形式 | A | C | 长插入语遮蔽 → 双谓语 ⭐⭐⭐ |
+| 7. M2 Q25 换羽时间压力 | Transitions — 过渡词 | B | A | 概括-展开误判为并列 ⭐⭐⭐ |
+| 8. M2 Q27 Valosik 笔记 | Command of Evidence — 笔记题 | B | C | 归属对但目的错位 + 细节扭曲 ⭐⭐⭐⭐ |
 
 ### 技能分布汇总
 
-```mermaid
-pie title 错题技能分布
-    "Command of Evidence (表格/笔记)" : 3
-    "SEC 动词形式" : 2
-    "Rhetorical Purpose 下划线功能" : 1
-    "逻辑补全" : 1
-    "Transitions 过渡词" : 1
-```
+- Command of Evidence（表格/笔记）: 3 题（Q11 / Q12 / Q27）
+- SEC 动词形式: 2 题（Q16 / Q20）
+- Rhetorical Purpose 下划线功能: 1 题（Q5）
+- 逻辑补全: 1 题（Q15）
+- Transitions 过渡词: 1 题（Q25）
 
-### 行动建议
+### 行动项
 
 1. **表格数据题（Q11, Q12）** — 两大铁律：① 结论是比较性就必须有对照组，缺对照 = 不支持；② 先圈题干变量（占比 vs 绝对量），选项引用的数字必须属于该变量所在列。警惕"最亮眼的单点数字"与"数字相同但变量不同"两类干扰。
 
-2. **SEC 动词形式（Q16, Q20）** — 同一陷阱的两种变体：空格前有 with（独立主格，只能接分词）或空格后远处已有谓语（encourages）。做题先找全句唯一谓语，再决定空格填谓语还是分词；"双谓语"是最常见的 SEC 结构错误。
+2. **SEC 动词形式（Q16, Q20）** — 同一陷阱的两种变体：空格前有 with（独立主格，只能接分词）或空格后远处已有谓语（encourages）。做题先找全句唯一谓语，再决定空格填谓语还是分词；"双谓语"（Checklist A1.7）是最常见的 SEC 结构错误。
 
 3. **逻辑补全（Q15）** — 空格只能由前文因果链推出；选项引入文中未提及的原因（保存条件/发掘不足）一律排除；"证据缺口 ≠ 屏障"型收束（absence of evidence ≠ evidence of absence）是高频正确形态。
 

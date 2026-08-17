@@ -17,9 +17,7 @@ created: 2026-07-21
 > - **Module 2 正确率**: 7/13 (53.8%)（含2题未作答）
 > - **薄弱技能**: Central Ideas and Details, Words in Context, Command of Evidence (Scientific & Quantitative), Standard English Conventions
 > - **说明**: 本版为修正版——根据标准答案 `0715_answer_key.md` 重新核对，覆盖所有**实际错误**的题目。原样本中 M1Q24、M2Q2、M2Q9 经自修正后实际正确，本版不再纳入。
-
-
----
+> - **备注**: 按 v3.3 标准模板重塑（2026-08-17）
 
 > [!danger] 分析原则
 > 详见 [[SAT Reading - Analysis Principles]]。
@@ -39,290 +37,299 @@ created: 2026-07-21
 
 # 1. Module 1 Q9 — 主旨题（Cisneros & Castillo 非英语词汇使用）
 
-> [!info] 标记: `A` — 错选
+> [!info] 我的答案: A — 错误 | 正确答案: **D**
 
-## 题干
+## Task（题干与选项）
 
-Sandra Cisneros's English-language short story "Eyes of Zapata" occasionally includes words and phrases from the Mexican dialect of Spanish. While the story doesn't translate the Spanish text into English, the meaning can be inferred from the surrounding English text. Ana Castillo adopts a comparable approach to Spanish in her English language novel *So Far from God*. Both works thus remain accessible to all readers of English, not just those who can also read Spanish.
+> Sandra Cisneros's English-language short story "Eyes of Zapata" occasionally includes words and phrases from the Mexican dialect of Spanish. While the story doesn't translate the Spanish text into English, the meaning can be inferred from the surrounding English text. Ana Castillo adopts a comparable approach to Spanish in her English language novel *So Far from God*. Both works thus remain accessible to all readers of English, not just those who can also read Spanish.
+>
+> What is the main topic of the text?
 
-What is the main topic of the text?
+选项（逐字保留）：
 
-**我的答案**: A &nbsp;&nbsp; **正确答案**: D
+- **A** ✏️ — The difficulty of translating Sandra Cisneros's works into languages other than English
+- **B** — The commercial success of English-language literature around the world
+- **C** — The enduring popularity of Ana Castillo's works in Mexico
+- **D** ✅ — The use of non-English vocabulary in two English-language literary works
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
+- 句1: **set-up/claim** — Cisneros 的英语短篇偶尔包含墨西哥西班牙语词汇
+- 句2: **elaboration（对句1的补充）** — 不翻译西班牙语，含义可从上下文推断
+- 句3: **对比/平行主体** — Castillo 在其英语小说中采用类似做法
+- 句4: **conclusion** — 两部作品对所有英语读者（不必懂西班牙语）都可理解
+
+## Step 2 — Mark（T / F / NG 判定）
+
+| 选项 | 判定 | 依据 |
 |:---|:---|:---|
-| **A** ✏️ | The difficulty of translating Sandra Cisneros's works into languages other than English | ❌ 文本未讨论翻译难度，且只提了 Cisneros，忽略 Castillo |
-| **B** | The commercial success of English-language literature around the world | ❌ 与商业成功完全无关 |
-| **C** | The enduring popularity of Ana Castillo's works in Mexico | ❌ 未讨论受欢迎程度，亦未限定墨西哥 |
-| **D** ✅ | The use of non-English vocabulary in two English-language literary works | ✅ 准确概括：两位作家在英语作品中融入西班牙语词汇 |
+| **A** ✏️ | NG | 引入原文从未出现的元素 "translating ... into languages other than English"——原文说的是作者**不翻译**西语（方向相反）；且只提 Cisneros，缺 Castillo |
+| **B** | NG | 引入 "commercial success" 元素，文本通篇未讨论商业成功 |
+| **C** | NG | 引入 "popularity in Mexico" 元素；且只提 Castillo，缺 Cisneros |
+| **D** ✅ | T | 每个元素都能在原文找到：non-English vocabulary ← 句1 西语词汇；two English-language literary works ← 句1 short story + 句3 novel |
 
-## 解题思路
+## Step 3 — Source-check（溯源）
 
-### 考点：Central Ideas and Details — Main Topic
+- **D 的逐元素支撑**：`non-English vocabulary` ← 句1 "words and phrases from the Mexican dialect of Spanish"；`two English-language literary works` ← 句1 "English-language short story" + 句3 "English language novel *So Far from God*"。
+- **A 缺的元素**：原文从未讨论"翻译成其他语言"及其难度——句2 "the story doesn't translate the Spanish text into English" 说的恰是作者不提供翻译；且 A 缺 Castillo 这个主体。
+- **B 缺的元素**：commercial success（商业成功）。
+- **C 缺的元素**：popularity / Mexico（受欢迎程度、墨西哥限定）。
 
-本文核心结构：
+## Step 4 — Chain-check（链条验证）
 
-> Cisneros 作品中使用西班牙语词汇（不翻译，依赖上下文推断）→ Castillo 采用类似做法 → 两部作品的英语读者都无需懂西班牙语即可理解。
+原文逻辑链（文本链条）：
 
-### 推理过程
+> Cisneros 在英语作品中使用西语词（不翻译、靠上下文可懂）→ Castillo 采用 comparable approach → 两作共同手法 = 英语文学作品中融入非英语词汇 → **主旨 = 两者的共性**（D）
 
-```mermaid
-flowchart LR
-    A[Cisneros: 英语作品中<br>混入西班牙语词] --> C[共同点: 非英语词汇<br>在英语文学作品中的使用]
-    B[Castillo: 英语小说中<br>使用类似手法] --> C
-    C --> D[✓ 选项D: 两部英语文学作品中<br>非英语词汇的使用]
-```
+A 是另一条链（"翻译"链）上的话题，不在主线；B/C 是完全离线的引入话题。主旨题 = 主线链的概括，只挂一个主体的选项即跳链。
 
-### 为什么 D 正确
+## Trap（陷阱命名）
 
-文本的**共同主题**是两位作家的共同做法：在英语文学作品中保留非英语（西班牙语）词汇，不翻译。最后一句 "Both works thus remain accessible to all readers of English" 再次聚焦于英语读者与非英语词汇的关系——**这正是跨语言文学创作手法**。
+> [!warning] 范围缺口（单主体覆盖）
+> 主旨题正确选项必须覆盖文本**全部主体与核心内容**；只提其中一个人物、或引入"翻译难度/商业成功/受欢迎程度"等文本外话题的都是陷阱。防法：圈出全部主体（Cisneros + Castillo）与结论句（句4），逐选项核对覆盖度。
 
-### 为什么 A 不对
+## Principle（对应原则）
 
-- **范围错误**：A 说 "translating Cisneros's works into languages other than English"——文本从未讨论把 Cisneros 的作品翻译成其他语言。
-- **对象片面**：A 仅提 Cisneros，忽略 Castillo。主旨题的正确选项必须覆盖文本**所有**核心内容。
-
-> [!warning] 陷阱识别
-> **主旨题常见陷阱**：选项只覆盖文本**部分**内容或**一个人物**，而非两人的共同点。看到 "Cisneros ... Ana Castillo adopts a comparable approach" 这样的对比句式时，主旨必然涉及**二者的共性**。错误选项往往只提其中一人或引入文本未讨论的新话题（翻译难度、商业成功、受欢迎程度）。
+原则一 文本依据（NG 元素逐项溯源）+ 原则四 中心问题（主旨 = 主线链的答案）。
 
 ---
 
 # 2. Module 1 Q10 — 主旨题（蝴蝶颜色与天气影响行为）
 
-> [!info] 标记: `A` — 错选
+> [!info] 我的答案: A — 错误 | 正确答案: **D**
 
-## 题干
+## Task（题干与选项）
 
-In a large community science effort, biologist Grace Herzel and colleagues collaborated with hundreds of students and other amateur science enthusiasts for more than three years to study how butterfly color and weather conditions relate to butterfly behavior. They found that butterfly color might influence behavior more than butterfly size does, and that butterflies tended to prefer orange and red flowers on cloudy days and multicolor flowers on partly cloudy days.
+> In a large community science effort, biologist Grace Herzel and colleagues collaborated with hundreds of students and other amateur science enthusiasts for more than three years to study how butterfly color and weather conditions relate to butterfly behavior. They found that butterfly color might influence behavior more than butterfly size does, and that butterflies tended to prefer orange and red flowers on cloudy days and multicolor flowers on partly cloudy days.
+>
+> Which choice best states the main idea of the text?
 
-Which choice best states the main idea of the text?
+选项（逐字保留）：
 
-**我的答案**: A &nbsp;&nbsp; **正确答案**: D
+- **A** ✏️ — Collaboration between professional scientists and members of the public is especially useful when studying the behavior of butterflies and other flying insects.
+- **B** — A recent study suggested that butterflies' coloring seems to be less relevant to their behavior than weather conditions.
+- **C** — Weather conditions and butterfly color seem to have less influence on butterfly behavior than the location where the butterflies are studied does.
+- **D** ✅ — A large study suggested that butterfly color and weather conditions might influence the behavior of certain butterflies.
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
+- 句1: **set-up（背景/手段）** — community science 协作方式与研究目的（研究 color/weather 与 behavior 的关系）
+- 句2: **claim（研究发现）** — "They found that..."：color 对 behavior 的影响可能 > size；多云天偏好橙红花、部分多云天偏好杂色花
+
+## Step 2 — Mark（T / F / NG 判定）
+
+| 选项 | 判定 | 依据 |
 |:---|:---|:---|
-| **A** ✏️ | Collaboration between professional scientists and members of the public is especially useful when studying the behavior of butterflies and other flying insects. | ❌ 协作方式只是研究**背景/手段**，不是研究发现本身 |
-| **B** | A recent study suggested that butterflies' coloring seems to be less relevant to their behavior than weather conditions. | ❌ 原文说 color 的影响可能 > size，但未与 weather 比较高低 |
-| **C** | Weather conditions and butterfly color seem to have less influence on butterfly behavior than the location where the butterflies are studied does. | ❌ location 完全未提及 |
-| **D** ✅ | A large study suggested that butterfly color and weather conditions might influence the behavior of certain butterflies. | ✅ 准确概括研究发现的两个核心变量 |
+| **A** ✏️ | NG | 引入原文没有的元素："especially useful"（效用判断）与 "other flying insects"（范围扩大）；且把 set-up（协作方式）当作中心 |
+| **B** | NG | 引入原文没有的元素：color 与 weather 的影响力**比较**——原文只比较 color vs size（"more than butterfly size does"），从未比较 color vs weather |
+| **C** | NG | 引入原文完全没有的元素：location（研究地点） |
+| **D** ✅ | T | 每个元素都能找到："A large study" ← 句1 large community science effort；"color and weather conditions might influence the behavior" ← 句2 found that...；"certain butterflies" ← 研究对象 |
 
-## 解题思路
+## Step 3 — Source-check（溯源）
 
-### 考点：Central Ideas and Details — Main Idea
+- **D 的逐元素支撑**：`A large study` ← 句1 "a large community science effort"；`butterfly color and weather conditions might influence the behavior` ← 句2 两个 found 从句（color 影响 behavior、天气影响花朵偏好）；`certain butterflies` ← 原文研究对象。
+- **A 缺的元素**："especially useful"（原文只描述协作事实，未下效用判断）、"other flying insects"（原文只有 butterflies）。
+- **B 缺的元素**：color 与 weather 的影响力高低比较（原文的比较对象是 size）。
+- **C 缺的元素**：location（全篇未出现）。
 
-判定标准：**研究发现了什么？** 不是**研究怎么做的**。
+## Step 4 — Chain-check（链条验证）
 
-关键证据句：
-> "They found that **butterfly color might influence behavior** more than butterfly size does, and that **butterflies tended to prefer orange and red flowers on cloudy days** and multicolor flowers on partly cloudy days."
+文本链条：
 
-两个发现分别对应：颜色影响行为 + 天气条件影响行为 → 选项 D 完美概括。
+> 背景链（谁、用什么方式研究）→ 发现链（They found that color 影响行为 ∧ weather 影响花朵选择）→ **主旨 = 发现链**
 
-### 为什么 A 不对
+A 是背景链上的一环（set-up 当中心 = 跳链）；B 把发现链改写成原文没有的比较；C 挂靠 location 这个链外元素。
 
-A 把**研究执行方式**（community science / collaboration）误当作**研究发现**（main idea）。"Collaboration between professionals and the public" 只是研究背景——第一句中的 "collaborated with hundreds of students" ——并非研究结论。
+## Trap（陷阱命名）
 
-> [!warning] 陷阱识别
-> **"研究方式 ≠ 研究结论"** 是 SAT 主旨题的经典陷阱。当题干开头用大量笔墨描述研究方法/参与方式时，正确选项应聚焦于 **"They found that..."** 之后的内容，而非之前的背景叙述。
+> [!warning] set-up 当中心
+> 研究**方式/背景 ≠ 研究发现**：题干开头大篇幅描述协作方法时，主旨聚焦 "They found that..." 之后的内容。防法：划出 found 从句，用"这选项是研究发现还是研究背景"自检。
+
+## Principle（对应原则）
+
+原则三 功能定位（set-up 与 claim 的功能区分）+ 原则四 中心问题。
 
 ---
 
 # 3. Module 1 Q17 — 标点符号（分号连接独立分句）
 
-> [!info] 标记: `A` — 错选
+> [!info] 我的答案: A — 错误 | 正确答案: **B**
 
-## 题干
+## Task（题干与选项）
 
-Drummer Dennis Chambers's distinguished career includes many memorable achievements, such as working on the Brecker Brothers' album *Return of the Brecker Brothers*. However, as house drummer at Sugar Hill Records, a record label that was a pioneer of early hip hop ______ Chambers joined too late to play drums on the label's classic song "Rapper's Delight."
-
-Which choice completes the text so that it conforms to the conventions of Standard English?
-
-**我的答案**: A &nbsp;&nbsp; **正确答案**: B
-
-## 选项分析
-
-| 选项 | 内容 | 评价 |
-|:---|:---|:---|
-| **A** ✏️ | `music,` | ❌ 逗号无法连接两个独立分句 → comma splice |
-| **B** ✅ | `music;` | ✅ 分号正确连接两个独立分句 |
-| **C** | `music, which` | ❌ "which" 会让 "Chambers joined..." 变成修饰 "hip hop music" 的定语从句，逻辑荒谬（音乐自己加入？） |
-| **D** | `Music` | ❌ 大写 M 且无标点 → run-on sentence |
-
-## 解题思路
-
-### 考点：Standard English Conventions — Punctuation (Semicolons)
-
-分析句子结构：
-
-- **分句 1**（完整独立句）：However, as house drummer at Sugar Hill Records, a record label that was a pioneer of early hip hop **music**
-- **分句 2**（完整独立句）：Chambers joined too late to play drums on the label's classic song "Rapper's Delight."
-
-两个都是**独立分句**（independent clauses），各有主语和谓语。连接两个独立分句的正确方式是**分号（`;`）**。
-
-```
-[独立分句1: ...hip hop music] ; [独立分句2: Chambers joined too late...]
-```
-
-### 为什么 A 不对
-
-逗号 (`music, Chambers...`) 在连接两个独立分句时构成 **comma splice**（逗号拼接错误），是 SAT 语法题的高频考点。
-
-> [!tip] SAT 标点速记
-> 连接两个**独立分句**只有三种合法方式：
-> 1. **句号** `.` → `...music. Chambers...`
-> 2. **分号** `;` → `...music; Chambers...`
-> 3. **逗号 + FANBOYS 连词** `, and/but/or...` → `...music, and Chambers...`
+> Drummer Dennis Chambers's distinguished career includes many memorable achievements, such as working on the Brecker Brothers' album *Return of the Brecker Brothers*. However, as house drummer at Sugar Hill Records, a record label that was a pioneer of early hip hop ______ Chambers joined too late to play drums on the label's classic song "Rapper's Delight."
 >
-> **逗号单独使用 (`music, Chambers`) → comma splice → 错误。**
+> Which choice completes the text so that it conforms to the conventions of Standard English?
+
+选项（逐字保留）：
+
+- **A** ✏️ — `music,`
+- **B** ✅ — `music;`
+- **C** — `music, which`
+- **D** — `Music`
+
+## Step 1 — Map（结构标注）
+
+- **分句1（主句）**：However, as house drummer at Sugar Hill Records, a record label that was a pioneer of early hip hop **music**〔空格〕——真正谓语在定语从句 that **was** a pioneer 内
+- **分句2（主句）**：Chambers **joined** too late to play drums on the label's classic song "Rapper's Delight."——谓语 = joined
+- 结构结论：空格两侧各是一个**完整独立分句**（各有主语 + 谓语），需要句级连接标点
+
+## Step 2 — Mark（T / F / NG 判定）
+
+| 选项 | 判定 | 依据 |
+|:---|:---|:---|
+| **A** ✏️ | F | 裸逗号连接两个独立分句 → **comma splice**（Checklist A2.x 标点规则） |
+| **B** ✅ | T | 分号正确连接两个独立分句 |
+| **C** | F | "which" 使 "Chambers joined..." 变成修饰 hip hop music 的定语从句——"音乐自己加入乐坛"逻辑荒谬 |
+| **D** | F | 无标点直接拼接两个独立分句 → **run-on sentence** |
+
+## Step 3 — Source-check（溯源）
+
+- **规则依据（Checklist A2.x）**：连接两个**独立分句**只有三种合法方式——句号 `.` / 分号 `;` / 逗号 + FANBOYS（`, and/but/or...`）。
+- **A 的矛盾点**：`music, Chambers`——逗号两侧都是独立分句 → comma splice。
+- **D 的矛盾点**：`music Chambers`——无连接 → run-on sentence。
+- **C 的矛盾点**：定语从句的先行词 hip hop music 无法被 "Chambers joined too late..." 修饰（语义不成立）。
+
+## Step 4 — Chain-check（链条验证）
+
+结构链：
+
+> 分句1〔...hip hop music〕＋〔空格〕＋分句2〔Chambers joined too late...〕
+
+"一个分句只有一个有限动词"边界测试：分句1 的有限动词在 that 从句内（was），分句2 的有限动词是 joined——两套主谓结构之间必须有句级连接符。B 补上分号 = 两个完整分句并列 ✓；A 制造 comma splice；D 制造 run-on；C 把分句2 降格为从句导致语义荒谬。
+
+## Trap（陷阱命名）
+
+> [!warning] comma splice（逗号拼接）
+> 两个独立分句之间**绝不能用裸逗号**；合法连接只有句号 / 分号 / 逗号+FANBOYS 三种。防法：空格两侧各找一套"主语+谓语"，确认都是独立分句后逐一排除裸逗号选项。
+
+## Principle（对应原则）
+
+结构优先（逻辑优先的语法版）——先定主句谓语，再做边界测试。
 
 ---
 
 # 4. Module 2 Q1 — 词汇题（intermediate = 介于两种文体之间）
 
-> [!info] 标记: `D → B`（自修正后 B）— 仍错
+> [!info] 我的答案: B（orthodox）— 错误 | 正确答案: **C（intermediate）**
 
-## 题干
+## Task（题干与选项）
 
-Writer Lydia Davis observed that while literary forms, such as the short story, are recognizable as such even as they evolve, there are rarer "intergeneric" forms that might, for example, use elements of both fiction and essays to create something unclassifiable. The very short publications of Diane Williams arguably fit in this category, since they straddle the line between prose and poetry.
+> Writer Lydia Davis observed that while literary forms, such as the short story, are recognizable as such even as they evolve, there are rarer "intergeneric" forms that might, for example, use elements of both fiction and essays to create something unclassifiable. The very short publications of Diane Williams arguably fit in this category, since they straddle the line between prose and poetry.
+>
+> Which choice completes the text with the most logical and precise word or phrase?
 
-Which choice completes the text with the most logical and precise word or phrase?
+选项（逐字保留）：
 
-**我的答案**: B（orthodox）&nbsp;&nbsp; **正确答案**: C（intermediate）
+- **A** — equivocal（模棱两可的、含糊的）
+- **B** ✏️ — orthodox（正统的、传统的）
+- **C** ✅ — intermediate（中间的、介于两者之间的）
+- **D** — neutral（中立的）
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 释义 | 评价 |
+- 句1: **set-up（概念铺垫）** — literary forms 可识别；"intergeneric" 形式用 fiction + essays 双体裁元素 → unclassifiable
+- 句2: **answer/claim** — Williams 的作品 fit in this category，因 straddle the line between prose and poetry → 空格需"介于两者之间"义
+
+## Step 2 — Mark（T / F / NG 判定）
+
+| 选项 | 判定 | 依据 |
 |:---|:---|:---|
-| **A** | **equivocal** — 模棱两可的、含糊的 | ❌ 含贬义/不确定性，非"介于之间"的中性描述 |
-| **B** ✏️ | **orthodox** — 正统的、传统的 | ❌ 与上下文矛盾：Diane Williams 的作品 straddle the line between prose and poetry，显然**不**正统 |
-| **C** ✅ | **intermediate** — 中间的、介于两者之间的 | ✅ 精准对应 "intergeneric" / "straddle the line between" / "between fiction and essays" |
-| **D** | **neutral** — 中立的 | ❌ 语义不匹配（neutral 指立场/态度中立，非文体居中） |
+| **A** | NG | equivocal 引入原文没有的"含糊/不确定"语义；上下文要的是中性的"介于之间"定位 |
+| **B** ✏️ | F | orthodox 与原文直接矛盾：straddle the line between prose and poetry = 跨界不可归类；正统 = 可清晰归类 |
+| **C** ✅ | T | intermediate = 介于两者之间，与 "intergeneric" / "elements of both fiction and essays" / "straddle the line between" 全部信号吻合 |
+| **D** | NG | neutral 指立场/态度中立，非文体居中——"立场中立"语义未在上下文出现 |
 
-## 解题思路
+## Step 3 — Source-check（溯源）
 
-### 考点：Words in Context — Precision
+- **C 的逐元素支撑**：`inter-`（之间）← 原文 "intergeneric" 前缀；"between two categories" ← "use elements of both fiction and essays" 与 "straddle the line between prose and poetry"。
+- **B 的矛盾句**："straddle the line between prose and poetry"——正统形式边界清晰，与"横跨界线、无法归类"相反。
+- **A/D 缺的元素**：上下文中没有任何"含糊"或"立场中立"的信号。
 
-上下文到处是"介于之间"的信号：
+## Step 4 — Chain-check（链条验证）
 
-```
-"intergeneric" forms → uses elements of BOTH fiction and essays
-→ straddle the line BETWEEN prose and poetry
-→ something unclassifiable
-```
+文本链条：
 
-**intermediate** = situated between two points, stages, or categories → 完美匹配所有上下文线索。
+> "intergeneric"（跨体裁）→ 用 fiction + essay 双元素 → unclassifiable → Williams 的作品 fit in this category（straddle prose/poetry）→ 需要"介于两者之间"的词 → **intermediate**
 
-### 推理过程
+B 跳链：orthodox 属于"单一清晰体裁"链，与 straddle 矛盾。
 
-```mermaid
-flowchart TB
-    A["intergeneric" 跨体裁形式] --> B[使用 fiction + essay 元素]
-    B --> C[无法归类<br>unclassifiable]
-    C --> D["straddle the line<br>between prose and poetry"]
-    D --> E[✅ intermediate<br>介于两者之间]
-    
-    F[✏️ orthodox 正统的] --> G[与 straddle 矛盾]
-```
+## Trap（陷阱命名）
 
-### 为什么 B 不对
+> [!warning] 词汇反义陷阱
+> 正确选项可以从上下文的**同义替换**或**结构平行**推出（inter- → intermediate）；与核心信号词（straddle the line between X and Y）**语义相反**的选项必错。防法：先画出上下文信号链，再逐词对位，警惕"看起来也通"的反义词。
 
-"Orthodox" = 正统的、传统的。如果 Williams 的作品是 orthodox，它应该属于**可清晰归类**的传统文学形式。但原文明确说它 "straddle the line between prose and poetry"（横跨散文与诗歌之间）——这种**跨界/模糊**特质恰恰与 "orthodox" 完全相反。
+## Principle（对应原则）
 
-> [!warning] 陷阱识别
-> **词汇题的反义词陷阱**：正确选项往往可以从上下文的**同义替换**或**结构平行**推出。"intergeneric" 的前缀 "inter-"（之间）直接对应 "intermediate" 的词根。当你看到 "straddle the line between X and Y" 时，正确答案大概率是一个表示"中间/过渡"的词汇。
+原则一 文本依据（词汇题 = 上下文证据链）。
 
 ---
 
 # 5. Module 2 Q11 — 支持结论（阿拉斯加早雪与净CO₂增加）
 
-> [!info] 标记: `A (?, high difficulty)` — 高难度错选
+> [!info] 我的答案: A — 错误 | 正确答案: **B**
 
-## 题干
+## Task（题干与选项）
 
-Periods of subfreezing temperatures in Alaska have been growing shorter as a result of climate changes, potentially enabling increased carbon dioxide (CO₂) absorption through greater productivity of sidebells wintergreen (*Orthilia secunda*) plants and other vegetation, but also potentially enabling increased CO₂ output through greater heterotrophic respiration (CO₂ generated by the activity of soil microorganisms). Hydrologist Yonghong Yi and her colleagues developed a model incorporating numerous inputs — years of soil moisture and snow cover data among them — to evaluate the effects of climate changes on the CO₂ balance in Alaska, concluding that **net CO₂ is likely to increase if seasonal snow cover arrives earlier relative to the onset of soil surface freezing**.
+> Periods of subfreezing temperatures in Alaska have been growing shorter as a result of climate changes, potentially enabling increased carbon dioxide (CO₂) absorption through greater productivity of sidebells wintergreen (*Orthilia secunda*) plants and other vegetation, but also potentially enabling increased CO₂ output through greater heterotrophic respiration (CO₂ generated by the activity of soil microorganisms). Hydrologist Yonghong Yi and her colleagues developed a model incorporating numerous inputs — years of soil moisture and snow cover data among them — to evaluate the effects of climate changes on the CO₂ balance in Alaska, concluding that **net CO₂ is likely to increase if seasonal snow cover arrives earlier relative to the onset of soil surface freezing**.
+>
+> Which finding, if true, would most **directly support** the researchers' conclusion?
 
-Which finding, if true, would most **directly support** the researchers' conclusion?
+选项（逐字保留）：
 
-**我的答案**: A &nbsp;&nbsp; **正确答案**: B
+- **A** ✏️ — Early snow cover reduces soil moisture for plant growth **and** lowers heterotrophic respiration rate.
+- **B** ✅ — The soil insulation provided by snow cover enables heterotrophic respiration to continue during a period in which plant species are typically not growing.
+- **C** — The effect of soil moisture on vegetation and respiration is stronger during snow cover.
+- **D** — Snow cover persists longer in areas of relatively low vegetation growth and high heterotrophic respiration.
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
+- 句1: **set-up（机制铺垫）** — 霜冻期缩短 → 可能↑吸收（植物生产力）∧ 可能↑排放（异养呼吸）
+- 句2: **conclusion（要支持的结论）** — Yi 的模型结论：早雪（相对土壤冻结提前到达）→ 净 CO₂ 很可能增加
+- 题干任务：找能**直接支持**结论的发现 = 补齐结论的逻辑缺口
+
+## Step 2 — Mark（T / F / NG 判定）
+
+| 选项 | 判定 | 依据 |
 |:---|:---|:---|
-| **A** ✏️ | Early snow cover reduces soil moisture for plant growth **and** lowers heterotrophic respiration rate. | ❌ 同时降低吸收和排放，两个效应方向相反 → 净效应不明确 |
-| **B** ✅ | The soil insulation provided by snow cover enables heterotrophic respiration to continue during a period in which plant species are typically not growing. | ✅ **直接解释净CO₂为何增加**：排放持续，吸收停止 |
-| **C** | The effect of soil moisture on vegetation and respiration is stronger during snow cover. | ❌ 仅谈效应强度，未涉及净CO₂**方向** |
-| **D** | Snow cover persists longer in areas of relatively low vegetation growth and high heterotrophic respiration. | ❌ 描述相关性（哪里雪持久），不构成因果机制 |
+| **A** ✏️ | F | 双向效应互相抵消：降吸收（→净↑）＋降排放（→净↓），方向相反，**无法推出**"净CO₂增加" |
+| **B** ✅ | T | 排放持续（异养呼吸因积雪隔热继续）＋吸收停止（植物不生长）→ 排放>吸收 → 直接支持净CO₂增加 |
+| **C** | NG | "效应强度更强"只谈强度，缺"净方向"元素，无法支持结论 |
+| **D** | NG | 描述"哪里雪持久"的相关性，缺因果机制元素，与结论链无关 |
 
-## 解题思路
+## Step 3 — Source-check（溯源）
 
-### 考点：Command of Evidence — Supporting a Conclusion (Scientific Reasoning)
+- **B 的逐元素支撑**：`soil insulation provided by snow cover` ← 结论中 snow cover 早于土壤冻结（积雪在冻结前覆盖 = 隔热）；`heterotrophic respiration to continue` ← 句1 异养呼吸定义（土壤微生物活动产生 CO₂）；`plant species are typically not growing` ← 句1 植物生产力语境（积雪期植被休眠、无光合吸收）。
+- **A 的矛盾点**：结论要求"排放 > 吸收"；A 同时压低两者，无法推出净增加。
+- **C 缺的元素**：净方向（increase/decrease 的判定）。
+- **D 缺的元素**：因果机制（只说相关性，不解释为什么净CO₂增加）。
 
-### 结论拆解
+## Step 4 — Chain-check（链条验证）
 
-> **"Net CO₂ is likely to increase if seasonal snow cover arrives earlier relative to the onset of soil surface freezing."**
+文本链条：
 
-```
-净CO₂增加 = CO₂排放 − CO₂吸收
-要使净CO₂增加，必须:
-  ① CO₂排放 持续/增加（异养呼吸）
-  ② CO₂吸收 减少/停止（植物光合作用）
-```
+> 早雪（早于土壤冻结）→ 积雪隔热 → 土壤不冻结 → 异养呼吸持续（CO₂排放↑）∧ 植物休眠（CO₂吸收→0）→ 排放 > 吸收 → **净CO₂增加**
 
-### 推理过程
+B 正是这条链上缺失的机制环；A 是反向碎片（净方向不明）；C 只谈强度不谈方向；D 是相关性而非因果。
 
-```mermaid
-flowchart LR
-    A["早雪覆盖<br>（土壤冻结之前）"] --> B["积雪隔热保温<br>（选项B核心机制）"]
-    B --> C[土壤微生物<br>异养呼吸持续]
-    B --> D[植物已停止生长<br>光合吸收为零]
-    C --> E[CO₂排放持续 🠉]
-    D --> F[CO₂吸收停止 🠋]
-    E --> G["净CO₂增加 ✅"]
-    F --> G
-```
+## Trap（陷阱命名）
 
-### 为什么 B 正确
+> [!warning] 净效应抵消
+> 支持结论的选项必须说明净效应的**方向**；同时含正反两面效应、又未说明孰强的选项无法支撑结论。防法：把选项拆成"对吸收的影响 / 对排放的影响"两栏，净方向不明即弃。
 
-B 精准补上了结论中的**逻辑缺口**：为什么早雪会导致净CO₂增加？
+## Principle（对应原则）
 
-- **积雪像毯子** → 隔绝冷空气 → 土壤不冻结 → 微生物异养呼吸持续 → CO₂ 持续排放
-- **同时** → 植物在积雪期间不生长 → 无光合作用 → CO₂ 零吸收
-- **结果** → 排放 > 吸收 → 净CO₂增加
-
-### 为什么 A 不对（关键）
-
-A 的问题是**双向效应互相抵消**：
-
-| A 描述的效果 | 对净CO₂的影响 |
-|:---|:---|
-| 早雪降低植物生长 | 吸收减少 → 净CO₂ ↑ |
-| 早雪降低异养呼吸速率 | 排放减少 → 净CO₂ ↓ |
-
-两个效应方向相反，**无法判断净CO₂是增加还是减少** → 不能直接支持结论。
-
-> [!warning] 陷阱识别
-> **净效应抵消陷阱**：支持结论必须说明净效应的**方向**。若选项同时包含正反两面效应且未说明哪方更强，则无法支持结论。遇到此类选项时问自己：这句话能否让我推断出**净CO₂增加**？如果不能，就不是正确选项。
-
-### 解题策略
-
-1. **精确提取结论**：圈出因果关键词（"if...net CO₂ is likely to increase"）
-2. **识别逻辑缺口**：从"早雪"到"净CO₂增加"之间缺什么机制？
-3. **用净效应检验**：选项是否明确说明排放 > 吸收？
-4. **区分相关与因果**：D 只描述现象，B 提供机制
+原则二 逻辑优先（机制链补齐）+ 原则一 文本依据。
 
 ---
 
 # 6. Module 2 Q12 — 图表数据解读（哥斯达黎加森林砍伐）
 
-> [!info] 标记: `C` — 错选
+> [!info] 我的答案: C — 错误 | 正确答案: **D**
 
-## 题干
+## Task（题干与选项）
 
-Annual Number of Forest Patches for Three Land Use Capability Classes in the Chorotega Region, Costa Rica
+> **Annual Number of Forest Patches for Three Land Use Capability Classes in the Chorotega Region, Costa Rica**
 
 | Year | Class VI | Class VII | Class VIII |
 |:---:|:---:|:---:|:---:|
@@ -331,77 +338,62 @@ Annual Number of Forest Patches for Three Land Use Capability Classes in the Cho
 | 1986 | ~1,400 | ~800 | ~300 |
 | 2000 | ~1,800 | ~1,200 | ~400 |
 
-To understand the extent of deforestation in the Chorotega region of Costa Rica, Juan Pablo Arroyo Mora and colleagues used historical aerial photography and remote sensing data to track changes in the total number of forest patches in areas of different land use capability classes (categories that indicate possible uses of forest land). Due to the Chorotega region's accessibility, various types of forested areas were converted to cattle pasture as rising international meat prices drove a cattle ranching boom in the **1960s and 1970s**: this conversion is evident in the ______
+> To understand the extent of deforestation in the Chorotega region of Costa Rica, Juan Pablo Arroyo Mora and colleagues used historical aerial photography and remote sensing data to track changes in the total number of forest patches in areas of different land use capability classes (categories that indicate possible uses of forest land). Due to the Chorotega region's accessibility, various types of forested areas were converted to cattle pasture as rising international meat prices drove a cattle ranching boom in the **1960s and 1970s**: this conversion is evident in the ______
+>
+> Which choice most effectively uses data from the graph to complete the assertion?
 
-Which choice most effectively uses data from the graph to complete the assertion?
+选项（逐字保留）：
 
-**我的答案**: C &nbsp;&nbsp; **正确答案**: D
+- **A** — high number of patches in class VII and class VIII in 1986.
+- **B** — difference between the number of patches in Class VII and in Class VI in 2000.
+- **C** ✏️ — increase in the number of patches for all classes from 1979 to 2000.
+- **D** ✅ — decrease in the number of patches for all classes from 1960 to 1979.
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
+- **表格**：三类土地（VI/VII/VIII）斑块数四个时点——1960 高 → 1979 骤降 → 1986/2000 回升
+- 句1: **set-up** — 研究目的与方法（航拍 + 遥感追踪斑块数变化）
+- 句2: **claim（待补全的断言）** — 1960s-1970s 牧场扩张导致森林转牧场；"this conversion is evident in the ____" → 空格需引用**该时段**的图表数据佐证砍伐
+
+## Step 2 — Mark（T / F / NG 判定）
+
+| 选项 | 判定 | 依据 |
 |:---|:---|:---|
-| **A** | high number of patches in class VII and class VIII in 1986. | ❌ 1986 年斑块数已在回升（恢复期），非砍伐高峰期证据 |
-| **B** | difference between the number of patches in Class VII and in Class VI in 2000. | ❌ 2000 年的差异与 1960s-1970s 的砍伐无关 |
-| **C** ✏️ | increase in the number of patches for all classes from 1979 to 2000. | ❌ 这是**恢复期**（砍伐后斑块数回升），不是砍伐的证据 |
-| **D** ✅ | decrease in the number of patches for all classes from 1960 to 1979. | ✅ 1960→1979 三个类别斑块数**全部减少**，直接对应砍伐高峰期 |
+| **A** | F | 1986 在砍伐高峰**之后**（恢复期），时间窗口与题干不符；高数量与"砍伐 = 减少"矛盾 |
+| **B** | F | 2000 年数据与 1960s-1970s 砍伐无关；"两类之间的差异"比较不构成砍伐证据 |
+| **C** ✏️ | F | 1979→2000 是**恢复期**（斑块数回升）——回升恰恰说明砍伐已停止，与"砍伐证据"直接矛盾 |
+| **D** ✅ | T | 1960→1979 三个类别斑块数**全部减少**（~1,700→~700 / ~1,200→~400 / ~700→~200），与 1960s-1970s 砍伐高峰严格对齐 |
 
-## 解题思路
+## Step 3 — Source-check（溯源）
 
-### 考点：Command of Evidence — Quantitative (Graph Interpretation)
+- **D 的逐元素支撑**：表格 1960 行（~1,700 / ~1,200 / ~700）vs 1979 行（~700 / ~400 / ~200）——三类全部下降；题干 "1960s and 1970s" 与 1960→1979 区间对齐。
+- **C 的矛盾点**：1979→2000 三类回升（~700→~1,800 等）是砍伐后恢复，不能证明砍伐存在。
+- **A/B 的时间错位**：1986 / 2000 超出题干限定的证据窗口（1960s-1970s）。
 
-### 关键数据比较
+## Step 4 — Chain-check（链条验证）
 
-```mermaid
-flowchart TB
-    subgraph 1960年[1960年 砍伐前]
-        A1["Class VI: ~1,700"]
-        A2["Class VII: ~1,200"]
-        A3["Class VIII: ~700"]
-    end
-    subgraph 1979年[1979年 砍伐高峰后]
-        B1["Class VI: ~700 ↓ (−59%)"]
-        B2["Class VII: ~400 ↓ (−67%)"]
-        B3["Class VIII: ~200 ↓ (−71%)"]
-    end
-    subgraph 2000年[2000年 恢复后]
-        C1["Class VI: ~1,800"]
-        C2["Class VII: ~1,200"]
-        C3["Class VIII: ~400"]
-    end
-    1960年 -->|"森林→牧场<br/>斑块数骤降"| 1979年
-    1979年 -->|"逐步恢复<br/>斑块数回升"| 2000年
-```
+文本链条：
 
-**核心时序**：
-- 1960s-1970s：砍伐高峰期（森林 → 牧场）
-- 1979-2000：恢复期（斑块数逐渐回升）
+> 1960s-1970s 国际肉价上升 → 牧场扩张 → 森林转牧场 → 斑块数减少 → 砍伐证据须落在 1960→1979 且方向向下
 
-### 为什么 D 正确
+D 是链上的证据环；C 属于恢复链（1979→2000 回升），挂错了因果段；B 属 2000 年链；A 属 1986 年链。
 
-题干明确说砍伐发生在 "1960s and 1970s"，因此砍伐证据必须出现在 **1960→1979** 这个时间段。图表显示三类斑块在此期间**全部减少**（三个箭头全向下）→ 完美匹配。
+## Trap（陷阱命名）
 
-### 为什么 C 不对
+> [!warning] 时间窗口错位
+> 数据为真但**时间段错位**仍是错：题干限定的时段（1960s-1970s）必须与选项引用的数据区间严格对齐，方向须与现象一致（砍伐 = 减少）。防法：圈出题干时间信号，逐选项标注"区间 + 方向"再对位。
 
-C 说 "increase from 1979 to 2000" —— 这段时间斑块数确实在增加，但那是**砍伐高峰期过后森林恢复**的结果。题干问的是"**砍伐（deforestation）的证据**"，增斑块数恰恰说明砍伐已经停止、森林在恢复，无法证明砍伐的存在。
+## Principle（对应原则）
 
-> [!warning] 陷阱识别
-> **时间窗口错位陷阱**：题干中 "1960s and 1970s" 明确限定了考察的时间窗口。选项 C 的 1979→2000 虽然数据为真，但时间窗口错位——这是砍伐**之后**的恢复期数据，不能作为砍伐的证据。解题时必须将选项描述的**时间段**与题干指定的**时间段**严格对齐。
-
-### 解题策略
-
-1. **圈出时间信号**：题干 "1960s and 1970s" → 对应图表 1960→1979
-2. **锁定指标方向**：砍伐 → 斑块数减少（↓）
-3. **验证全类覆盖**："all classes" —— 三个类别必须全部一致
-4. **排除时间错位的选项**：C 和 B 涉及 2000 年，A 涉及 1986 年
+原则一 文本依据（图表数据即文本证据）+ 原则二 逻辑优先。
 
 ---
 
 # 7. Module 2 Q13 — 削弱论证（美国硬币铸币税）
 
-> [!info] 标记: 未作答 — 空题
+> [!info] 我的答案: 未作答 — 错误 | 正确答案: **B**
 
-## 题干
+## Task（题干与选项）
 
 | Denomination | Total value of units produced (in millions of dollars) | Gross cost (in millions of dollars) | Seigniorage (in millions of dollars) | Seigniorage per dollar issued (dollars) |
 |:---|:---:|:---:|:---:|:---:|
@@ -410,180 +402,127 @@ C 说 "increase from 1979 to 2000" —— 这段时间斑块数确实在增加�
 | Ten-cent | 266.6 | 141.1 | +125.5 | +0.47 |
 | Quarter dollar | 568.4 | 264.4 | +304.0 | +0.53 |
 
-Issuing a one-dollar coin yields positive seigniorage — profit generated when the face value of a coin exceeds the unit cost of producing it — for Singapore's government, which can be used to fund such services as education. Issuing coins can also result in negative seigniorage, however, and this phenomenon led Australia to stop producing certain coins. A student argues that it is in the financial interest of the United States to follow the example of Australia with regard to **each of the four coins** shown in the table.
+> Issuing a one-dollar coin yields positive seigniorage — profit generated when the face value of a coin exceeds the unit cost of producing it — for Singapore's government, which can be used to fund such services as education. Issuing coins can also result in negative seigniorage, however, and this phenomenon led Australia to stop producing certain coins. A student argues that it is in the financial interest of the United States to follow the example of Australia with regard to **each of the four coins** shown in the table.
+>
+> Which choice best describes data from the table that **weaken** the student's argument?
 
-Which choice best describes data from the table that **weaken** the student's argument?
+选项（逐字保留）：
 
-**我的答案**: 未作答 &nbsp;&nbsp; **正确答案**: B
+- **A** — Seigniorage per dollar issued was slightly greater for quarter-dollar than for ten-cent, but seigniorage in millions was much greater for quarter-dollar.
+- **B** ✅ — Although issuing one-cent and five-cent coins resulted in negative seigniorage in millions, issuing ten-cent and quarter-dollar coins resulted in **positive** seigniorage.
+- **C** — Negative seigniorage coins had lower gross cost than positive seigniorage coins.
+- **D** — Five-cent coins had greatest negative seigniorage in millions, but one-cent had greatest negative per dollar.
 
-## 选项分析
+## Step 1 — Map（结构标注）
 
-| 选项 | 内容 | 评价 |
+- 句1-2: **set-up（概念与先例）** — seigniorage 定义（面值 > 成本 = 正利润）；负铸币税曾使澳大利亚停产某些硬币
+- 句3: **claim（要削弱的论证）** — 学生主张美国应仿效澳大利亚，停掉表中**全部四种**硬币
+- 表格: Seigniorage 列——1美分 −86.0 / 5美分 −92.6（负）；10美分 +125.5 / 25美分 +304.0（正）
+
+## Step 2 — Mark（T / F / NG 判定）
+
+| 选项 | 判定 | 依据 |
 |:---|:---|:---|
-| **A** | Seigniorage per dollar issued was slightly greater for quarter-dollar than for ten-cent, but seigniorage in millions was much greater for quarter-dollar. | ❌ 只比较两个正铸币税硬币之间的差异，未涉及削弱论证 |
-| **B** ✅ | Although issuing one-cent and five-cent coins resulted in negative seigniorage in millions, issuing ten-cent and quarter-dollar coins resulted in **positive** seigniorage. | ✅ 10美分和25美分有正的铸币税 → 停掉它们会损失财政收入 → 削弱 |
-| **C** | Negative seigniorage coins had lower gross cost than positive seigniorage coins. | ❌ 铸币税的关键是面值与成本之差，不是绝对成本 |
-| **D** | Five-cent coins had greatest negative seigniorage in millions, but one-cent had greatest negative per dollar. | ❌ 只比较两个负铸币税硬币，不削弱"停掉全部四种"的论证 |
+| **A** | NG | 只比较两个**正铸币税**硬币（quarter vs ten-cent），未触及"是否该停"的论证范围 |
+| **B** ✅ | T | 精确覆盖四种硬币：1/5美分负铸币税（该停）但 10/25美分**正**铸币税（不该停）→ "全部该停"不成立 → 削弱 |
+| **C** | F | 与表格数据矛盾：five-cent gross 163.4 > ten-cent 141.1，"负铸币税硬币成本更低"不成立；且绝对成本不决定铸币税 |
+| **D** | NG | 只比较两个**负铸币税**硬币，不攻击"停掉全部四种"的论证 |
 
-## 解题思路
+## Step 3 — Source-check（溯源）
 
-### 考点：Command of Evidence — Weakening an Argument (Quantitative Data)
+- **B 的逐元素支撑**：表格 Seigniorage 列——one-cent −86.0、five-cent −92.6（负）；ten-cent +125.5、quarter +304.0（正）。10/25美分停产将损失正铸币税收入 → 直接削弱"停掉全部四种符合财政利益"。
+- **C 的矛盾点**：数据行 five-cent gross 163.4 > ten-cent 141.1。
+- **A/D 缺的元素**：关键反例（10/25美分为正铸币税）——A/D 均未覆盖。
 
-### 论证结构
+## Step 4 — Chain-check（链条验证）
 
-```mermaid
-flowchart TD
-    A["学生主张: 美国应像澳大利亚一样<br/>停掉全部 4 种硬币"] --> B{检查表中4种硬币的铸币税}
-    B --> C["1美分: −86.0M ❌"]
-    B --> D["5美分: −92.6M ❌"]
-    B --> E["10美分: +125.5M ✅"]
-    B --> F["25美分: +304.0M ✅"]
-    C --> G[停掉合理: 亏钱]
-    D --> G
-    E --> H["停掉不合理: 赚钱!"]
-    F --> H
-    H --> I["削弱论证:<br/>不是所有4种都该停"]
-```
+文本链条：
 
-### 关键概念
+> 负铸币税（亏钱）→ 澳大利亚停产 → 学生主张美国停掉**全部四种**（each of the four coins）
 
-**Seigniorage（铸币税）** = 面值 − 制造成本
+削弱 = 找反例断链：表中 10美分（+125.5M）与 25美分（+304.0M）为正铸币税 → 停掉它们损失财政收入 → "全部"不成立。B 是断链点；A/D 在链的分支上比较同类硬币内部差异，不触链。
 
-- **正铸币税**：面值 > 成本 → 政府赚钱 → **不该停**
-- **负铸币税**：面值 < 成本 → 政府亏钱 → 该停（澳大利亚就是这样做的）
+## Trap（陷阱命名）
 
-### 为什么 B 正确
+> [!warning] 论证范围攻击
+> 削弱题先锁定论证的量化范围（"each of the four coins"），**一个反例即可断链**；只做同类内部比较、不攻击范围的选项无效。防法：圈出范围词（each/all/four），用"这选项是否证明『不是全部四种都该停』"检验。
 
-学生的论证是**停掉全部四种**。但数据显示：
-- 1美分和5美分：铸币税为负 → 停掉有理
-- **10美分和25美分：铸币税为正（+125.5M, +304.0M）** → 停掉会损失大量财政收入
+## Principle（对应原则）
 
-选项 B 精确指出了这个矛盾：有一半硬币是赚钱的，停掉它们**不符合财政利益** → 削弱学生论证。
-
-### 解题策略
-
-```mermaid
-flowchart LR
-    A[读表: 找正/负符号] --> B{铸币税 > 0?}
-    B -->|是| C[不该停!]
-    B -->|否| D[可以停]
-    C --> E[有正有负 →<br/>停掉全部不合理<br/>→ 削弱学生论证]
-```
-
-1. **表头速读**：Seigniorage 列最关键——正号 = 赚钱，负号 = 亏钱
-2. **精确锁定论证范围**："each of the four coins" → 停掉全部
-3. **找反例**：只要任意一个硬币有正铸币税，就削弱了"停掉全部"的合理性
-4. **排除比较型选项**：A 和 D 在比较同类硬币内部的差异，不触及论证核心
-
-> [!warning] 陷阱识别
-> **削弱论证题的关键是攻击论证范围**。学生的论证是"停掉**全部四种**"，要削弱它只需证明**不是全部四种都该停**。选项 A、C、D 要么在正铸币税硬币之间比（A），要么在负铸币税硬币之间比（D），要么比较绝对成本（C）——都偏离了"是否有硬币不该停"这个核心问题。
-
----
+原则二 逻辑优先（断链点 = 反例定位）。
 
 ---
 
 # 8. Module 2 Q15 — 因果推断（品牌延伸与市场份额的反向关系）
 
-> [!info] 标记: 未作答 — 空题
+> [!info] 我的答案: 未作答 — 错误 | 正确答案: **C**
 
-## 题干
+## Task（题干与选项）
 
-The Virgin Group's introduction of the Virgin Atlantic airline in 1984 is an instance of **brand extension**—the company leveraged its brand recognition as a music retailer to enter a new product category. To investigate how market share affects consumers' likelihood of purchasing brand extensions, Alicia Grasby et al identified 30 extended brand pairs (e.g., the same brand of vacuum cleaner and microwave) in household purchasing data; for each pair, Grasby et al. calculated the branded products' **market share** and calculated the **increase in probability** of a brand in one category being purchased if the same brand was purchased in the other category. **A broad inverse relationship between the two values emerged**, which can most reasonably be attributed to the fact that ___
+> The Virgin Group's introduction of the Virgin Atlantic airline in 1984 is an instance of **brand extension**—the company leveraged its brand recognition as a music retailer to enter a new product category. To investigate how market share affects consumers' likelihood of purchasing brand extensions, Alicia Grasby et al identified 30 extended brand pairs (e.g., the same brand of vacuum cleaner and microwave) in household purchasing data; for each pair, Grasby et al. calculated the branded products' **market share** and calculated the **increase in probability** of a brand in one category being purchased if the same brand was purchased in the other category. **A broad inverse relationship between the two values emerged**, which can most reasonably be attributed to the fact that ___
 
-**我的答案**: 未作答 &nbsp;&nbsp; **正确答案**: C
+选项（逐字保留）：
 
-## 选项分析
+- **A** — The purchase probability of a brand is affected by the purchase probability of the particular product category to which it belongs, and thus brands in categories that are rarely purchased tend to have low purchase probabilities **regardless of market share**.
+- **B** — As a brand's market share increases, the number of competing brands in the same product category tends to decrease, and thus the rate of increase in market share tends to accelerate as a brand's market share grows.
+- **C** ✅ — Brands with high market share have high purchase probability regardless of whether the other product in the pair is purchased and thus have **less potential to increase** in purchase probability than brands with low market share do.
+- **D** — Consumers tend to be less familiar with brands with low market share than brands with high market share and thus may purchase both products in a pair with low market share without recognizing that the products are the same brand.
 
-| 选项 | 内容 | 评价 |
+## Step 1 — Map（结构标注）
+
+- 句1: **set-up（背景）** — brand extension 实例（Virgin 从音乐零售商进入新品类）
+- 句2: **evidence（研究设计）** — 30 对延伸品牌；计算 market share 与 increase in probability（买了 A 类该品牌 → 也买 B 类该品牌的概率增幅）
+- 句3: **claim（待解释的发现）** — 两值呈 broad inverse relationship → 空格需给最合理的**因果解释**
+
+## Step 2 — Mark（T / F / NG 判定）
+
+| 选项 | 判定 | 依据 |
 |:---|:---|:---|
-| **A** | The purchase probability of a brand is affected by the purchase probability of the particular product category to which it belongs, and thus brands in categories that are rarely purchased tend to have low purchase probabilities **regardless of market share**. | ❌ 最后 "regardless of market share" 直接否定研究发现——研究发现的恰恰是市场份额与增幅的关系 |
-| **B** | As a brand's market share increases, the number of competing brands in the same product category tends to decrease, and thus the rate of increase in market share tends to accelerate as a brand's market share grows. | ❌ 完全跑题：研究是关于**跨品类**品牌延伸的购买概率增幅，不是同品类内的竞争动态 |
-| **C** ✅ | Brands with high market share have high purchase probability regardless of whether the other product in the pair is purchased and thus have **less potential to increase** in purchase probability than brands with low market share do. | ✅ 天花板效应的精确表述：高基线 → 增量空间小 |
-| **D** | Consumers tend to be less familiar with brands with low market share than brands with high market share and thus may purchase both products in a pair with low market share without recognizing that the products are the same brand. | ❌ 引入"品牌识别/熟悉度"作为解释变量，但研究没有讨论这个机制——SAT 不允许脑补因果 |
+| **A** | F | 结尾 "regardless of market share" 与研究发现的"份额与增幅相关"**直接矛盾** |
+| **B** | NG | 把研究主题偷换成**同品类**竞争动态；研究的是**跨品类**品牌延伸（two categories 的 extended brand pairs） |
+| **C** ✅ | T | 高份额 → 基线购买概率已高 → 增幅空间小；低份额 → 基线低 → 增幅空间大 → 精确解释反向关系 |
+| **D** | NG | 引入研究从未讨论的变量 brand familiarity（品牌熟悉度/识别）——编造因果机制 |
 
-## 解题思路
+## Step 3 — Source-check（溯源）
 
-### 考点：Command of Evidence — Scientific Reasoning（因果机制推断）
+- **C 的逐元素支撑**：`high market share → high purchase probability` ← 句2 研究的两个变量（market share 与购买概率）；`less potential to increase ... than brands with low market share` ← 句3 反向关系的必要推论（天花板效应）。
+- **A 的矛盾句**：句3 "A broad inverse relationship between the two values emerged"——A 的 "regardless of market share" 直接否定该发现。
+- **D 缺的元素**：familiarity（研究的变量只有 market share 与 increase in probability，无品牌熟悉度）。
+- **B 缺的元素**：跨品类延伸（句2 的 extended brand pairs 是两个品类的同品牌对）。
 
-这道题的核心不是读图表，而是**给定相关关系，推断最合理的因果解释**。
+## Step 4 — Chain-check（链条验证）
 
-### 先拆解研究
+文本链条：
 
-```mermaid
-flowchart LR
-    A["30对品牌延伸对<br/>例: 同品牌吸尘器+微波炉"] --> B["计算: 市场份额<br/>market share"]
-    A --> C["计算: 购买概率增幅<br/>increase in probability"]
-    B --> D{"反向关系<br/>inverse relationship"}
-    C --> D
-    D --> E["市场份额越大<br/>→ 增幅越小"]
-    D --> F["市场份额越小<br/>→ 增幅越大"]
-```
+> 高份额品牌 → 购买概率基线高 → 另一品类连带购买的概率**增幅**空间小；低份额品牌 → 基线低 → 增幅空间大 → **反向关系**（天花板效应）
 
-研究发现了「**inverse relationship between the two values**」：
-- 值 1：市场份额（market share）
-- 值 2：购买概率增幅（买了 A 类别该品牌 → 也买 B 类别该品牌的概率提升了多少）
+C 是链上的解释环；A 断链（regardless of market share 否认关系本身）；D 引入链外变量（familiarity）；B 换链（同品类竞争，非跨品类延伸）。
 
-### 为什么是反向？——天花板效应
+## Trap（陷阱命名）
 
-```mermaid
-flowchart TD
-    A[高市场份额品牌] --> B["本来就很多人买<br/>high baseline purchase probability"]
-    B --> C["品牌延伸能带来的<br/>额外购买空间很小"]
-    C --> D["→ 增幅小 📉"]
-    
-    E[低市场份额品牌] --> F["本来买的人少<br/>low baseline"]
-    F --> G["品牌延伸有大量<br/>潜在新顾客"]
-    G --> H["→ 增幅大 📈"]
-```
+> [!warning] 编造因果机制
+> 解释相关/反向关系的题，因果变量必须来自文本研究框架；"消费者熟悉度/品牌识别"等**外部变量**是高频陷阱（SAT 不允许脑补因果）。防法：先列出研究的全部变量，选项引入新变量即弃。
 
-**类比**：一个拿了 95 分的学生再努力「提分空间」只有 5 分；一个只拿了 50 分的学生提升空间却有 50 分。市场份额就是那个「初始分数」——高份额品牌已经饱和，品牌延伸带来的增量自然有限。
+## Principle（对应原则）
 
-### 为什么 C 正确
-
-> *"brands with high market share have high purchase probability regardless of whether the other product in the pair is purchased and thus have **less potential to increase**..."*
-
-C 精确描述了天花板效应的因果链：
-1. 高市场份额 = 已经在目标人群中广泛购买（high purchase probability）
-2. 因此（thus）= 品牌延伸带来的**额外增量空间更小**
-3. 低市场份额品牌反之 = 增量空间更大
-
-→ 完美解释了为什么市场份额与增幅呈反向关系。
-
-### 为什么 A、B、D 不对
-
-| 选项 | 错在哪 | 陷阱类型 |
-|:---|:---|:---|
-| **A** | 最后 "regardless of market share" 直接否定研究的核心发现 | **否定研究发现** |
-| **B** | 把「跨品类品牌延伸」偷换成「同品类竞争动态」 | **偷换研究主题** |
-| **D** | "consumers less familiar with low-share brands"——研究从未讨论 familiarity | **编造因果机制** |
-
-> [!warning] 陷阱识别
-> **编造因果机制**是 SAT 科学推理题的高频陷阱。选项 D 看起来逻辑通顺（知名度低 → 没意识到同品牌 → 多买），但文中**没有任何关于 brand familiarity 的讨论**。SAT 科学推理题的正确答案必须基于文内讨论的机制，不允许从外部引入新的解释变量。
-
-### 解题策略
-
-面对「解释相关/反向关系」类题目：
-
-1. **精确定义两个变量**：值 1 = 市场份额，值 2 = 增幅
-2. **明确关系方向**：反向 = 一高一低
-3. **找天花板/地板效应**：哪个方向有自然上限？高份额 → 已经饱和 → 增幅空间自然小。这是 SAT 科学推理中反复出现的模式
+原则一 文本依据（机制须在文内）+ 原则二 逻辑优先。
 
 ---
 
-## 总结：薄弱技能分布
+## 积累小结
 
-| # | 题目 | 技能类别 | 错误类型 | 优先级 |
-|:---|:---|:---|:---|:---:|
-| 1 | M1 Q9 | Central Ideas — Main Topic | 选偏（只覆盖部分内容） | ⭐⭐⭐ |
-| 2 | M1 Q10 | Central Ideas — Main Idea | 混淆"研究方式"与"研究发现" | ⭐⭐⭐ |
-| 3 | M1 Q17 | Standard English Conventions | Comma splice（逗号连接独立分句） | ⭐⭐ |
-| 4 | M2 Q1 | Words in Context | 选反义词（orthodox vs. intermediate） | ⭐⭐⭐ |
-| 5 | M2 Q11 | Command of Evidence — Supporting Conclusion | 净效应抵消（双向效应无法判定方向） | ⭐⭐⭐⭐ |
-| 6 | M2 Q12 | Command of Evidence — Quantitative | 时间窗口错位（选了恢复期数据） | ⭐⭐⭐ |
-| 7 | M2 Q13 | Command of Evidence — Weakening | 未作答 | ⭐⭐⭐ |
-| 8 | M2 Q15 | Command of Evidence — Causal Inference | 未作答（品牌延伸天花板效应） | ⭐⭐⭐⭐ |
+| 题号 | 考点 | 我的答案 | 正确答案 | 错误类型 |
+|:---|:---|:---|:---|:---|
+| M1 Q9 | Central Ideas — Main Topic | A | D | 选偏（只覆盖部分内容） |
+| M1 Q10 | Central Ideas — Main Idea | A | D | 混淆"研究方式"与"研究发现" |
+| M1 Q17 | Standard English Conventions | A | B | Comma splice（逗号连接独立分句） |
+| M2 Q1 | Words in Context | B | C | 选反义词（orthodox vs. intermediate） |
+| M2 Q11 | Command of Evidence — Supporting Conclusion | A | B | 净效应抵消（双向效应无法判定方向） |
+| M2 Q12 | Command of Evidence — Quantitative | C | D | 时间窗口错位（选了恢复期数据） |
+| M2 Q13 | Command of Evidence — Weakening | 未作答 | B | 未作答 |
+| M2 Q15 | Command of Evidence — Causal Inference | 未作答 | C | 未作答（品牌延伸天花板效应） |
 
-### 汇总
+### 技能大类汇总
 
 | 技能大类 | 错题数 | 占比 |
 |:---|:---:|:---:|
@@ -592,19 +531,16 @@ C 精确描述了天花板效应的因果链：
 | Standard English Conventions | 1 | 13% |
 | Command of Evidence (Scientific/Quantitative) | 4 | 50% |
 
-### 行动建议
+### 行动项
 
-1. **Command of Evidence 是最大短板**（4/8 = 50%）：Q11（支持结论）、Q12（图表解读）、Q13（削弱论证）、Q15（因果推断）覆盖了四个不同子类型，说明需要系统训练科学论证的各类题型，尤其是新增的 Q15 暴露出的「因果机制推断」弱点——给定相关关系推断因果解释
-2. **主旨题注意区分"背景手段"与"核心发现"**（Q10）：定位 "They found that..." 之后的内容
-3. **主旨题注意覆盖全文所有主体**（Q9）：当文本讨论两个人物/事物的共同点时，正确选项必须涵盖二者
-4. **词汇题利用上下文同义替换**（Q1）："intergeneric" → "intermediate"，"straddle the line" → "介于之间"
-5. **语法题牢记 comma splice 规则**（Q17）：两个独立分句之间不能只用逗号
-   - ⚠️ Comma splice 是跨卷高频错误（也出现在 [[SAT RW 2023年12月第一套 错题分析|2023年12月第一套]] 和 [[SAT RW Four Parts Practice Boundaries 错题分析|FourParts Boundaries]]）
-6. **图表题注意时间窗口对齐**（Q12）：题干中的时间段必须与选项描述的数据区间严格匹配
+1. **Command of Evidence 是最大短板**（4/8 = 50%）：Q11（支持结论）、Q12（图表解读）、Q13（削弱论证）、Q15（因果推断）覆盖了四个不同子类型，需要系统训练科学论证的各类题型，尤其是 Q15 暴露出的「因果机制推断」弱点——给定相关关系推断因果解释。
+2. **主旨题注意区分"背景手段"与"核心发现"**（Q10）：定位 "They found that..." 之后的内容。
+3. **主旨题注意覆盖全文所有主体**（Q9）：当文本讨论两个人物/事物的共同点时，正确选项必须涵盖二者。
+4. **词汇题利用上下文同义替换**（Q1）："intergeneric" → "intermediate"，"straddle the line" → "介于之间"。
+5. **语法题牢记 comma splice 规则**（Q17）：两个独立分句之间不能只用逗号。⚠️ Comma splice 是跨卷高频错误（也出现在 [[SAT RW 2023年12月第一套 错题分析|2023年12月第一套]] 和 [[SAT RW Four Parts Practice Boundaries 错题分析|FourParts Boundaries]]）。
+6. **图表题注意时间窗口对齐**（Q12）：题干中的时间段必须与选项描述的数据区间严格匹配。
 
----
-
-## 待创建的相关笔记
+### 待创建的相关笔记
 
 - [[SAT Reading - Command of Evidence 全解]]
 - [[SAT Reading - Words in Context 逻辑关系分类]]
