@@ -12,7 +12,7 @@ modified:
 # Complex Field
 
 > [!abstract] 概述
-> **复数域 (Complex Field)** 章节（Rudin §1.6）在实数域 $\mathbb{R}$ 的基础上，将数系扩张到 $\mathbb{C}$。复数被定义为实数的有序对 $(a,b)$，通过精心设计的加法和乘法运算构成一个域。$\mathbb{R}$ 作为子域嵌入 $\mathbb{C}$（对应形如 $(a,0)$ 的元素），而虚数单位 $i = (0,1)$ 满足 $i^2 = -1$。本章建立了复数的共轭、绝对值等基本运算，并最终证明了 **Schwarz 不等式**，这是整个分析学中最重要的不等式之一。
+> **复数域 (Complex Field)** 章节（Rudin §1.6）在实数域 $\mathbb{R}$ 的基础上，将数系扩张到 $\mathbb{C}$。复数被定义为实数的有序对 $(a,b)$，通过精心设计的加法和乘法运算构成一个域。$\mathbb{R}$ 作为子域嵌入 $\mathbb{C}$（对应形如 $(a,0)$ 的元素），而虚数单位 $i = (0,1)$ 满足 $i^2 = -1$。本章建立了复数的共轭、模等基本运算，并最终证明了 **Schwarz 不等式**，这是整个分析学中最重要的不等式之一。
 
 ## 结构上下文
 
@@ -34,7 +34,7 @@ modified:
 | 之前 (§1.4–1.5) | 现在 (§1.6) | 之后 (§1.7) |
 |:----------------|:------------|:------------|
 | $\mathbb{R}$：完备的有序域 | $\mathbb{C}$：从 $\mathbb{R}$ 构造的域 | $\mathbb{R}^k$：欧氏空间 |
-| 三大定理 (1.19–1.21) | 域验证 + 共轭 + 模长 + Schwarz 不等式 | 度量结构与拓扑 |
+| 4 个核心定理 (1.19–1.22) | 域验证 + 共轭 + 模 + Schwarz 不等式 | 度量结构与拓扑 |
 | $\mathbb{Q} \subset \mathbb{R}$ | $\mathbb{R} \subset \mathbb{C}$（作为子域） | $\mathbb{R}^k$ 的向量空间结构 |
 
 ---
@@ -80,13 +80,10 @@ modified:
 
 因此可以将 $(a,0)$ 与实数 $a$ 等同。$\mathbb{R}$ 作为 $\mathbb{C}$ 的子域嵌入。
 
-```
-                    ℂ
-                   ╱
-            ╲    ╱
-             ℝ ———
-            ╱
-           ℚ
+```mermaid
+graph TD
+    Q[ℚ 有理数域] --> R[ℝ 实数域]
+    R --> C[ℂ 复数域]
 ```
 
 ---
@@ -223,7 +220,7 @@ Schwarz 不等式是整个分析学和线性代数中**最重要**的不等式�
       |--- $i = (0,1),\; i^2 = -1$
       |--- 表示: $(a,b) = a+bi$
       |
-      |--- 共轭: $a+bi = a-bi$
+      |--- 共轭: $\overline{a+bi} = a-bi$
       |--- 模: $|z| = \sqrt{a^2+b^2}$
       |
       |--- Schwarz: $\bigl|\sum a_j \overline{b_j}\bigr|^2 \leq (\sum|a_j|^2)(\sum|b_j|^2)$
@@ -247,8 +244,8 @@ Schwarz 不等式是整个分析学和线性代数中**最重要**的不等式�
 
 - [[Real Field]] — $\mathbb{R}$ 的构造与完备性，$\mathbb{C}$ 的构建基础
 - [[Field]] — 域的抽象定义，$\mathbb{C}$ 作为域的例子
-- [[Inner Product and Norm]] — 从 $|z|$ 推广到一般内积空间
-- [[n-dimensional Euclidean space]] — $\mathbb{R}^k$ 上的度量结构
+- [[Linear_Algebra/Inner Product and Norm]] — 从 $|z|$ 推广到一般内积空间
+- [[Geometry/n-dimensional Euclidean space]] — $\mathbb{R}^k$ 上的度量结构
 - [[Density and Completeness]] — $\mathbb{Q}$ 与 $\mathbb{R}$ 的差异，为何需要数系扩张
 
 ---

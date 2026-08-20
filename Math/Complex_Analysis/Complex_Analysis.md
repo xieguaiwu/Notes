@@ -14,7 +14,7 @@ created: 2026-07-03
 # Complex Analysis
 
 > [!abstract] 概述
-> **复分析 (Complex Analysis)** 研究定义在复平面 $\mathbb{C}$ 上的复变函数。它与实分析的风格截然不同：在实轴上，可导性是一回事，无穷可导是另一回事，解析性更是另一回事；但在复平面上，**一次复可导**就蕴含了无穷可导、解析展开以及 Cauchy 积分公式——这种刚性 (rigidity) 是复分析最深刻的结构特征。本章从 [[Mathematical_Analysis/Complex Field|复数域]] 出发，建立解析函数理论、复积分理论，最终到达留数定理及其在实积分中的应用。
+> **复分析 (Complex Analysis)** 研究定义在复平面 $\mathbb{C}$ 上的复变函数。它与实分析风格截然不同。在实轴上，可导、无穷可导、解析是三个不同层次；在复平面上，**一次复可导**就蕴含无穷可导、解析展开与 Cauchy 积分公式。这种刚性 (rigidity) 是复分析最深刻的结构特征。本章从 [[Mathematical_Analysis/Complex Field|复数域]] 出发，建立解析函数理论、复积分理论，最终到达留数定理及其在实积分中的应用。
 
 ## 概念结构
 
@@ -38,7 +38,7 @@ graph TD
 
 ### 1.1 复平面 $\mathbb{C}$
 
-复数 $z = x + iy$ 可视为 $\mathbb{R}^2$ 中的点 $(x, y)$。与 [[Mathematical_Analysis/Complex Field|实数域]] 不同，$\mathbb{C}$ **不能**成为有序域——$i^2 = -1 < 0$ 会与序公理矛盾。复数的模 $|z| = \sqrt{x^2 + y^2}$ 和共轭 $\overline{z} = x - iy$ 是基本运算。
+复数 $z = x + iy$ 可视为 $\mathbb{R}^2$ 中的点 $(x, y)$。与 [[Mathematical_Analysis/Real Field|实数域]] 不同，$\mathbb{C}$ **不能**成为有序域——$i^2 = -1 < 0$ 会与序公理矛盾。复数的模 $|z| = \sqrt{x^2 + y^2}$ 和共轭 $\overline{z} = x - iy$ 是基本运算。
 
 > [!definition] 复函数
 > 复函数 $f: D \subset \mathbb{C} \to \mathbb{C}$ 将复平面上的区域 $D$ 映射到复平面。记 $z = x + iy$，则可拆分为实部与虚部：
@@ -124,7 +124,7 @@ $$f'(z_0) = \frac{\partial v}{\partial y} - i\frac{\partial u}{\partial y}$$
 > $-1 = 1 \cdot e^{i\pi}$，故 $\operatorname{Log}(-1) = \ln 1 + i\pi = i\pi$。一般支值为 $i\pi + 2\pi i k$。
 
 > [!warning] 多值函数的陷阱
-> 对多值函数，"$\log z_1 z_2 = \log z_1 + \log z_2$" 仅在模 $2\pi i$ 的意义下成立。例如：$\operatorname{Log}(-1 \cdot -1) = \operatorname{Log}(1) = 0$，但 $\operatorname{Log}(-1) + \operatorname{Log}(-1) = 2\pi i$——两者相差 $2\pi i$，来自不同的分支选择。
+> 对多值函数，"$\log z_1 z_2 = \log z_1 + \log z_2$" 仅在相差 $2\pi i$ 的整数倍的意义下成立。例如：$\operatorname{Log}(-1 \cdot -1) = \operatorname{Log}(1) = 0$，但 $\operatorname{Log}(-1) + \operatorname{Log}(-1) = 2\pi i$——两者相差 $2\pi i$，来自不同的分支选择。
 
 ### 3.2 复幂函数 $z^\alpha$
 
@@ -317,7 +317,7 @@ graph TD
 > - **有理函数积分** $\int_{-\infty}^\infty \frac{P(x)}{Q(x)}dx$（$\deg Q \geq \deg P + 2$）：上半平面围道
 > - **Fourier 型积分** $\int_{-\infty}^\infty f(x)e^{i\omega x}dx$：利用 Jordan 引理，依 $\omega$ 的符号选择上半或下半平面
 > - **有理三角函数积分** $\int_0^{2\pi} R(\cos\theta, \sin\theta)d\theta$：令 $z = e^{i\theta}$ 化为单位圆上的围道积分
-> - **涉及支点的积分**：使用钥匙孔围道 (keyhole contour)，需小心分支切割的位置
+> - **涉及支点 (branch point) 的积分**：使用钥匙孔围道 (keyhole contour)，需小心分支切割的位置
 
 ## 9. 核心定理关系
 
@@ -338,7 +338,7 @@ graph TD
 
 ## 相关笔记
 
-- [[Math/Mathematical_Analysis/Complex Field]] — $\mathbb{C}$ 的域结构与基本性质，Schwarz 不等式
+- [[Mathematical_Analysis/Complex Field]] — $\mathbb{C}$ 的域结构与基本性质，Schwarz 不等式
 - [[Mathematical_Analysis/Differentiability and Continuity]] — 实可导性与实连续性
 - [[Mathematical_Analysis/limit]] — 极限的 $\varepsilon$-$\delta$ 定义
 - [[Mathematical_Analysis/Definite Integrals]] — 实定积分的 Riemann 定义与基本性质

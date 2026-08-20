@@ -79,7 +79,7 @@ $H \subset G$ 称为 $G$ 的**子群**，若 $H$ 在 $G$ 的运算下自身构�
 ## 相关链接
 
 - [[Field]] — 域的定义及其与群的关系
-- [[Boundedness#3.3 有界序列 (Def 3.1 & Theorem 3.14)]] — 实数作为群的例子
+- [[Mathematical_Analysis/Real Field]] — 实数域：$(\mathbb{R},+)$ 与 $(\mathbb{R}\setminus\{0\},\times)$ 都是阿贝尔群的实例
 
 ## 参考来源
 

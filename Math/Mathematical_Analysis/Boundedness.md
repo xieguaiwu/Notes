@@ -4,46 +4,51 @@ tags:
   - Math
   - 证明
   - 定义性
-title: Continuity and Boundedness
+title: Boundedness
 created: 2025-11-24T23:04:00
 modified:
 ---
 # Boundedness
-## 1. Def
-假如对于$f:A\to\mathbb{R}$
-$$\exists M>0(M\in\mathbb{R})\forall x(x\in A)|f(x)|\leq M$$
-则函数$f$是有界的
-假如对于$\forall x\in A$同时有
-$$f(x)\leq M$$
-$$f(x)\geq m$$
-则$f$同时有上界 (upper bound) 和下界 (lower bound)
+## 1. 有界函数（直观定义）
 
-## 2. Continuity & Boundedness
-对于下方两个函数：
-![[continuity_and_boundedness.png]]
-此函数为$f(x)$，其中$x\neq 1$，但$\lim_{x\to 1}f(x)=0$
+设 $f: A \to \mathbb{R}$。
 
-同时有$g(x)$
-![[continuity_and_boundedness2.png]]
-其为分段函数，当$x\leq 2$时$g(x)=1$，反之则$g(x)=-1$，这意味着$\neg\exists\lim_{x\to 2}g(x)$
+- 若存在实数 $M > 0$，使对所有 $x \in A$ 有 $|f(x)| \leq M$，则称 $f$ **有界** (bounded)：
 
-考虑以下极限：
->$$\lim_{x\to 1}(f(x)\cdot g(x+1))$$
+$$\exists M > 0,\; \forall x \in A:\; |f(x)| \leq M$$
 
+- 若对所有 $x \in A$ 同时有 $f(x) \leq M$ 和 $f(x) \geq m$，则称 $f$ 有**上界** (upper bound) 和**下界** (lower bound)：
 
-可以意识到不确定性，因为已知
-$$\neg\exists\lim_{x\to 2}g(x)$$
-但是根据**1**可知函数$g$有界
-$$(\forall x)|g(x)|\leq 1$$
+$$\forall x \in A:\; m \leq f(x) \leq M$$
 
-回到一开始的极限中，考虑到极限法则：
-$$\lim_{x\to a}(f(x)\cdot g(x))=L\cdot M$$
-而
-$$\lim_{x\to 1}f(x)=0$$
-那么原极限等同于
-$$\lim_{x\to 1}(f(x)\cdot g(x+1)) = 0 \cdot M = 0$$
-带入$M=1$后
-$$\lim_{x\to 1}(f(x)\cdot g(x+1))=0\cdot 1=0$$
+> [!note] 两种定义等价
+> 若 $f$ 有上界 $M$ 与下界 $m$，则取 $M' = \max(|m|, |M|)$ 得 $|f(x)| \leq M'$。因此对实值函数，"有上、下界" ⟺ "有界"。
+
+## 2. 连续性、有界性与极限：一个例子
+
+考虑两个函数（见下图）：
+
+- $f(x)$：$x \neq 1$ 处有定义，且 $\lim_{x\to 1} f(x) = 0$；
+- $g(x)$：分段函数，$x \leq 2$ 时 $g(x) = 1$，否则 $g(x) = -1$。因此 $\lim_{x\to 2} g(x)$ **不存在**（左右极限不同）。
+
+![[../../attachments/math/function_characteristic/continuity_and_boundedness.png]]
+
+![[../../attachments/math/function_characteristic/continuity_and_boundedness2.png]]
+
+现在求极限
+
+$$\lim_{x\to 1}\big(f(x)\cdot g(x+1)\big)$$
+
+**难点**：$g(x+1)$ 在 $x \to 1$ 时的行为由 $g$ 在 $2$ 处决定，而 $\lim_{x\to 2} g(x)$ 不存在——不能直接套用"积的极限 = 极限的积"（该法则要求两个极限都存在）。
+
+**解法**：$g$ 虽然没有极限，但它**有界**（见 §1）：$|g(x)| \leq 1$ 对所有 $x$ 成立。于是
+
+$$|f(x)\cdot g(x+1)| \leq |f(x)| \cdot 1 = |f(x)| \to 0 \quad (x \to 1)$$
+
+由夹逼定理，$\lim_{x\to 1}\big(f(x)\cdot g(x+1)\big) = 0$。
+
+> [!tip] 教训
+> 积的极限法则要求两个极限都存在；当其中一个不存在但有界时，改用"**有界函数 × 趋于 0 的函数 → 0**"（夹逼），结论同样成立。这是分析中常用的手法。
 
 ## 3. Rudin 体系中的有界性
 

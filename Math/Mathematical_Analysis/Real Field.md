@@ -12,7 +12,7 @@ modified:
 # Real Field
 
 > [!abstract] 概述
-> **实数域 (Real Field)** 章节（Rudin §1.4）是整个数学分析的基石。前三个子节分别搭建了有序集、域和有序域，本节将它们融合为 $\mathbb{R}$ 的完整刻画：**$\mathbb{R}$ 是满足最小上界性质的有序域，并且 $\mathbb{Q}$ 作为其子域**。三大核心定理（1.19–1.21）完成了这一构建。
+> **实数域 (Real Field)** 章节（Rudin §1.4）是整个数学分析的基石。前 3 个子节分别搭建了有序集、域和有序域，本节将它们融合为 $\mathbb{R}$ 的完整刻画：**$\mathbb{R}$ 是满足最小上界性质（LUB）的有序域，并且 $\mathbb{Q}$ 作为其子域**。4 个核心定理（1.19–1.22）完成这一构建。
 
 ## 结构上下文
 
@@ -82,14 +82,16 @@ $$\{p \in \mathbb{Q} \mid p < 0\} \cup \{p \in \mathbb{Q} \mid p \geq 0,\; p^2 <
 
 ---
 
-## Theorem 1.20 — Archimedes 性质
+## Theorem 1.20 — Archimedes 性质与 $\mathbb{Q}$ 的稠密性
 
 > [!note] Archimedean Property (Rudin Theorem 1.20)
 > 设 $x, y \in \mathbb{R}$，且 $x > 0$。则：
 > 
-> (a) 存在正整数 $n$ 使得 $nx > y$
+> (a) 存在正整数 $n$ 使得 $nx > y$（**Archimedes 性质**）
 > 
-> (b) 存在正整数 $n$ 使得 $0 < \dfrac{1}{n} < x$（由 (a) 取 $y = 1$ 即得）
+> (b) 若 $x < y$，则存在 $p \in \mathbb{Q}$ 使得 $x < p < y$（**$\mathbb{Q}$ 在 $\mathbb{R}$ 中稠密**）
+
+Part (a) 称为 $\mathbb{R}$ 的 **Archimedes 性质**（archimedean property）；Part (b) 说 $\mathbb{Q}$ 在 $\mathbb{R}$ 中稠密：任意两个实数之间都有有理数。
 
 ### 证明 (a) — 反证法 + LUB 性质
 
@@ -101,18 +103,30 @@ $$(m+1)x = mx + x > (\alpha - x) + x = \alpha$$
 
 但 $(m+1)x \in A$，这与 $\alpha$ 是 $A$ 的上界相矛盾。$\square$
 
-### 证明 (b) — 直接来自 (a)
+### 推论 — $1/n$ 任意小
 
-取 $y = 1$，则 $\exists n$ 使 $n x > 1$，两边同除以 $n$ 得 $x > 1/n$。$\square$
+取 $y = 1$，则 $\exists n$ 使 $nx > 1$，两边同除以 $n$ 得 $x > 1/n$。$\square$
 
 > [!warning] 直观意义
 > Archimedes 性质说：**无论多小的正数 $x$，总存在正整数 $n$ 使 $1/n$ 比它还小**；**无论多大的 $y$，总能用 $x$ 的整数倍超过它**。它排除了"无穷小"和"无穷大"元素在 $\mathbb{R}$ 中的存在——$\mathbb{R}$ 中不存在非零"无穷小"，这是分析学可行性的核心保障。
 
-### 推论：$\mathbb{Q}$ 在 $\mathbb{R}$ 中稠密
+### 证明 (b) — $\mathbb{Q}$ 在 $\mathbb{R}$ 中稠密
 
-由 (b) 可证明：对任意 $x, y \in \mathbb{R}$ 且 $x < y$，存在 $p \in \mathbb{Q}$ 使 $x < p < y$。
+由于 $x < y$，$y - x > 0$。由 (a) 取正整数 $n$ 使
 
-> 详细证明见 [[Density and Completeness#1.2 有理数的稠密性]]。
+$$n(y-x) > 1$$
+
+再用 (a) 取正整数 $m_1, m_2$ 使 $m_1 > nx$、$m_2 > -nx$，于是 $-m_2 < nx < m_1$。故存在整数 $m$（$-m_2 \leq m \leq m_1$）使
+
+$$m - 1 \leq nx < m$$
+
+合并不等式得 $nx < m \leq 1 + nx < ny$。因 $n > 0$，两边除以 $n$：
+
+$$x < \frac{m}{n} < y$$
+
+取 $p = m/n$ 即得。$\square$
+
+> 证明分三步：先用 (a) 把间隔 $y-x$ 放大到 $>1$；再用 (a) 把 $nx$ 夹在两个整数之间；最后取整数 $m$ 使 $m/n$ 落进 $(x, y)$。每一步都依赖 Archimedes 性质——它是稠密性的燃料。
 
 ### Archimedes 性质在证明中的典型用法
 
@@ -120,7 +134,7 @@ Archimedes 性质在 $\mathbb{R}$ 分析中是几乎每步都用到的基础工�
 
 | 用法 | 步骤 | 目的 |
 |:----|:-----|:-----|
-| 取 $\exists n$ 使 $1/n < \varepsilon$ | 用 $x = \varepsilon$ 代入 (b) | 极限定义中的 $\varepsilon$-$N$ 论证 |
+| 取 $\exists n$ 使 $1/n < \varepsilon$ | 用 $x = \varepsilon$ 代入推论（(a) 取 $y=1$） | 极限定义中的 $\varepsilon$-$N$ 论证 |
 | $\exists n$ 使 $n > N$ | 用 $x = 1$ 代入 (a) | 自然数无上界 |
 | 取 $\exists n$ 使 $n(y-x) > 1$ | 用 $x = y-x$ 代入 (a) | 稠密性证明 |
 
@@ -141,7 +155,7 @@ $$E = \{ t \in \mathbb{R} \mid t > 0,\; t^n < x \}$$
 - $E$ 非空（取 $t = \frac{x}{1+x}$，可证 $t^n < x$）
 - $E$ 上有界：若 $t \geq 1+x$，则 $t^n \geq t \geq 1+x > x$，故 $t \notin E$，从而所有 $t \in E$ 均满足 $t < 1+x$，即 $1+x$ 是上界
 
-由 LUB 性质，令 $y = \sup E$，目标是证明 $y^n = x$。
+由最小上界性质，令 $y = \sup E$，目标是证明 $y^n = x$。
 
 **关键论证**——反证法分两步，核心是利用恒等式 $b^n - a^n = (b-a)(b^{n-1} + b^{n-2}a + \cdots + a^{n-1})$，得到不等式：
 
@@ -174,7 +188,7 @@ $$b^n - a^n < (b-a) \cdot n \cdot b^{n-1} \quad (0 < a < b)$$
 
 因此 $y^n = x$。
 
-> 上述构造依赖 Archimedes 性质确保 $h$ 的存在性（保证能选到足够小的正数），以及 LUB 性质给出 $y = \sup E$。两者缺一不可——这也解释了**为何仅有 LUB 性质不足以证明 $n$ 次根存在**（见下方依赖图）。
+> 上述构造同时使用两条工具：最小上界性质给出 $y = \sup E$（存在性），Archimedes 性质保证可选到足够小的正数 $h$（扰动可行性）——而后者本身也是最小上界性质的推论（定理 1.20）。这说明 $\mathbb{R}$ 的完备性如何层层"派生"出执行能力。
 
 **唯一性**：若 $0 < y_1 < y_2$，则 $y_1^n < y_2^n$（单调性），故至多一个满足 $y^n = x$。
 
@@ -194,7 +208,27 @@ $$b^n - a^n < (b-a) \cdot n \cdot b^{n-1} \quad (0 < a < b)$$
 
 ---
 
-## 三大定理的逻辑依赖
+## Theorem 1.22 — 小数表示
+
+> 对每个 $x > 0$，存在十进制展开 $n_0.n_1n_2n_3\cdots$，使 $x$ 等于其所有截断数 $n_0 + \frac{n_1}{10} + \cdots + \frac{n_k}{10^k}$（$k = 0, 1, 2, \dots$）组成的集合 $E$ 的上确界。反之，每个无限小数展开都对应一个实数——即其截断集的上确界。
+
+### 构造（贪心逐位）
+
+1. $n_0$ = 满足 $n_0 \leq x$ 的最大整数。**存在性依赖 Archimedes 性质**——否则"最大整数"不保证存在；
+2. 已选 $n_0, \dots, n_{k-1}$ 后，$n_k$ = 使 $n_0 + \frac{n_1}{10} + \cdots + \frac{n_k}{10^k} \leq x$ 的最大数字（$n_k \in \{0, \dots, 9\}$）。
+
+截断和从左边逼近 $x$，故 $x = \sup E$。
+
+### 反向
+
+任意小数展开 $n_0.n_1n_2\cdots$ 的截断集 $E$ 有上界（如 $n_0 + 1$），由最小上界性质 $\sup E$ 存在，该展开就是 $\sup E$ 的十进制展开。
+
+> [!tip] 桥梁作用
+> 1.22 把公理化构造的 $\mathbb{R}$ 与日常的十进制表示接轨：小数只是"从左边逼近 $x$ 的有理数阶梯"的极限。Rudin 明确说全书不再使用小数，故只给构造不给细节。注意 $0.9999\cdots$ 与 $1.0000\cdots$ 对应同一个上确界——十进制表示不唯一，Rudin 未讨论这一点。
+
+---
+
+## 四个定理的逻辑依赖
 
 ```
 Theorem 1.19 (ℝ 存在)
@@ -205,11 +239,13 @@ Theorem 1.19 (ℝ 存在)
     │
     ├── LUB 性质 + Archimedes ──→ Theorem 1.21 (n 次根存在)
     │
+    ├── Archimedes 性质 ──→ Theorem 1.22 (小数表示)
+    │
     └── LUB 性质 ──→ Theorem 1.11 (LUB ⇒ GLB)
 ```
 
 > [!note] 关键洞察
-> **仅有 LUB 性质不足以证明 $n$ 次根存在**——Archimedes 性质是必需的。这说明 $\mathbb{R}$ 的"完备性"是一个复合性质：LUB 提供框架，Archimedes 提供"无限逼近"的执行能力。
+> 1.21 的证明同时调用两条工具：最小上界性质给出 $y = \sup E$（存在性），Archimedes 性质保证能选到足够小的 $h$（扰动可行性）——而 Archimedes 性质本身也是 1.19 的推论。完备性不是单一公理，而是一台层层派生工具的"存在机器"。
 
 ---
 
@@ -242,7 +278,7 @@ Theorem 1.19 (ℝ 存在)
 | 笔记 | 侧重 |
 |:----|:------|
 | [[Density and Completeness]] | 有序集基础、稠密性 vs 完备性的概念辨析、$\sqrt{2}$ 空隙例证 |
-| **Real Field**（本篇） | **定理 1.19–1.21 的陈述与证明**、Archimedes 性质、$n$ 次根存在性、$\mathbb{R}$ 的唯一性 |
+| **Real Field**（本篇） | **定理 1.19–1.22 的陈述与证明**、Archimedes 性质、$n$ 次根存在性、小数表示、$\mathbb{R}$ 的唯一性 |
 
 两者互为补充：前者提供"为什么需要 $\mathbb{R}$"的概念动机，后者提供"$\mathbb{R}$ 究竟是什么"的严格定理。
 
@@ -250,6 +286,6 @@ Theorem 1.19 (ℝ 存在)
 
 ## 参考来源
 
-- Rudin, W. *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill 1976. (§1.4 The Real Field, Theorems 1.19–1.21)
+- Rudin, W. *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill 1976. (§1.4 The Real Field, Theorems 1.19–1.22)
 - Dedekind, R. *Stetigkeit und Irrationale Zahlen*, 1872.
 - Spivak, M. *Calculus*, 4th ed., Publish or Perish 2008. (Chapter 1, Basic Properties of Numbers)
