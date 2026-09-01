@@ -49,6 +49,7 @@ modified:
 |------|------|------|
 | [[Preposition]] | 介词用法（支配各格的介词） | A1-A2 |
 | [[Praepositionaladverbien]] | 代副词 | B1 |
+| [[Da-Compounds]] | Da-词（dafür/darin/dahin 等）意义与用法 | B1 |
 
 ### 5. 冠词与代词 (Artikel und Pronomen)
 
@@ -91,6 +92,7 @@ modified:
 3. [[Konjunktiv]] - 虚拟式
 4. [[Partizip I]] - 现在分词
 5. [[Substantivierte Adjektive]] - 形容词名词化
+6. [[Da-Compounds]] - Da-词的意义与用法
 
 ### B2 阶段（高级）
 1. [[Kausative Verb]] - 使役动词
@@ -146,10 +148,10 @@ modified:
 | 动词 | 11 篇 | - |
 | 形容词 | 5 篇 | - |
 | 名词与格 | 1 篇 | 名词变格详解 |
-| 介词 | 2 篇 | - |
+| 介词 | 3 篇 | - |
 | 冠词与代词 | 2 篇 | 疑问词详解 |
 | 句法 | 3 篇 | 句子语序详解 |
 
 ---
 
-*最后更新：2026-03-12*
+*最后更新：2026-09-01*
