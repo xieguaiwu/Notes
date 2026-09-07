@@ -6,86 +6,78 @@ tags:
 created: 2026-06-14
 ---
 
-# Significance Tests for Proportions
+# 比例的显著性检验
 
-**Parent:** [[Unit_6_Inference_for_Proportions|Unit 6 — Inference for Proportions]]
+**所属：** [[Unit_6_Inference_for_Proportions|单元 6 — 比例的推断]]
 
----
+## 单比例 Z 检验
 
-## One-Proportion Z-Test
+### 结构
 
-### Structure
-
-| Component | Notation |
+| 组成部分 | 符号 |
 |-----------|----------|
-| **Null hypothesis** | $H_0: p = p_0$ |
-| **Alternative** (two-sided) | $H_a: p \neq p_0$ |
-| **Alternative** (one-sided) | $H_a: p > p_0$ or $H_a: p < p_0$ |
-| **Test statistic** | $z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}$ |
-| **$p$-value** | $P(Z \ge |z|)$ for two-sided; $P(Z \ge z)$ or $P(Z \le z)$ for one-sided |
+| **原假设** | $H_0: p = p_0$ |
+| **备择假设**（双侧） | $H_a: p \neq p_0$ |
+| **备择假设**（单侧） | $H_a: p > p_0$ 或 $H_a: p < p_0$ |
+| **检验统计量** | $z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}$ |
+| **$p$ 值** | 双侧：$P(Z \ge |z|)$；单侧：$P(Z \ge z)$ 或 $P(Z \le z)$ |
 
-### Conditions
+### 条件
 
-| Condition | Check |
+| 条件 | 检查 |
 |-----------|-------|
-| **Random** | SRS or randomized experiment |
+| **随机** | SRS 或随机化实验 |
 | **10%** | $n \le 0.10N$ |
-| **Large Counts** | $np_0 \ge 10$ and $n(1-p_0) \ge 10$ (use $p_0$, **not** $\hat{p}$) |
+| **大计数** | $np_0 \ge 10$ 且 $n(1-p_0) \ge 10$（用 $p_0$，**不是** $\hat{p}$） |
 
-> [!warning] CI vs. Test — Different SEs
-> - **Confidence interval** uses $SE = \sqrt{\hat{p}(1-\hat{p})/n}$
-> - **Hypothesis test** uses $SE = \sqrt{p_0(1-p_0)/n}$
+> [!warning] CI vs 检验——不同的标准误
+> - **置信区间** 用 $SE = \sqrt{\hat{p}(1-\hat{p})/n}$
+> - **假设检验** 用 $SE = \sqrt{p_0(1-p_0)/n}$
 >
-> Why? Under $H_0$, $p_0$ is the assumed truth. Plugging in $p_0$ gives the correct **null distribution**.
+> 为什么？在 $H_0$ 下，$p_0$ 被视为真实值。代入 $p_0$ 得到正确的**零分布**。
 
----
+### $p$ 值的解释
 
-### $p$-Value Interpretation
+> [!tip] $p$ 值定义
+> **$p$ 值**是在**假设 $H_0$ 为真**的条件下，观测到检验统计量与当前一样极端（或更极端）的概率。
 
-> [!tip] $p$-Value Definition
-> A **$p$-value** is the probability of observing a test statistic as extreme as (or more extreme than) the one observed, **assuming $H_0$ is true**.
-
-| $p$-value | Evidence against $H_0$ |
+| $p$ 值 | 对 $H_0$ 的证据 |
 |:---------:|:----------------------|
-| $p > 0.10$ | Little to none |
-| $0.05 < p \le 0.10$ | Suggestive (marginal) |
-| $0.01 < p \le 0.05$ | Moderate — significant at $\alpha = 0.05$ |
-| $p \le 0.01$ | Strong — significant at $\alpha = 0.01$ |
+| $p > 0.10$ | 几乎没有 |
+| $0.05 < p \le 0.10$ | 有提示性（边缘显著） |
+| $0.01 < p \le 0.05$ | 中等——在 $\alpha = 0.05$ 下显著 |
+| $p \le 0.01$ | 强——在 $\alpha = 0.01$ 下显著 |
 
-> ❌ **Common misinterpretation:** "The $p$-value is the probability that $H_0$ is true." — This is wrong. The $p$-value is calculated **assuming** $H_0$ is true.
+> ❌ **常见误解：** "$p$ 值是 $H_0$ 为真的概率。"——这是错误的。$p$ 值是在**假设** $H_0$ 为真的条件下计算出来的。
 
----
-
-### Decision Rule
+### 决策规则
 
 $$
-\text{If } p\text{-value} < \alpha \;\rightarrow\; \text{Reject } H_0 \text{ (statistically significant)}
+\text{如果 } p\text{ 值} < \alpha \;\rightarrow\; \text{拒绝 } H_0 \text{（统计显著）}
 $$
 
 $$
-\text{If } p\text{-value} \ge \alpha \;\rightarrow\; \text{Fail to reject } H_0 \text{ (not significant)}
+\text{如果 } p\text{ 值} \ge \alpha \;\rightarrow\; \text{无法拒绝 } H_0 \text{（不显著）}
 $$
 
-> [!key] Never "Accept $H_0$"
-> We never **accept** $H_0$. We either **reject** or **fail to reject** it. Failing to reject means insufficient evidence, not proof that $H_0$ is true.
+> [!key] 绝不"接受 $H_0$"
+> 我们绝不**接受** $H_0$。要么**拒绝**，要么**无法拒绝**。无法拒绝意味着证据不足，不是证明 $H_0$ 为真。
 
----
+### 例题
 
-### Worked Example
+**问题：** 一位候选人声称 60% 的选民支持她。一项对 500 名选民的调查发现 280 人支持。在 $\alpha = 0.05$ 水平下，是否有证据表明她的主张有误？
 
-**Problem:** A candidate claims 60% of voters support her. A poll of 500 voters finds 280 supporters. Is there evidence at $\alpha = 0.05$ that her claim is wrong?
-
-**Step 1 — State:**
+**步骤 1—陈述：**
 - $H_0: p = 0.60$
-- $H_a: p \neq 0.60$ (two-sided — "wrong" means either direction)
+- $H_a: p \neq 0.60$（双侧——"有误"意味着任一方向）
 - $\alpha = 0.05$
 
-**Step 2 — Plan:**
-- Random ✅ (assume SRS)
-- $500 \le 0.10$ of all voters ✅
-- $np_0 = 500(0.60) = 300 \ge 10$ ✅; $n(1-p_0) = 500(0.40) = 200 \ge 10$ ✅
+**步骤 2—计划：**
+- 随机 ✅（假设 SRS）
+- $500 \le 0.10$ 所有选民 ✅
+- $np_0 = 500(0.60) = 300 \ge 10$ ✅；$n(1-p_0) = 500(0.40) = 200 \ge 10$ ✅
 
-**Step 3 — Do:**
+**步骤 3—实施：**
 
 $$
 \hat{p} = \frac{280}{500} = 0.56
@@ -96,49 +88,47 @@ z = \frac{0.56 - 0.60}{\sqrt{\frac{0.60(0.40)}{500}}} = \frac{-0.04}{\sqrt{0.000
 $$
 
 $$
-p\text{-value} = 2 \times P(Z \le -1.826) \approx 2 \times 0.0339 = 0.0678
+p\text{ 值} = 2 \times P(Z \le -1.826) \approx 2 \times 0.0339 = 0.0678
 $$
 
-**Step 4 — Conclude:** Since $p = 0.0678 > \alpha = 0.05$, we **fail to reject** $H_0$. There is not sufficient evidence at the 5% level that the candidate's support differs from 60%.
+**步骤 4—结论：** 由于 $p = 0.0678 > \alpha = 0.05$，我们**无法拒绝** $H_0$。在 5% 显著性水平下，没有足够证据表明候选人的支持率不同于 60%。
 
----
+## 双比例 Z 检验
 
-## Two-Proportion Z-Test
+### 假设
 
-### Hypotheses
+- $H_0: p_1 = p_2$（或 $p_1 - p_2 = 0$）
+- $H_a: p_1 \neq p_2$（或 $p_1 > p_2$、$p_1 < p_2$）
 
-- $H_0: p_1 = p_2$ (or $p_1 - p_2 = 0$)
-- $H_a: p_1 \neq p_2$ (or $p_1 > p_2$, $p_1 < p_2$)
-
-### Test Statistic
+### 检验统计量
 
 $$
 z = \frac{\hat{p}_1 - \hat{p}_2}{\sqrt{\hat{p}_c(1-\hat{p}_c)\left(\frac{1}{n_1} + \frac{1}{n_2}\right)}}
 $$
 
-Where $\hat{p}_c$ is the **pooled proportion** (under $H_0$, both groups share the same $p$):
+其中 $\hat{p}_c$ 是**合并比例**（在 $H_0$ 下，两组共享相同的 $p$）：
 
 $$
-\hat{p}_c = \frac{\text{successes}_1 + \text{successes}_2}{n_1 + n_2}
+\hat{p}_c = \frac{\text{成功}_1 + \text{成功}_2}{n_1 + n_2}
 $$
 
-### Conditions
+### 条件
 
-| Condition | Check |
+| 条件 | 检查 |
 |-----------|-------|
-| **Random** | Both samples independent SRSs or randomized experiment |
-| **10%** | $n_1 \le 0.10N_1$, $n_2 \le 0.10N_2$ |
-| **Large Counts** | $n_1\hat{p}_c \ge 10$, $n_1(1-\hat{p}_c) \ge 10$ and same for $n_2$ |
+| **随机** | 两个独立 SRS 或随机化实验 |
+| **10%** | $n_1 \le 0.10N_1$，$n_2 \le 0.10N_2$ |
+| **大计数** | $n_1\hat{p}_c \ge 10$、$n_1(1-\hat{p}_c) \ge 10$，且 $n_2$ 同样 |
 
-> [!summary] Choosing the Right Test
-> | Scenario | Test |
+> [!summary] 选择正确的检验
+> | 场景 | 检验 |
 > |----------|------|
-> | One proportion vs. fixed $p_0$ | One-prop $z$-test |
-> | Two independent proportions | Two-prop $z$-test |
-> | Paired/matched data | McNemar's test (not on AP exam) |
+> | 一个比例 vs 固定 $p_0$ | 单比例 $z$ 检验 |
+> | 两个独立比例 | 双比例 $z$ 检验 |
+> | 配对数据 | McNemar 检验（AP 不考） |
 >
-> Related: [[Confidence_Intervals_Proportions|Confidence Intervals for Proportions]], [[Type_I_and_II_Errors|Type I & II Errors]]
+> 相关：[[Confidence_Intervals_Proportions|比例的置信区间]]、[[Type_I_and_II_Errors|第一类与第二类错误]]
 
 ---
 
-[[AP_Statistics_MOC|← Back to AP Statistics MOC]]
+[[AP_Statistics_MOC|← 返回 AP 统计学知识地图]]

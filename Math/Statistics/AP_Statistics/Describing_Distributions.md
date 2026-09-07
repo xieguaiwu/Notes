@@ -6,106 +6,106 @@ tags:
 created: 2026-06-14
 ---
 
-# Describing Distributions
+# 描述分布
 
-> **Core Skill:** For any distribution of a quantitative variable, answer: *Shape, Center, Spread, Outliers.*
+> **核心技能：** 面对任意定量变量的分布，都能回答：*形状（Shape）、中心（Center）、离散程度（Spread）、离群值（Outliers）。*
 
-Every data display tells a story. The **SOCS** framework (or **SOCS + Context**) gives us a systematic vocabulary to describe what we see.
+每种数据展示都在讲述一个故事。**SOCS 框架**（或 **SOCS + 情境**）为我们提供了系统描述所见内容的词汇。
 
-Part of: [[AP_Statistics_MOC]].
+属于：[[AP_Statistics_MOC]]。
 
-## Shape
+## 形状（Shape）
 
-Shape is the first and most visually immediate characteristic.
+形状是分布最直观的第一特征。
 
-### Modality
+### 模态（Modality）
 
-- **Unimodal:** A single prominent peak.
-- **Bimodal:** Two peaks, often indicating two subgroups. For example, a histogram of heights with both men and women may be bimodal.
-- **Uniform:** Roughly flat; all values appear equally often.
-- **Multimodal:** Three or more peaks.
+- **单峰（Unimodal）：** 只有一个突出的峰。
+- **双峰（Bimodal）：** 有两个峰，通常提示存在两个子群体。例如，同时包含男性和女性身高的直方图可能是双峰的。
+- **均匀（Uniform）：** 大致平坦；所有取值出现的频率相近。
+- **多峰（Multimodal）：** 三个或更多峰。
 
-> [!note] Multimodality and Stemplots
-> Stemplots and histograms both reveal modality. Boxplots **do not** — never use a boxplot as your sole display when exploring data.
+> [!note] 多峰性与茎叶图
+> 茎叶图和直方图都能揭示模态。箱线图**不能**——探索数据时，绝不要只用箱线图。
 
-### Symmetry and Skew
+### 对称与偏斜
 
-- **Symmetric:** The left and right sides are approximate mirror images. In a perfectly symmetric distribution, $\text{mean} = \text{median}$.
-- **Skewed right (positively skewed):** The right tail is longer. The mean is pulled toward the tail, so $\text{mean} > \text{median}$. Examples: income, house prices, reaction times.
-- **Skewed left (negatively skewed):** The left tail is longer. The mean is pulled left, so $\text{mean} < \text{median}$. Examples: exam scores with a ceiling effect, age at death from natural causes.
+- **对称（Symmetric）：** 左右两侧近似镜像。完全对称时，$\text{均值} = \text{中位数}$。
+- **右偏（正偏）：** 右尾更长。均值被长尾拉动，所以 $\text{均值} > \text{中位数}$。例如：收入、房价、反应时间。
+- **左偏（负偏）：** 左尾更长。均值被向左拉动，所以 $\text{均值} < \text{中位数}$。例如：存在上限效应的考试成绩、自然死亡年龄。
 
 ```
-Symmetric:          Skewed Right:        Skewed Left:
+对称：             右偏：              左偏：
     /‾\                 /‾\                  /‾\
    /   \               /   \__              /   \
   /     \             /       \          __/     \
  /_______\           /_________\        /________\
 ```
 
-### Additional Shape Types
+### 其他形状类型
 
-- **Bell-shaped:** A symmetric, unimodal distribution approximating the normal curve.
-- **J-shaped:** Frequencies rise (or fall) sharply at one end.
-- **U-shaped:** Frequencies are highest at the extremes and lowest in the middle.
+- **钟形（Bell-shaped）：** 对称、单峰，近似正态曲线。
+- **J 形（J-shaped）：** 频数在一端急剧上升（或下降）。
+- **U 形（U-shaped）：** 两端频数最高，中间最低。
 
-## Center
+## 中心（Center）
 
-The center locates the "typical" value. There are two primary measures:
+中心定位"典型"取值。主要有两个度量：
 
-| Measure | Definition | Resistant? |
+| 度量 | 定义 | 抗离群？ |
 |:---|:---|:---:|
-| **Mean** $\bar{x}$ | Arithmetic average: $\bar{x} = \frac{\sum x_i}{n}$ | No |
-| **Median** | Middle value when ordered; the 50th percentile | Yes |
+| **均值** $\bar{x}$ | 算术平均：$\bar{x} = \frac{\sum x_i}{n}$ | 否 |
+| **中位数** | 排序后的中间值；第 50 百分位 | 是 |
 
-- Use the **median** for skewed distributions or when outliers are present.
-- Use the **mean** for roughly symmetric distributions without outliers.
+- 偏斜分布或有离群值时，用**中位数**。
+- 大致对称且无离群值时，用**均值**。
 
-> [!important] Resistant vs. Non-Resistant
-> A **resistant** statistic is not strongly affected by extreme values. The median and IQR are resistant; the mean, range, and standard deviation are not. If Bill Gates walks into a room of 50 people, the mean income skyrockets, but the median barely moves.
+> [!important] 抗离群 vs 不抗离群
+> **抗离群（resistant）** 统计量不受极端值强烈影响。中位数和 IQR 抗离群；均值、极差和标准差不抗离群。如果比尔·盖茨走进一个有 50 人的房间，均值收入飙升，中位数却几乎不动。
 
-## Spread (Variability)
+## 离散程度（Spread / Variability）
 
-Spread quantifies how tightly the data cluster around the center.
+离散程度量化数据围绕中心的紧密程度。
 
-| Measure | Formula | Resistant? |
+| 度量 | 公式 | 抗离群？ |
 |:---|:---|:---:|
-| **Range** | $\max - \min$ | No |
-| **Interquartile Range (IQR)** | $Q_3 - Q_1$ | Yes |
-| **Standard Deviation** $s$ | $s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}$ | No |
-| **Variance** $s^2$ | $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$ | No |
+| **极差（Range）** | $\max - \min$ | 否 |
+| **四分位距（IQR）** | $Q_3 - Q_1$ | 是 |
+| **标准差** $s$ | $s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}$ | 否 |
+| **方差** $s^2$ | $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$ | 否 |
 
-- **IQR** measures the spread of the middle 50% of data. Always paired with the median.
-- **Standard deviation** measures the typical distance of observations from the mean. Always paired with the mean.
-- Larger spread = more variability = less consistency.
+- **IQR** 度量中间 50% 数据的离散程度。始终与中位数搭配使用。
+- **标准差** 度量观测值偏离均值的典型距离。始终与均值搭配使用。
+- 离散程度越大 = 变异越大 = 一致性越差。
 
-## Outliers
+## 离群值（Outliers）
 
-An observation is a **suspected outlier** if it falls more than $1.5 \times \text{IQR}$ below $Q_1$ or above $Q_3$:
+观测值低于 $Q_1 - 1.5 \times \text{IQR}$ 或高于 $Q_3 + 1.5 \times \text{IQR}$ 时，判定为**疑似离群值**：
 
-$$\text{Lower fence} = Q_1 - 1.5 \times \text{IQR}$$
-$$\text{Upper fence} = Q_3 + 1.5 \times \text{IQR}$$
+$$\text{下围栏} = Q_1 - 1.5 \times \text{IQR}$$
+$$\text{上围栏} = Q_3 + 1.5 \times \text{IQR}$$
 
-Any point outside these fences is flagged as a potential outlier and plotted individually in a modified boxplot.
+围栏之外的点标记为潜在离群值，在修正箱线图中单独画出。
 
-### What to Do With Outliers
+### 离群值如何处理
 
-1. **Check for data entry errors.** A height of 72 inches entered as 7.2 or 720.
-2. **Investigate the context.** Was that test score from a student who was absent for weeks?
-3. **Report analyses both with and without** the suspect point.
-4. **Never delete an outlier** without a documented, non-statistical reason.
+1. **检查数据录入错误。** 例如身高 72 英寸被录成 7.2 或 720。
+2. **调查情境。** 那个低分是否来自旷课数周的学生？
+3. **分别报告含与不含**可疑点的分析结果。
+4. **绝不擅自删除离群值**，除非有记录的、非统计学的理由。
 
-> [!warning] Outliers Can Be the Story
-> In some disciplines (fraud detection, quality control, rare-disease screening), the outlier IS the signal. Do not automatically remove them.
+> [!warning] 离群值可能就是故事本身
+> 在某些领域（欺诈检测、质量控制、罕见病筛查），离群值**就是**信号。不要自动删除它们。
 
-## Putting It Together: The SOCS Framework
+## 综合运用：SOCS 框架
 
-Given a distribution, describe it with **four components**:
+描述一个分布时，回答**四个要素**：
 
-1. **S**hape — symmetric? skewed left/right? unimodal/bimodal? any gaps or clusters?
-2. **O**utliers — are there any? use the $1.5 \times \text{IQR}$ rule or look for isolated points on a dotplot.
-3. **C**enter — report the appropriate measure (median for skewed, mean for symmetric).
-4. **S**pread — report the companion measure (IQR with median, standard deviation with mean).
+1. **形**状（Shape）——对称？左/右偏？单峰/双峰？有间隙或簇吗？
+2. **离**群值（Outliers）——有吗？用 $1.5 \times \text{IQR}$ 规则，或在点图上找孤立点。
+3. **中**心（Center）——报告合适的度量（偏斜用中位数，对称用均值）。
+4. **离**散程度（Spread）——报告配套度量（中位数配 IQR，均值配标准差）。
 
-Always answer in **context**: *"The distribution of AP Statistics scores is roughly symmetric and unimodal, with a median of 3 and an IQR of 1. There are no apparent outliers."*
+始终结合**情境**作答：*"AP 统计学成绩的分布大致对称且单峰，中位数为 3，IQR 为 1，没有明显的离群值。"*
 
-**Related:** [[Unit_1_One-Variable_Data]] | [[Measuring_Center_and_Spread]] | [[Normal_Distributions]]
+**相关笔记：** [[Unit_1_One-Variable_Data]] | [[Measuring_Center_and_Spread]] | [[Normal_Distributions]]

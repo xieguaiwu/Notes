@@ -6,157 +6,139 @@ tags:
 created: 2026-06-14
 ---
 
-# Type I and Type II Errors
+# 第一类错误与第二类错误
 
-**Parent:** [[Unit_6_Inference_for_Proportions|Unit 6 — Inference for Proportions]]
+**所属：** [[Unit_6_Inference_for_Proportions|单元 6 — 比例的推断]]
 
----
+## 决策框架
 
-## The Decision Framework
+做假设检验时，有**四种可能结果**——两种正确，两种错误。
 
-When we perform a hypothesis test, there are **four possible outcomes** — two correct, two incorrect.
+### $2 \times 2$ 决策表
 
-### $2 \times 2$ Decision Table
-
-| | $H_0$ is **True** | $H_0$ is **False** |
+| | $H_0$ 为**真** | $H_0$ 为**假** |
 |:---|:---:|:---:|
-| **Reject $H_0$** | ❌ **Type I Error** (False Positive) | ✅ **Correct Decision** (Power) |
-| **Fail to Reject $H_0$** | ✅ **Correct Decision** | ❌ **Type II Error** (False Negative) |
+| **拒绝 $H_0$** | ❌ **第一类错误**（假阳性） | ✅ **正确决策**（检验力） |
+| **无法拒绝 $H_0$** | ✅ **正确决策** | ❌ **第二类错误**（假阴性） |
 
----
+## 第一类错误
 
-## Type I Error
+> **定义：** $H_0$ 实际为真时拒绝 $H_0$。即**假阳性**。
 
-> **Definition:** Rejecting $H_0$ when $H_0$ is actually true. A **false positive**.
+**概率：** $\alpha$（显著性水平）
 
-**Probability:** $\alpha$ (the significance level)
+- $\alpha$ 在**收集数据前**设定（常用值：0.10、0.05、0.01）
+- 在 $\alpha = 0.05$ 下检验，约有 5% 的概率错误拒绝真实的 $H_0$
+- **后果示例：** 断定某药有效而实际上无效——导致批准无效治疗
 
-- $\alpha$ is set **before** data collection (common values: 0.10, 0.05, 0.01)
-- A test at $\alpha = 0.05$ will incorrectly reject a true $H_0$ about 5% of the time
-- **Consequence example:** Concluding a drug is effective when it actually isn't — leading to approval of an ineffective treatment
+## 第二类错误
 
----
+> **定义：** $H_0$ 实际为假时无法拒绝 $H_0$。即**假阴性**。
 
-## Type II Error
+**概率：** $\beta$
 
-> **Definition:** Failing to reject $H_0$ when $H_0$ is actually false. A **false negative**.
+- $\beta$ 取决于：真实效应量、样本量 $n$ 和 $\alpha$
+- $\beta$ **不是**分析者直接设定的；它由特定备择假设计算得出
+- **后果示例：** 断定某药无效而实际上有效——错过潜在治疗
 
-**Probability:** $\beta$
+## 检验力（Power）
 
-- $\beta$ depends on: the true effect size, sample size $n$, and $\alpha$
-- $\beta$ is **not** directly set by the analyst; it is calculated from the specific alternative
-- **Consequence example:** Concluding a drug is ineffective when it actually works — missing a potential treatment
-
----
-
-## Power
-
-> **Definition:** The probability of correctly rejecting $H_0$ when $H_0$ is false.
+> **定义：** $H_0$ 实际为假时正确拒绝 $H_0$ 的概率。
 
 $$
-\text{Power} = 1 - \beta
+\text{检验力} = 1 - \beta
 $$
 
-Increasing power means we are more likely to detect a real effect when one exists.
+检验力越高，越可能检测到真实存在的效应。
 
-### How to Increase Power
+### 如何提高检验力
 
-| Method | Effect | Tradeoff |
+| 方法 | 效果 | 权衡 |
 |--------|--------|----------|
-| Increase sample size $n$ | Decreases SE, separates null & alternative distributions | Cost, time |
-| Increase $\alpha$ | Reject more often (lower threshold) | Higher Type I error rate |
-| Larger effect size | Naturally easier to detect | Cannot control (it's the truth) |
-| Reduce variability | Better data collection | Often limited by population |
+| 增加样本量 $n$ | 减小 SE，拉开零分布与备择分布的距离 | 成本、时间 |
+| 增大 $\alpha$ | 更频繁拒绝（阈值更低） | 第一类错误率更高 |
+| 更大的效应量 | 自然更容易检测 | 无法控制（这是真相） |
+| 减少变异 | 更好的数据收集 | 常受总体限制 |
 
----
-
-## Relationships Between $\alpha$, $\beta$, $n$, and Effect Size
+## $\alpha$、$\beta$、$n$ 与效应量的关系
 
 ```mermaid
 flowchart TB
-    subgraph Tradeoffs["Tradeoffs in Inference"]
-        A["Increase α"] -->|"↑ Type I"| B["↓ β (↑ Power)"]
-        C["Increase n"] -->|"↓ SE"| D["↓ β (↑ Power)"]
-        D --> E["α unaffected"]
-        F["Larger effect size"] -->|"↑ separation"| G["↓ β (↑ Power)"]
-        H["Decrease α"] -->|"↓ Type I"| I["↑ β (↓ Power)"]
+    subgraph Tradeoffs["推断中的权衡"]
+        A["增大 α"] -->|"↑ 第一类错误"| B["↓ β（↑ 检验力）"]
+        C["增大 n"] -->|"↓ SE"| D["↓ β（↑ 检验力）"]
+        D --> E["α 不受影响"]
+        F["更大的效应量"] -->|"↑ 分离度"| G["↓ β（↑ 检验力）"]
+        H["减小 α"] -->|"↓ 第一类错误"| I["↑ β（↓ 检验力）"]
     end
 ```
 
-> [!key] Fundamental Tension
-> For a fixed $n$, decreasing $\alpha$ increases $\beta$. The only way to reduce **both** error types simultaneously is to increase $n$.
+> [!key] 基本张力
+> 固定 $n$ 时，减小 $\alpha$ 会增大 $\beta$。要**同时**减少两类错误，唯一途径是增大 $n$。
 
----
+## 计算 $\beta$ 与检验力（单比例 $z$ 检验）
 
-## Calculating $\beta$ and Power (One-Proportion $z$-Test)
+**设定：** 在水平 $\alpha$ 下检验 $H_0: p = p_0$ vs $H_a: p > p_0$。
 
-**Setup:** Test $H_0: p = p_0$ vs $H_a: p > p_0$ at level $\alpha$.
-
-**Step 1 — Find the rejection cutoff:**
+**步骤 1——求拒绝阈值：**
 
 $$
-\text{Reject if } \hat{p} > p_0 + z_\alpha \sqrt{\frac{p_0(1-p_0)}{n}}
+\text{如果 } \hat{p} > p_0 + z_\alpha \sqrt{\frac{p_0(1-p_0)}{n}}，则拒绝
 $$
 
-Let this critical value be $\hat{p}_c$.
+设此临界值为 $\hat{p}_c$。
 
-**Step 2 — Compute $\beta$ for a specific alternative $p_a > p_0$:**
+**步骤 2——对特定备择 $p_a > p_0$ 计算 $\beta$：**
 
 $$
 \beta = P(\hat{p} \le \hat{p}_c \mid p = p_a) = \Phi\!\left(\frac{\hat{p}_c - p_a}{\sqrt{p_a(1-p_a)/n}}\right)
 $$
 
-**Step 3 — Power:**
+**步骤 3——检验力：**
 
 $$
-\text{Power} = 1 - \beta = P(\hat{p} > \hat{p}_c \mid p = p_a)
+\text{检验力} = 1 - \beta = P(\hat{p} > \hat{p}_c \mid p = p_a)
 $$
 
----
-
-## Visualizing the Tradeoff
+## 可视化权衡
 
 ```mermaid
 flowchart LR
-    subgraph NullDist["Distribution Under H₀"]
+    subgraph NullDist["H₀ 下的分布"]
         ND["N(p₀, SE₀)"]
     end
-    subgraph AltDist["Distribution Under Hₐ"]
+    subgraph AltDist["Hₐ 下的分布"]
         AD["N(pₐ, SEₐ)"]
     end
-    ND -->|"rejection region<br/>(area = α)"| RR["Type I Error"]
-    AD -->|"non-rejection region<br/>(area = β)"| NR["Type II Error"]
-    AD -->|"rejection region<br/>(area = 1-β)"| PW["Power"]
+    ND -->|"拒绝域<br/>（面积 = α）"| RR["第一类错误"]
+    AD -->|"非拒绝域<br/>（面积 = β）"| NR["第二类错误"]
+    AD -->|"拒绝域<br/>（面积 = 1-β）"| PW["检验力"]
 ```
 
-- **$\alpha$** = area under $H_0$ curve in the rejection region
-- **$\beta$** = area under $H_a$ curve in the non-rejection region
-- **Power** = area under $H_a$ curve in the rejection region
+- **$\alpha$** = $H_0$ 曲线下拒绝域的面积
+- **$\beta$** = $H_a$ 曲线下非拒绝域的面积
+- **检验力** = $H_a$ 曲线下拒绝域的面积
 
----
+## AP 考试提示
 
-## AP Exam Tips
-
-> [!tip] How to Identify Error Types on the Exam
-> 1. Determine $H_0$ and $H_a$ from the problem context.
-> 2. Ask: "If $H_0$ is true but we reject it → Type I." / "If $H_0$ is false but we don't reject → Type II."
-> 3. Always describe the error **in context**, not just in symbols.
+> [!tip] 考试中如何识别错误类型
+> 1. 从题目情境确定 $H_0$ 和 $H_a$。
+> 2. 问自己："如果 $H_0$ 为真但我们拒绝了 → 第一类错误。"/"如果 $H_0$ 为假但我们没有拒绝 → 第二类错误。"
+> 3. 始终**结合情境**描述错误，而不是只用符号。
 >
-> **Example (Type I):** "Concluding that the new teaching method is more effective when it actually isn't."
-> **Example (Type II):** "Concluding that the new teaching method is not more effective when it actually is."
+> **示例（第一类）：**"断定新教学法更有效，而实际上并非如此。"
+> **示例（第二类）：**"断定新教学法并不更有效，而实际上确实更有效。"
 
----
+## 总结
 
-## Summary
-
-| Concept | Symbol | Definition | How to Reduce |
+| 概念 | 符号 | 定义 | 如何减少 |
 |---------|--------|------------|---------------|
-| Type I Error | $\alpha$ | Reject true $H_0$ (false positive) | Decrease $\alpha$ |
-| Type II Error | $\beta$ | Fail to reject false $H_0$ (false negative) | Increase $n$, increase $\alpha$ |
-| Power | $1-\beta$ | Correctly reject false $H_0$ | Increase $n$, increase $\alpha$, larger effect |
+| 第一类错误 | $\alpha$ | 拒绝真实的 $H_0$（假阳性） | 减小 $\alpha$ |
+| 第二类错误 | $\beta$ | 无法拒绝虚假的 $H_0$（假阴性） | 增大 $n$、增大 $\alpha$ |
+| 检验力 | $1-\beta$ | 正确拒绝虚假的 $H_0$ | 增大 $n$、增大 $\alpha$、更大效应 |
 
-Related: [[Significance_Tests_Proportions|Significance Tests for Proportions]], [[Confidence_Intervals_Proportions|Confidence Intervals]]
+相关：[[Significance_Tests_Proportions|比例的显著性检验]]、[[Confidence_Intervals_Proportions|比例的置信区间]]
 
 ---
 
-[[AP_Statistics_MOC|← Back to AP Statistics MOC]]
+[[AP_Statistics_MOC|← 返回 AP 统计学知识地图]]

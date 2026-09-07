@@ -6,114 +6,114 @@ tags:
 created: 2026-06-14
 ---
 
-## Binomial and Geometric Distributions
+# 二项分布与几何分布
 
-Both the binomial and geometric distributions model settings with repeated independent trials that each yield a binary outcome: **success** or **failure**. They differ in what we count.
+二项分布和几何分布都模拟每次结果二元的重复独立试验：**成功**或**失败**。它们的区别在于计数对象。
 
-### The Binomial Setting (BINS)
+### 二项设定（BINS）
 
-A binomial random variable counts the number of successes in $n$ independent trials. Four conditions must be met:
+二项随机变量计数 $n$ 次独立试验中的成功次数。必须满足四个条件：
 
-| Letter | Condition | Meaning |
+| 字母 | 条件 | 含义 |
 |--------|-----------|---------|
-| **B** | Binary | Each trial has exactly two outcomes: success or failure |
-| **I** | Independent | Trials are independent — the outcome of one does not affect another |
-| **N** | Number fixed | The number of trials $n$ is fixed in advance |
-| **S** | Same probability | Each trial has the same probability of success, $p$ |
+| **B** | 二元（Binary） | 每次试验恰好两种结果：成功或失败 |
+| **I** | 独立（Independent） | 试验独立——一次结果不影响另一次 |
+| **N** | 次数固定（Number fixed） | 试验次数 $n$ 事先固定 |
+| **S** | 概率相同（Same probability） | 每次试验成功概率相同，均为 $p$ |
 
-> [!tip] Checking Independence
-> When sampling without replacement, the 10% condition ensures approximate independence: the sample size must be less than 10% of the population. $n < 0.10N$.
+> [!tip] 检查独立性
+> 不放回抽样时，10% 条件保证近似独立：样本容量必须小于总体的 10%，即 $n < 0.10N$。
 
-### Binomial Probability Formula
+### 二项概率公式
 
-If $X \sim B(n, p)$, the probability of exactly $k$ successes is:
+如果 $X \sim B(n, p)$，恰好 $k$ 次成功的概率为：
 
 $$
 P(X = k) = \binom{n}{k} \, p^k \, (1-p)^{\,n - k}
 $$
 
-where $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ counts the number of ways to choose $k$ successes among $n$ trials.
+其中 $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ 计数从 $n$ 次试验中选出 $k$ 次成功的方式数。
 
-Each of the three factors has a meaning:
-- $\binom{n}{k}$: number of arrangements with exactly $k$ successes
-- $p^k$: probability of $k$ successes
-- $(1-p)^{n-k}$: probability of $n-k$ failures
+三个因子各有含义：
+- $\binom{n}{k}$：恰好 $k$ 次成功的排列方式数
+- $p^k$：$k$ 次成功的概率
+- $(1-p)^{n-k}$：$n-k$ 次失败的概率
 
-> [!example] On the Calculator
-> Use `binompdf(n, p, k)` for $P(X = k)$ and `binomcdf(n, p, k)` for $P(X \leq k)$ — the cumulative probability.
+> [!example] 计算器用法
+> 用 `binompdf(n, p, k)` 求 $P(X = k)$，用 `binomcdf(n, p, k)` 求 $P(X \leq k)$——累积概率。
 
-### Binomial Mean and Standard Deviation
+### 二项分布的均值与标准差
 
-For $X \sim B(n, p)$:
+对 $X \sim B(n, p)$：
 
 $$
 \mu_X = np \qquad \sigma_X = \sqrt{np(1-p)}
 $$
 
-### Normal Approximation to the Binomial
+### 二项分布的正态近似
 
-When $n$ is large, a binomial distribution is approximately normal. The rule of thumb:
+$n$ 足够大时，二项分布近似正态。经验法则：
 
 $$
-np \geq 10 \quad \text{and} \quad n(1-p) \geq 10
+np \geq 10 \quad \text{且} \quad n(1-p) \geq 10
 $$
 
-If both conditions hold, then $X$ is approximately $N\big(np, \sqrt{np(1-p)}\big)$. Use this approximation to avoid computing large binomial coefficients by hand — it is the foundation for inference about proportions.
+两个条件都满足时，$X$ 近似服从 $N\big(np, \sqrt{np(1-p)}\big)$。用此近似避免手算大二项系数——它是比例推断的基础。
 
-### The Geometric Setting
+### 几何设定
 
-A geometric random variable counts the number of trials until the **first success**. The BINS conditions are modified:
+几何随机变量计数直到**首次成功**所需的试验次数。BINS 条件有所修改：
 
-| Condition | Difference from Binomial |
+| 条件 | 与二项的区别 |
 |-----------|--------------------------|
-| Binary | Same |
-| Independent | Same |
-| **T**rials until success | No fixed $n$ — we stop at the first success |
-| Same probability | Same |
+| 二元（Binary） | 相同 |
+| 独立（Independent） | 相同 |
+| **T**（试验直到成功） | 没有固定 $n$——在首次成功时停止 |
+| 概率相同（Same probability） | 相同 |
 
-The mnemonic is **BITS**: Binary, Independent, Trials until success, Same $p$.
+记忆口诀是 **BITS**：二元、独立、试验直到成功、概率相同。
 
-### Geometric Probability Formula
+### 几何概率公式
 
-If $X$ is geometric with probability of success $p$, the probability that the first success occurs on the $k$-th trial is:
+如果 $X$ 是成功概率为 $p$ 的几何分布，首次成功发生在第 $k$ 次试验的概率为：
 
 $$
 P(X = k) = (1-p)^{\,k-1} \cdot p
 $$
 
-This requires $k-1$ consecutive failures followed by one success.
+这需要连续 $k-1$ 次失败，然后一次成功。
 
-### Geometric Mean
+### 几何分布的均值
 
-The expected number of trials to the first success is:
+首次成功所需的期望试验次数为：
 
 $$
 \mu_X = \frac{1}{p}
 $$
 
-> [!example] Interpretation
-> If a basketball player makes 80% of free throws ($p = 0.8$), the expected number of attempts until a miss (defining "success" as a miss) is $\frac{1}{0.2} = 5$ attempts.
+> [!example] 解释
+> 如果篮球运动员罚球命中率为 80%（$p = 0.8$），则首次罚失（定义"成功"为罚失）的期望次数为 $\frac{1}{0.2} = 5$ 次。
 
-### Geometric Cumulative Probability
+### 几何分布的累积概率
 
-The probability that more than $k$ trials are needed for the first success:
+首次成功需要多于 $k$ 次试验的概率：
 
 $$
 P(X > k) = (1-p)^k
 $$
 
-This is simply the probability that all of the first $k$ trials are failures.
+这等于前 $k$ 次试验全部失败的概率。
 
-### Binomial vs. Geometric: When to Use Which
+### 二项 vs 几何：何时用哪个
 
-| Question | Distribution |
+| 问题 | 分布 |
 |----------|-------------|
-| "What is the probability of exactly 3 successes in 10 trials?" | **Binomial** ($n = 10$ fixed) |
-| "What is the probability that the first success occurs on the 4th trial?" | **Geometric** (no fixed $n$) |
-| "What is the probability that it takes more than 5 trials to win?" | **Geometric** |
+| "10 次试验中恰好 3 次成功的概率？" | **二项**（$n = 10$ 固定） |
+| "首次成功出现在第 4 次试验的概率？" | **几何**（$n$ 不固定） |
+| "获胜需要超过 5 次试验的概率？" | **几何** |
 
-> [!danger] AP Exam Tip
-> Always explicitly check and **name** the conditions (BINS or BITS) before applying these formulas. State: "This is a binomial setting because: Binary (two outcomes), Independent (trials are independent), Number fixed ($n =$ ...), Same probability ($p =$ ...)."
+> [!danger] AP 考试提示
+> 应用这些公式前，始终明确检查并**说出**条件（BINS 或 BITS）。陈述："这是一个二项设定，因为：二元（两种结果）、独立（试验独立）、次数固定（$n =$ ...）、概率相同（$p =$ ...）。"
 
 ---
-Related: [[Unit_4_Probability]] | [[Random_Variables]] | [[Central_Limit_Theorem]] | [[AP_Statistics_MOC]]
+相关笔记：[[Unit_4_Probability]] | [[Random_Variables]] | [[Central_Limit_Theorem]] | [[AP_Statistics_MOC]]

@@ -6,138 +6,138 @@ tags:
 created: 2026-06-14
 ---
 
-# Correlation vs. Causation
+# 相关 vs 因果
 
-> **"Correlation does not imply causation."** — The most important sentence in introductory statistics.
+> **"相关关系不蕴含因果关系。"** —— 统计入门最重要的一句话。
 
-Observing that two variables move together does not prove that one causes the other. This note explains why, and catalogues the alternative explanations you must consider in every data analysis.
+观察到两个变量一起变动，并不证明一个导致另一个。本笔记解释原因，并列举每次数据分析中必须考虑的替代解释。
 
-Part of: [[AP_Statistics_MOC]].
+属于：[[AP_Statistics_MOC]]。
 
-## The Fundamental Distinction
+## 核心区别
 
-| Term | Meaning |
+| 术语 | 含义 |
 |:---|:---|
-| **Association** | Two variables are related in a systematic way. Knowing one helps predict the other. |
-| **Causation** | Changing one variable **produces** a change in the other. Requires a mechanism, not just a pattern. |
+| **关联（Association）** | 两个变量之间以系统性方式相关。知道一个有助于预测另一个。 |
+| **因果（Causation）** | 改变一个变量**导致**另一个变量发生变化。需要机制，而不仅仅是模式。 |
 
-A strong correlation ($|r|$ near 1) does **not** establish causation. It merely tells us the variables tend to move together. Establishing causation requires a **controlled experiment** with random assignment — not an observational study.
+强相关（$|r|$ 接近 1）并**不**建立因果关系。它只告诉我们变量倾向于一起变动。建立因果关系需要**对照实验**（随机分配）——而不是观察性研究。
 
-> [!warning] The Most Common AP Exam Trap
-> Free-response questions often describe observational studies with strong correlations and ask for a conclusion. The correct answer almost always includes: "No, we cannot conclude causation because this is an observational study. There may be lurking or confounding variables."
+> [!warning] AP 考试最常见的陷阱
+> 自由回答题常描述存在强相关的观察性研究，然后问结论。正确答案几乎总是包含："不，我们不能推断因果关系，因为这是观察性研究。可能存在潜伏变量或混杂变量。"
 
-## Lurking Variables
+## 潜伏变量
 
-A **lurking variable** is a variable not included in the study that affects both the explanatory and response variables, creating a spurious association.
+**潜伏变量**是未纳入研究、但影响解释变量和响应变量两者，从而产生虚假关联的变量。
 
-**Classic example:** Ice cream sales and drowning deaths are positively correlated. Does ice cream cause drowning? No. The lurking variable is **temperature** (summer weather): hot weather increases both ice cream consumption and swimming activity, which increases drowning risk.
+**经典例子：** 冰淇淋销量与溺水死亡人数正相关。冰淇淋导致溺水？不。潜伏变量是**温度**（夏季天气）：炎热天气增加了冰淇淋消费和游泳活动，从而增加了溺水风险。
 
-**Another example:** A study finds that people who drink more coffee have lower rates of heart disease. The lurking variable could be **overall health consciousness** — people who avoid coffee might also smoke more, exercise less, or have poorer diets.
+**另一个例子：** 一项研究发现喝咖啡越多的人患心脏病越少。潜伏变量可能是**整体健康意识**——不喝咖啡的人可能吸烟更多、运动更少或饮食更差。
 
-### How to Address Lurking Variables
+### 如何处理潜伏变量
 
-- **Measure them** and include them in the analysis (multiple regression or stratification).
-- **Randomize** in an experiment so that lurking variables are balanced across treatment groups.
-- Acknowledge them in the discussion section when they cannot be eliminated.
+- **测量它们**并纳入分析（多元回归或分层）。
+- 在实验中**随机化**，使潜伏变量在各处理组间平衡。
+- 当无法消除时，在讨论部分承认它们的存在。
 
-## Confounding
+## 混杂
 
-**Confounding** occurs when the effects of two variables on a response cannot be separated. A variable is a **confounder** if:
+**混杂**发生在两个变量对响应变量的影响无法分离时。一个变量是**混杂变量**的条件：
 
-1. It is associated with the explanatory variable.
-2. It is a risk factor for the response variable.
-3. It is not on the causal pathway between them.
+1. 它与解释变量相关。
+2. 它是响应变量的风险因素。
+3. 它不在两者之间的因果路径上。
 
-> [!important] Lurking vs. Confounding
-> These terms are closely related. A **lurking variable** is a potential confounder that was not measured. A **confounding variable** is a variable whose effect is mixed with the effect of the explanatory variable. In practice, AP Exam readers largely treat them as synonyms, but "confounding" implies that the mixing of effects has actually occurred.
+> [!important] 潜伏 vs 混杂
+> 这两个术语密切相关。**潜伏变量**是未被测量的潜在混杂变量。**混杂变量**是其效应与解释变量效应混合在一起的变量。实践中，AP 考试阅卷者基本视它们为同义词，但"混杂"暗示效应混合确实发生了。
 
-### Example
+### 示例
 
-Suppose we observe that students who take AP Statistics have higher college GPAs. Is AP Stats causing higher GPAs?
+假设我们观察到修 AP 统计学课程的学生大学 GPA 更高。是 AP 统计学导致了更高的 GPA 吗？
 
-- **Confounder:** Academic motivation. Motivated students are more likely to take AP Stats AND more likely to earn high GPAs regardless. The effect of the course and the effect of motivation are confounded.
+- **混杂变量：** 学业动机。有动机的学生更可能选 AP 统计学，也**无论是否选课**都更可能拿高 GPA。课程的效果和动机的效果被混杂在一起。
 
-## Common Response
+## 共同响应
 
-**Common response** is a special case where both the explanatory and response variables are caused by a third variable.
+**共同响应**是一种特殊情况：解释变量和响应变量都由第三个变量引起。
 
 ```
-    Lurking Variable Z
+    潜伏变量 Z
          ↙        ↘
-   Variable X    Variable Y
-   (observed)    (observed)
+   变量 X        变量 Y
+   (观测到的)    (观测到的)
 ```
 
-X and Y appear associated, but only because they share a common cause Z. This is the causal structure behind most spurious correlations.
+X 和 Y 看似相关，只因为共享了共同原因 Z。这是大多数虚假相关背后的因果结构。
 
-**Example:** Cities with more police officers have higher crime rates. The common cause is **city size** — larger cities have more police AND more crime. The correlation does not mean police cause crime.
+**示例：** 警察人数越多的城市犯罪率越高。共同原因是**城市规模**——大城市警察更多，犯罪也更多。相关不意味着警察导致犯罪。
 
-## Simpson's Paradox
+## 辛普森悖论
 
-**Simpson's Paradox** occurs when the direction of an association reverses when data are aggregated versus when they are disaggregated by a third variable.
+**辛普森悖论**是指：数据汇总时与按第三个变量分层时，关联方向发生逆转的现象。
 
-### Classic Example: UC Berkeley Graduate Admissions (1973)
+### 经典例子：加州大学伯克利分校研究生招生（1973）
 
-Aggregated data appeared to show **gender bias against women**:
+汇总数据似乎显示对**女性存在性别偏见**：
 
-| Gender | Applicants | Admitted | Rate |
+| 性别 | 申请人数 | 录取人数 | 录取率 |
 |:---|:---:|:---:|:---:|
-| Men | 8,442 | 3,738 | **44%** |
-| Women | 4,321 | 1,494 | **35%** |
+| 男性 | 8,442 | 3,738 | **44%** |
+| 女性 | 4,321 | 1,494 | **35%** |
 
-But disaggregating by **department** revealed that women applied disproportionately to **more competitive departments** with lower overall admission rates. Within most individual departments, women were admitted at *equal or higher* rates than men.
+但按**院系**分层后发现，女性不成比例地申请了**竞争更激烈**（总体录取率更低）的院系。在大多数院系内部，女性的录取率**等于或高于**男性。
 
-The lurking variable — **department competitiveness** — reversed the apparent direction of association.
+潜伏变量——**院系竞争程度**——逆转了表面关联的方向。
 
-### Why Simpson's Paradox Occurs
+### 辛普森悖论的原因
 
-1. The grouping variable is associated with both the explanatory and response variables.
-2. The group sizes are unbalanced (different numbers of observations in subgroups).
-3. The relationship within each subgroup is homogeneous but differs from the overall (marginal) relationship.
+1. 分组变量与解释变量和响应变量都相关。
+2. 各组规模不平衡（子组中观测值个数不同）。
+3. 每个子组内部的关系方向一致，但与总体（边际）关系不同。
 
-**Always ask:** Could there be a lurking categorical variable that, if used to stratify the data, would change the conclusion?
+**始终问自己：** 是否存在一个潜在的分类变量，如果用它来分层数据，会改变结论？
 
-## Establishing Causation
+## 建立因果关系
 
-Correlation alone cannot establish causation, but several lines of evidence together can build a strong case:
+单靠相关不能建立因果关系，但多条证据结合起来可以构建强有力的案例：
 
-### 1. Randomized Controlled Experiment
+### 1. 随机对照实验
 
-The **gold standard**. Random assignment of subjects to treatment groups ensures that, on average, all other variables (known and unknown) are balanced. Any systematic difference in response can then be attributed to the treatment.
+**黄金标准**。将受试者随机分配到处理组，确保所有其他变量（已知和未知）平均而言在各组间平衡。响应中的任何系统性差异可归因于处理。
 
-### 2. Bradford Hill Criteria (Epidemiology)
+### 2. 布拉德福德·希尔准则（流行病学）
 
-When experiments are unethical or impractical (e.g., smoking and lung cancer), epidemiologists use these criteria:
+当实验不道德或不切实际时（例如吸烟与肺癌），流行病学家使用这些准则：
 
-- **Strength** of association (large effect size).
-- **Consistency** (replicated across many studies and populations).
-- **Specificity** (one cause → one effect).
-- **Temporality** (cause precedes effect in time).
-- **Biological gradient** (dose-response relationship).
-- **Plausibility** (mechanism makes biological sense).
-- **Coherence** (consistent with existing knowledge).
-- **Experiment** (experimental evidence when available).
-- **Analogy** (similar to other established causal relationships).
+- **关联强度**（效应量大）
+- **一致性**（在多项研究和人群中重复验证）
+- **特异性**（一种原因 → 一种效应）
+- **时间性**（原因在时间上先于效应）
+- **生物梯度**（剂量-反应关系）
+- **合理性**（机制在生物学上说得通）
+- **协调性**（与现有知识一致）
+- **实验证据**（有实验证据时）
+- **类比**（与其他已建立的因果关系类似）
 
-### 3. Natural Experiments and Causal Inference Methods
+### 3. 自然实验与因果推断方法
 
-Modern causal inference uses:
-- **Instrumental variables** (a variable that affects the treatment but not the outcome directly).
-- **Regression discontinuity** (exploit a cutoff threshold in treatment assignment).
-- **Difference-in-differences** (compare changes over time between treated and untreated groups).
-- **Propensity score matching** (match treated and untreated units on observed covariates).
+现代因果推断使用：
+- **工具变量**（影响处理但不直接影响结果的变量）
+- **断点回归**（利用处理分配中的截断阈值）
+- **双重差分**（比较处理组与未处理组随时间的变化）
+- **倾向评分匹配**（在观测协变量上匹配处理组和未处理组）
 
-> [!tip] On the AP Exam
-> The AP Exam tests your ability to recognize that **observational studies cannot establish causation**. You do not need to know the Bradford Hill criteria or advanced causal inference methods. Simply state: "Because this is an observational study, we cannot conclude that [explanatory variable] causes [response variable]. There may be lurking or confounding variables such as [give a plausible example]."
+> [!tip] AP 考试要点
+> AP 考试考察你识别**观察性研究不能建立因果关系**的能力。你不需要知道布拉德福德·希尔准则或高级因果推断方法。只需陈述："因为这是观察性研究，我们不能断定[解释变量]导致[响应变量]。可能存在潜伏变量或混杂变量，例如[给出一个合理的例子]。"
 
-## Summary: Interpreting Association
+## 总结：解释关联
 
-| If you see... | You can conclude... |
+| 如果看到... | 能得出的结论... |
 |:---|:---|
-| Strong $r$ in an experiment | Evidence for causation (with caveats) |
-| Strong $r$ in an observational study | Association only. Causation cannot be established. |
-| $r$ close to 0 | No linear association. (A curved relationship may still exist — always check the scatterplot.) |
-| Association disappears after controlling for $Z$ | $Z$ was a confounder; the original association was spurious. |
-| Association reverses after stratifying by $Z$ | Simpson's Paradox. $Z$ is a critical contextual variable. |
+| 实验中 $r$ 很强 | 有因果关系的证据（有保留） |
+| 观察性研究中 $r$ 很强 | 仅有关联。不能建立因果关系。 |
+| $r$ 接近 0 | 没有线性关联。（仍可能存在曲线关系——始终检查散点图。） |
+| 控制 $Z$ 后关联消失 | $Z$ 是混杂变量；原始关联是虚假的。 |
+| 按 $Z$ 分层后关联逆转 | 辛普森悖论。$Z$ 是关键的情境变量。 |
 
-**Related:** [[Unit_2_Two-Variable_Data]] | [[Two-Way_Tables]] | [[Unit_1_One-Variable_Data]]
+**相关笔记：** [[Unit_2_Two-Variable_Data]] | [[Two-Way_Tables]] | [[Unit_1_One-Variable_Data]]

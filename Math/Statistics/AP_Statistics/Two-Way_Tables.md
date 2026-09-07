@@ -6,130 +6,130 @@ tags:
 created: 2026-06-14
 ---
 
-# Two-Way Tables
+# 二维表（列联表）
 
-> **When both variables are categorical, we organize data in a two-way (contingency) table and analyze distributions, not regression.**
+> **两个变量都是分类变量时，用二维表（列联表）组织数据，分析分布，而不是回归。**
 
-Part of: [[AP_Statistics_MOC]].
+属于：[[AP_Statistics_MOC]]。
 
-## Structure of a Two-Way Table
+## 二维表的结构
 
-A **two-way table** (or **contingency table**) summarizes the relationship between two categorical variables. Rows represent categories of one variable; columns represent categories of the other.
+**二维表**（或**列联表**）概括两个分类变量之间的关系。行代表一个变量的类别；列代表另一个变量的类别。
 
-**Example:** 200 students classified by **Gender** (Male/Female) and **Handedness** (Right/Left/Ambidextrous).
+**示例：** 200 名学生按**性别**（男/女）和**惯用手**（右/左/双手）分类。
 
-| Gender | Right | Left | Ambi | **Total** |
+| 性别 | 右手 | 左手 | 双手 | **合计** |
 |:---|:---:|:---:|:---:|:---:|
-| Male | 82 | 12 | 6 | **100** |
-| Female | 88 | 10 | 2 | **100** |
-| **Total** | **170** | **22** | **8** | **200** |
+| 男 | 82 | 12 | 6 | **100** |
+| 女 | 88 | 10 | 2 | **100** |
+| **合计** | **170** | **22** | **8** | **200** |
 
-The **marginal totals** are the row and column sums. They appear in the margins of the table and describe each variable independently.
+**边际合计**是行和与列和。它们出现在表格边缘，各自独立描述每个变量。
 
-## Marginal Distribution
+## 边际分布
 
-The **marginal distribution** of a categorical variable is its distribution ignoring the other variable. It is computed from the marginal totals divided by the grand total.
+分类变量的**边际分布**是忽略另一个变量时的分布。用边际合计除以总计得到。
 
-**Marginal distribution of Handedness:**
+**惯用手的边际分布：**
 
-- Right: $170/200 = 0.850$ (85.0%)
-- Left: $22/200 = 0.110$ (11.0%)
-- Ambi: $8/200 = 0.040$ (4.0%)
+- 右手：$170/200 = 0.850$（85.0%）
+- 左手：$22/200 = 0.110$（11.0%）
+- 双手：$8/200 = 0.040$（4.0%）
 
-**Marginal distribution of Gender:**
+**性别的边际分布：**
 
-- Male: $100/200 = 0.500$ (50.0%)
-- Female: $100/200 = 0.500$ (50.0%)
+- 男：$100/200 = 0.500$（50.0%）
+- 女：$100/200 = 0.500$（50.0%）
 
-These distributions answer: "What proportion of ALL students are left-handed?" without considering gender.
+这些分布回答："**所有**学生中左撇子占多少？"——不考虑性别。
 
-## Conditional Distribution
+## 条件分布
 
-The **conditional distribution** describes the distribution of one variable **given** a specific value of the other variable.
+**条件分布**描述一个变量在另一个变量**给定**特定取值时的分布。
 
-**Conditional distribution of Handedness given Male:**
+**给定男性时惯用手的条件分布：**
 
-- Right: $82/100 = 0.820$ (82.0%)
-- Left: $12/100 = 0.120$ (12.0%)
-- Ambi: $6/100 = 0.060$ (6.0%)
+- 右手：$82/100 = 0.820$（82.0%）
+- 左手：$12/100 = 0.120$（12.0%）
+- 双手：$6/100 = 0.060$（6.0%）
 
-**Conditional distribution of Handedness given Female:**
+**给定女性时惯用手的条件分布：**
 
-- Right: $88/100 = 0.880$ (88.0%)
-- Left: $10/100 = 0.100$ (10.0%)
-- Ambi: $2/100 = 0.020$ (2.0%)
+- 右手：$88/100 = 0.880$（88.0%）
+- 左手：$10/100 = 0.100$（10.0%）
+- 双手：$2/100 = 0.020$（2.0%）
 
-> [!important] Conditional vs. Marginal
-> The marginal distribution of handedness says 11% of students are left-handed *overall*. The conditional distributions reveal that left-handedness is slightly more common among males (12%) than females (10%). These comparisons — not the marginal distributions — are how we detect **association**.
+> [!important] 条件分布 vs 边际分布
+> 惯用手的边际分布说 **总体上** 11% 的学生是左撇子。条件分布揭示：左撇子在男性中（12%）比女性中（10%）略常见。检测**关联**靠的是这些条件分布的对比——而不是边际分布。
 
-### Computing Conditional Distributions
+### 计算条件分布
 
-1. Identify the **conditioning variable** (e.g., gender).
-2. For each category of the conditioning variable, divide **each cell count** by the **row total** (or column total, depending on direction) for that category.
-3. Express as percentages.
+1. 确定**条件变量**（例如性别）。
+2. 对条件变量的每个类别，把**每个单元格计数**除以该类别的**行合计**（或列合计，取决于方向）。
+3. 用百分比表示。
 
-If conditioning on **rows**, each row sums to 100%. If conditioning on **columns**, each column sums to 100%.
+如果按**行**作条件，每行合计为 100%。如果按**列**作条件，每列合计为 100%。
 
-## Segmented (Stacked) Bar Charts
+## 分段条形图（堆叠条形图）
 
-A **segmented bar chart** displays conditional distributions visually. Each bar represents 100% of one category of the conditioning variable, segmented by the response variable.
+**分段条形图**直观展示条件分布。每个条形代表条件变量某个类别的 100%，按响应变量分段。
 
-- If the segments have **similar proportions** across bars → little or no association.
-- If the segments have **clearly different proportions** across bars → evidence of association.
+- 如果各条形中的分段**比例相似** → 关联很小或没有关联。
+- 如果各条形中的分段**比例明显不同** → 存在关联的证据。
 
-Segmented bar charts are more informative than side-by-side pie charts because the aligned bars make it easy to compare segment lengths.
+分段条形图比并排饼图更有信息量，因为对齐的条形便于比较分段长度。
 
-## Mosaic Plots
+## 马赛克图（Mosaic Plot）
 
-A **mosaic plot** is a graphical representation of a two-way table where each cell is a rectangle whose **area** is proportional to the cell frequency. The width of each column is proportional to the marginal total of the column variable.
+**马赛克图**是二维表的图形表示：每个单元格是一个矩形，**面积**与单元格频数成正比。每列的宽度与列变量的边际合计成正比。
 
-- Like segmented bar charts, mosaic plots reveal associations through width × height variations.
-- Mosaic plots are particularly effective for tables with more than two rows/columns, where segmented bar charts become cluttered.
-- When there is **no association**, the dividing lines within each column align horizontally.
+- 与分段条形图一样，马赛克图通过宽度 × 高度的变化揭示关联。
+- 行/列超过两个时，分段条形图会变得杂乱，马赛克图尤其有效。
+- 没有**关联**时，每列内的分隔线水平对齐。
 
-## Detecting Association
+## 检测关联
 
-Two categorical variables are **associated** (dependent) if knowing the value of one changes the distribution of the other. In the table:
+两个分类变量**相关联**（依赖）是指：知道其中一个的值会改变另一个的分布。在表中：
 
-- If the conditional distributions of Handedness **given** Male and Female are identical → no association.
-- If they differ (as they do above: 82%/12%/6% vs. 88%/10%/2%) → evidence of association.
+- 如果给定男性和女性的惯用手条件分布**相同** → 没有关联。
+- 如果它们**不同**（如上例：82%/12%/6% vs 88%/10%/2%）→ 存在关联的证据。
 
-> [!tip] Formal Check: Chi-Square
-> The $\chi^2$ test for association (Unit 8) formally tests whether observed differences are statistically significant. Even without inference, comparing conditional distributions is the foundation.
+> [!tip] 正式检验：卡方
+> 关联的 $\chi^2$ 检验（单元 8）正式检验观测差异是否统计显著。即使不做推断，比较条件分布也是基础。
 
-### Simulating Independence
+### 模拟独立性
 
-Under independence, the expected count for cell $(i, j)$ is:
+在独立假设下，单元格 $(i, j)$ 的期望计数为：
 
-$$\text{expected}_{ij} = \frac{(\text{row total}_i) \times (\text{column total}_j)}{\text{grand total}}$$
+$$\text{期望}_{ij} = \frac{(\text{行合计}_i) \times (\text{列合计}_j)}{\text{总计}}$$
 
-Comparing observed to expected counts reveals which cells contribute most to any association.
+把观测计数与期望计数对比，能揭示哪些单元格对关联的贡献最大。
 
-## Example: Simpson's Paradox Setup
+## 示例：辛普森悖论的设置
 
-A two-way table can conceal a lurking variable. Consider:
+二维表可能隐藏潜伏变量。考虑：
 
-| Hospital | Survived | Died | Survival Rate |
+| 医院 | 存活 | 死亡 | 存活率 |
 |:---|:---:|:---:|:---:|
 | A | 800 | 200 | **80%** |
 | B | 900 | 100 | **90%** |
 
-Hospital B appears superior. But disaggregating by patient condition:
+医院 B 看似更优。但按患者病情拆分：
 
-**Good condition patients:**
+**病情良好的患者：**
 
-| Hospital | Survived | Died | Rate |
+| 医院 | 存活 | 死亡 | 存活率 |
 |:---|:---:|:---:|:---:|
 | A | 590 | 10 | **98%** |
 | B | 870 | 30 | **97%** |
 
-**Poor condition patients:**
+**病情严重的患者：**
 
-| Hospital | Survived | Died | Rate |
+| 医院 | 存活 | 死亡 | 存活率 |
 |:---|:---:|:---:|:---:|
 | A | 210 | 190 | **53%** |
 | B | 30 | 70 | **30%** |
 
-Hospital A outperforms B in **every** subgroup, yet B's overall rate is higher — because B treats mostly good-condition patients. This is [[Correlation_vs_Causation|Simpson's Paradox]].
+医院 A 在**每个**亚组中都优于 B，但 B 的总体存活率反而更高——因为 B 收治的大多是病情良好的患者。这就是[[Correlation_vs_Causation|辛普森悖论]]。
 
-**Related:** [[Unit_2_Two-Variable_Data]] | [[Correlation_vs_Causation]] | [[Unit_1_One-Variable_Data]]
+**相关笔记：** [[Unit_2_Two-Variable_Data]] | [[Correlation_vs_Causation]] | [[Unit_1_One-Variable_Data]]

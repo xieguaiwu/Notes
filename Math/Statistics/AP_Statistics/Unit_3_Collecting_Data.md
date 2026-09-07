@@ -6,70 +6,70 @@ tags:
 created: 2026-06-14
 ---
 
-## Unit 3: Collecting Data
+# Unit 3 — 数据收集
 
-**Exam Weight:** 12–15% of AP Statistics. Unit 3 covers how to properly gather data so that conclusions are valid — the foundation of statistical inference.
+**考试占比：** AP 统计学的 12–15%。单元 3 讲解如何正确收集数据，使结论有效——这是统计推断的基础。
 
-> [!info] Why This Matters
-> No statistical technique can rescue poorly collected data. A biased sample or a confounded experiment yields conclusions that are worse than useless — they are misleading.
+> [!info] 为什么这很重要
+> 任何统计技术都无法挽救收集不当的数据。有偏样本或混杂实验产生的结论比无用更糟——它们具有误导性。
 
-### Core Vocabulary
+### 核心词汇
 
-| Term | Definition |
+| 术语 | 定义 |
 |------|------------|
-| **Population** | The entire group of individuals we want information about |
-| **Sample** | A subset of the population from which we actually collect data |
-| **Parameter** | A number that describes a population (e.g., $\mu$, $p$) |
-| **Statistic** | A number that describes a sample (e.g., $\bar{x}$, $\hat{p}$) |
-| **Census** | Attempting to collect data from every individual in the population |
-| **Bias** | Systematic error that consistently over- or under-estimates the true value |
+| **总体（Population）** | 我们想获取信息的全部个体 |
+| **样本（Sample）** | 实际收集数据的总体子集 |
+| **参数（Parameter）** | 描述总体的数字（例如 $\mu$、$p$） |
+| **统计量（Statistic）** | 描述样本的数字（例如 $\bar{x}$、$\hat{p}$） |
+| **普查（Census）** | 试图收集总体中每个个体的数据 |
+| **偏倚（Bias）** | 系统性误差，始终高估或低估真实值 |
 
-The relationship is simple: we use a **statistic** from a **sample** to estimate a **parameter** about a **population**. The quality of that estimate depends entirely on how the sample was collected.
+关系很简单：我们用来自**样本**的**统计量**估计关于**总体**的**参数**。估计的质量完全取决于样本的收集方式。
 
-### Study Design Classification
+### 研究设计分类
 
 ```mermaid
 flowchart TD
-    A[Study Design] --> B{Was a treatment<br/>imposed?}
-    B -->|Yes| C[Experiment]
-    B -->|No| D[Observational Study]
-    C --> E["Can establish<br/>cause and effect"]
-    D --> F[Sample Survey]
-    D --> G[Observational<br/>(no survey)]
-    F --> H["Uses random<br/>sampling?"]
-    H -->|Yes| I["Generalizable to<br/>population"]
-    H -->|No| J["Not generalizable"]
+    A[研究设计] --> B{是否施加了<br/>处理？}
+    B -->|是| C[实验]
+    B -->|否| D[观察性研究]
+    C --> E["能建立<br/>因果关系"]
+    D --> F[样本调查]
+    D --> G[观察<br/>（非调查）]
+    F --> H["使用随机<br/>抽样？"]
+    H -->|是| I["可推广到<br/>总体"]
+    H -->|否| J["不可推广"]
 ```
 
-### Observational Study vs. Experiment
+### 观察性研究 vs 实验
 
-- **Observational Study:** Observe individuals and measure variables of interest without imposing any treatment. Can reveal **associations**, but not causation.
-- **Experiment:** Deliberately impose a treatment on individuals to measure their response. With proper design, can establish **cause and effect**.
+- **观察性研究：** 观察个体并测量感兴趣的变量，不施加任何处理。能揭示**关联**，但不能揭示因果。
+- **实验：** 故意对个体施加处理以测量其响应。设计得当的实验能建立**因果关系**。
 
-The fundamental advantage of experiments is that randomization controls for lurking variables by making treatment groups roughly equal on all variables except the treatment itself.
+实验的根本优势在于：随机化通过使处理组在除处理本身外的所有变量上大致相等，来控制潜伏变量。
 
-### Random Sampling → Generalizability
+### 随机抽样 → 可推广性
 
-If a sample is **randomly selected** from the population, the results can be **generalized** back to that population. If the sample is biased (convenience, voluntary response), generalizability is lost.
+如果样本从总体中**随机选取**，结果可以**推广**回该总体。如果样本有偏（便利、自愿响应），推广性就丧失。
 
-### Random Assignment → Causation
+### 随机分配 → 因果关系
 
-If subjects are **randomly assigned** to treatment groups in an experiment, we can draw **causal conclusions**. Without random assignment, an experiment is little better than an observational study.
+如果实验中受试者被**随机分配**到处理组，我们就能得出**因果结论**。没有随机分配，实验比观察性研究好不了多少。
 
-> [!warning] Common Confusion
-> **Random sampling** deals with who is *in* the study (generalizability). **Random assignment** deals with which treatment they *receive* (causation). A study can have one without the other.
+> [!warning] 常见混淆
+> **随机抽样**决定谁*进入*研究（可推广性）。**随机分配**决定他们*接受*哪种处理（因果关系）。一项研究可以只有其一，没有另一个。
 
-### The Ideal: Random Sampling + Random Assignment
+### 理想情况：随机抽样 + 随机分配
 
-A well-designed survey uses random sampling to generalize to a population. A well-designed experiment uses random assignment to establish causation — and random sampling to generalize those causal conclusions.
+设计良好的调查用随机抽样推广到总体。设计良好的实验用随机分配建立因果关系——并用随机抽样推广那些因果结论。
 
-### Key Takeaways
+### 关键要点
 
-1. **Population** → **Parameter**; **Sample** → **Statistic**
-2. Observational studies show association; experiments (with randomization) show causation
-3. The sampling method determines whether conclusions generalize
-4. [[Sampling_Methods|Sampling Methods →]]
-5. [[Experimental_Design|Experimental Design →]]
+1. **总体** → **参数**；**样本** → **统计量**
+2. 观察性研究展示关联；实验（含随机化）展示因果
+3. 抽样方法决定结论能否推广
+4. [[Sampling_Methods|抽样方法 →]]
+5. [[Experimental_Design|实验设计 →]]
 
 ---
-Related: [[AP_Statistics_MOC]]
+相关笔记：[[AP_Statistics_MOC]]

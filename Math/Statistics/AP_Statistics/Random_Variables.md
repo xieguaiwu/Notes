@@ -6,119 +6,119 @@ tags:
 created: 2026-06-14
 ---
 
-## Random Variables
+# 随机变量
 
-A **random variable** is a numerical outcome of a random phenomenon. Instead of describing every possible outcome of a sample space in words, we assign a number to each outcome and analyze its distribution.
+**随机变量**是随机现象的数值结果。与其用文字描述样本空间的每个可能结果，不如给每个结果分配一个数字，然后分析它的分布。
 
-### Discrete vs. Continuous Random Variables
+### 离散 vs 连续随机变量
 
-| Type | Values | Probability Assignment |
+| 类型 | 取值 | 概率分配 |
 |------|--------|----------------------|
-| **Discrete** | Countable set (e.g., 0, 1, 2, ...) | Lists probabilities for each value: $P(X = x)$ |
-| **Continuous** | Any value in an interval | Describes density; $P(X = x) = 0$ for any single point |
+| **离散** | 可数集（例如 0, 1, 2, ...） | 列出每个值的概率：$P(X = x)$ |
+| **连续** | 区间内任意值 | 用密度描述；任意单点 $P(X = x) = 0$ |
 
-For discrete random variables, the **probability distribution** (or probability mass function) lists all possible values and their probabilities:
+对离散随机变量，**概率分布**（或概率质量函数）列出所有可能值及其概率：
 
 | $x$ | 0 | 1 | 2 | 3 |
 |-----|---|---|---|---|
 | $P(X=x)$ | 0.125 | 0.375 | 0.375 | 0.125 |
 
-**Requirements for a valid discrete probability distribution:**
-1. $0 \leq P(X = x) \leq 1$ for every value $x$
+**有效离散概率分布的要求：**
+1. 对每个值 $x$，$0 \leq P(X = x) \leq 1$
 2. $\sum P(X = x) = 1$
 
-### Expected Value (Mean) of a Discrete Random Variable
+### 离散随机变量的期望值（均值）
 
-The expected value $E(X)$ or $\mu_X$ is the long-run average:
+期望值 $E(X)$ 或 $\mu_X$ 是长期平均值：
 
 $$
 E(X) = \mu_X = \sum x \cdot P(X = x)
 $$
 
-Multiply each value by its probability, then sum. This is a weighted average — values with higher probability contribute more.
+把每个值乘以其概率，再求和。这是加权平均——概率越高的值贡献越大。
 
-> [!tip] Interpretation
-> $E(X)$ is what we "expect" on average over many, many repetitions. It does not need to be a possible value of $X$. For example, the expected value of a fair die roll is 3.5, which is not a possible outcome.
+> [!tip] 解释
+> $E(X)$ 是"许多许多次重复"后的平均期望。它不必是 $X$ 的可能取值。例如，均匀骰子掷出的期望值是 3.5，而 3.5 不是可能结果。
 
-### Variance and Standard Deviation
+### 方差与标准差
 
-The variance measures the average squared deviation from the mean:
+方差度量偏离均值的平均平方距离：
 
 $$
 \text{Var}(X) = \sigma_X^2 = \sum (x - \mu_X)^2 \cdot P(X = x)
 $$
 
-**Computational shortcut** (often easier):
+**计算捷径**（通常更容易）：
 
 $$
 \text{Var}(X) = \left(\sum x^2 \cdot P(X = x)\right) - \mu_X^2
 $$
 
-The standard deviation is the square root: $\sigma_X = \sqrt{\text{Var}(X)}$.
+标准差是平方根：$\sigma_X = \sqrt{\text{Var}(X)}$。
 
-### Linear Transformations of Random Variables
+### 随机变量的线性变换
 
-If $Y = a + bX$, where $a$ and $b$ are constants:
+如果 $Y = a + bX$，其中 $a$、$b$ 为常数：
 
-**Mean:**
+**均值：**
 $$
 \mu_Y = E(a + bX) = a + b \cdot \mu_X
 $$
 
-**Variance:**
+**方差：**
 $$
 \sigma_Y^2 = \text{Var}(a + bX) = b^2 \cdot \sigma_X^2
 $$
 
-**Standard deviation:**
+**标准差：**
 $$
 \sigma_Y = |b| \cdot \sigma_X
 $$
 
-> [!warning] Adding a Constant
-> Adding $a$ shifts the mean by $a$ but has **no effect** on the variance or standard deviation. Only multiplication by $b$ changes the spread.
+> [!warning] 加常数
+> 加 $a$ 使均值平移 $a$，但对方差或标准差**没有影响**。只有乘以 $b$ 才改变离散程度。
 
-### Combining Independent Random Variables
+### 合并独立随机变量
 
-For independent random variables $X$ and $Y$, and constants $a$, $b$:
+对独立随机变量 $X$ 和 $Y$，以及常数 $a$、$b$：
 
-**Mean of a sum or difference:**
+**和或差的均值：**
 $$
 E(X \pm Y) = E(X) \pm E(Y) = \mu_X \pm \mu_Y
 $$
 
-**General linear combination:**
+**一般线性组合：**
 $$
 E(aX + bY) = a\mu_X + b\mu_Y
 $$
 
-**Variance of a sum or difference** (independence required for these):
+**和或差的方差**（下列公式要求独立）：
 
 $$
 \text{Var}(X \pm Y) = \text{Var}(X) + \text{Var}(Y) = \sigma_X^2 + \sigma_Y^2
 $$
 
-> [!danger] Extremely Important
-> The variance of a sum is the sum of the variances — **always addition**, even for $X - Y$. The formula is $\sigma_X^2 + \sigma_Y^2$, not $\sigma_X^2 - \sigma_Y^2$.
+> [!danger] 极其重要
+> 和的方差等于方差之和——**永远是加法**，即使对 $X - Y$ 也一样。公式是 $\sigma_X^2 + \sigma_Y^2$，不是 $\sigma_X^2 - \sigma_Y^2$。
 
-**General linear combination:**
+**一般线性组合：**
 $$
 \text{Var}(aX + bY) = a^2\sigma_X^2 + b^2\sigma_Y^2
 $$
 
-### Continuous Random Variables
+### 连续随机变量
 
-For a continuous random variable, probability is represented by the area under a **probability density curve**. The total area is exactly 1. The probability that $X$ falls in an interval $[a, b]$ is:
+对连续随机变量，概率用**概率密度曲线**下的面积表示。总面积恰好为 1。$X$ 落在区间 $[a, b]$ 内的概率为：
 
 $$
 P(a \leq X \leq b) = \int_a^b f(x) \, dx
 $$
 
-The mean and variance are defined analogously using integrals instead of sums. The **normal distribution** is the most important continuous distribution — it is the foundation of inference.
+均值和方差用积分（而非求和）类似定义。**正态分布**是最重要的连续分布——它是推断的基础。
 
-### Why Random Variables Matter
+### 随机变量为什么重要
 
-Every statistic we compute — $\bar{x}$, $\hat{p}$, $s$, the slope of a regression line — is itself a random variable when the data come from a random sample. Understanding their probability distributions enables us to quantify uncertainty through confidence intervals and significance tests.
+我们计算的每个统计量——$\bar{x}$、$\hat{p}$、$s$、回归线斜率——当数据来自随机样本时，本身都是随机变量。理解它们的概率分布，使我们能通过置信区间和显著性检验量化不确定性。
 
 ---
-Related: [[Unit_4_Probability]] | [[Binomial_and_Geometric_Distributions]] | [[AP_Statistics_MOC]]
+相关笔记：[[Unit_4_Probability]] | [[Binomial_and_Geometric_Distributions]] | [[AP_Statistics_MOC]]

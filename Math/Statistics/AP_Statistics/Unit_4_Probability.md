@@ -6,102 +6,102 @@ tags:
 created: 2026-06-14
 ---
 
-## Unit 4: Probability, Random Variables, and Probability Distributions
+# Unit 4 — 概率、随机变量与概率分布
 
-**Exam Weight:** 10–20% of AP Statistics. Unit 4 covers the mathematical foundation of statistical inference — probability and its applications to random variables and sampling distributions.
+**考试占比：** AP 统计学的 10–20%。单元 4 覆盖统计推断的数学基础——概率及其在随机变量和抽样分布中的应用。
 
-### The Law of Large Numbers
+### 大数定律
 
-As the number of repetitions of a random process increases, the **relative frequency** of an outcome approaches its true probability.
+随着随机过程重复次数的增加，结果的**相对频率**逼近其真实概率。
 
 $$
-\lim_{n \to \infty} \frac{\text{count of successes}}{n} = P(\text{success})
+\lim_{n \to \infty} \frac{\text{成功次数}}{n} = P(\text{成功})
 $$
 
-> [!warning] Misconception Alert
-> The Law of Large Numbers does **not** say that outcomes will "even out" in the short run. If you flip a fair coin 10 times and get 8 heads, the probability of heads on the next flip is still 0.5. There is no "law of averages" that forces compensation.
+> [!warning] 误解警示
+> 大数定律并**不**意味着结果短期内会"扯平"。如果掷均匀硬币 10 次得到 8 次正面，下一次掷出正面的概率仍然是 0.5。不存在强迫补偿的"平均定律"。
 
-### Basic Probability Rules
+### 基本概率法则
 
-For any random phenomenon, let $S$ be the sample space — the set of all possible outcomes. An **event** is any subset of $S$.
+对任意随机现象，设 $S$ 为样本空间——所有可能结果的集合。**事件**是 $S$ 的任意子集。
 
-1. **Probability of an event:** $0 \leq P(A) \leq 1$ for any event $A$
-2. **Probability of sample space:** $P(S) = 1$
-3. **Complement rule:** $P(A^c) = 1 - P(A)$
-4. **Addition rule (general):** For any two events $A$ and $B$:
+1. **事件的概率：** 对任意事件 $A$，$0 \leq P(A) \leq 1$
+2. **样本空间的概率：** $P(S) = 1$
+3. **补集法则：** $P(A^c) = 1 - P(A)$
+4. **加法法则（一般形式）：** 对任意两个事件 $A$ 和 $B$：
 
    $$
    P(A \cup B) = P(A) + P(B) - P(A \cap B)
    $$
 
-### Disjoint (Mutually Exclusive) Events
+### 互斥（不相容）事件
 
-Two events are **disjoint** if they cannot occur simultaneously: $P(A \cap B) = 0$.
+两个事件**互斥**指它们不能同时发生：$P(A \cap B) = 0$。
 
-When events are disjoint, the addition rule simplifies:
+事件互斥时，加法法则简化：
 
 $$
-P(A \cup B) = P(A) + P(B) \quad \text{(disjoint only)}
+P(A \cup B) = P(A) + P(B) \quad \text{（仅互斥时）}
 $$
 
-> [!tip] Venn Diagram Thinking
-> Draw a Venn diagram whenever you are confused about probability relationships. The subtraction of $P(A \cap B)$ in the general addition rule prevents double-counting the overlapping region.
+> [!tip] 维恩图思维
+> 对概率关系感到困惑时，画一张维恩图。一般加法法则中减去 $P(A \cap B)$，是为了避免重复计算重叠区域。
 
-### Conditional Probability
+### 条件概率
 
-The probability that event $A$ occurs **given** that event $B$ has occurred:
+事件 $A$ 在**给定**事件 $B$ 已发生条件下的概率：
 
 $$
 P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) > 0
 $$
 
-This is the single most important formula in Unit 4. It restricts the sample space to only those outcomes where $B$ has occurred, then finds the proportion where $A$ also occurs.
+这是单元 4 最重要的公式。它把样本空间限制为 $B$ 已发生的结果，再求其中 $A$ 也发生的比例。
 
-### Independence
+### 独立性
 
-Two events $A$ and $B$ are **independent** if knowing that one occurred does not change the probability of the other:
+如果知道一个事件发生不改变另一个事件的概率，则两个事件 $A$ 和 $B$ **独立**：
 
 $$
-P(A \mid B) = P(A) \quad \text{or equivalently} \quad P(A \cap B) = P(A) \cdot P(B)
+P(A \mid B) = P(A) \quad \text{或等价地} \quad P(A \cap B) = P(A) \cdot P(B)
 $$
 
-> [!danger] Independence ≠ Disjoint
-> Disjoint events are **never** independent (except the trivial case where one has probability 0). If $A$ and $B$ are disjoint and $A$ occurs, then $B$ *cannot* occur — so knowing $A$ gives information about $B$, violating independence.
+> [!danger] 独立 ≠ 互斥
+> 互斥事件**永远不独立**（除非其中一个概率为 0 的平凡情形）。如果 $A$ 和 $B$ 互斥且 $A$ 发生，则 $B$ *不可能*发生——所以知道 $A$ 就提供了 $B$ 的信息，违反独立性。
 
-### Multiplication Rule
+### 乘法法则
 
-- **General:** $P(A \cap B) = P(A) \cdot P(B \mid A) = P(B) \cdot P(A \mid B)$
-- **Independent events only:** $P(A \cap B) = P(A) \cdot P(B)$
+- **一般形式：** $P(A \cap B) = P(A) \cdot P(B \mid A) = P(B) \cdot P(A \mid B)$
+- **仅独立事件：** $P(A \cap B) = P(A) \cdot P(B)$
 
-### Probability Tree Diagrams
+### 概率树状图
 
-When a process has multiple stages, a tree diagram is often the clearest way to compute probabilities:
+当过程有多个阶段时，树状图常是计算概率最清晰的方式：
 
-1. Label each branch with its probability (must sum to 1 at each node)
-2. Multiply along branches to find the probability of a path: $P(A \cap B) = P(A) \cdot P(B \mid A)$
-3. Add probabilities from all relevant paths for an "or" problem
+1. 给每条枝标上概率（每个节点的枝概率之和必须为 1）
+2. 沿枝相乘求路径概率：$P(A \cap B) = P(A) \cdot P(B \mid A)$
+3. "或"问题把所有相关路径的概率相加
 
-### General Multiplication and the Chain Rule
+### 一般乘法与链式法则
 
-For three events: $P(A \cap B \cap C) = P(A) \cdot P(B \mid A) \cdot P(C \mid A \cap B)$
+三个事件：$P(A \cap B \cap C) = P(A) \cdot P(B \mid A) \cdot P(C \mid A \cap B)$
 
-### Two-Way Tables
+### 二维表
 
-A two-way table (contingency table) organizes counts by two categorical variables. From it you can compute:
-- **Marginal probabilities:** row or column totals divided by grand total
-- **Joint probabilities:** individual cell counts divided by grand total
-- **Conditional probabilities:** cell count divided by row or column total
+二维表（列联表）按两个分类变量组织计数。从中可以计算：
+- **边际概率：** 行或列合计除以总计
+- **联合概率：** 单个单元格计数除以总计
+- **条件概率：** 单元格计数除以行或列合计
 
-### Summary of Key Formulas
+### 关键公式汇总
 
-| Situation | Formula |
+| 情形 | 公式 |
 |-----------|---------|
-| Complement | $P(A^c) = 1 - P(A)$ |
-| General addition | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
-| Disjoint addition | $P(A \cup B) = P(A) + P(B)$ |
-| Conditional probability | $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$ |
-| General multiplication | $P(A \cap B) = P(A) \cdot P(B \mid A)$ |
-| Independence (product) | $P(A \cap B) = P(A) \cdot P(B)$ |
+| 补集 | $P(A^c) = 1 - P(A)$ |
+| 一般加法 | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| 互斥加法 | $P(A \cup B) = P(A) + P(B)$ |
+| 条件概率 | $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$ |
+| 一般乘法 | $P(A \cap B) = P(A) \cdot P(B \mid A)$ |
+| 独立（乘积） | $P(A \cap B) = P(A) \cdot P(B)$ |
 
 ---
-Related: [[Random_Variables]] | [[Binomial_and_Geometric_Distributions]] | [[Central_Limit_Theorem]] | [[AP_Statistics_MOC]]
+相关笔记：[[Random_Variables]] | [[Binomial_and_Geometric_Distributions]] | [[Central_Limit_Theorem]] | [[AP_Statistics_MOC]]

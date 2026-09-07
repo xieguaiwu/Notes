@@ -6,71 +6,65 @@ tags:
 created: 2026-06-14
 ---
 
-## Overview
+# 配对 t 检验
 
-A **matched pairs** (or **paired**) design controls for extraneous variability by pairing similar subjects or by taking two measurements on the same subject. The analysis focuses on the **differences within each pair**, reducing the analysis to a **one-sample problem** on those differences.
+**所属：** [[Unit_7_Inference_for_Means|单元 7 — 均值的推断]]
 
----
+## 概述
 
-## When to Use a Paired Design
+**配对**（matched pairs / paired）设计通过配对相似受试者或在同一受试者上做两次测量，来控制无关变异。分析聚焦于**每对内部的差值**，把问题化简为对这些差值的**单样本检验**。
 
-Two situations:
+## 何时使用配对设计
 
-1. **Same subjects, two conditions** — Pre-test / post-test, before / after treatment, left vs right side.
-2. **Matched subjects** — Twins, siblings, or subjects matched on key covariates (age, sex, baseline measure), then randomly assigned.
+两种情况：
 
-### Paired vs Two-Sample
+1. **同一受试者，两种条件**——前测/后测、处理前/处理后、左侧 vs 右侧。
+2. **匹配的受试者**——双胞胎、兄弟姐妹，或在关键协变量（年龄、性别、基线测量）上匹配后随机分配。
 
-| Aspect | Paired t-Test | Two-Sample t-Test |
+### 配对 vs 双样本
+
+| 方面 | 配对 t 检验 | 双样本 t 检验 |
 |--------|---------------|-------------------|
-| Data structure | Pairs of related observations | Two independent groups |
-| What we analyze | Differences $d_i$ | Raw values in each group |
-| Degrees of freedom | $n_{\text{pairs}} - 1$ | $\min(n_1-1, n_2-1)$ |
-| Power | Higher (removes between-pair variability) | Lower |
-| Example | Same students before vs after tutoring | Tutored group vs control group |
+| 数据结构 | 成对的相关观测 | 两个独立组 |
+| 分析对象 | 差值 $d_i$ | 各组的原始值 |
+| 自由度 | $n_{\text{对}} - 1$ | $\min(n_1-1, n_2-1)$ |
+| 检验力 | 更高（消除了对间变异） | 更低 |
+| 示例 | 同一批学生辅导前后对比 | 辅导组 vs 对照组 |
 
----
+## 假设
 
-## Hypotheses
+- $H_0: \mu_d = 0$（均值差为零——无效应）
+- $H_a: \mu_d \neq 0$（双侧）、$\mu_d > 0$ 或 $\mu_d < 0$（单侧）
 
-- $H_0: \mu_d = 0$ (mean difference is zero — no effect)
-- $H_a: \mu_d \neq 0$ (two-sided), $\mu_d > 0$, or $\mu_d < 0$ (one-sided)
+其中 $\mu_d$ 是总体差值的真实均值。
 
-Where $\mu_d$ is the true mean of the population differences.
-
----
-
-## Test Statistic
+## 检验统计量
 
 $$ t = \frac{\bar{x}_d}{s_d/\sqrt{n}}, \quad \text{df} = n - 1 $$
 
-- $\bar{x}_d = \frac{1}{n} \sum d_i$ — mean of the differences
-- $s_d = \sqrt{\frac{1}{n-1} \sum (d_i - \bar{x}_d)^2}$ — standard deviation of the differences
-- $n$ = number of **pairs** (not individual measurements)
+- $\bar{x}_d = \frac{1}{n} \sum d_i$——差值的均值
+- $s_d = \sqrt{\frac{1}{n-1} \sum (d_i - \bar{x}_d)^2}$——差值的标准差
+- $n$ = **配对数**（不是单个测量数）
 
-### Confidence Interval
+### 置信区间
 
 $$ \bar{x}_d \pm t^*_{n-1} \cdot \frac{s_d}{\sqrt{n}} $$
 
----
+## 条件
 
-## Conditions
+1. **随机**——配对是总体的随机样本，或处理在每对内部随机分配。
+2. **独立 / 10%**——各对相互独立；不放回抽样时少于所有可能配对的 10%。
+3. **近似正态**——**差值**（不是原始值）的分布近似正态。用差值的直方图或正态概率图检查 $d_i$。$n \ge 30$ 时 CLT 适用。
 
-1. **Random** — Pairs are a random sample from the population, or treatments are randomly assigned within each pair.
-2. **Independence / 10%** — The pairs are independent of each other; fewer than 10% of all possible pairs if sampling without replacement.
-3. **Nearly Normal** — The distribution of **differences** (not the original values) is approximately Normal. Check with a histogram or Normal probability plot of the $d_i$. For $n \ge 30$, the CLT applies.
+**关键洞见：** 只要**差值**大致正态，原始数据即使偏斜也可以。
 
-**Key insight:** The original data can be skewed as long as the **differences** are roughly Normal.
+## 示例
 
----
+### 示例 1：前测 / 后测
 
-## Examples
+八名学生先做模拟考试，再上复习课，然后做后测。
 
-### Example 1: Pre-test / Post-test
-
-Eight students take a practice exam, then a review course, then a post-test.
-
-| Student | Pre | Post | $d$ (Post − Pre) |
+| 学生 | 前测 | 后测 | $d$（后测 − 前测） |
 |---------|-----|------|------------------|
 | 1 | 72 | 78 | 6 |
 | 2 | 65 | 68 | 3 |
@@ -81,55 +75,47 @@ Eight students take a practice exam, then a review course, then a post-test.
 | 7 | 82 | 88 | 6 |
 | 8 | 76 | 80 | 4 |
 
-$\bar{x}_d = 3.75$, $s_d = 3.01$, $n = 8$
+$\bar{x}_d = 3.75$，$s_d = 3.01$，$n = 8$
 
 $$ t = \frac{3.75}{3.01/\sqrt{8}} = \frac{3.75}{1.06} = 3.52, \quad \text{df} = 7 $$
 
-$p \approx 0.010$ (two-sided) — strong evidence that scores increased on average.
+$p \approx 0.010$（双侧）——成绩平均提高的强证据。
 
-### Example 2: Twin Study
+### 示例 2：双胞胎研究
 
-10 pairs of identical twins are randomized: one twin receives a treatment, the other a placebo. Outcome measured on each.
+10 对同卵双胞胎随机分配：一个接受处理，另一个接受安慰剂。测量每对的结果。
 
-The analysis proceeds identically: compute the difference (treated − placebo) for each twin pair, then run a one-sample t-test on those differences.
+分析方式相同：计算每对双胞胎的差值（处理 − 安慰剂），然后对这些差值做单样本 t 检验。
 
----
+## 为什么配对检验检验力更强
 
-## Why Paired Tests Are More Powerful
+配对检验消除了**对间**变异。双样本检验的标准误涉及 $\sigma_1^2$ 和 $\sigma_2^2$，而配对检验的标准误只涉及 $\sigma_d^2$，后者通常小得多。
 
-A paired test removes the **between-pair** variability. The standard error of the two-sample test involves both $\sigma_1^2$ and $\sigma_2^2$, while the paired test's standard error involves only $\sigma_d^2$, which is typically much smaller.
+然而，配对**减少**了自由度（配对数 − 1 vs $n_1 + n_2 - 2$），所以检验力的提升来自方差缩减，而不是更多信息。
 
-However, pairing **reduces** degrees of freedom (pairs − 1 vs. $n_1 + n_2 - 2$), so the power gain comes from variance reduction, not from more information.
+## 常见陷阱
 
----
-
-## Common Pitfalls
-
-| Pitfall | Explanation |
+| 陷阱 | 解释 |
 |---------|-------------|
-| Running two-sample test on paired data | Loses power, may obscure real effects, violates independence |
-| Forgetting to check differences for Normality | The CLT applies to the differences, not the original variables |
-| Incorrectly computing $d$ direction | Always be consistent about which direction is subtracted; document it |
-| Using $n$ = total measurements instead of pairs | Doubles the sample size artificially; produces wrong df and SE |
+| 对配对数据做双样本检验 | 损失检验力，可能掩盖真实效应，违反独立性 |
+| 忘记检查差值是否正态 | CLT 适用于差值，不是原始变量 |
+| 错误计算 $d$ 的方向 | 始终一致地说明谁减谁；记录在案 |
+| 用 $n$ = 总测量数而非配对数 | 人为翻倍样本量；产生错误的 df 和 SE |
 
----
+## 配对 t 区间
 
-## Paired t-Interval
-
-The CI follows the same logic:
+CI 遵循同样的逻辑：
 
 $$ \bar{x}_d \pm t^*_{n-1} \cdot \frac{s_d}{\sqrt{n}} $$
 
-Interpretation: "We are $C\%$ confident that the true mean difference $\mu_d$ is between \_\_ and \_\_."
+解释："我们有 $C\%$ 的把握认为真实均值差 $\mu_d$ 在 \_\_ 和 \_\_ 之间。"
 
-If the interval contains 0, the result is not statistically significant at level $\alpha = 1 - C$.
+如果区间包含 0，结果在 $\alpha = 1 - C$ 水平下不统计显著。
 
----
+## 总结
 
-## Summary
+满足以下条件时用配对 t 检验：
+- 一个组中的每个观测值**自然对应**另一个组中的一个观测值
+- 双样本检验会**忽略**这种配对关系
 
-Use a paired t-test when:
-- Each observation in one group is **naturally paired** with one in the other
-- The alternative is a two-sample test that would **ignore** the pairing
-
-See also: [[Significance_Tests_Means]], [[Confidence_Intervals_Means]], [[Unit_7_Inference_for_Means]], [[AP_Statistics_MOC]]
+另见：[[Significance_Tests_Means]]、[[Confidence_Intervals_Means]]、[[Unit_7_Inference_for_Means]]、[[AP_Statistics_MOC]]

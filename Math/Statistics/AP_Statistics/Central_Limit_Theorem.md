@@ -6,109 +6,109 @@ tags:
 created: 2026-06-14
 ---
 
-## Central Limit Theorem
+# 中心极限定理
 
-The Central Limit Theorem (CLT) is the single most important theorem in statistics. It is the reason we can use the normal distribution for inference about means, even when the population is not normally distributed.
+中心极限定理（CLT）是统计学中最重要的定理。它使我们能在总体不正态的情况下，仍使用正态分布进行关于均值的推断。
 
-### Sampling Distribution of $\bar{x}$
+### $\bar{x}$ 的抽样分布
 
-When we take a random sample and compute the sample mean $\bar{x}$, that computed value is **one observation** from the sampling distribution of $\bar{x}$. Different samples produce different $\bar{x}$ values.
+当我们取一个随机样本并计算样本均值 $\bar{x}$ 时，这个计算值就是 $\bar{x}$ 的抽样分布的一个**观测值**。不同样本产生不同的 $\bar{x}$ 值。
 
-The sampling distribution of $\bar{x}$ has:
+$\bar{x}$ 的抽样分布具有：
 
-- **Mean:** $\mu_{\bar{x}} = \mu$ (the sample mean is an unbiased estimator of the population mean)
-- **Standard deviation:** $\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$ (called the **standard error**)
+- **均值：** $\mu_{\bar{x}} = \mu$（样本均值是总体均值的无偏估计量）
+- **标准差：** $\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$（称为**标准误**）
 
-### Conditions for the Sampling Distribution
+### 抽样分布的条件
 
-Three conditions must be met for the CLT to apply:
+CLT 适用需要满足三个条件：
 
-| Condition | What It Means |
+| 条件 | 含义 |
 |-----------|---------------|
-| **Random** | The data come from a random sample or randomized experiment |
-| **Independent / 10%** | $n < 0.10N$ — sample size is less than 10% of the population when sampling without replacement |
-| **Large counts / Normal** | Either the population is Normal **or** $n \geq 30$ (CLT) |
+| **随机** | 数据来自随机样本或随机化实验 |
+| **独立 / 10%** | $n < 0.10N$——不放回抽样时，样本容量小于总体的 10% |
+| **大样本 / 正态** | 总体是正态分布 **或** $n \geq 30$（CLT） |
 
-### The Central Limit Theorem (Statement)
+### 中心极限定理（陈述）
 
-Let $\bar{x}$ be the sample mean from an SRS of size $n$ drawn from a population with mean $\mu$ and finite standard deviation $\sigma$. Then, as $n \to \infty$, the sampling distribution of $\bar{x}$ approaches the normal distribution:
+设 $\bar{x}$ 为来自均值为 $\mu$、有限标准差为 $\sigma$ 的总体的 SRS 的样本均值，样本容量为 $n$。则当 $n \to \infty$ 时，$\bar{x}$ 的抽样分布趋近正态分布：
 
 $$
 \bar{x} \sim N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)
 $$
 
-In words: **Regardless of the shape of the population distribution, the sampling distribution of $\bar{x}$ becomes approximately normal when the sample size is large enough.**
+换言之：**无论总体分布的形状如何，$\bar{x}$ 的抽样分布都会在样本容量足够大时近似正态。**
 
 ```mermaid
 flowchart TD
-    A["Population<br/>(any shape, mean μ, SD σ)"] --> B["Take SRS of size n"]
-    B --> C["Compute x̄"]
-    C --> D["Repeat many times"]
-    D --> E["Sampling distribution<br/>of x̄ is approximately<br/>N(μ, σ/√n)"]
+    A["总体<br/>(任意形状, 均值 μ, 标准差 σ)"] --> B["取 SRS, 容量 n"]
+    B --> C["计算 x̄"]
+    C --> D["重复多次"]
+    D --> E["x̄ 的抽样分布<br/>近似服从<br/>N(μ, σ/√n)"]
 ```
 
-### When Is $n$ "Large Enough"?
+### $n$ 多大才算"足够大"？
 
-The rule of thumb depends on the shape of the population:
+经验法则取决于总体形状：
 
-| Population Shape | Minimum $n$ for Normality |
+| 总体形状 | 正态所需的最小 $n$ |
 |-----------------|---------------------------|
-| Normal | Any $n$ works (sampling distribution is exactly normal) |
-| Approximately symmetric | $n \geq 15$ is usually sufficient |
-| Skewed | $n \geq 30$ |
-| Heavily skewed or outliers | $n \geq 30$, but larger may be needed |
+| 正态 | 任意 $n$ 都行（抽样分布精确正态） |
+| 大致对称 | $n \geq 15$ 通常足够 |
+| 偏斜 | $n \geq 30$ |
+| 严重偏斜或有离群值 | $n \geq 30$，但可能需要更大 |
 
-The standard AP threshold is **$n \geq 30$**, but always consider the context. For a strongly skewed distribution, even $n = 30$ may not be enough — check with a graph of the sample data.
+AP 标准阈值是 **$n \geq 30$**，但始终要结合情境判断。对强偏态分布，即使 $n = 30$ 也可能不够——用样本数据的图形检查。
 
-> [!tip] The CLT Does Not Apply to Individuals
-> The CLT describes the distribution of the **sample mean**, not the distribution of individual observations. Individual observations follow the population distribution. The sample mean follows an approximately normal distribution when $n$ is large.
+> [!tip] CLT 不适用于个体
+> CLT 描述的是**样本均值**的分布，不是个体观测值的分布。个体观测值遵循总体分布。样本均值在 $n$ 足够大时近似正态。
 
-### Two Cases: Population Normal vs. Population Not Normal
+### 两种情形：总体正态 vs 总体不正态
 
-#### Case 1: Population Is Normal
+#### 情形 1：总体正态
 
-If the population itself is normally distributed ($X \sim N(\mu, \sigma)$), then the sampling distribution of $\bar{x}$ is **exactly** normal for any sample size:
-
-$$
-\bar{x} \sim N\left(\mu, \frac{\sigma}{\sqrt{n}}\right) \quad \text{exactly, for all } n
-$$
-
-No approximation is needed. This holds regardless of how small $n$ is.
-
-#### Case 2: Population Is NOT Normal
-
-If the population is not normal, the CLT guarantees that $\bar{x}$ is **approximately** normal when $n$ is large enough (typically $n \geq 30$):
+如果总体本身正态分布（$X \sim N(\mu, \sigma)$），则 $\bar{x}$ 的抽样分布对任意样本容量都**精确**正态：
 
 $$
-\bar{x} \stackrel{\text{approx}}{\sim} N\left(\mu, \frac{\sigma}{\sqrt{n}}\right) \quad \text{when } n \geq 30
+\bar{x} \sim N\left(\mu, \frac{\sigma}{\sqrt{n}}\right) \quad \text{精确成立，对所有 } n
 $$
 
-### Standardizing $\bar{x}$ to a $z$-Score
+不需要近似。无论 $n$ 多小都成立。
 
-Once we know (or assume) that the sampling distribution is approximately normal, we can compute $z$-scores and probabilities using:
+#### 情形 2：总体不正态
+
+如果总体不正态，CLT 保证当 $n$ 足够大（通常 $n \geq 30$）时，$\bar{x}$ **近似**正态：
+
+$$
+\bar{x} \stackrel{\text{近似}}{\sim} N\left(\mu, \frac{\sigma}{\sqrt{n}}\right) \quad \text{当 } n \geq 30
+$$
+
+### 将 $\bar{x}$ 标准化为 $z$ 分数
+
+一旦知道（或假设）抽样分布近似正态，就可以用下式计算 $z$ 分数和概率：
 
 $$
 z = \frac{\bar{x} - \mu}{\sigma / \sqrt{n}}
 $$
 
-This is the key to all one-sample mean inference: confidence intervals and significance tests for $\mu$ both depend on the CLT.
+这是所有单样本均值推断的关键：$\mu$ 的置信区间和显著性检验都依赖 CLT。
 
-### What the CLT Enables
+### CLT 带来的可能性
 
-Without the CLT, every population shape would require its own unique inference procedure. With the CLT, one framework — the normal distribution — handles essentially all inference about means. This is the insight that made modern statistics possible.
+没有 CLT，每种总体形状都需要自己的推断方法。有了 CLT，一个框架——正态分布——就能处理几乎所有关于均值的推断。正是这一洞见使现代统计学成为可能。
 
-> [!danger] Common Misconceptions
-> - The CLT does **not** say that the *population* becomes normal with a large sample
-> - The CLT does **not** say that a large sample guarantees a *representative* sample (you still need random sampling)
-> - The CLT does **not** work for the median or other statistics (it applies to the **mean**, though similar theorems exist for other statistics)
+> [!danger] 常见误解
+> - CLT 并**不**是说大样本会使*总体*变正态
+> - CLT 并**不**说大样本保证样本有*代表性*（你仍然需要随机抽样）
+> - CLT 不适用于中位数或其他统计量（它适用于**均值**，尽管其他统计量也有类似定理）
 
-### Summary Table
+### 汇总表
 
-| Quantity | Notation | Formula |
+| 量 | 符号 | 公式 |
 |----------|----------|---------|
-| Mean of sampling distribution | $\mu_{\bar{x}}$ | $\mu$ |
-| Standard deviation (standard error) | $\sigma_{\bar{x}}$ | $\dfrac{\sigma}{\sqrt{n}}$ |
-| $z$-score for $\bar{x}$ | $z$ | $\dfrac{\bar{x} - \mu}{\sigma / \sqrt{n}}$ |
+| 抽样分布的均值 | $\mu_{\bar{x}}$ | $\mu$ |
+| 标准差（标准误） | $\sigma_{\bar{x}}$ | $\dfrac{\sigma}{\sqrt{n}}$ |
+| $\bar{x}$ 的 $z$ 分数 | $z$ | $\dfrac{\bar{x} - \mu}{\sigma / \sqrt{n}}$ |
 
 ---
-Related: [[Unit_5_Sampling_Distributions]] | [[Sampling_Distribution_Means]] | [[AP_Statistics_MOC]]
+相关笔记：[[Unit_5_Sampling_Distributions]] | [[Sampling_Distribution_Means]] | [[AP_Statistics_MOC]]

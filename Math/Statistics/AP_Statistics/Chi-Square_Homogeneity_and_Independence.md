@@ -6,156 +6,138 @@ tags:
 created: 2026-06-14
 ---
 
-## Overview
+# 卡方齐性检验与独立性检验
 
-Both the **test of homogeneity** and the **test of independence** use a two-way (contingency) table and the same $\chi^2$ statistic. They differ in **design, sampling scheme, and interpretation**.
+**所属：** [[Unit_8_Chi-Square_Tests|单元 8 — 卡方检验]]
 
----
+## 概述
 
-## The Chi-Square Statistic (Two-Way Table)
+**齐性检验**和**独立性检验**都使用二维表（列联表）和相同的 $\chi^2$ 统计量。它们的区别在于**设计、抽样方案和解释**。
 
-For a table with $R$ rows and $C$ columns:
+## 卡方统计量（二维表）
 
-$$ \chi^2 = \sum_{\text{all cells}} \frac{(O - E)^2}{E}, \quad \text{df} = (R-1)(C-1) $$
+对于有 $R$ 行和 $C$ 列的表：
 
-Expected count for each cell (under $H_0$):
+$$ \chi^2 = \sum_{\text{所有单元格}} \frac{(O - E)^2}{E}, \quad \text{df} = (R-1)(C-1) $$
 
-$$ E = \frac{\text{row total} \times \text{column total}}{\text{grand total}} $$
+每个单元格的期望计数（在 $H_0$ 下）：
 
----
+$$ E = \frac{\text{行合计} \times \text{列合计}}{\text{总计}} $$
 
-## Test of Homogeneity
+## 齐性检验
 
-### When to Use
-Two or more **independent groups** (populations, treatments) are compared on the same categorical variable. The question: "Do these groups have the **same distribution** across categories?"
+### 何时使用
+比较两个或更多**独立组**（总体、处理）在同一个分类变量上的分布。问题："这些组在各类别上的**分布相同**吗？"
 
-### Design
-- Multiple random samples, one from each population
-- **Row totals fixed** by sample sizes
+### 设计
+- 多个随机样本，每个总体一个
+- **行合计固定**（由样本量决定）
 
-### Hypotheses
-- **$H_0$:** The distribution of the categorical variable is the same across all groups.
-- **$H_a$:** At least one group's distribution differs.
+### 假设
+- **$H_0$：** 分类变量在所有组中的分布相同。
+- **$H_a$：** 至少有一个组的分布不同。
 
-### Example
-Compare the distribution of preferred phone brand (Apple, Samsung, Other) across three age groups (18–29, 30–49, 50+). Survey 100 people from each age group.
+### 示例
+比较三个年龄组（18–29、30–49、50+）偏好的手机品牌分布（Apple、Samsung、其他）。从每个年龄组调查 100 人。
 
----
+## 独立性检验
 
-## Test of Independence
+### 何时使用
+来自一个总体的**单个样本**按两个分类变量交叉分类。问题："这两个变量是否**相关**（依赖）？"
 
-### When to Use
-A **single sample** from one population is cross-classified by two categorical variables. The question: "Are these two variables **associated** (dependent) or not?"
+### 设计
+- 一个随机样本
+- 只有**总计**固定
 
-### Design
-- One random sample
-- Only the **grand total** is fixed
+### 假设
+- **$H_0$：** 两个变量独立。
+- **$H_a$：** 两个变量相关（不独立）。
 
-### Hypotheses
-- **$H_0$:** The two variables are independent.
-- **$H_a$:** The two variables are associated (not independent).
+### 示例
+调查 300 名成年人，记录其教育水平（高中、大学、研究生）和是否支持某项政策（是、否）。检查教育水平与支持态度是否相关。
 
-### Example
-Survey 300 adults and record both their education level (HS, College, Graduate) and whether they support a policy (Yes, No). Check if education and support are related.
+## 对比表
 
----
-
-## Comparison Table
-
-| Feature | Homogeneity | Independence |
+| 特征 | 齐性 | 独立性 |
 |---------|-------------|--------------|
-| **Number of samples** | Two or more | One |
-| **What is fixed** | Row totals (sample sizes) | Grand total |
-| **Question** | Same distribution across groups? | Association between variables? |
-| **$H_0$ wording** | Distributions are equal across groups | Variables are independent |
-| **$H_a$ wording** | At least one distribution differs | Variables are associated |
-| **Example** | Do men and women have the same party affiliation distribution? | Is party affiliation associated with gender in the US? |
-| **Row totals** | Fixed by design | Random |
-| **Same $\chi^2$ formula?** | Yes | Yes |
-| **Same df?** | Yes ($(R-1)(C-1)$) | Yes |
+| **样本数量** | 两个或更多 | 一个 |
+| **固定什么** | 行合计（样本量） | 总计 |
+| **问题** | 各组分布相同？ | 变量间相关？ |
+| **$H_0$ 表述** | 各组分布相等 | 变量独立 |
+| **$H_a$ 表述** | 至少一个分布不同 | 变量相关 |
+| **示例** | 男性和女性的政党归属分布相同吗？ | 在美国，政党归属与性别相关吗？ |
+| **行合计** | 由设计固定 | 随机 |
+| **$\chi^2$ 公式相同？** | 是 | 是 |
+| **df 相同？** | 是（$(R-1)(C-1)$） | 是 |
 
----
+## 条件（两种检验）
 
-## Conditions (Both Tests)
+1. **随机**——数据来自随机样本或随机化实验。
+2. **独立**——每个观测值恰好属于一个单元格；无重复测量。
+   - 10% 条件：如果不放回抽样，$n < 0.10N$。
+3. **大期望计数**——所有 $E \ge 5$。
 
-1. **Random** — Data from random samples or randomized experiments.
-2. **Independence** — Each observation belongs to exactly one cell; no repeated measures.
-   - 10% condition: $n < 0.10N$ if sampling without replacement.
-3. **Large Expected Counts** — All $E \ge 5$.
+## 示例：齐性
 
----
-
-## Example: Homogeneity
-
-| | Support | Oppose | Undecided | Total |
+| | 支持 | 反对 | 未决定 | 合计 |
 |-----------|---------|--------|-----------|-------|
-| Group A | 45 | 30 | 25 | 100 |
-| Group B | 35 | 40 | 25 | 100 |
-| Group C | 25 | 45 | 30 | 100 |
+| 组 A | 45 | 30 | 25 | 100 |
+| 组 B | 35 | 40 | 25 | 100 |
+| 组 C | 25 | 45 | 30 | 100 |
 
-Expected for Group A, Support: $(105 \times 100) / 300 = 35$.
+组 A 支持单元格的期望计数：$(105 \times 100) / 300 = 35$。
 
 $$ \chi^2 = \frac{(45-35)^2}{35} + \frac{(30-35)^2}{35} + \cdots = 10.86 $$
 $$ \text{df} = (3-1)(3-1) = 4 $$
 
-$p \approx 0.028$ — reject $H_0$; the groups have different distributions of opinion.
+$p \approx 0.028$——拒绝 $H_0$；各组意见分布不同。
 
----
+## 示例：独立性
 
-## Example: Independence
-
-Same table, different design: one sample of 300 adults, then asked group membership and opinion.
+相同表格，不同设计：一个 300 名成年人的样本，询问其所属组别和意见。
 
 $$ \chi^2 = 10.86,\ \text{df} = 4,\ p \approx 0.028 $$
 
-**Interpretation:** There is evidence of an association between group membership and opinion among these 300 adults.
+**解释：** 在这 300 名成年人中，有证据表明组别归属与意见之间存在关联。
 
----
+## 标准化残差（二维表）
 
-## Standardized Residuals (Two-Way Tables)
+$\chi^2$ 显著后，检查：
 
-After a significant $\chi^2$, examine:
+$$ \text{残差} = \frac{O - E}{\sqrt{E}} $$
 
-$$ \text{residual} = \frac{O - E}{\sqrt{E}} $$
-
-| | Support | Oppose | Undecided |
+| | 支持 | 反对 | 未决定 |
 |-----------|---------|--------|-----------|
-| Group A | 1.69 | −0.85 | −1.69 |
-| Group B | 0 | 0.85 | −0.85 |
-| Group C | −1.69 | 1.69 | 0 |
+| 组 A | 1.69 | −0.85 | −1.69 |
+| 组 B | 0 | 0.85 | −0.85 |
+| 组 C | −1.69 | 1.69 | 0 |
 
-Group C has more Oppose and less Support than expected under $H_0$ — this drives the significance.
+组 C 在反对上比 $H_0$ 下期望更多，在支持上更少——这是驱动显著性的因素。
 
----
+## 常见错误
 
-## Common Mistakes
-
-| Mistake | Why it's wrong |
+| 错误 | 为什么错 |
 |---------|----------------|
-| Saying "homogeneity" when the design is one sample | Look at how the data were collected |
-| Claiming causation from independence test | Association ≠ causation; no temporal ordering |
-| Using wrong df ($R \times C$ instead of $(R-1)(C-1)$) | df counts free cells after fixing margins |
-| Computing $E$ incorrectly | Always $(\text{row} \times \text{col}) / \text{total}$ |
-| Forgetting $E \ge 5$ condition | Check after computing expected counts |
+| 设计是单个样本时却说"齐性" | 看数据是如何收集的 |
+| 从独立性检验中声称因果关系 | 关联 ≠ 因果；没有时间顺序 |
+| 用错 df（$R \times C$ 而非 $(R-1)(C-1)$） | df 计算的是固定边际后自由的单元格数 |
+| 错误计算 $E$ | 始终是 $(\text{行} \times \text{列}) / \text{总计}$ |
+| 忘记 $E \ge 5$ 条件 | 计算期望计数后检查 |
 
----
+## 哪种检验？快速检查清单
 
-## Which Test? Quick Checklist
+- **一个样本，两个分类变量** → 独立性
+- **两个或更多独立样本，一个分类变量** → 齐性
 
-- **One sample, two categorical variables** → Independence
-- **Two or more independent samples, one categorical variable** → Homogeneity
+在 AP 考试中，区别通常在于数据如何收集——仔细阅读题目描述。
 
-On the AP exam, the distinction often comes down to how the data were collected — read the problem description carefully.
+## 总结
 
----
-
-## Summary
-
-| | Homogeneity | Independence |
+| | 齐性 | 独立性 |
 |--|-------------|--------------|
-| $H_0$ | $p_{1j} = p_{2j} = \cdots = p_{Rj}$ for all $j$ | $P(A \cap B) = P(A)P(B)$ |
-| Chi-square | $\sum (O-E)^2/E$ | $\sum (O-E)^2/E$ |
+| $H_0$ | 对所有 $j$，$p_{1j} = p_{2j} = \cdots = p_{Rj}$ | $P(A \cap B) = P(A)P(B)$ |
+| 卡方 | $\sum (O-E)^2/E$ | $\sum (O-E)^2/E$ |
 | df | $(R-1)(C-1)$ | $(R-1)(C-1)$ |
-| Key question | Same across groups? | Associated in population? |
+| 关键问题 | 各组相同？ | 总体中相关？ |
 
-See also: [[Chi-Square_Goodness_of_Fit]], [[Unit_8_Chi-Square_Tests]], [[AP_Statistics_MOC]]
+另见：[[Chi-Square_Goodness_of_Fit]]、[[Unit_8_Chi-Square_Tests]]、[[AP_Statistics_MOC]]

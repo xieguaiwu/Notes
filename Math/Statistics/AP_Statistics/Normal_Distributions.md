@@ -6,45 +6,45 @@ tags:
 created: 2026-06-14
 ---
 
-# Normal Distributions
+# 正态分布
 
-> **Density Curves → Normal Curves → Standard Normal → z-Scores → Probability**
+> **密度曲线 → 正态曲线 → 标准正态 → z 分数 → 概率**
 
-The normal distribution is the most important continuous probability model in statistics. Many natural phenomena are approximately normal; more critically, the **Central Limit Theorem** guarantees that sample means tend toward normality regardless of the population shape.
+正态分布是统计学中最重要的连续概率模型。许多自然现象近似正态；更重要的是，**中心极限定理**保证：无论总体形状如何，样本均值都趋向正态。
 
-Part of: [[AP_Statistics_MOC]].
+属于：[[AP_Statistics_MOC]]。
 
-## Density Curves
+## 密度曲线
 
-A **density curve** is a smooth curve that describes the overall pattern of a distribution. It must satisfy:
+**密度曲线**是描述分布整体模式的光滑曲线。它必须满足：
 
-1. Always on or above the horizontal axis: $f(x) \geq 0$ for all $x$.
-2. Total area under the curve equals exactly 1: $\int_{-\infty}^{\infty} f(x)\,dx = 1$.
+1. 始终在横轴之上或横轴上：对所有 $x$，$f(x) \geq 0$。
+2. 曲线下总面积恰好等于 1：$\int_{-\infty}^{\infty} f(x)\,dx = 1$。
 
-The **median** of a density curve is the equal-areas point (50% to the left, 50% to the right). The **mean** is the balance point — in a symmetric density curve, mean = median.
+密度曲线的**中位数**是等面积点（左边 50%，右边 50%）。**均值**是平衡点——对称密度曲线中，均值 = 中位数。
 
-## Properties of the Normal Curve
+## 正态曲线的性质
 
-A **Normal distribution** $N(\mu, \sigma)$ is a density curve with these properties:
+**正态分布** $N(\mu, \sigma)$ 是具有以下性质的密度曲线：
 
-- **Symmetric** and **bell-shaped**.
-- **Unimodal** — the peak occurs at the mean $\mu$.
-- **Mean = Median = Mode** at the center.
-- The **standard deviation** $\sigma$ controls the spread. Larger $\sigma$ → flatter and wider curve.
-- The curve approaches but never touches the horizontal axis (asymptotic).
-- **Inflection points** occur at $\mu \pm \sigma$ — this is where the curvature changes direction.
+- **对称**且**钟形**。
+- **单峰**——峰值出现在均值 $\mu$ 处。
+- 中心处 **均值 = 中位数 = 众数**。
+- **标准差** $\sigma$ 控制离散程度。$\sigma$ 越大 → 曲线越扁平、越宽。
+- 曲线无限逼近横轴但永不接触（渐近线）。
+- **拐点**出现在 $\mu \pm \sigma$——曲率在此改变方向。
 
-The probability density function is:
+概率密度函数为：
 
 $$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\, e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
-You will never need to compute this by hand on the AP exam. Instead, use the **Empirical Rule** and **z-scores**.
+AP 考试中永远不需要手算这个公式。改用**经验法则**和 **z 分数**。
 
-## The Empirical Rule (68–95–99.7 Rule)
+## 经验法则（68–95–99.7 法则）
 
-For data that are approximately normal:
+对于近似正态的数据：
 
-| Interval | Approximate Proportion |
+| 区间 | 近似比例 |
 |:---|:---:|
 | $\mu \pm 1\sigma$ | **68%** |
 | $\mu \pm 2\sigma$ | **95%** |
@@ -65,64 +65,64 @@ For data that are approximately normal:
 
 $$ \mu-3\sigma \qquad \mu-2\sigma \qquad \mu-\sigma \qquad \mu \qquad \mu+\sigma \qquad \mu+2\sigma \qquad \mu+3\sigma $$
 
-### Applying the Rule: An Example
+### 应用法则：一个例子
 
-IQ scores are approximately $N(100, 15)$.
+IQ 分数近似服从 $N(100, 15)$。
 
-- 68% of people have IQs between **85 and 115**.
-- 95% of people have IQs between **70 and 130**.
-- 99.7% of people have IQs between **55 and 145**.
-- What percentage have IQs above 130? Since 95% fall within $\pm 2\sigma$, the remaining 5% is split equally in the two tails: **2.5%** above 130.
+- 68% 的人智商在 **85 到 115** 之间。
+- 95% 的人智商在 **70 到 130** 之间。
+- 99.7% 的人智商在 **55 到 145** 之间。
+- 智商高于 130 的人占多少？95% 落在 $\pm 2\sigma$ 内，剩余 5% 平分到两个尾端：高于 130 的占 **2.5%**。
 
-## Standardizing with z-Scores
+## 用 z 分数标准化
 
-A **z-score** measures how many standard deviations an observation is from the mean:
+**z 分数**度量观测值偏离均值多少个标准差：
 
 $$z = \frac{x - \mu}{\sigma}$$
 
-- $z = 0$ → the observation equals the mean.
-- $z = +2$ → the observation is 2 standard deviations above the mean.
-- $z = -1.5$ → the observation is 1.5 standard deviations below the mean.
+- $z = 0$ → 观测值等于均值。
+- $z = +2$ → 观测值在均值之上 2 个标准差。
+- $z = -1.5$ → 观测值在均值之下 1.5 个标准差。
 
-z-scores have no units — they are **dimensionless**. This makes them useful for comparing values from different distributions (e.g., comparing an SAT math score to an ACT math score).
+z 分数没有单位——它们是**无量纲**的。因此可用于比较来自不同分布的值（例如，比较 SAT 数学分数与 ACT 数学分数）。
 
-### The Standard Normal Distribution
+### 标准正态分布
 
-When we transform any $N(\mu, \sigma)$ variable to z-scores, the resulting distribution is the **standard normal** $N(0, 1)$ with mean 0 and standard deviation 1.
+把任意 $N(\mu, \sigma)$ 变量变换为 z 分数后，得到的分布就是**标准正态** $N(0, 1)$，均值为 0，标准差为 1。
 
-To find the proportion of observations below a given value $x$:
+求某个值 $x$ 以下的观测比例：
 
-1. Compute $z = \frac{x - \mu}{\sigma}$.
-2. Look up the cumulative probability in the **Standard Normal Table** (Table A).
-3. Interpret: the table gives the area to the **left** of $z$.
+1. 计算 $z = \frac{x - \mu}{\sigma}$。
+2. 在**标准正态表**（表 A）中查累积概率。
+3. 解释：表给出的是 $z$ **左侧**的面积。
 
-For areas to the **right**, use $1 - \text{table value}$.
-For areas **between** two z-scores, subtract the smaller table value from the larger.
+右侧面积用 $1 - \text{表值}$。
+两个 z 分数**之间**的面积，用较大表值减去较小表值。
 
-> [!tip] Which Table?
-> The AP Stats formula sheet provides areas to the **left** of $z$. If you need the area to the right of $z = 1.25$, find the table entry for $z = 1.25$ (approximately 0.8944) and compute $1 - 0.8944 = 0.1056$.
+> [!tip] 用哪张表？
+> AP 统计学公式表提供 $z$ **左侧**的面积。如果需要 $z = 1.25$ 右侧的面积，先查 $z = 1.25$ 的表值（约 0.8944），再计算 $1 - 0.8944 = 0.1056$。
 
-### Checking the Standard Normal Table
+### 验证标准正态表
 
-Given $z = 1.00$, the table gives approximately 0.8413. This means about 84.13% of observations in a standard normal distribution fall below $z = 1.00$. Equivalently, $P(Z < 1.00) \approx 0.8413$.
+$z = 1.00$ 时，表值约为 0.8413。这意味着标准正态分布中约有 84.13% 的观测值低于 $z = 1.00$。等价地，$P(Z < 1.00) \approx 0.8413$。
 
-## Assessing Normality
+## 评估正态性
 
-### Normal Probability (Quantile) Plots
+### 正态概率图（分位数图）
 
-A **normal probability plot** plots the sorted data against the **expected z-scores** they would have if the data were exactly normal.
+**正态概率图**把排序后的数据对应对应的**期望 z 分数**（若数据严格正态时应有的 z 分数）作图。
 
-- If the points fall roughly along a **straight diagonal line** → data are approximately normal.
-- **Systematic curvature** (bending, S-shape) → data are not normal.
-- No formal hypothesis test is required — judge by eye.
+- 如果点大致落在**直的对角线**上 → 数据近似正态。
+- **系统性弯曲**（弯折、S 形）→ 数据不正态。
+- 不需要正式的假设检验——凭目测判断。
 
-### Additional Checks
+### 附加检查
 
-- Compare $\bar{x}$ and $s$ to the empirical rule expectations.
-- Look for symmetry and unimodality in a histogram.
-- Check for outliers (normal distributions have very few).
+- 把 $\bar{x}$ 和 $s$ 与经验法则的期望值对比。
+- 在直方图中寻找对称性和单峰性。
+- 检查离群值（正态分布的离群值极少）。
 
-> [!important] Normality and Inference
-> Many inference procedures (one-sample t-tests, ANOVA) assume that the **population** is normal. We check this assumption by examining the **sample** distribution. Even moderate departures from normality are often acceptable when $n$ is large, thanks to the Central Limit Theorem.
+> [!important] 正态性与推断
+> 许多推断程序（单样本 t 检验、ANOVA）假设**总体**正态。我们通过检查**样本**分布来验证这一假设。由于中心极限定理，$n$ 较大时，即使中等程度偏离正态也常可接受。
 
-**Related:** [[Describing_Distributions]] | [[Measuring_Center_and_Spread]] | [[Unit_1_One-Variable_Data]]
+**相关笔记：** [[Describing_Distributions]] | [[Measuring_Center_and_Spread]] | [[Unit_1_One-Variable_Data]]

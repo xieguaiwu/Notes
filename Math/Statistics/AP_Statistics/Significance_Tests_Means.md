@@ -6,146 +6,134 @@ tags:
 created: 2026-06-14
 ---
 
-## Overview
+# 均值的显著性检验
 
-Significance tests (hypothesis tests) for means evaluate evidence against a null hypothesis about $\mu$. All use the **t-statistic** with degrees of freedom determined by the design.
+**所属：** [[Unit_7_Inference_for_Means|单元 7 — 均值的推断]]
 
----
+## 概述
 
-## One-Sample t-Test
+均值的显著性检验（假设检验）评估关于 $\mu$ 的原假设的证据。全部使用 **t 统计量**，自由度由设计决定。
 
-Test whether the population mean $\mu$ equals a hypothesized value $\mu_0$.
+## 单样本 t 检验
 
-### Hypotheses
+检验总体均值 $\mu$ 是否等于假设值 $\mu_0$。
+
+### 假设
 
 - $H_0: \mu = \mu_0$
-- $H_a: \mu \neq \mu_0$ (two-sided), $\mu > \mu_0$, or $\mu < \mu_0$ (one-sided)
+- $H_a: \mu \neq \mu_0$（双侧）、$\mu > \mu_0$ 或 $\mu < \mu_0$（单侧）
 
-### Test Statistic
+### 检验统计量
 
 $$ t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}, \quad \text{df} = n-1 $$
 
-### Conditions
+### 条件
 
-Same as for confidence intervals: Random, Independent (10%), Nearly Normal.
+与置信区间相同：随机、独立（10%）、近似正态。
 
-### p-value
+### $p$ 值
 
-- Upper-tailed: $P(T_{n-1} \ge t)$
-- Lower-tailed: $P(T_{n-1} \le t)$
-- Two-tailed: $2 \cdot P(T_{n-1} \ge |t|)$
+- 上尾：$P(T_{n-1} \ge t)$
+- 下尾：$P(T_{n-1} \le t)$
+- 双侧：$2 \cdot P(T_{n-1} \ge |t|)$
 
-### Example (One-Sample t-Test, 4-Step Process)
+### 示例（单样本 t 检验，四步流程）
 
-A teacher claims the mean score is 78. A random sample of 30 students has $\bar{x}=74.2$, $s=11.5$. Test at $\alpha = 0.05$.
+一位老师声称均值分数是 78。随机抽取 30 名学生，$\bar{x}=74.2$，$s=11.5$。在 $\alpha = 0.05$ 下检验。
 
-**Step 1 — State:**
-- $H_0: \mu = 78$ (the teacher's claim is correct)
-- $H_a: \mu \neq 78$ (two-sided — the claim is wrong)
+**步骤 1—陈述：**
+- $H_0: \mu = 78$（老师的说法正确）
+- $H_a: \mu \neq 78$（双侧——说法有误）
 - $\alpha = 0.05$
 
-**Step 2 — Plan:** One-sample t-test for $\mu$. Check conditions:
-- Random ✅ (SRS of 30 students)
-- 10% ✅ ($30 \le 0.10N$)
-- Nearly Normal ✅ ($n = 30 \ge 30$, CLT applies)
+**步骤 2—计划：** 单样本 t 检验 $\mu$。检查条件：
+- 随机 ✅（30 名学生的 SRS）
+- 10% ✅（$30 \le 0.10N$）
+- 近似正态 ✅（$n = 30 \ge 30$，CLT 适用）
 
-**Step 3 — Do:**
+**步骤 3—实施：**
 $$ t = \frac{74.2 - 78}{11.5/\sqrt{30}} = \frac{-3.8}{2.10} = -1.81, \quad \text{df} = 29 $$
 $$ p = 2 \cdot P(T_{29} \le -1.81) \approx 0.080 $$
 
-**Step 4 — Conclude:** Since $p = 0.080 > \alpha = 0.05$, we **fail to reject** $H_0$. There is not sufficient evidence at the 5% level that the true mean score differs from 78.
+**步骤 4—结论：** 由于 $p = 0.080 > \alpha = 0.05$，我们**无法拒绝** $H_0$。在 5% 显著性水平下，没有足够证据表明真实均值分数不同于 78。
 
----
+## 双样本 t 检验
 
-## Two-Sample t-Test
+用独立样本比较两个总体均值。
 
-Compare two population means using independent samples.
+### 假设
 
-### Hypotheses
+- $H_0: \mu_1 - \mu_2 = 0$（或 $\mu_1 = \mu_2$）
+- $H_a: \mu_1 - \mu_2 \neq 0$（或单侧）
 
-- $H_0: \mu_1 - \mu_2 = 0$ (or $\mu_1 = \mu_2$)
-- $H_a: \mu_1 - \mu_2 \neq 0$ (or one-sided)
-
-### Test Statistic
+### 检验统计量
 
 $$ t = \frac{(\bar{x}_1 - \bar{x}_2) - 0}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}, \quad \text{df} = \min(n_1 - 1,\ n_2 - 1) $$
 
-### Additional Condition
+### 额外条件
 
-**Independent groups** — the two samples are independent.
+**独立组**——两个样本相互独立。
 
----
+## 配对 t 检验
 
-## Paired t-Test
+用于配对或依赖样本。完整处理见 [[Matched_Pairs_T_Test]]。
 
-For matched pairs or dependent samples. See [[Matched_Pairs_T_Test]] for full treatment.
-
-### Hypotheses
+### 假设
 
 - $H_0: \mu_d = 0$
-- $H_a: \mu_d \neq 0$ (or one-sided)
+- $H_a: \mu_d \neq 0$（或单侧）
 
-### Test Statistic
+### 检验统计量
 
 $$ t = \frac{\bar{x}_d}{s_d/\sqrt{n}}, \quad \text{df} = n-1 $$
 
-Where $\bar{x}_d$ and $s_d$ are the mean and standard deviation of the **differences** within each pair.
+其中 $\bar{x}_d$ 和 $s_d$ 是每对**差值**的均值和标准差。
 
----
-
-## Decision Flowchart
+## 决策流程图
 
 ```mermaid
 flowchart TD
-    A[Significance test for mean] --> B{One or two<br>populations?}
-    B -->|One| C{Paired data?}
-    B -->|Two| D{Paired or<br>independent?}
-    C -->|Yes| E[Paired t-test<br>H₀: μ_d = 0<br>df = n-1]
-    C -->|No| F[One-sample t-test<br>H₀: μ = μ₀<br>df = n-1]
-    D -->|Paired| E
-    D -->|Independent| G[Two-sample t-test<br>H₀: μ₁ = μ₂<br>df = min(n₁-1, n₂-1)]
+    A[均值的显著性检验] --> B{一个还是两个<br>总体？}
+    B -->|一个| C{配对数据？}
+    B -->|两个| D{配对还是<br>独立？}
+    C -->|是| E[配对 t 检验<br>H₀: μ_d = 0<br>df = n-1]
+    C -->|否| F[单样本 t 检验<br>H₀: μ = μ₀<br>df = n-1]
+    D -->|配对| E
+    D -->|独立| G[双样本 t 检验<br>H₀: μ₁ = μ₂<br>df = min(n₁-1, n₂-1)]
 ```
 
----
+## 做出决策
 
-## Making a Decision
-
-| Evidence | $p$-value | Conclusion |
+| 证据 | $p$ 值 | 结论 |
 |----------|-----------|------------|
-| Weak against $H_0$ | $p > \alpha$ | Fail to reject $H_0$ — not enough evidence |
-| Strong against $H_0$ | $p \le \alpha$ | Reject $H_0$ — statistically significant |
+| 对 $H_0$ 弱 | $p > \alpha$ | 无法拒绝 $H_0$——证据不足 |
+| 对 $H_0$ 强 | $p \le \alpha$ | 拒绝 $H_0$——统计显著 |
 
-**Never say "accept $H_0$."** We only lack evidence to reject it.
+**绝不说"接受 $H_0$"。** 我们只是缺乏证据拒绝它。
 
----
+## 与置信区间的关系
 
-## Relationship with Confidence Intervals
+对水平 $\alpha$ 的双侧检验：
 
-For a two-sided test at level $\alpha$:
+- 如果 $\mu_0$ **在** $C = 1 - \alpha$ CI **内** → 无法拒绝 $H_0$
+- 如果 $\mu_0$ **在** $C = 1 - \alpha$ CI **外** → 拒绝 $H_0$
 
-- If $\mu_0$ is **inside** the $C = 1 - \alpha$ CI → fail to reject $H_0$
-- If $\mu_0$ is **outside** the $C = 1 - \alpha$ CI → reject $H_0$
+这种对偶性提供了有用的一致性检查。
 
-This duality provides a useful consistency check.
+## 常见错误
 
----
-
-## Common Errors
-
-| Error | Description |
+| 错误 | 描述 |
 |-------|-------------|
-| **Type I** | Reject $H_0$ when $H_0$ is true (false positive). Probability = $\alpha$. |
-| **Type II** | Fail to reject $H_0$ when $H_a$ is true (false negative). Probability = $\beta$. |
-| **Power** | $1 - \beta$ — probability of correctly rejecting a false $H_0$. |
+| **第一类错误** | $H_0$ 为真时拒绝 $H_0$（假阳性）。概率 = $\alpha$。 |
+| **第二类错误** | $H_a$ 为真时无法拒绝 $H_0$（假阴性）。概率 = $\beta$。 |
+| **检验力（Power）** | $1 - \beta$——正确拒绝假 $H_0$ 的概率。 |
 
-### Increasing Power
+### 提高检验力
 
-Increase sample size $n$, increase $\alpha$, reduce variability (better measurement, blocking).
+增加样本量 $n$，增大 $\alpha$，减少变异（更好的测量、区组化）。
 
----
+## 实际意义 vs 统计意义
 
-## Practical vs Statistical Significance
+非常大的样本可以检测到极小、实际无关的差异。始终**解释效应量**——置信区间有助于评估实际意义。
 
-A very large sample can detect a tiny, practically irrelevant difference. Always **interpret effect size** — a confidence interval helps assess practical significance.
-
-See also: [[Confidence_Intervals_Means]], [[Matched_Pairs_T_Test]], [[Unit_7_Inference_for_Means]], [[AP_Statistics_MOC]]
+另见：[[Confidence_Intervals_Means]]、[[Matched_Pairs_T_Test]]、[[Unit_7_Inference_for_Means]]、[[AP_Statistics_MOC]]

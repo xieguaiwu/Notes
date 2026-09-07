@@ -6,107 +6,107 @@ tags:
 created: 2026-06-14
 ---
 
-# Measuring Center and Spread
+# 度量中心与离散程度
 
-> **Summary statistics compress a distribution into a few numbers. Choose wisely, because they can mislead as much as they inform.**
+> **汇总统计量把分布压缩成几个数字。选择要谨慎，因为它们可能误导，也可能提供信息。**
 
-Part of: [[AP_Statistics_MOC]].
+属于：[[AP_Statistics_MOC]]。
 
-## Measures of Center
+## 中心度量
 
-### Mean
+### 均值（Mean）
 
-The **arithmetic mean** (average) is the sum of observations divided by the count.
+**算术均值（平均数）** 等于观测值之和除以个数。
 
-**Sample mean:**
+**样本均值：**
 $$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n} = \frac{x_1 + x_2 + \cdots + x_n}{n}$$
 
-**Population mean:**
+**总体均值：**
 $$\mu = \frac{\sum_{i=1}^{N} x_i}{N}$$
 
-The mean is the **balance point** of the distribution — if you placed the data on a number line as physical weights, the mean is the fulcrum point where the line would balance.
+均值是分布的**平衡点**——如果把数据看作数轴上的物理砝码，均值就是使数轴保持平衡的支点。
 
-The mean is **not resistant**. A single extreme value can dramatically shift it.
+均值**不抗离群**。单个极端值就能让它大幅偏移。
 
-**Example:** The dataset $\{4, 5, 6, 7, 100\}$ has $\bar{x} = 24.4$, even though four of the five values are below 8. The mean fails to represent the "typical" observation.
+**示例：** 数据集 $\{4, 5, 6, 7, 100\}$ 的 $\bar{x} = 24.4$，尽管五个值中有四个低于 8。均值无法代表"典型"观测值。
 
-### Median
+### 中位数（Median）
 
-The **median** is the midpoint: half the observations lie below it, half above. To find it:
+**中位数**是中点：一半观测值在它之下，一半在它之上。求法：
 
-1. Order the data from smallest to largest.
-2. If $n$ is odd: median = the middle value at position $\frac{n+1}{2}$.
-3. If $n$ is even: median = the average of the two middle values at positions $\frac{n}{2}$ and $\frac{n}{2} + 1$.
+1. 把数据从小到大排序。
+2. 如果 $n$ 为奇数：中位数 = 第 $\frac{n+1}{2}$ 个位置的值。
+3. 如果 $n$ 为偶数：中位数 = 第 $\frac{n}{2}$ 和第 $\frac{n}{2} + 1$ 两个位置值的平均。
 
-The median is **resistant**. For $\{4, 5, 6, 7, 100\}$, the median is 6 — a much better summary of the typical value.
+中位数**抗离群**。对 $\{4, 5, 6, 7, 100\}$，中位数是 6——对典型值的概括好得多。
 
-### Mode
+### 众数（Mode）
 
-The **mode** is the most frequently occurring value. Distributions can be:
+**众数**是出现次数最多的值。分布可以是：
 
-- **Unimodal** (one mode), **bimodal** (two), or **multimodal** (many).
-- A distribution with no repeated values has **no mode**.
-- The mode is the only appropriate measure of center for **categorical** data.
+- **单峰**（一个众数）、**双峰**（两个）或**多峰**（多个）。
+- 没有重复值的分布**没有众数**。
+- 众数是**分类数据**唯一合适的中心度量。
 
-### Choosing Between Mean and Median
+### 均值与中位数的选择
 
-| Situation | Recommended |
+| 情形 | 推荐 |
 |:---|:---|
-| Symmetric, no outliers | Mean |
-| Skewed or outliers present | Median |
-| Categorical data | Mode |
+| 对称、无离群值 | 均值 |
+| 偏斜或有离群值 | 中位数 |
+| 分类数据 | 众数 |
 
-> [!warning] Always Pair Correctly
-> When reporting center and spread as a pair, report **mean with standard deviation** OR **median with IQR**. Never mix: "the mean is 72 with an IQR of 8" is incoherent because the IQR describes the middle 50%, not the average spread around the mean.
+> [!warning] 配对必须正确
+> 报告中心与离散程度时，要么**均值配标准差**，要么**中位数配 IQR**。绝不混搭："均值为 72，IQR 为 8"自相矛盾——IQR 描述的是中间 50%，不是围绕均值的平均离散。
 
-## Measures of Spread
+## 离散程度度量
 
-### Range
+### 极差（Range）
 
 $$\text{Range} = \max - \min$$
 
-The range uses only two observations and is extremely **sensitive to outliers**. A single extreme value can make the range enormous. Rarely used as the sole measure of spread.
+极差只用两个观测值，对离群值**极其敏感**。单个极端值就能让极差变得巨大。很少单独作为离散程度度量。
 
-### Interquartile Range (IQR)
+### 四分位距（IQR）
 
-The IQR is the spread of the middle half of the data:
+IQR 是数据中间一半的离散程度：
 
 $$\text{IQR} = Q_3 - Q_1$$
 
-- $Q_1$ is the **first quartile** (25th percentile): the median of the lower half of the data.
-- $Q_3$ is the **third quartile** (75th percentile): the median of the upper half of the data.
-- The IQR is **resistant** — outliers do not affect it.
+- $Q_1$ 是**第一四分位数**（第 25 百分位）：数据下半部分的中位数。
+- $Q_3$ 是**第三四分位数**（第 75 百分位）：数据上半部分的中位数。
+- IQR **抗离群**——离群值不影响它。
 
-**Finding quartiles:** After ordering the data, locate the median. Then find the median of the values below the overall median ($Q_1$) and above the overall median ($Q_3$). The overall median is not included in either half.
+**求四分位数：** 排序后先找中位数。再分别求中位数以下部分的中位数（$Q_1$）和以上部分的中位数（$Q_3$）。总中位数不属于任何一半。
 
-### Variance and Standard Deviation
+### 方差与标准差
 
-**Variance** measures the average squared deviation from the mean.
+**方差**度量偏离均值的平均平方距离。
 
-**Sample variance:**
+**样本方差：**
 $$s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}$$
 
-**Population variance:**
+**总体方差：**
 $$\sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}$$
 
-Why divide by $n-1$ for the sample? This **Bessel's correction** makes $s^2$ an unbiased estimator of the population variance $\sigma^2$. Using $n$ would systematically underestimate the true variance.
+样本方差为什么除以 $n-1$？这是**贝塞尔校正**，它使 $s^2$ 成为总体方差 $\sigma^2$ 的无偏估计量。除以 $n$ 会系统性低估真实方差。
 
-**Standard deviation** is the square root of the variance:
+**标准差**是方差的平方根：
 
 $$s = \sqrt{s^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}}$$
 
-Standard deviation is measured in the **original units** of the data (unlike variance, which is in squared units). This makes $s$ the natural companion to the mean.
+标准差的单位与**原始数据相同**（方差单位是平方单位）。这让 $s$ 成为均值的天然伴侣。
 
-**Properties of $s$:**
+**$s$ 的性质：**
 
-- $s \geq 0$. $s = 0$ only when all observations are identical.
-- $s$ is strongly affected by outliers (non-resistant).
-- $s$ has the same units as the original data.
-- Adding a constant to every observation does not change $s$. Multiplying every observation by a constant multiplies $s$ by the absolute value of that constant.
+- $s \geq 0$。仅当所有观测值相同时，$s = 0$。
+- $s$ 受离群值强烈影响（不抗离群）。
+- $s$ 与原始数据同单位。
+- 每个观测值加上常数，$s$ 不变。每个观测值乘以常数，$s$ 乘以该常数的绝对值。
 
-### Numerical Example
+### 数值示例
 
-Consider the dataset: $\{2, 4, 6, 8, 10\}$
+考虑数据集：$\{2, 4, 6, 8, 10\}$
 
 $$\bar{x} = \frac{2+4+6+8+10}{5} = 6$$
 
@@ -114,18 +114,18 @@ $$s^2 = \frac{(2-6)^2 + (4-6)^2 + (6-6)^2 + (8-6)^2 + (10-6)^2}{5-1} = \frac{16 
 
 $$s = \sqrt{10} \approx 3.162$$
 
-$$\text{Median} = 6, \quad Q_1 = 3, \quad Q_3 = 9, \quad \text{IQR} = 6$$
+$$\text{中位数} = 6, \quad Q_1 = 3, \quad Q_3 = 9, \quad \text{IQR} = 6$$
 
-## Summary Table: Resistant vs. Non-Resistant
+## 汇总表：抗离群 vs 不抗离群
 
-| Statistic | Resistant? | Best Used With |
+| 统计量 | 抗离群？ | 最佳搭配 |
 |:---|:---:|:---|
-| Mean $\bar{x}$ | No | Standard deviation |
-| Median | **Yes** | IQR |
-| Mode | **Yes** | Categorical analysis |
-| Range | No | Quick descriptive |
-| IQR | **Yes** | Median, boxplots |
-| Standard Deviation $s$ | No | Mean, normal models |
-| Variance $s^2$ | No | Theoretical derivations |
+| 均值 $\bar{x}$ | 否 | 标准差 |
+| 中位数 | **是** | IQR |
+| 众数 | **是** | 分类分析 |
+| 极差 | 否 | 快速描述 |
+| IQR | **是** | 中位数、箱线图 |
+| 标准差 $s$ | 否 | 均值、正态模型 |
+| 方差 $s^2$ | 否 | 理论推导 |
 
-**Related:** [[Describing_Distributions]] | [[Unit_1_One-Variable_Data]] | [[Normal_Distributions]]
+**相关笔记：** [[Describing_Distributions]] | [[Unit_1_One-Variable_Data]] | [[Normal_Distributions]]

@@ -6,111 +6,105 @@ tags:
 created: 2026-06-14
 ---
 
-## Overview
+# 均值的置信区间
 
-A confidence interval for a population mean $\mu$ gives a range of plausible values based on sample data. When $\sigma$ is unknown (the usual case), we use the **t-interval** rather than the z-interval.
+**所属：** [[Unit_7_Inference_for_Means|单元 7 — 均值的推断]]
 
----
+## 概述
 
-## One-Sample t-Interval
+总体均值 $\mu$ 的置信区间基于样本数据给出一个合理取值区间。当 $\sigma$ 未知时（通常情况），我们用 **t 区间**而非 z 区间。
 
-### Formula
+## 单样本 t 区间
+
+### 公式
 
 $$ \bar{x} \pm t^*_{n-1} \cdot \frac{s}{\sqrt{n}} $$
 
-- $\bar{x}$: sample mean
-- $s$: sample standard deviation
-- $n$: sample size
-- $t^*_{n-1}$: critical value from t-distribution with $n-1$ df, capturing central $C\%$ of the distribution
+- $\bar{x}$：样本均值
+- $s$：样本标准差
+- $n$：样本容量
+- $t^*_{n-1}$：自由度为 $n-1$ 的 t 分布临界值，捕获中心 $C\%$ 的区域
 
-### Conditions
+### 条件
 
-1. **Random** — Data from a random sample or randomized experiment.
-2. **Independence / 10%** — $n < 0.10N$ (population at least $10 \times$ sample size).
-3. **Nearly Normal** — Either the population is Normal, $n \ge 30$ (CLT), or a graph shows no strong skew/outliers.
+1. **随机**——数据来自随机样本或随机化实验。
+2. **独立/10%**——$n < 0.10N$（总体至少为样本容量的 10 倍）。
+3. **近似正态**——总体正态，或 $n \ge 30$（CLT），或图形显示无强偏斜/离群值。
 
-### Interpreting the Interval
+### 解释区间
 
-> "We are $C\%$ confident that the true population mean $\mu$ is between $\_\_$ and $\_\_$."
+> "我们有 $C\%$ 的把握认为总体均值 $\mu$ 的真实值在 $\_\_$ 和 $\_\_$ 之间。"
 
-The confidence is in the **method**: if we repeated the sampling procedure many times, $C\%$ of the resulting intervals would capture $\mu$.
+把握在于**方法**：如果重复抽样过程多次，$C\%$ 的区间会捕获 $\mu$。
 
-### Example
+### 示例
 
-A random sample of 25 students has $\bar{x} = 82.4$, $s = 8.2$. For a 95% CI with df = 24, $t^* \approx 2.064$.
+随机抽取 25 名学生，$\bar{x} = 82.4$，$s = 8.2$。95% CI，df = 24，$t^* \approx 2.064$。
 
 $$ 82.4 \pm 2.064 \cdot \frac{8.2}{\sqrt{25}} = 82.4 \pm 3.38 = (79.02,\ 85.78) $$
 
-**Interpretation:** We are 95% confident that the true mean score is between 79.02 and 85.78.
+**解释：** 我们有 95% 的把握认为真实均值分数在 79.02 到 85.78 之间。
 
----
+## 双样本 t 区间
 
-## Two-Sample t-Interval
-
-### Formula
+### 公式
 
 $$ (\bar{x}_1 - \bar{x}_2) \pm t^*_{\text{df}} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} $$
 
-- Estimates $\mu_1 - \mu_2$, the difference between two population means
-- **Never pool** the variances — the AP exam uses the unpooled (Welch's) approach
+- 估计 $\mu_1 - \mu_2$，两个总体均值之差
+- **绝不合并**方差——AP 考试使用非合并（Welch）方法
 
-### Degrees of Freedom
+### 自由度
 
-Use the conservative **minimum** of $n_1 - 1$ and $n_2 - 1$, or the Welch–Satterthwaite formula (AP formula sheet provides the conservative df):
+使用保守的 $n_1 - 1$ 和 $n_2 - 1$ 中的**最小值**，或 Welch-Satterthwaite 公式（AP 公式表提供保守 df）：
 
 $$ \text{df} = \min(n_1 - 1,\ n_2 - 1) $$
 
-### Additional Condition
+### 额外条件
 
-**Independent groups** — The two samples are independent of each other (not paired, not matched). See [[Matched_Pairs_T_Test]] for dependent samples.
+**独立组**——两个样本相互独立（不是配对，不是匹配）。关于依赖样本，见 [[Matched_Pairs_T_Test]]。
 
-### Example
+### 示例
 
-| Group | $n$ | $\bar{x}$ | $s$ |
+| 组 | $n$ | $\bar{x}$ | $s$ |
 |-------|-----|-----------|-----|
-| Treatment | 20 | 74.3 | 10.1 |
-| Control | 22 | 68.9 | 9.8 |
+| 处理组 | 20 | 74.3 | 10.1 |
+| 对照组 | 22 | 68.9 | 9.8 |
 
-df = $\min(19, 21) = 19$, $t^*_{19} \approx 2.093$ for 95% CI.
+df = $\min(19, 21) = 19$，95% CI 的 $t^*_{19} \approx 2.093$。
 
 $$ (74.3 - 68.9) \pm 2.093 \cdot \sqrt{\frac{10.1^2}{20} + \frac{9.8^2}{22}} $$
 $$ = 5.4 \pm 2.093 \cdot 3.08 = 5.4 \pm 6.44 = (-1.04,\ 11.84) $$
 
-Since 0 is in the interval, the difference is not statistically significant at $\alpha = 0.05$.
+由于 0 在区间内，差异在 $\alpha = 0.05$ 下不统计显著。
 
----
-
-## Choosing the Correct Interval
+## 选择正确的区间
 
 ```mermaid
 flowchart TD
-    A[Confidence interval for mean?] --> B{One group or two?}
-    B -->|One| C[One-sample t-interval]
-    B -->|Two| D{Are data paired?}
-    D -->|Yes| E[Paired t-interval<br>on differences]
-    D -->|No| F[Two-sample t-interval]
+    A[均值的置信区间？] --> B{一组还是两组？}
+    B -->|一组| C[单样本 t 区间]
+    B -->|两组| D{数据是否配对？}
+    D -->|是| E[配对 t 区间<br>基于差值]
+    D -->|否| F[双样本 t 区间]
 ```
 
----
+## 常见错误
 
-## Common Mistakes
-
-| Mistake | Why it's wrong |
+| 错误 | 为什么错 |
 |---------|----------------|
-| Using $z$ when $\sigma$ unknown | $z$-interval is too narrow; nominal confidence level not achieved |
-| Pooling variances | Assumes equal $\sigma$ — not required or tested in AP |
-| Interpreting as probability of $\mu$ | $\mu$ is fixed, not random; the interval captures it or doesn't |
-| Checking 10% condition on the sample | 10% condition applies to sampling from a finite population |
-| Using $n$ instead of $n-1$ for df | We estimate $\mu$ with $\bar{x}$, losing 1 degree of freedom; df = $n-1$ remains for estimating $\sigma$ |
+| $\sigma$ 未知时用 $z$ | $z$ 区间太窄，名义置信水平达不到 |
+| 合并方差 | 假设 $\sigma$ 相等——AP 不要求也不考 |
+| 解释为 $\mu$ 的概率 | $\mu$ 固定，不是随机的；区间要么捕获它要么不捕获 |
+| 在样本上检查 10% 条件 | 10% 条件适用于从有限总体抽样 |
+| 用 $n$ 而非 $n-1$ 作为 df | 我们用 $\bar{x}$ 估计 $\mu$，损失 1 个自由度；df = $n-1$ 仍用于估计 $\sigma$ |
 
----
+## 目标误差范围的样本量
 
-## Sample Size for a Desired Margin of Error
-
-When planning a study, solve for $n$:
+规划研究时，解 $n$：
 
 $$ \text{ME} = t^* \cdot \frac{s}{\sqrt{n}} \quad\Rightarrow\quad n = \left( \frac{t^* \cdot s}{\text{ME}} \right)^2 $$
 
-Use $z^*$ as an approximation for $t^*$ when $n$ is unknown (since $t^*$ depends on $n$). Use a pilot study's $s$ or a conservative estimate.
+$n$ 未知时用 $z^*$ 近似 $t^*$（因为 $t^*$ 依赖 $n$）。用预研的 $s$ 或保守估计。
 
-See also: [[Unit_7_Inference_for_Means]], [[AP_Statistics_MOC]]
+另见：[[Unit_7_Inference_for_Means]]、[[AP_Statistics_MOC]]

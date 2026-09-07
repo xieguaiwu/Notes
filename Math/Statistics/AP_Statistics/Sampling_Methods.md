@@ -6,75 +6,75 @@ tags:
 created: 2026-06-14
 ---
 
-## Sampling Methods
+# 抽样方法
 
-Choosing how to select individuals from a population directly determines whether study results are trustworthy. A method is **biased** if it systematically favors certain outcomes.
+如何从总体中选择个体，直接决定研究结果是否可信。如果某种方法系统性偏向某些结果，它就是**有偏**的。
 
-### Probability Sampling Methods
+### 概率抽样方法
 
-These methods use chance to select individuals — each member of the population has a known, nonzero probability of being selected.
+这些方法用随机手段选择个体——总体中的每个成员都有已知的、非零的被选概率。
 
-#### Simple Random Sample (SRS)
+#### 简单随机样本（SRS）
 
-An SRS of size $n$ gives every group of $n$ individuals an equal chance of being chosen. This is the gold standard: it eliminates selection bias and makes statistical inference valid.
+容量为 $n$ 的 SRS 给每组 $n$ 个个体相同的被选机会。这是黄金标准：它消除选择偏倚，使统计推断有效。
 
-**How to implement:** Assign each individual a unique number, then use a random number generator (or a table of random digits) to pick $n$ of them.
+**实施方法：** 给每个个体分配唯一编号，然后用随机数生成器（或随机数表）挑出 $n$ 个。
 
-#### Stratified Random Sample
+#### 分层随机样本（Stratified）
 
-1. Divide the population into **strata** — groups of similar individuals (e.g., by grade level, gender)
-2. Take an SRS from *each* stratum
+1. 把总体分成**层（strata）**——相似个体的组（例如按年级、性别）
+2. 从*每个*层中取一个 SRS
 
-**Why use it?** Guarantees representation from each subgroup and can reduce sampling variability compared to an SRS of the same size, because individuals within a stratum tend to be homogeneous.
+**为什么用？** 保证每个子组都有代表，并且与相同容量的 SRS 相比可减少抽样变异，因为层内个体趋于同质。
 
-#### Cluster Sample
+#### 整群样本（Cluster）
 
-1. Divide the population into **clusters** — groups that are each representative of the population (e.g., homeroom classes in a school)
-2. Randomly select one or more clusters
-3. Include *all* individuals from the selected clusters
+1. 把总体分成**群（clusters）**——每个群都能代表总体的组（例如学校里的班级）
+2. 随机选择一个或多个群
+3. 纳入所选群的*所有*个体
 
-**Why use it?** Practical when the population is geographically spread out or when a complete list of individuals is unavailable. The key difference from stratification: strata are internally homogeneous, while clusters are internally heterogeneous.
+**为什么用？** 当总体在地理上分散、或没有完整的个体名单时很实用。与分层的关键区别：层内同质，群内异质。
 
-#### Systematic Random Sample
+#### 系统随机样本（Systematic）
 
-Select a starting point at random, then pick every $k$-th individual. For example, interview every 30th customer entering a store. Valid **only if** the ordering has no pattern related to the variable of interest.
+随机选择起点，然后每隔 $k$ 个个体取一个。例如，对进店的每第 30 位顾客进行访谈。**仅当**排序与感兴趣的变量无关时才有效。
 
-### Non-Probability Sampling (Biased)
+### 非概率抽样（有偏）
 
-| Method | How It Works | Problem |
+| 方法 | 做法 | 问题 |
 |--------|-------------|---------|
-| **Convenience sample** | Choose individuals easiest to reach | Over-represents accessible groups |
-| **Voluntary response** | Individuals choose to participate | Only those with strong opinions respond |
+| **便利样本** | 选择最容易接触的个体 | 过度代表易接触的群体 |
+| **自愿响应** | 个体自愿参与 | 只有意见强烈的人响应 |
 
-> [!danger] AP Exam Warning
-> Convenience and voluntary response samples are **always** biased. Do not use them unless the question specifically asks you to identify a biased method.
+> [!danger] AP 考试警告
+> 便利样本和自愿响应样本**总是有偏**。除非题目明确要求你识别有偏方法，否则不要使用。
 
-### Types of Bias
+### 偏倚类型
 
-#### Sampling Bias (Selection Bias)
-The method for choosing the sample systematically excludes part of the population. *Example:* A phone survey misses people without phones.
+#### 抽样偏倚（选择偏倚）
+选择样本的方法系统性排除总体的一部分。*示例：* 电话调查漏掉了没有电话的人。
 
-#### Nonresponse Bias
-Individuals selected for the sample cannot be contacted or refuse to participate — and those who respond differ systematically from those who don't.
+#### 无响应偏倚
+被选入样本的个体无法联系或拒绝参与——而响应者与未响应者在系统上不同。
 
-#### Response Bias
-The survey itself influences answers. Sources include:
-- **Question wording** ("Do you support killing innocent animals?" vs. "Do you support medical research using animal testing?")
-- **Interviewer effect** (race, gender, or demeanor of the interviewer)
-- **Social desirability** (respondents give "acceptable" rather than truthful answers)
+#### 响应偏倚
+调查本身影响回答。来源包括：
+- **问题措辞**（"你支持杀死无辜动物吗？" vs "你支持用动物做医学研究吗？"）
+- **访员效应**（访员的种族、性别或举止）
+- **社会期望**（受访者给出"可接受的"而非真实的回答）
 
-#### Undercoverage
-Some groups in the population are left out of the sampling frame entirely. *Example:* Using a list of registered voters misses unregistered adults.
+#### 覆盖不足
+总体中的某些群体完全不在抽样框中。*示例：* 使用登记选民名单会漏掉未登记的成年人。
 
-> [!tip] Identifying Bias on the AP Exam
-> When asked to describe a bias, name the **type** (sampling, nonresponse, response, undercoverage), explain **how** it arises from the study design, and state the **direction** of the bias (who is over- or under-represented).
+> [!tip] AP 考试识别偏倚
+> 要求描述偏倚时，说出**类型**（抽样、无响应、响应、覆盖不足），解释它**如何**从研究设计中产生，并说明偏倚的**方向**（谁被过度或不足代表）。
 
-### How to Reduce Bias
+### 如何减少偏倚
 
-- Use a **random sampling** method — SRS is best when feasible
-- Maximize **response rate** with follow-ups and incentives
-- Write **neutral, clear questions** and pilot-test them
-- Ensure the **sampling frame** matches the target population
+- 使用**随机抽样**方法——可行时 SRS 最好
+- 用跟进和激励最大化**响应率**
+- 写**中立、清晰的问题**并先做预测试
+- 确保**抽样框**与目标总体一致
 
 ---
-Related: [[Unit_3_Collecting_Data]] | [[AP_Statistics_MOC]]
+相关笔记：[[Unit_3_Collecting_Data]] | [[AP_Statistics_MOC]]

@@ -6,124 +6,110 @@ tags:
 created: 2026-06-14
 ---
 
-## Overview
+# 卡方拟合优度检验
 
-The **chi-square goodness-of-fit (GOF) test** determines whether the observed distribution of a single categorical variable matches a hypothesized (claimed) distribution. It answers: "Is the sample consistent with the claimed population proportions?"
+**所属：** [[Unit_8_Chi-Square_Tests|单元 8 — 卡方检验]]
 
----
+## 概述
 
-## Hypotheses
+**卡方拟合优度检验**判断单个分类变量的观测分布是否与假设（声称的）分布一致。它回答："样本是否与声称的总体比例一致？"
 
-- **$H_0$:** The population follows the specified distribution (the proportions $p_1, p_2, \ldots, p_k$ are as claimed).
-- **$H_a$:** At least one proportion differs from the claimed value.
+## 假设
 
-The alternative is **always two-sided** in the sense that any deviation counts — there is no "direction" for GOF.
+- **$H_0$：** 总体遵循指定分布（比例 $p_1, p_2, \ldots, p_k$ 与声称值一致）。
+- **$H_a$：** 至少有一个比例与声称值不同。
 
----
+备择假设从**总是双侧**的意义上说，任何偏差都算——拟合优度没有"方向"。
 
-## Test Statistic
+## 检验统计量
 
 $$ \chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}, \quad \text{df} = k - 1 $$
 
-- $k$ = number of categories
-- $O_i$ = observed count in category $i$
-- $E_i = n \cdot p_i$ = expected count (under $H_0$)
-- $n$ = total sample size
+- $k$ = 类别数
+- $O_i$ = 类别 $i$ 中的观测计数
+- $E_i = n \cdot p_i$ = 期望计数（在 $H_0$ 下）
+- $n$ = 总样本容量
 
-The $p$-value is $P(\chi^2_{k-1} \ge \chi^2_{\text{calc}})$.
+$p$ 值是 $P(\chi^2_{k-1} \ge \chi^2_{\text{calc}})$。
 
-### Key Properties
+### 关键性质
 
-- $\chi^2$ is always **non-negative**.
-- Larger values indicate **greater deviation** from $H_0$.
-- Each term $\frac{(O-E)^2}{E}$ measures the **relative contribution** of that cell.
+- $\chi^2$ 始终**非负**。
+- 值越大，对 $H_0$ 的**偏离越大**。
+- 每一项 $\frac{(O-E)^2}{E}$ 度量该单元格的**相对贡献**。
 
----
+## 条件
 
-## Conditions
+1. **随机**——数据来自随机样本或随机化实验。
+2. **独立**——每个观测值恰好属于一个类别；观测值独立。
+3. **大计数**——所有期望计数 $\ge 5$。
 
-1. **Random** — Data from a random sample or randomized experiment.
-2. **Independence** — Each observation belongs to exactly one category; observations are independent.
-3. **Large Counts** — All expected counts $\ge 5$.
+如果期望计数太小，考虑合并相邻类别（仅当在情境中有意义时）。
 
-If an expected count is too small, consider combining adjacent categories (only if meaningful in context).
+## 示例：M&M 颜色分布
 
----
-
-## Example: M&M Color Distribution
-
-| Color | Claimed $p$ | Observed $O$ | Expected $E = 100 \times p$ | $(O-E)^2/E$ |
+| 颜色 | 声称的 $p$ | 观测 $O$ | 期望 $E = 100 \times p$ | $(O-E)^2/E$ |
 |-------|-------------|--------------|------------------------------|-------------|
-| Blue | 0.24 | 28 | 24 | 0.667 |
-| Orange | 0.20 | 22 | 20 | 0.200 |
-| Green | 0.16 | 14 | 16 | 0.250 |
-| Yellow | 0.14 | 12 | 14 | 0.286 |
-| Red | 0.13 | 15 | 13 | 0.308 |
-| Brown | 0.13 | 9 | 13 | 1.231 |
+| 蓝色 | 0.24 | 28 | 24 | 0.667 |
+| 橙色 | 0.20 | 22 | 20 | 0.200 |
+| 绿色 | 0.16 | 14 | 16 | 0.250 |
+| 黄色 | 0.14 | 12 | 14 | 0.286 |
+| 红色 | 0.13 | 15 | 13 | 0.308 |
+| 棕色 | 0.13 | 9 | 13 | 1.231 |
 
 $$ \chi^2 = 0.667 + 0.200 + 0.250 + 0.286 + 0.308 + 1.231 = 2.942 $$
 $$ \text{df} = 6 - 1 = 5 $$
 
-$p \approx 0.71$ — insufficient evidence to reject the claimed distribution.
+$p \approx 0.71$——证据不足，无法拒绝声称的分布。
 
----
+## 标准化残差
 
-## Standardized Residuals
-
-The **standardized residual** for each category is:
+每个类别的**标准化残差**为：
 
 $$ \text{residual}_i = \frac{O_i - E_i}{\sqrt{E_i}} $$
 
-- Residuals > 2 or < −2 suggest a **notable deviation** in that category.
-- Residuals > 3 or < −3 are **strong evidence** of deviation in that cell.
+- 残差 > 2 或 < −2 提示该类别**偏离显著**。
+- 残差 > 3 或 < −3 是该单元格偏离的**强证据**。
 
-In the M&M example, the largest |residual| is $\sqrt{1.231} = 1.11$ (Brown), well below 2 — no single cell drives the result.
+在 M&M 示例中，最大 |残差| 为 $\sqrt{1.231} = 1.11$（棕色），远低于 2——没有单个单元格驱动结果。
 
----
+## 检验显著时
 
-## When the Test is Significant
+如果 $p \le \alpha$：
 
-If $p \le \alpha$:
+- 结论：至少有一个比例与声称值不同。
+- **不要**断定所有比例都不同——找出哪个类别的标准化残差大。
+- 用标准化残差进行后续分析，定位来源。
 
-- Conclude that at least one proportion differs from the claimed value.
-- **Do not** conclude all proportions differ — identify which categories have large residuals.
-- A follow-up analysis using standardized residuals pinpoints the source.
+### 示例
 
-### Example
+遗传学实验检验 $H_0: (9{:}3{:}3{:}1)$ 双杂合子比例。df = 3，$\chi^2 = 14.5$，$p \approx 0.002$。最大残差可能在"双隐性"类别——这就是观测与期望偏离最大的地方。
 
-A genetics experiment tests $H_0: (9{:}3{:}3{:}1)$ dihybrid ratio. With df = 3 and $\chi^2 = 14.5$, $p \approx 0.002$. The largest residual might be in the "double recessive" category — that's where observed and expected diverge most.
+## 与单比例 z 检验的关系
 
----
-
-## Relationship to the One-Proportion z-Test
-
-When $k = 2$ (two categories), the GOF test is equivalent to a **two-sided one-proportion z-test**:
+当 $k = 2$（两个类别）时，拟合优度检验等价于**双侧单比例 z 检验**：
 
 $$ \chi^2 = z^2, \quad \chi^2_{1, \alpha} = z^2_{\alpha/2} $$
 
-The GOF test generalizes this to $k \ge 2$ categories.
+拟合优度检验将此推广到 $k \ge 2$ 个类别。
 
----
+## 常见错误
 
-## Common Mistakes
-
-| Mistake | Why it's wrong |
+| 错误 | 为什么错 |
 |---------|----------------|
-| Using counts where proportions are given | Expected counts must be $n \times p$, not just $p$ |
-| Checking $O_i \ge 5$ instead of $E_i \ge 5$ | The condition is about **expected** counts |
-| Interpreting $H_a$ directionally | Any deviation, in any category, counts against $H_0$ |
-| Running GOF on numeric data | GOF requires categorical data; binning numeric data loses information |
-| Using $\chi^2$ when expected counts < 5 | Test may not be valid; consider combining categories |
+| 给出比例时用了计数 | 期望计数必须是 $n \times p$，不是 $p$ |
+| 检查 $O_i \ge 5$ 而非 $E_i \ge 5$ | 条件是关于**期望**计数的 |
+| 方向性解释 $H_a$ | 任何类别、任何方向的偏离都算对 $H_0$ 不利 |
+| 对数值数据做拟合优度 | 拟合优度需要分类数据；分箱数值数据会丢失信息 |
+| 期望计数 < 5 时用 $\chi^2$ | 检验可能无效；考虑合并类别 |
 
----
+## 总结
 
-## Summary
+1. 陈述 $H_0$，给出声称的比例。
+2. 计算期望计数 $E_i = n \cdot p_i$。
+3. 检查条件（随机、独立、$E_i \ge 5$）。
+4. 计算 $\chi^2 = \sum (O-E)^2 / E$。
+5. 求 df = $k-1$，计算 $p$ 值。
+6. 如果 $p < \alpha$，检查标准化残差，找出哪些类别不同。
 
-1. State $H_0$ with the claimed proportions.
-2. Compute expected counts $E_i = n \cdot p_i$.
-3. Check conditions (Random, Independence, $E_i \ge 5$).
-4. Calculate $\chi^2 = \sum (O-E)^2 / E$.
-5. Find df = $k-1$, compute $p$-value.
-6. If $p < \alpha$, examine standardized residuals to identify which categories differ.
-
-See also: [[Unit_8_Chi-Square_Tests]], [[Chi-Square_Homogeneity_and_Independence]], [[AP_Statistics_MOC]]
+另见：[[Unit_8_Chi-Square_Tests]]、[[Chi-Square_Homogeneity_and_Independence]]、[[AP_Statistics_MOC]]

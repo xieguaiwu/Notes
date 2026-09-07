@@ -6,127 +6,127 @@ tags:
 created: 2026-06-14
 ---
 
-# Unit 2 — Exploring Two-Variable Data
+# Unit 2 — 探索双变量数据
 
-> **AP Exam Weight:** 5–7% | **Big Idea:** Patterns and Uncertainty
+> **AP 考试占比：** 5–7% | **核心思想：** 模式与不确定性
 
-Unit 2 moves from describing a single variable to exploring the **relationship** between two quantitative variables. The core question: does knowing one variable help predict the other?
+单元 2 从描述单个变量进入探索两个定量变量之间的**关系**。核心问题：知道一个变量是否有助于预测另一个？
 
-Part of: [[AP_Statistics_MOC]].
+属于：[[AP_Statistics_MOC]]。
 
-## Scatterplots
+## 散点图
 
-A **scatterplot** displays the relationship between two quantitative variables measured on the same individuals.
+**散点图**展示同一组个体上两个定量变量之间的关系。
 
-- **Explanatory variable (x):** The predictor or independent variable. Placed on the horizontal axis.
-- **Response variable (y):** The outcome or dependent variable. Placed on the vertical axis.
+- **解释变量（$x$）：** 预测变量或自变量。放在横轴。
+- **响应变量（$y$）：** 结果变量或因变量。放在纵轴。
 
-### Describing a Scatterplot: D.O.F.S.
+### 描述散点图：D.O.F.S.
 
-1. **D**irection — positive, negative, or no association.
-2. **O**utliers — points that deviate from the overall pattern.
-3. **F**orm — linear, curved, clustered?
-4. **S**trength — how closely do the points follow a clear form?
+1. **方向（Direction）**——正相关、负相关或无关联。
+2. **离群值（Outliers）**——偏离整体模式的点。
+3. **形式（Form）**——线性、弯曲、有簇？
+4. **强度（Strength）**——点对清晰形式的跟随程度。
 
-A **positive association** means larger $x$ values tend to have larger $y$ values (e.g., height and weight). A **negative association** means larger $x$ values tend to have smaller $y$ values (e.g., speed and travel time).
+**正相关**意味着 $x$ 越大，$y$ 也倾向于越大（例如身高和体重）。**负相关**意味着 $x$ 越大，$y$ 倾向于越小（例如速度和旅行时间）。
 
-## Correlation ($r$)
+## 相关系数 $r$
 
-The **Pearson correlation coefficient** $r$ measures the **direction and strength** of a linear relationship:
+**皮尔逊相关系数** $r$ 度量线性关系的**方向和强度**：
 
 $$r = \frac{1}{n-1} \sum_{i=1}^{n} \left(\frac{x_i - \bar{x}}{s_x}\right)\!\left(\frac{y_i - \bar{y}}{s_y}\right)$$
 
-### Properties of $r$
+### $r$ 的性质
 
-- $-1 \leq r \leq 1$.
-- $r > 0$ → positive linear association; $r < 0$ → negative; $r = 0$ → no **linear** association (but a curved relationship may still exist!).
-- $r = 1$ or $r = -1$ → all points fall exactly on a straight line.
-- $r$ has **no units** (it is dimensionless).
-- $r$ is **not resistant** — a single outlier can dramatically change it.
-- Swapping $x$ and $y$ does **not** change $r$.
-- Linear transformations of $x$ or $y$ do not change $|r|$ (though they may flip the sign if multiplying by a negative).
+- $-1 \leq r \leq 1$。
+- $r > 0$ → 正线性相关；$r < 0$ → 负相关；$r = 0$ → 没有**线性**相关（但可能仍存在曲线关系！）。
+- $r = 1$ 或 $r = -1$ → 所有点恰好落在一条直线上。
+- $r$ **没有单位**（无量纲）。
+- $r$ **不抗离群**——单个离群值就能大幅改变它。
+- 交换 $x$ 和 $y$ 不改变 $r$。
+- $x$ 或 $y$ 的线性变换不改变 $|r|$（但如果乘以负数，符号可能翻转）。
 
-> [!warning] Correlation ≠ Slope
-> $r = 0.8$ does NOT mean that 80% of the points lie on a line. It means the linear association is strong and positive. For the proportion of variation explained, use $r^2$.
+> [!warning] 相关系数 ≠ 斜率
+> $r = 0.8$ 并**不**意味着 80% 的点在一条线上。它意味着线性关联强且正。解释变异的比例用 $r^2$。
 
-## Least-Squares Regression
+## 最小二乘回归
 
-The **least-squares regression line** (LSRL) is the line that minimizes the sum of the squared vertical distances (residuals) from the points to the line.
+**最小二乘回归线**是使点到线的垂直距离（残差）平方和最小的直线。
 
-### The Equation
+### 方程
 
 $$\hat{y} = a + bx$$
 
-- $\hat{y}$ is the **predicted** response for a given $x$.
-- $b$ is the **slope**: $b = r \cdot \frac{s_y}{s_x}$.
-- $a$ is the **y-intercept**: $a = \bar{y} - b\bar{x}$.
+- $\hat{y}$ 是给定 $x$ 时的**预测**响应。
+- $b$ 是**斜率**：$b = r \cdot \frac{s_y}{s_x}$。
+- $a$ 是 **$y$ 截距**：$a = \bar{y} - b\bar{x}$。
 
-> [!important] Interpreting Slope
-> The slope $b$ is the predicted change in $y$ for a one-unit increase in $x$. **Always phrase in context:** "For each additional hour spent studying, the predicted exam score increases by 4.2 points."
+> [!important] 解释斜率
+> 斜率 $b$ 是 $x$ 每增加一个单位时 $y$ 的预测变化。**始终结合情境表述：**"每多学习一小时，预测的考试成绩增加 4.2 分。"
 
-> [!important] Interpreting Intercept
-> The intercept $a$ is the predicted value of $y$ when $x = 0$. Only interpret it when $x = 0$ is plausible in context. An intercept predicting negative height makes no sense — it is simply an artifact of the fitted line.
+> [!important] 解释截距
+> 截距 $a$ 是 $x = 0$ 时 $y$ 的预测值。仅当 $x = 0$ 在情境中合理时才解释它。预测负身高的截距毫无意义——它只是拟合线的产物。
 
-### The Least-Squares Principle
+### 最小二乘原理
 
-Among all possible lines $\hat{y} = a + bx$, the LSRL minimizes:
+在所有可能的直线 $\hat{y} = a + bx$ 中，LSRL 最小化：
 
-$$\sum_{i=1}^{n} (y_i - \hat{y}_i)^2 = \sum_{i=1}^{n} (\text{residual})^2$$
+$$\sum_{i=1}^{n} (y_i - \hat{y}_i)^2 = \sum_{i=1}^{n} (\text{残差})^2$$
 
-The LSRL always passes through the point $(\bar{x}, \bar{y})$.
+LSRL 始终经过点 $(\bar{x}, \bar{y})$。
 
-## Coefficient of Determination ($r^2$)
+## 决定系数（$r^2$）
 
-The **coefficient of determination** is the square of the correlation:
+**决定系数**是相关系数的平方：
 
-$$r^2 = \frac{\text{variation in } y \text{ explained by the LSRL}}{\text{total variation in } y}$$
+$$r^2 = \frac{\text{被 LSRL 解释的 } y \text{ 的变异}}{\text{ } y \text{ 的总变异}}$$
 
-Interpretation: "$r^2 \times 100\%$ of the variation in $y$ is explained by the linear relationship with $x$."
+解释："$r^2 \times 100\%$ 的 $y$ 的变异可被 $x$ 的线性关系解释。"
 
-If $r = 0.8$, then $r^2 = 0.64$, meaning **64% of the variation in the response is accounted for by the linear model**. The remaining 36% is due to other factors or random variation.
+如果 $r = 0.8$，则 $r^2 = 0.64$，意味着**响应变量中 64% 的变异可由线性模型解释**。剩余 36% 来自其他因素或随机变异。
 
-## Residuals
+## 残差
 
-A **residual** is the difference between an observed and predicted value:
+**残差**是观测值与预测值之差：
 
-$$\text{residual} = y - \hat{y} = \text{observed} - \text{predicted}$$
+$$\text{残差} = y - \hat{y} = \text{观测值} - \text{预测值}$$
 
-- A **positive residual** means the model **under-predicted** (the actual point lies above the line).
-- A **negative residual** means the model **over-predicted** (the actual point lies below the line).
+- **正残差**意味着模型**低估**了（实际点在直线上方）。
+- **负残差**意味着模型**高估**了（实际点在直线下方）。
 
-### Residual Plots
+### 残差图
 
-A **residual plot** graphs residuals (y-axis) against the explanatory variable or predicted values (x-axis). It is the most important diagnostic for regression:
+**残差图**以残差（纵轴）对解释变量或预测值（横轴）作图。这是回归最重要的诊断工具：
 
-- **Good fit:** Residuals are randomly scattered around 0 with no clear pattern. Approximately equal vertical spread across all $x$ values.
-- **Curved pattern:** The relationship is not linear. Consider a transformation.
-- **Fan shape (increasing spread):** Violation of **constant variance** (heteroscedasticity).
-- **Outliers and influential points** become clearly visible.
+- **拟合良好：** 残差在 0 周围随机分布，无清晰模式。所有 $x$ 值上的垂直散布大致相等。
+- **弯曲模式：** 关系不是线性的。考虑变换。
+- **扇形扩散（散布增大）：** 违反**方差齐性**（异方差）。
+- **离群值和有影响力的点**变得清晰可见。
 
-### Standard Deviation of Residuals ($s_{\text{res}}$)
+### 残差的标准差（$s_{\text{res}}$）
 
 $$s_{\text{res}} = \sqrt{\frac{\sum (y_i - \hat{y}_i)^2}{n-2}}$$
 
-This is the "typical" prediction error of the model. Dividing by $n-2$ reflects the two parameters ($a$ and $b$) estimated from the data.
+这是模型的"典型"预测误差。除以 $n-2$ 反映了从数据中估计了两个参数（$a$ 和 $b$）。
 
-## Outliers and Influential Points in Regression
+## 回归中的离群值与有影响力的点
 
-- An **outlier** in regression is a point with a large residual (far from the fitted line vertically).
-- An **influential point** is a point whose removal substantially changes the slope, intercept, or $r$. Influential points are often far from $\bar{x}$ in the horizontal direction (high **leverage**).
-- Not all outliers are influential. Not all influential points are outliers.
+- 回归中的**离群值**是残差大的点（垂直方向上远离拟合线）。
+- **有影响力的点**是其移除会显著改变斜率、截距或 $r$ 的点。有影响力的点通常在水平方向上远离 $\bar{x}$（即**高杠杆**）。
+- 并非所有离群值都有影响力。并非所有有影响力的点都是离群值。
 
-To check influence: remove the point, recalculate the regression, and observe whether the slope changes meaningfully.
+检查影响力：移除该点，重新计算回归，观察斜率是否有实质性变化。
 
-## Transformations for Nonlinear Data
+## 非线性数据的变换
 
-When a scatterplot shows a curved pattern, transforming one or both variables can produce a linear relationship. Common transformations:
+当散点图显示弯曲模式时，变换一个或两个变量可使关系变为线性。常见变换：
 
-| Pattern | Transformation |
+| 模式 | 变换 |
 |:---|:---|
-| Exponential growth ($y = ab^x$) | Take $\log(y)$ and regress on $x$ |
-| Power law ($y = ax^b$) | Take $\log(y)$ and $\log(x)$ |
-| Reciprocal ($y = a + b/x$) | Regress $y$ on $1/x$ |
+| 指数增长（$y = ab^x$） | 取 $\log(y)$ 对 $x$ 做回归 |
+| 幂律（$y = ax^b$） | 取 $\log(y)$ 和 $\log(x)$ |
+| 倒数（$y = a + b/x$） | 用 $y$ 对 $1/x$ 做回归 |
 
-After transformation, fit the linear model on the transformed scale, then back-transform predictions to the original scale. **Always check the residual plot** of the transformed model — it should now be patternless.
+变换后，在变换后的尺度上拟合线性模型，然后将预测值反变换回原始尺度。**始终检查变换后模型的残差图**——它应该没有模式。
 
-**Related:** [[Two-Way_Tables]] | [[Correlation_vs_Causation]] | [[Unit_1_One-Variable_Data]]
+**相关笔记：** [[Two-Way_Tables]] | [[Correlation_vs_Causation]] | [[Unit_1_One-Variable_Data]]

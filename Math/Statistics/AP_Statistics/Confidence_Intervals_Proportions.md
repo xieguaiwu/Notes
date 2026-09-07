@@ -6,116 +6,104 @@ tags:
 created: 2026-06-14
 ---
 
-# Confidence Intervals for Proportions
+# 比例的置信区间
 
-**Parent:** [[Unit_6_Inference_for_Proportions|Unit 6 — Inference for Proportions]]
+**所属：** [[Unit_6_Inference_for_Proportions|单元 6 — 比例的推断]]
 
----
+## 单比例 Z 区间
 
-## One-Proportion Z-Interval
-
-### Formula
+### 公式
 
 $$
 \hat{p} \pm z^* \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
 $$
 
-Where:
-- $\hat{p}$ = sample proportion (point estimate)
-- $z^*$ = critical value from $N(0,1)$ for desired confidence level $C$
-- $SE = \sqrt{\hat{p}(1-\hat{p})/n}$ = standard error
+其中：
+- $\hat{p}$ = 样本比例（点估计）
+- $z^*$ = 对应置信水平 $C$ 的 $N(0,1)$ 临界值
+- $SE = \sqrt{\hat{p}(1-\hat{p})/n}$ = 标准误
 
-### Common Critical Values
+### 常用临界值
 
-| Confidence Level $C$ | $z^*$ |
+| 置信水平 $C$ | $z^*$ |
 |:---:|:---:|
 | 90% | 1.645 |
 | 95% | 1.960 |
 | 99% | 2.576 |
 
----
+### 条件
 
-### Conditions
-
-| Condition | Check |
+| 条件 | 检查 |
 |-----------|-------|
-| **Random** | SRS or randomized experiment |
-| **10%** | $n \le 0.10N$ (independence) |
-| **Large Counts** | $n\hat{p} \ge 10$ and $n(1-\hat{p}) \ge 10$ |
+| **随机** | SRS 或随机化实验 |
+| **10%** | $n \le 0.10N$（独立性） |
+| **大计数** | $n\hat{p} \ge 10$ 且 $n(1-\hat{p}) \ge 10$ |
 
-Unlike the hypothesis test (where large counts use $p_0$), the CI uses $\hat{p}$ because the true $p$ is unknown.
+与假设检验不同（大计数条件用 $p_0$），CI 使用 $\hat{p}$，因为真实 $p$ 未知。
 
----
+### 解释
 
-### Interpretation
+> **"我们有 $C\%$ 的把握认为从 ___ 到 ___ 的区间捕获了总体比例 $p$ 的真实值。"**
 
-> **"We are $C\%$ confident that the interval from ___ to ___ captures the true population proportion $p$."**
+> [!warning] 常见误解
+> - ❌ "$p$ 落在这个区间内的概率是 $C\%$。"（错误——$p$ 是固定的，区间是随机的。）
+> - ✅ "$C\%$ 的所有可能容量 $n$ 样本产生的区间会捕获 $p$。"
 
-> [!warning] Common Misinterpretations
-> - ❌ "There is a $C\%$ probability that $p$ is in the interval." (Wrong — $p$ is fixed, the interval is random.)
-> - ✅ "$C\%$ of all possible samples of size $n$ produce an interval that captures $p$."
+### 误差范围与样本量
 
----
-
-### Margin of Error & Sample Size
-
-**Margin of error:**
+**误差范围：**
 
 $$
 ME = z^* \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
 $$
 
-**Planning sample size** (before collecting data):
+**规划样本量**（收集数据前）：
 
 $$
 n = \left(\frac{z^*}{m}\right)^2 \cdot p^*(1-p^*)
 $$
 
-Where:
-- $m$ = desired margin of error
-- $p^*$ = guessed proportion (use $p^* = 0.5$ for maximum $n$, the most conservative choice)
+其中：
+- $m$ = 期望的误差范围
+- $p^*$ = 猜测的比例（用 $p^* = 0.5$ 得到最大 $n$，最保守的选择）
 
-> [!tip] Conservative $n$
-> Using $p^* = 0.5$ maximizes $p^*(1-p^*)$ and gives the **largest** required sample size. This is the safe choice when you have no prior estimate of $p$.
+> [!tip] 保守的 $n$
+> 用 $p^* = 0.5$ 最大化 $p^*(1-p^*)$，给出**最大**所需样本量。当没有 $p$ 的先验估计时，这是安全的选择。
 
----
+## 双比例 Z 区间
 
-## Two-Proportion Z-Interval
-
-### Formula
+### 公式
 
 $$
 (\hat{p}_1 - \hat{p}_2) \pm z^* \sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1} + \frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}
 $$
 
-### Conditions
+### 条件
 
-| Condition | Check |
+| 条件 | 检查 |
 |-----------|-------|
-| **Random** | Both samples are SRS/randomized (or 2 independent treatments) |
-| **10%** | $n_1 \le 0.10N_1$ and $n_2 \le 0.10N_2$ |
-| **Large Counts** | $n_1\hat{p}_1 \ge 10$, $n_1(1-\hat{p}_1) \ge 10$ and same for $n_2$ |
+| **随机** | 两个样本都是 SRS/随机化（或 2 个独立处理） |
+| **10%** | $n_1 \le 0.10N_1$ 且 $n_2 \le 0.10N_2$ |
+| **大计数** | $n_1\hat{p}_1 \ge 10$、$n_1(1-\hat{p}_1) \ge 10$，且 $n_2$ 同样 |
 
-### Interpretation
+### 解释
 
-> **"We are $C\%$ confident that the true difference in proportions $(p_1 - p_2)$ is between ___ and ___."**
+> **"我们有 $C\%$ 的把握认为比例的真实差异 $(p_1 - p_2)$ 在 ___ 到 ___ 之间。"**
 
-If the interval contains **0**, we cannot conclude $p_1 \neq p_2$ at the $C\%$ confidence level.
+如果区间包含 **0**，则不能在 $C\%$ 置信水平下断定 $p_1 \neq p_2$。
 
----
+## 例题
 
-## Worked Example
+**问题：** 一所学校调查了 200 名随机选取的学生；140 人支持延迟上课时间。构建真实比例的 95% 置信区间。
 
-**Problem:** A school surveys 200 randomly selected students; 140 say they support later start times. Construct a 95% CI for the true proportion.
+**步骤 1—陈述：** 参数 $p$ = 支持者的真实比例。置信水平 = 95%。
 
-**Step 1 — State:** Parameter $p$ = true proportion who support. CI level = 95%.
+**步骤 2—计划：**
+- 随机 ✅
+- $200 \le 0.10$（所有学生）✅
+- $n\hat{p} = 140 \ge 10$，$n(1-\hat{p}) = 60 \ge 10$ ✅
 
-**Step 2 — Plan:**
-- Random ✅
-- $200 \le 0.10$ (all students) ✅
-- $n\hat{p} = 140 \ge 10$, $n(1-\hat{p}) = 60 \ge 10$ ✅
-
-**Step 3 — Do:**
+**步骤 3—实施：**
 
 $$
 \hat{p} = \frac{140}{200} = 0.70
@@ -133,23 +121,21 @@ $$
 \text{CI} = 0.70 \pm 0.0635 = (0.6365,\; 0.7635)
 $$
 
-**Step 4 — Conclude:** We are 95% confident that the true proportion of students who support later start times is between **63.7% and 76.4%**.
+**步骤 4—结论：** 我们有 95% 的把握认为支持延迟上课时间的学生真实比例在 **63.7% 到 76.4%** 之间。
+
+## 与假设检验的关系
+
+CI 与检验的**对偶性**：
+
+- 如果 $\alpha = 0.05$ 的双侧 $z$ 检验拒绝 $H_0: p = p_0$，则 $p_0$ 落在 95% CI 之外。
+- 如果 $p_0$ 在 95% CI 内，则检验在 $\alpha = 0.05$ 下无法拒绝。
+- 这仅适用于双侧检验；单侧检验与 CI 的关系有所调整。
+
+> [!summary] 何时用哪个
+> - 目标是**估计**时用 **CI**："哪些值范围是合理的？"
+> - 目标是**决策**时用**检验**："证据是否足够强以拒绝某个具体主张？"
+> - 关于后者，见 [[Significance_Tests_Proportions|比例的显著性检验]]。
 
 ---
 
-## Relationship to Hypothesis Tests
-
-The **duality** between CIs and tests:
-
-- If a two-sided $z$-test at $\alpha = 0.05$ rejects $H_0: p = p_0$, then $p_0$ lies outside the 95% CI.
-- If $p_0$ is inside the 95% CI, the test fails to reject at $\alpha = 0.05$.
-- This applies only to two-sided tests; one-sided tests and CIs have a modified relationship.
-
-> [!summary] When to Use Which
-> - Use a **CI** when the goal is estimation: "What range of values is plausible?"
-> - Use a **test** when the goal is decision-making: "Is the evidence strong enough to reject a specific claim?"
-> - For the latter, see [[Significance_Tests_Proportions|Significance Tests for Proportions]].
-
----
-
-[[AP_Statistics_MOC|← Back to AP Statistics MOC]]
+[[AP_Statistics_MOC|← 返回 AP 统计学知识地图]]
