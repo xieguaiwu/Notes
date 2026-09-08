@@ -9,13 +9,13 @@ created: 2026-09-08
 # Unit 9 — Globalization（c. 1900–2001 命题窗口，权重 8–10%）
 
 > [!abstract] 概述
-> 收束单元：**技术、疾病、环境、经济、文化、制度**六条全球线。核心母题：①全球化是**加速而非新造**（1944 布雷顿森林 → 集装箱 → 互联网）；②**收益与代价并存**（Green Revolution 养更多人但也制造不平等；连接带来繁荣也带来流行病）。注意：本单元教学写 "to the present"，但**命题窗口止于 2001**。
+> 收束单元：**技术、疾病、环境、经济、文化、制度**六条全球线。核心母题：①全球化是**加速而非新造**（1944 布雷顿森林 $\to$ 集装箱 $\to$ 互联网）；②**收益与代价并存**（Green Revolution 养更多人但也制造不平等；连接带来繁荣也带来流行病）。注意：本单元教学写 "to the present"，但**命题窗口止于 2001**。
 
 ## 1 Topic 9.1–9.2 Technology & Disease
 
-**连接技术**（CED 9.1）：radio → cellular → **internet**；air travel + **shipping containers**（集装箱是被低估的全球化引擎）。
+**连接技术**（CED 9.1）：radio $\to$ cellular $\to$ **internet**；air travel + **shipping containers**（集装箱是被低估的全球化引擎）。
 **能源技术**：petroleum + **nuclear power**（民用与军用双面）。
-**医学**：vaccines、antibiotics → 寿命延长；**birth control** → 生育率下降（KC-6.1.III.B）。
+**医学**：vaccines、antibiotics $\to$ 寿命延长；**birth control** $\to$ 生育率下降（KC-6.1.III.B）。
 
 **疾病三分类（CED 9.2 点名，必背）**：
 
@@ -30,8 +30,8 @@ created: 2026-09-08
 
 ## 2 Topic 9.3 Environment（CED KC 原文）
 
-- 人类活动 → **deforestation、desertification、decline in air quality、fresh water 消耗加剧** → 资源竞争白热化（KC-6.1.II.A）。
-- **greenhouse gases and pollutants** → 关于气候变化性质与成因的 **debates**（KC-6.1.II.B）——CED 用词是 debates，考试尊重争议存在的表述。
+- 人类活动 $\to$ **deforestation、desertification、decline in air quality、fresh water 消耗加剧** $\to$ 资源竞争白热化（KC-6.1.II.A）。
+- **greenhouse gases and pollutants** $\to$ 关于气候变化性质与成因的 **debates**（KC-6.1.II.B）——CED 用词是 debates，考试尊重争议存在的表述。
 - 核能风险案例（标准课程内容）：**Chernobyl (1986)、Fukushima (2011)**——CED 未点名，但 SAQ/LEQ 引用有效。
 - 环境运动：**Greenpeace、Wangari Maathai's Green Belt Movement (Kenya)**（CED 点名）。
 
@@ -82,9 +82,9 @@ created: 2026-09-08
 
 ## 5 Topic 9.8–9.9 Institutions & CCOT
 
-**Institutions（KC-6.3.II.A）**：**United Nations**（1945）为维持和平与国际合作而立；衍生系统——和平行动、国际法、NGO（Amnesty International 1961、Médecins Sans Frontières 1971、International Criminal Court 2002）。**League → UN** 的制度学习：安理会五常否决权专为避免 League 的瘫痪设计。
+**Institutions（KC-6.3.II.A）**：**United Nations**（1945）为维持和平与国际合作而立；衍生系统——和平行动、国际法、NGO（Amnesty International 1961、Médecins Sans Frontières 1971、International Criminal Court 2002）。**League $\to$ UN** 的制度学习：安理会五常否决权专为避免 League 的瘫痪设计。
 
-**9.9 CCOT 骨架**（KC-6.1 原文）：Rapid advances in science and technology → **communication、transportation、industry、agriculture、medicine** 全线提速 → 人类对宇宙与自然界的理解被改写。
+**9.9 CCOT 骨架**（KC-6.1 原文）：Rapid advances in science and technology $\to$ **communication、transportation、industry、agriculture、medicine** 全线提速 $\to$ 人类对宇宙与自然界的理解被改写。
 
 ```mermaid
 flowchart LR
@@ -97,7 +97,7 @@ flowchart LR
 
 ## 6 考试陷阱清单
 
-1. **"Green Revolution 降低了人口增长"**——错。**提高产量 → 支撑人口增长**；代价是环境损害与区域不平等（CED 9.2/KC-6.1.I.B 原文方向）。
+1. **"Green Revolution 降低了人口增长"**——错。**提高产量 $\to$ 支撑人口增长**；代价是环境损害与区域不平等（CED 9.2/KC-6.1.I.B 原文方向）。
 2. **"今天的疾病都是新病"**——错。三分类见 §1：**穷病古老、新疫突袭、慢病随长寿**。
 3. **"核技术 = 武器"**——错。民用电力是主面；标准案例 Chernobyl 1986 / Fukushima 2011。
 4. **"气候变化在 CED 是定论"**——措辞陷阱。CED 写 **debates about the nature and causes of climate change**——承认争议存在是考纲原文。
@@ -108,12 +108,12 @@ flowchart LR
 9. **"Negritude / Liberation theology 是政党"**——错。**文学-哲学运动 / 天主教神学流派**。
 10. **"NGO = 慈善机构"**——错。Amnesty（监督）、MSF（医疗）、ICC（司法）职能各异。
 11. **"Microcredit = 外援"**——错。Grameen Bank / BRAC 是**小额信贷**（bottom-up 资本）——标准课程内容，CED 未点名。
-12. **"全球化始于 1990s/互联网"**——错。**1944 Bretton Woods + GATT → 集装箱 → 金融自由化 → 互联网**是接力链。
+12. **"全球化始于 1990s/互联网"**——错。**1944 Bretton Woods + GATT $\to$ 集装箱 $\to$ 金融自由化 $\to$ 互联网**是接力链。
 13. **"命题窗口 = 至今"**——错。**Unit 9 教学写 to the present，命题止于 2001**。
 
 ## 相关链接
 
-- [[AP_World_History_Unit8_Cold_War_and_Decolonization]]（冷战终结 → 自由化加速）
+- [[AP_World_History_Unit8_Cold_War_and_Decolonization]]（冷战终结 $\to$ 自由化加速）
 - [[AP_World_History_Unit5_Revolutions]]（工业革命 ↔ 绿色革命的技术接力）
 - [[AP_World_History_Unit1_MOC]]（起点：1200 年的世界）
 - 打印清单：`~/高二/世界历史/AP_World_History_Error_Checklist.pdf`

@@ -14,7 +14,7 @@ created: 2026-09-08
 ## 1 Topic 8.1 Setting the Stage
 
 - **WWI 后**：self-government hopes unfulfilled——mandate system、Versailles 种怨（CED KC-6.2.II 原文）。
-- **WWII 后**：anti-imperialist sentiment + 欧洲列强削弱 + US/USSR 崛起 → **dissolution of empires**。
+- **WWII 后**：anti-imperialist sentiment + 欧洲列强削弱 + US/USSR 崛起 $\to$ **dissolution of empires**。
 - Atlantic Charter（1941）的 self-determination 措辞被殖民地反向引用。
 
 ## 2 Topic 8.2 The Cold War
@@ -30,7 +30,7 @@ created: 2026-09-08
 | **Containment** | 总战略（Kennan 长电报） | 不等于具体某一项 |
 
 > [!tip] 一句话辨析
-> **Aid (Truman) → Money (Marshall) → Guns (NATO)**；苏联镜像：COMECON + Warsaw Pact。
+> **Aid (Truman) $\to$ Money (Marshall) $\to$ Guns (NATO)**；苏联镜像：COMECON + Warsaw Pact。
 
 ### 2.2 Proxy Wars（CED 8.2/8.3 例证）
 
@@ -46,7 +46,7 @@ flowchart TD
 
 ### 2.4 Non-Aligned Movement
 
-- **Bandung Conference 1955**（亚非会议）→ 1961 正式成立。
+- **Bandung Conference 1955**（亚非会议）$\to$ 1961 正式成立。
 - 领袖（CED 点名）：**Sukarno in Indonesia、Kwame Nkrumah in Ghana**；另有 Tito、Nasser、Nehru。
 - 定性：**主动拒绝加入任一集团、要求第三条路**，不是中立孤立。
 
@@ -54,8 +54,8 @@ flowchart TD
 
 - 新军事同盟：NATO / Warsaw Pact；**nuclear proliferation + proxy wars**（KC-6.2.IV.D 原文）。
 - 政权形态：coups（Iran 1953、Guatemala 1954、Chile 1973）、new constitutions、land/resource redistribution、**nationalization**：
-  - **Mossadegh nationalises Iranian oil (1951)** → 英美政变（1953）
-  - **Nasser nationalises Suez Canal Company (1956)** → Suez Crisis
+  - **Mossadegh nationalises Iranian oil (1951)** $\to$ 英美政变（1953）
+  - **Nasser nationalises Suez Canal Company (1956)** $\to$ Suez Crisis
 - **Dissidents**（CED 例证）：Solzhenitsyn（苏联）、Havel（Czechoslovakia）、Pope John Paul II（波兰团结工会的精神同盟）、Aung San Suu Kyi（缅甸）。
 - **Liberation theology**（拉美天主教、Second Vatican Council 后）与 **U.S. Civil Rights Act (1964/65)**、**end of apartheid**（U8–U9 交叉）。
 
@@ -66,8 +66,8 @@ flowchart TD
 | USSR | 1917 October Revolution；Stalin collectivization/five-year plans |
 | **China** | 1949 CCP 建国（Mao）；**Great Leap Forward (1958–62) 大饥荒**；**Cultural Revolution (1966–76)** 意识形态清洗（不是经济改革） |
 | **Cuba** | Castro + Guevara (1959)；Bay of Pigs、导弹危机 |
-| **Vietnam** | Ho Chi Minh；partition 1954 → 1975 统一 |
-| **Cambodia** | Khmer Rouge (1975–79) → CED 7.8 点名 atrocity |
+| **Vietnam** | Ho Chi Minh；partition 1954 $\to$ 1975 统一 |
+| **Cambodia** | Khmer Rouge (1975–79) $\to$ CED 7.8 点名 atrocity |
 
 > [!warning] 中苏分裂（阵营非铁板）
 | 错 | 对 |
@@ -130,7 +130,7 @@ flowchart LR
 
 ## 相关链接
 
-- [[AP_World_History_Unit7_Global_Conflict]]（WWII 削弱列强 → 去殖民窗口）
+- [[AP_World_History_Unit7_Global_Conflict]]（WWII 削弱列强 $\to$ 去殖民窗口）
 - [[AP_World_History_Unit6_Consequences_of_Industrialization]]（抵抗传统的延续）
 - 待建：[[AP_World_History_Unit9_Globalization]]
 - 打印清单：`~/高二/世界历史/AP_World_History_Error_Checklist.pdf`

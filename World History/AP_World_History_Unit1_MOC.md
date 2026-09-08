@@ -42,7 +42,7 @@ created: 2026-09-08
 | **Rajput kingdoms** | Hinduism | 印度教武士诸侯 |
 | **Delhi Sultanates** | Islam | 突厥-阿富汗征服政权（见 Dar al-Islam 笔记） |
 | **Srivijaya** | Buddhism（Mahayana） | 海上贸易帝国，控马六甲海峡 |
-| **Khmer Empire** | Hinduism→Buddhism | 湄公河流域，Angkor Wat 先湿婆后转佛 |
+| **Khmer Empire** | Hinduism$\to$Buddhism | 湄公河流域，Angkor Wat 先湿婆后转佛 |
 | **Majapahit / Sukhothai / Sinhala dynasties** | 佛/印混合 | 海陆各据一方 |
 
 信仰实践：**Bhakti movement**（印度教虔信运动，挑战种姓壁垒）、**Sufism**（伊斯兰神秘主义，向外传教主力）、**Buddhist monasticism**（知识节点）。

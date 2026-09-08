@@ -13,9 +13,9 @@ created: 2026-09-08
 
 ## 1 Topic 7.1 Shifting Power After 1900
 
-- **Ottoman** 崩解（Balkan wars、Young Turks）→ 中东权力真空。
-- **Qing** 崩解（1911 Revolution）→ 冬阀混战。
-- **Russian**：1905 Revolution（Bloody Sunday、Duma）→ 1917 February + October Revolution（Bolshevik）。
+- **Ottoman** 崩解（Balkan wars、Young Turks）$\to$ 中东权力真空。
+- **Qing** 崩解（1911 Revolution）$\to$ 冬阀混战。
+- **Russian**：1905 Revolution（Bloody Sunday、Duma）$\to$ 1917 February + October Revolution（Bolshevik）。
 - **Meiji Japan** 崛起为区域强权（甲午、日俄战争 1905 譁世）。
 - CED KC-6.2.I：West dominated the global political order at the beginning of the 20th century, but **both land-based and maritime empires gave way to new states by century's end**。
 
@@ -32,7 +32,7 @@ created: 2026-09-08
 
 ### 2.2 Conduct（CED 例证）
 
-- **新兵器**：machine gun、poison gas、tank、airplane、U-boat → trench stalemate。
+- **新兵器**：machine gun、poison gas、tank、airplane、U-boat $\to$ trench stalemate。
 - **Total war**：home front、**women in industry**（munitionettes）、rationing、propaganda、殖民地部队与劳工（印度、非洲、Indochina）。
 - **US enters 1917**（unrestricted submarine warfare + Zimmermann Telegram）——**不是 1914**。
 - **Russia exits 1918**（Brest-Litovsk）。
@@ -42,9 +42,9 @@ created: 2026-09-08
 
 | 现象 | 机制 | CED 例证 |
 |---|---|---|
-| **Great Depression** | 美股 1929 → 全球贸易崩 | **New Deal**（US）、**fascist corporatist economy**、**Brazil/Mexico 强人政府**（CED 点名） |
-| **German hyperinflation → Nazism** | Versailles 赔款 + 印钞 | Weimar 失信 |
-| **USSR command economy** | Five-Year Plans、collectivization | 快速重工业 + 人道灾难（Ukraine famine → CED 7.8 点名 Ukraine 1920s–30s） |
+| **Great Depression** | 美股 1929 $\to$ 全球贸易崩 | **New Deal**（US）、**fascist corporatist economy**、**Brazil/Mexico 强人政府**（CED 点名） |
+| **German hyperinflation $\to$ Nazism** | Versailles 赔款 + 印钞 | Weimar 失信 |
+| **USSR command economy** | Five-Year Plans、collectivization | 快速重工业 + 人道灾难（Ukraine famine $\to$ CED 7.8 点名 Ukraine 1920s–30s） |
 | **Japan militarism** | Manchuria 1931、退出国联 | 军部主导 |
 | **Mandate system** | League 授权列强"托管" | Middle East（Sykes-Picot 的制度化身）——**换皮帝国主义** |
 
@@ -54,7 +54,7 @@ created: 2026-09-08
 - **Mobilization 对比**（CED 7.6 点名）：Western democracies —— **Great Britain under Winston Churchill、US under Franklin Roosevelt**；Totalitarian states —— **Germany under Adolf Hitler、USSR under Joseph Stalin**。
 - **Turn points**：Barbarossa 1941、Pearl Harbor 1941、Stalingrad 1942–43、D-Day 1944、**Hiroshima/Nagasaki 1945 + Soviet entry**（两者共同促成日本投降，非单因素）。
 - **Technology**：radar、jet、rocket（V-2）、**atomic bomb**。
-- **Holocaust**：Nuremberg Laws → Kristallnacht → Einsatzgruppen → death camps；战后 Nuremberg Trials 确立 crimes against humanity。
+- **Holocaust**：Nuremberg Laws $\to$ Kristallnacht $\to$ Einsatzgruppen $\to$ death camps；战后 Nuremberg Trials 确立 crimes against humanity。
 
 ## 5 Topic 7.8 Mass Atrocities（CED 点名清单，必背）
 
@@ -71,8 +71,8 @@ created: 2026-09-08
 
 ## 6 Topic 7.9 Causation in Global Conflict
 
-- 鷨级因果：imperialism → arms race → alliance chain → WWI → Versailles → fascism → WWII → bipolar world（U8）。
-- CCOT 优选：war 的**规模与动员**从职业军 → 全民 → 核毁灭。
+- 鷨级因果：imperialism $\to$ arms race $\to$ alliance chain $\to$ WWI $\to$ Versailles $\to$ fascism $\to$ WWII $\to$ bipolar world（U8）。
+- CCOT 优选：war 的**规模与动员**从职业军 $\to$ 全民 $\to$ 核毁灭。
 
 ## 7 考试陷阱清单
 
@@ -89,7 +89,7 @@ created: 2026-09-08
 
 ## 相关链接
 
-- [[AP_World_History_Unit6_Consequences_of_Industrialization]]（帝国主义矛盾 → 战争）
+- [[AP_World_History_Unit6_Consequences_of_Industrialization]]（帝国主义矛盾 $\to$ 战争）
 - [[AP_World_History_Unit5_Revolutions]]（俄国革命的源头）
 - 待建：[[AP_World_History_Unit8_Cold_War_and_Decolonization]]
 - 打印清单：`~/高二/世界历史/AP_World_History_Error_Checklist.pdf`

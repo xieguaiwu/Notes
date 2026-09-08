@@ -25,9 +25,9 @@ created: 2026-09-08
 
 ## 2 Topic 6.2 State Expansion（CED 点名例证）
 
-- **Non-state → state colonial control**：
-  - Congo: King Leopold II 私领 → Belgium 政府（1908，暴行曝光后）
-  - Indonesia: **Dutch East India Company → Dutch government**
+- **Non-state $\to$ state colonial control**：
+  - Congo: King Leopold II 私领 $\to$ Belgium 政府（1908，暴行曝光后）
+  - Indonesia: **Dutch East India Company $\to$ Dutch government**
 - **European states in Africa**：Britain in West Africa、Belgium in Congo、French in West Africa。
 - **Settler colonies**。
 - 亚洲扩张：British India（1857 后 Crown 直辖）、French Indochina、Dutch Indonesia、US（Philippines）、Russia Central Asia、Japan（Taiwan 1895、Korea 1910）。
@@ -38,7 +38,7 @@ CED 点名四类**direct resistance**：
 - **Túpac Amaru II's rebellion in Peru**（1780s，安第斯）
 - **Samory Touré's military battles in West Africa**
 - **Yaa Asantewaa War in West Africa**（Ashanti，1900 金凳战争）
-- **1857 rebellion in India**（Sepoy Mutiny → Crown rule）
+- **1857 rebellion in India**（Sepoy Mutiny $\to$ Crown rule）
 
 **新国家例证**（CED）：Balkan 独立、**Sokoto Caliphate**、**Cherokee Nation**、**Zulu Kingdom**。
 **Rebellions**：**Ghost Dance**（US 平原印第安）、**Xhosa Cattle-Killing Movement**（南部非洲）、**Mahdist wars in Sudan**。
@@ -50,10 +50,10 @@ CED 点名四类**direct resistance**：
 
 ## 4 Topic 6.4–6.5 经济帝国主义
 
-- **Extractive economies**：单一出口作物（monoculture）→ 依赖单一市场 → 价格波动即灾难。
+- **Extractive economies**：单一出口作物（monoculture）$\to$ 依赖单一市场 $\to$ 价格波动即灾难。
 - **Economic imperialism（informal control）**：不吞并也控制——**债务、unequal treaties、foreign investment、spheres of influence**。
-- 中国案例链：Opium War（1839–42）→ Treaty ports → **spheres of influence**。
-- CED 5.6→6.5 跨例：**HSBC、Unilever**（在 British West Africa 与 Belgian Congo 运营）——跨国公司是经济帝国主义的载体。
+- 中国案例链：Opium War（1839–42）$\to$ Treaty ports $\to$ **spheres of influence**。
+- CED 5.6$\to$6.5 跨例：**HSBC、Unilever**（在 British West Africa 与 Belgian Congo 运营）——跨国公司是经济帝国主义的载体。
 
 > [!warning] Opium War 根因
 | 错 | 对 |
@@ -77,7 +77,7 @@ CED 点名四类**direct resistance**：
 
 ## 6 环境与社会后果
 
-- 单一作物 → 土壤耗竭、森林砍伐（橡胶、棉花、蔗糖）。
+- 单一作物 $\to$ 土壤耗竭、森林砍伐（橡胶、棉花、蔗糖）。
 - 城市化 + 公卫危机延续 U5。
 - diaspora 输出语言、宗教、菜系；return migration 回传技术与资本。
 
@@ -97,5 +97,5 @@ CED 点名四类**direct resistance**：
 
 - [[AP_World_History_Unit5_Revolutions]]（工业化是本单元的因）
 - [[AP_World_History_Unit4_Transoceanic_Interconnections]]（劳动体系前身）
-- 待建：[[AP_World_History_Unit7_Global_Conflict]]（帝国主义矛盾 → WWI）
+- 待建：[[AP_World_History_Unit7_Global_Conflict]]（帝国主义矛盾 $\to$ WWI）
 - 打印清单：`~/高二/世界历史/AP_World_History_Error_Checklist.pdf`

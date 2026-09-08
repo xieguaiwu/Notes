@@ -15,7 +15,7 @@ created: 2026-09-08
 
 | 帝国 | 核心区 | 关键制度 | 正当化手段 |
 |---|---|---|---|
-| **Ottoman** | Anatolia、Balkans、Levant、北非 | devshirme → Janissaries；millet 宗教自治；timar 军功采邑 | Sunni Islam + sultan-caliph；清真寺建筑（Sinan） |
+| **Ottoman** | Anatolia、Balkans、Levant、北非 | devshirme $\to$ Janissaries；millet 宗教自治；timar 军功采邑 | Sunni Islam + sultan-caliph；清真寺建筑（Sinan） |
 | **Safavid** | Iran | Shah 直控 Twelver Shi'a clergy | **Twelver Shi'ism 国教**（区别于 Ottoman） |
 | **Mughal** | South Asia | mansabdari 军功官僚；jizya 政策反复 | Akbar 的 sulh-i-kul（普遍和平）/ Aurangzeb 的 Islamization |
 | **Manchu (Qing)** | East & Central Asia | 沿用 Ming 科举官僚；banner system；queue 发式 | 天命 + 满蒙藏联盟（格鲁派护法） |
@@ -48,7 +48,7 @@ CED KC-4.3.II.B 原文点名这四个："Land empires included the Manchu...; th
 ### 2.3 Topic 3.3 Belief Systems（LO-C）
 
 - **Sikhism** 在 Punjab 兴起：Guru Nanak 创立，**syncretic**（融 Hindu/Islam 元素而独立成教）——经典"分支 vs 独立宗教"题。
-- **Protestant Reformation**（1517 起）：Luther + printing press → Western Christianity 分裂；**Henry VIII** 借机没收教会地产；Counter-Reformation（Trent 会议、Jesuits）反制；宗教战争为绝对主义与启蒙铺路。
+- **Protestant Reformation**（1517 起）：Luther + printing press $\to$ Western Christianity 分裂；**Henry VIII** 借机没收教会地产；Counter-Reformation（Trent 会议、Jesuits）反制；宗教战争为绝对主义与启蒙铺路。
 - Ottoman **millet**：宗教社群自治，非穆斯林缴 jizya——**pragmatic pluralism ≠ 宗教平等**。
 
 ## 3 标签配对速查（错题清单核心）
@@ -57,7 +57,7 @@ CED KC-4.3.II.B 原文点名这四个："Land empires included the Manchu...; th
 |---|---|---|
 | devshirme / Janissaries | **Ottoman** | 不是 Safavid |
 | Twelver Shi'ism 国教 | **Safavid** | 不是 Ottoman |
-| jizya 废（Akbar）→ 复征（Aurangzeb） | **Mughal** | 同一帝国，两朝反差 |
+| jizya 废（Akbar）$\to$ 复征（Aurangzeb） | **Mughal** | 同一帝国，两朝反差 |
 | queue 发式 / banner 八旗 | **Qing** | Manchu 统治标记 |
 | sakoku / Dejima / alternate attendance | **Tokugawa** | 锁国不等于断交（对荷兰、朝鲜、琉球、清仍通） |
 | Taj Mahal / Din-i Ilahi | **Mughal** | Shah Jahan 建泰姬陵；Akbar 创融合教义 |
@@ -67,7 +67,7 @@ CED KC-4.3.II.B 原文点名这四个："Land empires included the Manchu...; th
 
 - 内因先行：tax farming 侵蚀中央财政、军事精英世袭化（Janissary 后期坐大）、疆域过度扩张。
 - 外因跟进：欧洲海事力量改写贸易路线（绕开陆路），工业后差距拉大。
-- Qing 特殊：Manchu 身份焦虑 → 文字狱与排满反清叙事（U6 革命伏笔）。
+- Qing 特殊：Manchu 身份焦虑 $\to$ 文字狱与排满反清叙事（U6 革命伏笔）。
 
 ## 5 考试陷阱清单
 
