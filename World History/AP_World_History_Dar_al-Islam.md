@@ -130,7 +130,8 @@ flowchart LR
 
 ## 相关链接
 
-- 待建：[[AP World History - Unit 1 MOC]]（Unit 1 知识地图）
-- 待建：[[AP World History - Networks of Exchange]]（Unit 2：贸易网络如何传播伊斯兰）
-- 待建：[[AP World History - Land-Based Empires]]（Unit 3：Ottoman、Safavid 伊斯兰帝国）
+- [[AP_World_History_Unit1_MOC]]（Unit 1 知识地图）
+- [[AP_World_History_Unit2_Networks_of_Exchange]]（Unit 2：贸易网络如何传播伊斯兰）
+- [[AP_World_History_Unit3_Land_Based_Empires]]（Unit 3：Ottoman、Safavid 伊斯兰帝国）
+- [[AP_World_History_Error_Traps]]（全 9 单元陷阱索引）
 - 工作目录产物：`~/高二/世界历史/AP_World_History_Error_Checklist.pdf`（可直接打印的易错点清单）、`~/高二/世界历史/AP考纲资料/`（CED 官方考纲抽取）
