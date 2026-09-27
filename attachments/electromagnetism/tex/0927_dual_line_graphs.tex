@@ -1,0 +1,58 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepgfplotslibrary{groupplots}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={
+    group size=3 by 2,
+    horizontal sep=1.4cm,
+    vertical sep=2.2cm,
+  },
+  width=5.0cm, height=4.4cm,
+  axis lines=left,
+  xlabel={$t$},
+  grid=major,
+  major grid style={gray!25},
+  xtick=\empty, ytick=\empty,
+  xmin=0, xmax=2.2,
+  title style={font=\small, align=center},
+  every axis plot/.append style={very thick},
+]
+% ---------- 1. x(t) = v0 t ----------
+\nextgroupplot[title={水平位移 $x(t)=v_0 t$\\匀速直线}, ymin=-0.3, ymax=2.6]
+  \addplot[blue, domain=0:2] {x};
+  \node[gray,font=\footnotesize,anchor=west] at (axis cs:0.55,1.85) {斜率 $=v_0$};
+
+% ---------- 2. y(t) = -1/2 a t^2 ----------
+\nextgroupplot[title={垂直位移 $y(t)=-\dfrac{1}{2}at^2$\\匀加速直线}, ymin=-2.6, ymax=0.4]
+  \addplot[blue, domain=0:2.1, samples=60] {-0.5*x*x};
+  \node[gray,font=\footnotesize] at (axis cs:1.15,-1.35) {开口向下的抛物线};
+
+% ---------- 3. vx(t) = v0 ----------
+\nextgroupplot[title={水平速度 $v_x(t)=v_0$\\恒定}, ymin=-0.3, ymax=2.2]
+  \addplot[blue, domain=0:2] {1.5};
+  \node[gray,font=\footnotesize] at (axis cs:1.1,0.85) {$v_x$ 不随 $t$ 变};
+
+% ---------- 4. vy(t) = -a t ----------
+\nextgroupplot[title={垂直速度 $v_y(t)=-at$\\线性减小}, ymin=-2.6, ymax=0.4]
+  \addplot[blue, domain=0:2.1] {-x};
+  \node[gray,font=\footnotesize,anchor=west] at (axis cs:0.35,-1.9) {斜率 $=-a$};
+
+% ---------- 5. a(t) = -a ----------
+\nextgroupplot[title={加速度 $a(t)=-\dfrac{qE_{\mathrm{net}}}{m}$\\恒定}, ymin=-2.6, ymax=0.4]
+  \addplot[red, domain=0:2.1] {-1.5};
+  \node[gray,font=\footnotesize] at (axis cs:1.1,-0.75) {$\vec a$ 恒定、方向向下};
+
+% ---------- 6. v(t) = sqrt(v0^2 + a^2 t^2) ----------
+\nextgroupplot[title={速率 $v(t)=\sqrt{v_0^2+a^2t^2}$\\非线性增长}, ymin=-0.3, ymax=2.9]
+  \addplot[blue, domain=0:2.1, samples=60] {sqrt(1+x*x)};
+  \addplot[blue,dashed,thin,domain=0:2.1] {1};
+  \node[gray,font=\footnotesize,anchor=west] at (axis cs:0.12,1.22) {$v_0$};
+  \node[gray,font=\footnotesize] at (axis cs:1.25,2.25) {始终增大的曲线};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

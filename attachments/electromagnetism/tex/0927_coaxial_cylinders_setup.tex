@@ -1,0 +1,68 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}[>=Stealth]
+  % ================= 左panel：几何截面 =================
+  % 内柱（实心导体）
+  \filldraw[fill=gray!35, draw=black, thick] (0,0) circle (0.8);
+  \node at (0.25,0.2) {$\oplus$};
+  \node at (-0.28,0.25) {$\oplus$};
+  \node at (0.0,-0.32) {$\oplus$};
+  \node[below=2pt] at (0,-0.82) {内柱 $+\lambda$};
+  % 外筒（薄导体筒）
+  \draw[very thick] (0,0) circle (2.2);
+  \node at (90:2.2) {$\ominus$};
+  \node at (150:2.2) {$\ominus$};
+  \node at (210:2.2) {$\ominus$};
+  \node at (270:2.2) {$\ominus$};
+  \node at (330:2.2) {$\ominus$};
+  \node[above=2pt] at (0,2.22) {外筒 $-\lambda$};
+  % 间隙电场箭头（沿径向向外）
+  \foreach \ang in {60,120,185,235,300}
+    \draw[->,teal,thick] (\ang:0.95) -- (\ang:2.02);
+  \node[teal] at (30:1.5) {$\vec{E}$};
+  % 水平虚线半径 + 三个区域标记
+  \draw[dashed,gray] (0,0) -- (2.75,0);
+  \fill (0.4,0) circle (1.6pt);
+  \node[below] at (0.4,-0.06) {\footnotesize\textcircled{\scriptsize 1}};
+  \fill (1.5,0) circle (1.6pt);
+  \node[below] at (1.5,-0.06) {\footnotesize\textcircled{\scriptsize 2}};
+  \fill (2.75,0) circle (1.6pt);
+  \node[below] at (2.75,-0.06) {\footnotesize\textcircled{\scriptsize 3}};
+  \node[below=8pt] at (0.8,0) {$a$};
+  \node[above right=2pt] at (2.2,0.02) {$b$};
+  % 中心点
+  \fill (0,0) circle (1.6pt);
+  % 参考点注记（与球形对的关键差异；置于底部避免与外筒相碰）
+  \node[font=\footnotesize,align=left,anchor=west] at (-3.4,-2.95)
+    {参考点：$V=0$ 取在 $r=b$（线电荷电势在无穷远发散）};
+
+  \begin{scope}[xshift=8.2cm]
+    % ================= 右panel：V(r) 剖面 =================
+    \draw[->] (0,0) -- (3.45,0) node[below] {$r$};
+    \draw[->] (0,0) -- (0,1.45) node[left] {$V(r)$};
+    % 平台段 ①：r<a，平台高度 = ln(b/a) 归一化为 1
+    \draw[very thick,blue] (0.12,1) -- (1,1);
+    % 对数下降段 ②：a<r<b, V/V_ab = ln(2.75/x)/ln(2.75)
+    \draw[very thick,blue,domain=1:2.75,samples=80,smooth]
+      plot (\x,{ln(2.75/\x)/1.012});
+    % 零段 ③：r>b
+    \draw[very thick,blue] (2.75,0) -- (3.3,0);
+    % 参考虚线
+    \draw[dashed,gray] (0,1) -- (1,1);
+    \draw[dashed,gray] (1,0) -- (1,1);
+    \node[left] at (0,1) {$V_{ab}$};
+    \node[below] at (1,-0.02) {$a$};
+    \node[below] at (2.75,-0.02) {$b$};
+    % 区域标记
+    \node[font=\footnotesize] at (0.55,1.14) {\textcircled{\scriptsize 1}};
+    \node[font=\footnotesize] at (1.75,0.55) {\textcircled{\scriptsize 2}};
+    \node[font=\footnotesize,above] at (3.0,0.04) {\textcircled{\scriptsize 3} $V=0$};
+    % 公式注记（置于曲线上方空白处）
+    \node[font=\footnotesize,anchor=west] at (1.7,0.72)
+      {$\frac{\lambda}{2\pi\varepsilon_0}\ln\frac{b}{r}$};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

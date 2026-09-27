@@ -1,0 +1,51 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}[>=Stealth]
+  % ================= 球壳与电荷 =================
+  \draw[very thick] (0,0) circle (2.2);
+  \node at (90:2.2) {$\oplus$};
+  \node at (55:2.2) {$\oplus$};
+  \node at (175:2.2) {$\oplus$};
+  \node at (215:2.2) {$\oplus$};
+  \node at (285:2.2) {$\oplus$};
+  \node[above=2pt] at (0,2.22) {均匀带电球壳（电荷元到 $P$ 距离各异）};
+  \node[right=2pt] at (2.24,0.35) {$r_a$};
+  % ================= 圆心与内部点 P =================
+  \fill (0,0) circle (1.6pt);
+  \node[below left] at (0,0) {$O$};
+  \draw[dashed,gray] (0,0) -- (0.5,0.3);
+  \node[above left=-1pt] at (0.24,0.16) {\footnotesize $r$};
+  \fill (0.5,0.3) circle (2.2pt);
+  \node[below right=0pt] at (0.5,0.3) {$P$};
+  % ================= 双锥四条棱 =================
+  % 近锥棱（指向 136 与 128 度方向的面元）
+  \draw[teal] (0.5,0.3) -- (-1.582,1.529);
+  \draw[teal] (0.5,0.3) -- (-1.355,1.734);
+  % 远锥棱（对顶延伸，打到 -17 与 -23 度方向）
+  \draw[teal] (0.5,0.3) -- (2.103,-0.648);
+  \draw[teal] (0.5,0.3) -- (2.019,-0.875);
+  % ================= 两块面元（橙色加粗弧） =================
+  \draw[very thick,orange,line cap=round] (136:2.2) arc[start angle=136, end angle=128, radius=2.2];
+  \draw[very thick,orange,line cap=round] (-17:2.2) arc[start angle=-17, end angle=-23.4, radius=2.2];
+  \node[orange,above left=-1pt] at (134:2.42) {$\mathrm{d}A_1$};
+  \node[orange,below right=-1pt] at (-20:2.52) {$\mathrm{d}A_2$};
+  % ================= 距离标注 =================
+  \node[above left=-2pt] at (-0.72,1.02) {$d_1$};
+  \node[below right=-2pt] at (1.38,-0.28) {$d_2$};
+  % ================= P 处两个等大反向的场元 =================
+  \draw[->,red,thick] (0.5,0.3) -- (1.232,-0.133);
+  \node[red,right=1pt] at (1.2,-0.16) {$\mathrm{d}\vec{E}_1$};
+  \draw[->,red,thick] (0.5,0.3) -- (-0.232,0.733);
+  \node[red,left=1pt] at (-0.26,0.76) {$\mathrm{d}\vec{E}_2$};
+  % ================= 内部结论 =================
+  \node[blue,font=\small] at (-0.95,-0.85) {$\vec{E}(P)=\vec{0}$};
+  % ================= 底部公式注记 =================
+  \node[font=\footnotesize,align=left,anchor=west] at (-3.5,-2.95)
+    {$\mathrm{d}A=\dfrac{\mathrm{d}\Omega\, d^2}{|\cos\theta|}$，
+     $\mathrm{d}E=\dfrac{\sigma\,\mathrm{d}A}{4\pi\varepsilon_0 d^2}=\dfrac{\sigma\,\mathrm{d}\Omega}{4\pi\varepsilon_0|\cos\theta|}$：距离 $d$ 被约掉\\
+     成对等大反向 $\implies$ 全部配对相消，$E(P)=\vec{0}$ 对一切 $r<r_a$ 成立};
+\end{tikzpicture}
+\end{document}
