@@ -12,8 +12,8 @@ created: 2026-08-06
 > [!abstract] 试卷信息
 > - **试卷**: FormStructureSense Hard（Three Parts Practice 第三部分）
 > - **来源**: `0801hw/6.FormStructureSense Hard Answer and Explanation.pdf` / `AI-practice/set1`
-> - **当前积累**: 6 题（Q1, Q3, Q11, Q19, Q18, AI-P2 Q8）
-> - **薄弱技能**: Standard English Conventions — Form, Structure, and Sense（悬垂修饰语、主谓一致、句子完整性、情态动词语义）
+> - **当前积累**: 7 题（Q1, Q3, Q11, Q19, Q18, AI-P2 Q8, 截图 Q19）
+> - **薄弱技能**: Standard English Conventions — Form, Structure, and Sense（悬垂修饰语、主谓一致、句子完整性、情态动词语义、along with 插入语干扰）
 > - **备注**: 按 v3.3 标准模板重塑（2026-08-17）
 
 ---
@@ -29,6 +29,7 @@ created: 2026-08-06
 - [[#4. FSS Hard Q19 — 悬垂修饰语（过程 vs 状态：动名词陷阱）]]
 - [[#5. FSS Hard Q18 — 句子完整性（主句谓语缺失：句子碎片陷阱）]]
 - [[#6. AI-P2 Q8 — 反事实 vs 过去将来（would have done 陷阱）]]
+- [[#7. 截图 Q19 — 主谓一致（along with 插入语干扰）]]
 
 ---
 
@@ -359,6 +360,63 @@ Which choice completes the text so that it conforms to the conventions of Standa
 
 ---
 
+# 7. 截图 Q19 — 主谓一致（along with 插入语干扰）
+
+> [!info] 我的答案: `D` — 正确答案: **C**
+> 来源: 用户截图（2026-10-03）
+
+## Task（题干与选项）
+
+Stephanie Shonekan of the University of Missouri, along with researchers George Starks of Drexel University and Tyron Cooper of Indiana University, ______ on the advisory team for the Timeline of African American Music, an interactive digital resource that explores African American musical history from the 1600s to the present day.
+
+Which choice completes the text so that it conforms to the conventions of Standard English?
+
+- **A.** are serving
+- **B.** have served
+- **C.** serves
+- **D.** serve
+
+## Step 1 — Map（结构标注）
+
+- 主语 = **Stephanie Shonekan**（单数）
+- `of the University of Missouri` 是介词短语，修饰主语
+- `along with researchers George Starks of Drexel University and Tyron Cooper of Indiana University` 是**介词短语（插入语）**，不改变主谓一致——`along with` 不是并列连词，不构成复合主语
+- 空格后 `on the advisory team for the Timeline of African American Music` 是介词短语作表语
+- 真正谓语位置 = 空格，需要**单数动词**
+- 考点：Standard English Conventions — Form, Structure, and Sense — Subject-Verb Agreement（主谓一致）
+
+## Step 2 — Mark（T / F 判定）
+
+| 选项 | 判定 | 依据 |
+|:---|:---|:---|
+| **A** | F | 复数动词（are serving），与单数主语 Stephanie Shonekan 不一致（A1.2） |
+| **B** | F | 复数动词（have served），与单数主语不一致（A1.2） |
+| **C** | T | 单数动词（serves），与单数主语一致（A1.2） |
+| **D** | F | 复数动词（serve），与单数主语不一致（A1.2） |
+
+## Step 3 — Source-check（溯源）
+
+- **C 逐元素溯源**：主语 Stephanie Shonekan（单数）→ 谓语 serves（单数）；`along with researchers...` 是介词短语，不构成复合主语，不影响主谓一致
+- **A/B/D 矛盾点**：都是复数动词，与单数主语不一致；陷阱机制：`along with` 后的 `researchers`（复数）紧邻空格，诱导选复数——实际上 `along with` 引导的是介词短语，不是并列主语
+
+## Step 4 — Chain-check（链条验证）
+
+划掉介词短语：`of the University of Missouri` + `along with researchers George Starks of Drexel University and Tyron Cooper of Indiana University` → 露出裸主语 **Stephanie Shonekan**（单数）→ 谓语必须单数 → **serves** ✅
+
+边界验证（一个分句只有一个有限动词）：主句 `Stephanie Shonekan serves on the advisory team`（serves）→ 后面 `an interactive digital resource that explores...` 是同位语 + 定语从句（explores）——各分句谓语独立。
+
+## Trap（陷阱命名）
+
+> [!warning] 邻近干扰（Proximity Trap）— along with 变体
+> 规则：主语和动词之间插入 `along with` + 复数名词，利用"就近一致"的错觉诱导选复数；`along with` 是介词短语，不构成复合主语。
+> 防法：划掉 `along with` 短语（介词短语），露出真正主语，再定数（A1.2 四步：划介词短语 → 找裸主语 → 定数 → 验时态）。
+
+## Principle（对应原则）
+
+结构优先（逻辑优先的语法版）：先找真正主语（A1.2 四步），`along with` 不改变主谓一致。
+
+---
+
 ## 积累小结
 
 | 题号 | 考点 | 我的答案 | 正确答案 | 错误类型 |
@@ -369,5 +427,6 @@ Which choice completes the text so that it conforms to the conventions of Standa
 | Q19 | Subject-Modifier Placement（悬垂修饰语） | C | D | 过程 vs 状态（动名词陷阱） |
 | Q18 | Sentence Completeness（句子完整性） | 未作答 | A | 待确认 |
 | AI-P2 Q8 | 情态动词语义（反事实 vs 过去将来） | A | C | 反事实陷阱 |
+| 截图 Q19 | Subject-Verb Agreement（along with 插入语） | D | C | 邻近复数名词干扰（along with 变体） |
 
-**行动项**: ① 句首修饰语后紧跟 `there is/are`、动词（wrote/gained）、人或非被修饰名词时优先排除——验证"逗号后第一个名词能否被修饰语描述"；② 主谓一致题先划掉介词短语露出真正主语（动名词短语 → 单数），再用全文时态双保险；③ 错因记录须对准真正考点（如 Q1 不是标点题而是修饰语位置题）；④ 同位语=重命名，主语必须紧跟；动名词命名过程≠状态名词，先定主语再选语态；⑤ 句子完整性：主句必须有限定动词，`to do`/`doing`/`having done` 单独出现 = 句子碎片；先找主谓再判断修饰语；⑥ 反事实陷阱：`would have done` = 没发生（虚拟），`was/were to do` = 计划中将要发生（过去将来）；看到后文说事情确实发生 → 排除 would have done。
+**行动项**: ① 句首修饰语后紧跟 `there is/are`、动词（wrote/gained）、人或非被修饰名词时优先排除——验证"逗号后第一个名词能否被修饰语描述"；② 主谓一致题先划掉介词短语露出真正主语（动名词短语 → 单数），再用全文时态双保险；③ 错因记录须对准真正考点（如 Q1 不是标点题而是修饰语位置题）；④ 同位语=重命名，主语必须紧跟；动名词命名过程≠状态名词，先定主语再选语态；⑤ 句子完整性：主句必须有限定动词，`to do`/`doing`/`having done` 单独出现 = 句子碎片；先找主谓再判断修饰语；⑥ 反事实陷阱：`would have done` = 没发生（虚拟），`was/were to do` = 计划中将要发生（过去将来）；看到后文说事情确实发生 → 排除 would have done；⑦ **along with 插入语不改变主谓一致**——划掉 `along with + 名词` 短语，露出真正主语再定数（A1.2 Proximity Trap 变体）。
