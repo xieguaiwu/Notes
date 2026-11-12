@@ -1,0 +1,5 @@
+finish=stop
+1) Pass — starts at origin with flat tangent, one positive peak, returns to zero at T, never negative.  
+2) Partial — peak is correctly over T/2 and its dashed vertical guide aligns; T/4 and T dashed vertical guides are missing/not clearly drawn.  
+3) Minor crowding — “steepest here…” and “back to 0 at T…” sit very close to the curve; “Peak…” is crowded too. No cut-off labels.  
+4) Mostly usable, but not fully textbook-polished; add missing T/4 and T guides and move labels slightly off the curve.
